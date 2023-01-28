@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://statisticamd.github.io/sdg-data-moldova/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230128102532">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230128104327">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -536,7 +536,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('create_goals', {"previous_next_links":false,"goals":[]});
+        var currentValue = normalizeCurrentValue('create_goals', {"previous_next_links":false,"goal_content_heading":"","goals":[]});
         var propertyEditor = editor.getEditor('root.create_goals');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -674,8 +674,32 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.email_contacts'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('empty_metadata_placeholder', "");
+        var propertyEditor = editor.getEditor('root.empty_metadata_placeholder');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: empty_metadata_placeholder');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.empty_metadata_placeholder'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('empty_metadata_placeholder_sources', "");
+        var propertyEditor = editor.getEditor('root.empty_metadata_placeholder_sources');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: empty_metadata_placeholder_sources');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.empty_metadata_placeholder_sources'));
 
     
@@ -956,6 +980,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_single_unit'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('ignored_disaggregations', []);
+        var propertyEditor = editor.getEditor('root.ignored_disaggregations');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: ignored_disaggregations');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.ignored_disaggregations'));
 
     
@@ -1166,7 +1202,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"","status_types":[]});
+        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"","status_help":"","status_types":[]});
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1180,7 +1216,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('remote_data_prefix', "https://open-sdg.org/open-sdg-data-starter");
+        var currentValue = normalizeCurrentValue('remote_data_prefix', "https://statisticamd.github.io/sdg-data-moldova/");
         var propertyEditor = editor.getEditor('root.remote_data_prefix');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1220,7 +1256,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('repository_url_data', "https://github.com/open-sdg/open-sdg-data-starter");
+        var currentValue = normalizeCurrentValue('repository_url_data', "https://github.com/statisticamd/sdg-data-moldova");
         var propertyEditor = editor.getEditor('root.repository_url_data');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1457,12 +1493,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230128102532'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230128104327'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230128102532"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230128104327"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

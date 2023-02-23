@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230223150943">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230223154129">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -548,6 +548,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR_INFO', "");
+        var propertyEditor = editor.getEditor('root.SDG_INDICATOR_INFO');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: SDG_INDICATOR_INFO');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
 
     
@@ -594,7 +606,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_SERIES_DESCR', "test");
+        var currentValue = normalizeCurrentValue('SDG_SERIES_DESCR', "");
         var propertyEditor = editor.getEditor('root.SDG_SERIES_DESCR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -608,7 +620,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE', "test");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE', "");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -622,7 +634,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS', "test");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS', "");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -634,11 +646,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('CONTACT', "");
+        var propertyEditor = editor.getEditor('root.CONTACT');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: CONTACT');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_ORGANISATION', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_ORGANISATION', "");
         var propertyEditor = editor.getEditor('root.CONTACT_ORGANISATION');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -652,7 +676,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_NAME', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_NAME', "");
         var propertyEditor = editor.getEditor('root.CONTACT_NAME');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -666,7 +690,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('ORGANISATION_UNIT', "test");
+        var currentValue = normalizeCurrentValue('ORGANISATION_UNIT', "");
         var propertyEditor = editor.getEditor('root.ORGANISATION_UNIT');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -680,7 +704,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_FUNCT', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_FUNCT', "");
         var propertyEditor = editor.getEditor('root.CONTACT_FUNCT');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -694,7 +718,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_PHONE', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_PHONE', "");
         var propertyEditor = editor.getEditor('root.CONTACT_PHONE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -708,7 +732,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_MAIL', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_MAIL', "");
         var propertyEditor = editor.getEditor('root.CONTACT_MAIL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -722,7 +746,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CONTACT_EMAIL', "test");
+        var currentValue = normalizeCurrentValue('CONTACT_EMAIL', "");
         var propertyEditor = editor.getEditor('root.CONTACT_EMAIL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -734,6 +758,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('IND_DEF_CON_CLASS', "");
+        var propertyEditor = editor.getEditor('root.IND_DEF_CON_CLASS');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: IND_DEF_CON_CLASS');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS'));
 
     
@@ -752,7 +788,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "test");
+        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "");
         var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -766,7 +802,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('CLASS_SYSTEM', "test");
+        var currentValue = normalizeCurrentValue('CLASS_SYSTEM', "");
         var propertyEditor = editor.getEditor('root.CLASS_SYSTEM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -778,11 +814,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('SRC_TYPE_COLL_METHOD', "");
+        var propertyEditor = editor.getEditor('root.SRC_TYPE_COLL_METHOD');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: SRC_TYPE_COLL_METHOD');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "test");
+        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "");
         var propertyEditor = editor.getEditor('root.SOURCE_TYPE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -796,7 +844,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COLL_METHOD', "test");
+        var currentValue = normalizeCurrentValue('COLL_METHOD', "");
         var propertyEditor = editor.getEditor('root.COLL_METHOD');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -810,7 +858,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('FREQ_COLL', "test");
+        var currentValue = normalizeCurrentValue('FREQ_COLL', "");
         var propertyEditor = editor.getEditor('root.FREQ_COLL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -824,7 +872,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REL_CAL_POLICY', "test");
+        var currentValue = normalizeCurrentValue('REL_CAL_POLICY', "");
         var propertyEditor = editor.getEditor('root.REL_CAL_POLICY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -838,7 +886,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_SOURCE', "test");
+        var currentValue = normalizeCurrentValue('DATA_SOURCE', "");
         var propertyEditor = editor.getEditor('root.DATA_SOURCE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -852,7 +900,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPILING_ORG', "test");
+        var currentValue = normalizeCurrentValue('COMPILING_ORG', "");
         var propertyEditor = editor.getEditor('root.COMPILING_ORG');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -866,7 +914,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('INST_MANDATE', "test");
+        var currentValue = normalizeCurrentValue('INST_MANDATE', "");
         var propertyEditor = editor.getEditor('root.INST_MANDATE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -878,11 +926,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('OTHER_METHOD', "");
+        var propertyEditor = editor.getEditor('root.OTHER_METHOD');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: OTHER_METHOD');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('RATIONALE', "test");
+        var currentValue = normalizeCurrentValue('RATIONALE', "");
         var propertyEditor = editor.getEditor('root.RATIONALE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -896,7 +956,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "test");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -910,7 +970,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "test");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -924,7 +984,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_VALIDATION', "test");
+        var currentValue = normalizeCurrentValue('DATA_VALIDATION', "");
         var propertyEditor = editor.getEditor('root.DATA_VALIDATION');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -938,7 +998,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DOC_METHOD', "test");
+        var currentValue = normalizeCurrentValue('DOC_METHOD', "");
         var propertyEditor = editor.getEditor('root.DOC_METHOD');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -952,7 +1012,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('QUALITY_MGMNT', "test");
+        var currentValue = normalizeCurrentValue('QUALITY_MGMNT', "");
         var propertyEditor = editor.getEditor('root.QUALITY_MGMNT');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -966,7 +1026,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('QUALITY_ASSURE', "test");
+        var currentValue = normalizeCurrentValue('QUALITY_ASSURE', "");
         var propertyEditor = editor.getEditor('root.QUALITY_ASSURE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -980,7 +1040,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('QUALITY_ASSMNT', "test");
+        var currentValue = normalizeCurrentValue('QUALITY_ASSMNT', "");
         var propertyEditor = editor.getEditor('root.QUALITY_ASSMNT');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -994,7 +1054,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COVERAGE', "test");
+        var currentValue = normalizeCurrentValue('COVERAGE', "");
         var propertyEditor = editor.getEditor('root.COVERAGE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1008,7 +1068,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "test");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1022,7 +1082,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('OTHER_DOC', "test");
+        var currentValue = normalizeCurrentValue('OTHER_DOC', "");
         var propertyEditor = editor.getEditor('root.OTHER_DOC');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1050,7 +1110,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-02-01");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-02-23");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1062,6 +1122,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('un_designated_tier', "");
+        var propertyEditor = editor.getEditor('root.un_designated_tier');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: un_designated_tier');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.un_designated_tier'));
 
     
@@ -1201,12 +1273,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230223150943'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230223154129'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230223150943"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230223154129"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

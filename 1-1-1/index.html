@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230312150852">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230312153115">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -821,8 +821,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicator information </th>
+        <td>
           
+            <p>SDG_INDICATOR_INFO</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -874,58 +885,179 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Series </th>
+        <td>
           
-      
-      
-      
-        
+            <p>SDG_SERIES_DESCR</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
           
-      
-      
-      
+            <p>META_LAST_UPDATE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Related indicators </th>
+        <td>
           
-      
-      
-      
+            <p>SDG_RELATED_INDICATORS</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data reporter </th>
+        <td>
           
-      
-      
-      
+            <p>CONTACT</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
           
-      
-      
-      
+            <p>CONTACT_ORGANISATION</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact person(s) </th>
+        <td>
           
-      
-      
-      
+            <p>CONTACT_NAME</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact organisation unit </th>
+        <td>
           
-      
-      
-      
+            <p>ORGANISATION_UNIT</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact person function </th>
+        <td>
           
-      
-      
-      
+            <p>CONTACT_FUNCT</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact phone </th>
+        <td>
           
-      
-      
-      
+            <p>CONTACT_PHONE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact mail </th>
+        <td>
           
+            <p>CONTACT_MAIL</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact email </th>
+        <td>
+          
+            <p>CONTACT_EMAIL</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -959,8 +1091,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
           
+            <p>UNIT_MEASURE</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -980,108 +1123,339 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Classifications </th>
+        <td>
           
-      
-      
-      
-        
+            <p>CLASS_SYSTEM</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data source type and collection method </th>
+        <td>
           
-      
-      
-      
+            <p>SRC_TYPE_COLL_METHOD</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data sources </th>
+        <td>
           
-      
-      
-      
+            <p>SOURCE_TYPE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data collection method </th>
+        <td>
           
-      
-      
-      
+            <p>COLL_METHOD</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data collection calendar </th>
+        <td>
           
-      
-      
-      
+            <p>FREQ_COLL</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data release calendar </th>
+        <td>
           
-      
-      
-      
+            <p>REL_CAL_POLICY</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
           
-      
-      
-      
+            <p>DATA_SOURCE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data compilers </th>
+        <td>
           
-      
-      
-      
+            <p>COMPILING_ORG</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
           
-      
-      
-      
+            <p>INST_MANDATE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Other methodological considerations </th>
+        <td>
           
-      
-      
-      
+            <p>OTHER_METHOD</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
           
-      
-      
-      
+            <p>RATIONALE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comment and limitations </th>
+        <td>
           
-      
-      
-      
+            <p>REC_USE_LIM</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
           
-      
-      
-      
+            <p>DATA_COMP</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Validation </th>
+        <td>
           
-      
-      
-      
+            <p>DATA_VALIDATION</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Methods and guidance available to countries for the compilation of the data at the national level </th>
+        <td>
           
-      
-      
-      
+            <p>DOC_METHOD</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Quality management </th>
+        <td>
           
-      
-      
-      
+            <p>QUALITY_MGMNT</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Quality assurance </th>
+        <td>
           
-      
-      
-      
+            <p>QUALITY_ASSURE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Quality assessment </th>
+        <td>
           
-      
-      
-      
+            <p>QUALITY_ASSMNT</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data availability and disaggregation </th>
+        <td>
           
-      
-      
-      
+            <p>COVERAGE</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comparability/deviation from international standards </th>
+        <td>
           
+            <p>COMPARABILITY</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">References and Documentation </th>
+        <td>
+          
+            <p>OTHER_DOC</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1105,7 +1479,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Mar 09, 2023
+            Mar 12, 2023
           
         </td>
         </tr>
@@ -1405,8 +1779,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">UN designated tier </th>
+        <td>
           
+            <p>un_designated_tier</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -1538,12 +1923,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230312150852'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230312153115'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230312150852"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230312153115"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

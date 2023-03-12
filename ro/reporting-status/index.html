@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Starea raportării - Indicatori pentru Obiectivele de Dezvoltare Durabilă</title>
+    <title>Statutul raportării - general.site_title</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230309115033">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230312144053">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -152,20 +152,20 @@ layout-reportingstatus
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contrast implicit","disable_high_contrast":"Dezactivați contrastul ridicat","disclaimer":"Acesta este un site de dezvoltare. Vă salutăm <a href=\"mailto:%email_contacts.suggestions\">feedback-ul</a>.","enable_high_contrast":"Activați contrast ridicat","hide_menu":"Ascunde meniul de navigare","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","disable_high_contrast":"Dezactivare contrast înalt","disclaimer":"Acesta este un site web în dezvoltare. Aici puteți lăsa <a href=\"mailto:%email_address\">sugestiile Dvs.</a>.","enable_high_contrast":"Activare contrast înalt","skip_link":"Trecere la conținutul principal","tag_line":"17 Obiective pentru transformarea lumii"};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Trecere la conținutul principal</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
-    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+    <h2 class="internet-explorer-message-title"></h2>
+    <p class="internet-explorer-message-body"></p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Acesta este un site de dezvoltare. Vă salutăm <a href="mailto:sdg2030@statistica.gov.md">feedback-ul</a>.
+    Acesta este un site web în dezvoltare. Aici puteți lăsa <a href="mailto:%email_address">sugestiile Dvs.</a>.
     
   </div>
 </div>
@@ -175,10 +175,10 @@ layout-reportingstatus
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="Go to homepage" title="Go to homepage">
-    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Obiectivele de Dezvoltare Durabilă - 17 Goals to Transform our World" />
+            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="" title="">
+    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Obiective de Dezvoltare Durabilă - 17 Obiective pentru transformarea lumii" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
@@ -186,23 +186,23 @@ layout-reportingstatus
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Statutul raportării</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/about">About</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/faq">Întrebări frecvente</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/news">Updates</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">menu.updates</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Căutare</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Căutare">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -233,7 +233,7 @@ layout-reportingstatus
                 English
             </a>
         </li></ul>
-</div></span><a title="Activați contrast ridicat" aria-label="Activați contrast ridicat"
+</div></span><a title="Activare contrast înalt" aria-label="Activare contrast înalt"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -258,9 +258,9 @@ data-event-label="high"
   <nav>
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         <li class="breadcrumb-item" >
-            <a href="/sdg-site-moldova/ro/">Acasa</a>
+            <a href="/sdg-site-moldova/ro/">Acasă</a>
         </li>
-        <li class="breadcrumb-item active">Starea raportării</li>
+        <li class="breadcrumb-item active">Statutul raportării</li>
     </ol>
 </nav>
 </div>
@@ -268,13 +268,13 @@ data-event-label="high"
 
   <h1>
   
-    Starea raportării
+    Statutul raportării
   
 </h1>
 
 
 <div class="reporting-status-description">
-  <p>Reporting status provides an overview of how much Sustainable Development Goal (SDG) data Moldova reports.</p>
+  <p>status.description</p>
 
 </div>
 
@@ -287,14 +287,14 @@ data-event-label="high"
   <div class="goal goal-overall">
     <div class="details">
         <h2 class="status-goal">
-            Overall reporting status
+            Statutul general al raportării
         </h2>
         <span class="total"><span>248</span> indicatori</span>
         <div class="summary">
             <div class="statuses">
             
             <div>
-                <span class="status notstarted"><span class="status-inner">247</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                <span class="status notstarted"><span class="status-inner">247</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
             </div>
             
             
@@ -310,7 +310,7 @@ data-event-label="high"
             
             
             
-            <span class="notstarted" style="width:99.59677419354838%" title="Exploring data sources: 100%"></span>
+            <span class="notstarted" style="width:99.59677419354838%" title="Explorarea surselor de date: 100%"></span>
             
             
             
@@ -322,22 +322,22 @@ data-event-label="high"
     </div>
     <br style="clear:both;">
 </div>
-  <h2>Statut dupa obiectiv</h2><div class="goal reporting-status-item">
+  <h2>Statutul pe fiecare obiectiv</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/1" title="Vedeți obiectivele și indicatorii pentru Goal 1" aria-label="Vedeți obiectivele și indicatorii pentru Goal 1">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/1.png" alt="Fără sărăcie - Obiectiv 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/1" title=" 1" aria-label=" 1">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/1.png" alt="global_goals.1-short - Obiectiv 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/1">Fără sărăcie</a>
+            <a href="/sdg-site-moldova/ro/1">global_goals.1-short</a>
         </h3>
         <span class="total">13 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">92%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Explorarea surselor de date</strong><span class="value">92%</span>
                 </div>
                 
                 
@@ -353,7 +353,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:92.3076923076923%" title="Exploring data sources: 92%"></span>
+                <span class="notstarted" style="width:92.3076923076923%" title="Explorarea surselor de date: 92%"></span>
                 
                 
                 
@@ -367,20 +367,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/2" title="Vedeți obiectivele și indicatorii pentru Goal 2" aria-label="Vedeți obiectivele și indicatorii pentru Goal 2">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/2.png" alt="Zero hunger - Obiectiv 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/2" title=" 2" aria-label=" 2">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/2.png" alt="global_goals.2-short - Obiectiv 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/2">Zero hunger</a>
+            <a href="/sdg-site-moldova/ro/2">global_goals.2-short</a>
         </h3>
         <span class="total">14 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -396,7 +396,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -410,20 +410,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/3" title="Vedeți obiectivele și indicatorii pentru Goal 3" aria-label="Vedeți obiectivele și indicatorii pentru Goal 3">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/3.png" alt="Good health and well-being - Obiectiv 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/3" title=" 3" aria-label=" 3">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/3.png" alt="global_goals.3-short - Obiectiv 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/3">Good health and well-being</a>
+            <a href="/sdg-site-moldova/ro/3">global_goals.3-short</a>
         </h3>
         <span class="total">28 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -439,7 +439,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -453,20 +453,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/4" title="Vedeți obiectivele și indicatorii pentru Goal 4" aria-label="Vedeți obiectivele și indicatorii pentru Goal 4">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/4.png" alt="Quality education - Obiectiv 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/4" title=" 4" aria-label=" 4">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/4.png" alt="global_goals.4-short - Obiectiv 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/4">Quality education</a>
+            <a href="/sdg-site-moldova/ro/4">global_goals.4-short</a>
         </h3>
         <span class="total">12 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -482,7 +482,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -496,20 +496,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/5" title="Vedeți obiectivele și indicatorii pentru Goal 5" aria-label="Vedeți obiectivele și indicatorii pentru Goal 5">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/5.png" alt="Gender equality - Obiectiv 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/5" title=" 5" aria-label=" 5">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/5.png" alt="global_goals.5-short - Obiectiv 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/5">Gender equality</a>
+            <a href="/sdg-site-moldova/ro/5">global_goals.5-short</a>
         </h3>
         <span class="total">14 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -525,7 +525,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -539,20 +539,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/6" title="Vedeți obiectivele și indicatorii pentru Goal 6" aria-label="Vedeți obiectivele și indicatorii pentru Goal 6">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/6.png" alt="Clean water and sanitation - Obiectiv 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/6" title=" 6" aria-label=" 6">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/6.png" alt="global_goals.6-short - Obiectiv 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/6">Clean water and sanitation</a>
+            <a href="/sdg-site-moldova/ro/6">global_goals.6-short</a>
         </h3>
         <span class="total">11 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -568,7 +568,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -582,20 +582,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/7" title="Vedeți obiectivele și indicatorii pentru Goal 7" aria-label="Vedeți obiectivele și indicatorii pentru Goal 7">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/7.png" alt="Affordable and clean energy - Obiectiv 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/7" title=" 7" aria-label=" 7">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/7.png" alt="global_goals.7-short - Obiectiv 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/7">Affordable and clean energy</a>
+            <a href="/sdg-site-moldova/ro/7">global_goals.7-short</a>
         </h3>
         <span class="total">6 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -611,7 +611,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -625,20 +625,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/8" title="Vedeți obiectivele și indicatorii pentru Goal 8" aria-label="Vedeți obiectivele și indicatorii pentru Goal 8">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/8.png" alt="Decent work and economic growth - Obiectiv 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/8" title=" 8" aria-label=" 8">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/8.png" alt="global_goals.8-short - Obiectiv 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/8">Decent work and economic growth</a>
+            <a href="/sdg-site-moldova/ro/8">global_goals.8-short</a>
         </h3>
         <span class="total">16 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -654,7 +654,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -668,20 +668,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/9" title="Vedeți obiectivele și indicatorii pentru Goal 9" aria-label="Vedeți obiectivele și indicatorii pentru Goal 9">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/9.png" alt="Industry, innovation and infrastructure - Obiectiv 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/9" title=" 9" aria-label=" 9">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/9.png" alt="global_goals.9-short - Obiectiv 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/9">Industry, innovation and infrastructure</a>
+            <a href="/sdg-site-moldova/ro/9">global_goals.9-short</a>
         </h3>
         <span class="total">12 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -697,7 +697,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -711,20 +711,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/10" title="Vedeți obiectivele și indicatorii pentru Goal 10" aria-label="Vedeți obiectivele și indicatorii pentru Goal 10">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/10.png" alt="Reduced inequalities - Obiectiv 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/10" title=" 10" aria-label=" 10">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/10.png" alt="global_goals.10-short - Obiectiv 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/10">Reduced inequalities</a>
+            <a href="/sdg-site-moldova/ro/10">global_goals.10-short</a>
         </h3>
         <span class="total">14 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -740,7 +740,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -754,20 +754,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/11" title="Vedeți obiectivele și indicatorii pentru Goal 11" aria-label="Vedeți obiectivele și indicatorii pentru Goal 11">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/11.png" alt="Sustainable cities and communities - Obiectiv 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/11" title=" 11" aria-label=" 11">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/11.png" alt="global_goals.11-short - Obiectiv 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/11">Sustainable cities and communities</a>
+            <a href="/sdg-site-moldova/ro/11">global_goals.11-short</a>
         </h3>
         <span class="total">15 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -783,7 +783,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -797,20 +797,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/12" title="Vedeți obiectivele și indicatorii pentru Goal 12" aria-label="Vedeți obiectivele și indicatorii pentru Goal 12">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/12.png" alt="Responsible consumption and production - Obiectiv 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/12" title=" 12" aria-label=" 12">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/12.png" alt="global_goals.12-short - Obiectiv 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/12">Responsible consumption and production</a>
+            <a href="/sdg-site-moldova/ro/12">global_goals.12-short</a>
         </h3>
         <span class="total">13 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -826,7 +826,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -840,20 +840,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/13" title="Vedeți obiectivele și indicatorii pentru Goal 13" aria-label="Vedeți obiectivele și indicatorii pentru Goal 13">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/13.png" alt="Climate action - Obiectiv 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/13" title=" 13" aria-label=" 13">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/13.png" alt="global_goals.13-short - Obiectiv 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/13">Climate action</a>
+            <a href="/sdg-site-moldova/ro/13">global_goals.13-short</a>
         </h3>
         <span class="total">8 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -869,7 +869,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -883,20 +883,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/14" title="Vedeți obiectivele și indicatorii pentru Goal 14" aria-label="Vedeți obiectivele și indicatorii pentru Goal 14">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/14.png" alt="Life below water - Obiectiv 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/14" title=" 14" aria-label=" 14">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/14.png" alt="global_goals.14-short - Obiectiv 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/14">Life below water</a>
+            <a href="/sdg-site-moldova/ro/14">global_goals.14-short</a>
         </h3>
         <span class="total">10 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -912,7 +912,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -926,20 +926,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/15" title="Vedeți obiectivele și indicatorii pentru Goal 15" aria-label="Vedeți obiectivele și indicatorii pentru Goal 15">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/15.png" alt="Life on land - Obiectiv 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/15" title=" 15" aria-label=" 15">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/15.png" alt="global_goals.15-short - Obiectiv 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/15">Life on land</a>
+            <a href="/sdg-site-moldova/ro/15">global_goals.15-short</a>
         </h3>
         <span class="total">14 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -955,7 +955,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -969,20 +969,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/16" title="Vedeți obiectivele și indicatorii pentru Goal 16" aria-label="Vedeți obiectivele și indicatorii pentru Goal 16">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/16.png" alt="Peace, justice and strong institutions - Obiectiv 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/16" title=" 16" aria-label=" 16">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/16.png" alt="global_goals.16-short - Obiectiv 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/16">Peace, justice and strong institutions</a>
+            <a href="/sdg-site-moldova/ro/16">global_goals.16-short</a>
         </h3>
         <span class="total">24 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -998,7 +998,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -1012,20 +1012,20 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/sdg-site-moldova/ro/17" title="Vedeți obiectivele și indicatorii pentru Goal 17" aria-label="Vedeți obiectivele și indicatorii pentru Goal 17">
-        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/17.png" alt="Partnerships for the goals - Obiectiv 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        <a href="/sdg-site-moldova/ro/17" title=" 17" aria-label=" 17">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/17.png" alt="global_goals.17-short - Obiectiv 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site-moldova/ro/17">Partnerships for the goals</a>
+            <a href="/sdg-site-moldova/ro/17">global_goals.17-short</a>
         </h3>
         <span class="total">24 indicatori</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Explorarea surselor de date</strong><span class="value">100%</span>
                 </div>
                 
                 
@@ -1041,7 +1041,7 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Explorarea surselor de date: 100%"></span>
                 
                 
                 
@@ -1063,7 +1063,7 @@ data-event-label="high"
   
 
   </div>
-  <a href="#top">Inapoi sus</a>
+  <a href="#top"></a>
 </div>
 <footer role="contentinfo">
     <div class="container">
@@ -1072,21 +1072,21 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Construit folosind Open SDG</a>
+                            <a href="https://open-sdg.org"></a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/contact-us">Contact us</a>
+                            <a href="/sdg-site-moldova/ro/contact-us">Contacte</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">general.twitter</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">general.facebook</a>
                             
                         </li>
                         <li>
@@ -1128,17 +1128,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ascunde';</script>
+    translations['general']['hide'] = '';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Căutare';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230309115033'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230312144053'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230309115033"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230312144053"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

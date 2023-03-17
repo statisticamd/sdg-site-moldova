@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230317142540">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230317152202">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -487,7 +487,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "Procent, %");
+        var currentValue = normalizeCurrentValue('computation_units', "Percent, %");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -515,7 +515,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_footnote', "Începand cu anul 2019 datele nu sunt comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC");
+        var currentValue = normalizeCurrentValue('data_footnote', "Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified");
         var propertyEditor = editor.getEditor('root.data_footnote');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -757,7 +757,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "1.2.1. Rata sărăciei absolute");
+        var currentValue = normalizeCurrentValue('graph_title', "1.2.1. Absolute poverty rate");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_available', "<p>Indicator 1.2.1 Rata sărăciei absolute</p>");
+        var currentValue = normalizeCurrentValue('indicator_available', "Absolute poverty rate");
         var propertyEditor = editor.getEditor('root.indicator_available');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -813,7 +813,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "<p>Indicator 1.2.1 Ponderea populației aflate sub pragul național al sărăciei, pe sexe și vârstă </p>");
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-2-1-title");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -843,7 +843,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Republica Moldova, fără partea stângă a Nistrului și mun. Bender");
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender");
         var propertyEditor = editor.getEditor('root.national_geographical_coverage');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -913,7 +913,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', "target_achieved");
+        var currentValue = normalizeCurrentValue('progress_status', "not_available");
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1162,12 +1162,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Căutare';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230317142540'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230317152202'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230317142540"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230317152202"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1,8 +1,8 @@
 ---
-layout: categories
-permalink: /es/categories/
-title: Categories
-language: es
+layout: categorii
+permalink: /ro/categories/
+title: Categorii
+language: ro
 ---
 
 Translation needed.

@@ -1,8 +1,8 @@
 ---
-layout: news
-title: News & Events
-permalink: /es/news/
-language: es
+layout: noutati
+title: Noutăți și evenimente
+permalink: /ro/news/
+language: ro
 ---
 
 Translation needed.

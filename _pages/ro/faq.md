@@ -1,8 +1,8 @@
 ---
-title: Frequently Asked Questions (FAQ)
-permalink: /es/faq/
+title: Intrebări frecvente (FAQ)
+permalink: /ro/faq/
 layout: page
-language: es
+language: ro
 ---
 
 Translation needed.

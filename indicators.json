@@ -555,7 +555,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-3-1",
@@ -579,6 +579,38 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-5-1-a",
+          "title": "global_indicators.4-5-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-5-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "4-5-1-b",
+          "title": "global_indicators.4-5-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-5-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "4-5-1-c",
+          "title": "global_indicators.4-5-1-c-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-5-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "4-5-1-e",
+          "title": "global_indicators.4-5-1-e-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-5-1-e",
           "status": "notstarted"
         },
         {
@@ -606,6 +638,22 @@
           "status": "notstarted"
         },
         {
+          "id": "4-a-1-b",
+          "title": "global_indicators.4-a-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-a-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "4-a-1-c",
+          "title": "global_indicators.4-a-1-c-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-a-1-c",
+          "status": "complete"
+        },
+        {
           "id": "4-b-1",
           "title": "Volume of official development assistance flows for scholarships by sector and type of study",
           "description": "",
@@ -619,6 +667,30 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-c-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-c-1-a",
+          "title": "global_indicators.4-c-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-c-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "4-c-1-b",
+          "title": "global_indicators.4-c-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-c-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "4-c-1-c",
+          "title": "global_indicators.4-c-1-c-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-c-1-c",
           "status": "notstarted"
         }]
     }
@@ -676,6 +748,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/5-4-1",
           "status": "notstarted"
+        },
+        {
+          "id": "5-4-1-2",
+          "title": "global_indicators.5-4-1-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/5-4-1-2",
+          "status": "complete"
         },
         {
           "id": "5-5-1",
@@ -883,7 +963,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-1-2",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "7-1-2-1",
+          "title": "global_indicators.7-1-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/7-1-2-1",
+          "status": "complete"
         },
         {
           "id": "7-2-1",
@@ -972,6 +1060,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/8-5-1",
           "status": "notstarted"
+        },
+        {
+          "id": "8-5-1-1",
+          "title": "global_indicators.8-5-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-5-1-1",
+          "status": "complete"
         },
         {
           "id": "8-5-2",
@@ -1076,6 +1172,22 @@
           "keywords": "",
           "href": "/sdg-site-moldova/9-1-2",
           "status": "notstarted"
+        },
+        {
+          "id": "9-1-2-a",
+          "title": "global_indicators.9-1-2-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/9-1-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "9-1-2-b",
+          "title": "global_indicators.9-1-2-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/9-1-2-b",
+          "status": "complete"
         },
         {
           "id": "9-2-1",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro" class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://statisticamd.github.io/sdg-data-moldova/ro',
+  remoteDataBaseUrl: 'https://statisticamd.github.io/sdg-data-moldova/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -42,7 +42,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'ro',
+  language: 'en',
 };
 
 </script>
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Despre - Indicators For The Sustainable Development Goals</title>
+    <title>Cookies and privacy - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412102624">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412103754">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,7 +147,7 @@ var translations = {
         
 
     </head>
-<body class="language-ro
+<body class="language-en
 layout-page
 ">
 <!-- <div class="container"> -->
@@ -175,7 +175,7 @@ layout-page
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="Go to homepage" title="Go to homepage">
+            <a class="navbar-brand" href="/sdg-site-moldova/" id="home" aria-label="Go to homepage" title="Go to homepage">
     <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
@@ -184,25 +184,25 @@ layout-page
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
+    <a class="nav-link" href="/sdg-site-moldova/goals">Goals</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Starea raportării</a>
+    <a class="nav-link" href="/sdg-site-moldova/reporting-status">Reporting Status</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
+    <a class="nav-link" href="/sdg-site-moldova/about">About test</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site-moldova/faq">FAQ</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/news">Actualizari</a>
+    <a class="nav-link" href="/sdg-site-moldova/news">Updates</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
+                    <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Cauta</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Cauta">
+        <label class="visually-hidden" for="indicator_search">Search</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Cautare site" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -221,11 +221,11 @@ layout-page
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      Română
+      English
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site-moldova/about/">
-              English
+            <a class="dropdown-item" href="/sdg-site-moldova/ro/es/about/cookies-and-privacy/">
+              Română
             </a>
           </li></ul>
   </div>
@@ -235,9 +235,9 @@ layout-page
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
     <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
-            <a class="language-toggle-link" href="/sdg-site-moldova/about/">
-                English
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-ro list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-moldova/ro/es/about/cookies-and-privacy/">
+                Română
             </a>
         </li></ul>
 </div></span><a title="Enable high contrast" aria-label="Enable high contrast"
@@ -258,15 +258,15 @@ data-event-label="high"
     <nav>
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         <li class="breadcrumb-item" >
-            <a href="/sdg-site-moldova/ro/">Acasa</a>
+            <a href="/sdg-site-moldova/">Home</a>
         </li>
-        <li class="breadcrumb-item active">Despre</li>
+        <li class="breadcrumb-item active">Cookies and privacy</li>
     </ol>
 </nav>
 </div>
 <div id="main-content" class="container" role="main">
     <div>
-        <h1>Despre</h1>
+        <h1>Cookies and privacy</h1>
         
 
 
@@ -288,7 +288,7 @@ data-event-label="high"
                         </li>
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/contact-us">Contactati-ne</a>
+                            <a href="/sdg-site-moldova/contact-us">Contact us</a>
                             
                         </li>
                         <li>
@@ -302,14 +302,14 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site-moldova/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/config">Configuration</a>
+                            <a href="/sdg-site-moldova/config">Configuration</a>
                         </li>
                         </ul>
                 </div>
@@ -340,17 +340,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ascunde';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Cauta';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412102624'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412103754'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412102624"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412103754"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

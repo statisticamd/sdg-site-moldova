@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="ro" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://statisticamd.github.io/sdg-data-moldova/ro',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
+  language: 'ro',
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>indicator.edit_configuration: 13.1.1.b - general.site_title</title>
+
+
+
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <link rel="canonical" href="/">
+
+        <!--[if IE 9]>
+        <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/sdg-site-moldova/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/sdg-site-moldova/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
+
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412143601">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-ro
+layout-config-builder
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = null;</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title"></h2>
+    <p class="internet-explorer-message-body"></p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag"></strong>
+    
+    
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="" title="">
+    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="general.sdg - header.tag_line" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/goals">general.goals</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">menu.reporting_status</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">menu.about</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/faq">menu.faq</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">menu.updates</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search"></label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/sdg-site-moldova/13-1-1-b/config/">
+              
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-moldova/13-1-1-b/config/">
+                
+            </a>
+        </li></ul>
+</div></span><a title="" aria-label=""
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+<div id="main-content" class="container" role="main">
+  <div class="row">
+    <div class="col-md-12"><h1>indicator.edit_configuration: 13.1.1.b</h1></div>
+  </div>
+  <div class="config-widgets row">
+    <div class="col-md-6" id="search_holder">
+      <label for="config-search">Filter settings</label>
+      <input id="config-search" />
+      <input id="config-search-button" type="button" value="Filter">
+      <input id="config-reset-button" type="button" value="Reset">
+    </div>
+    <div class="col-md-6" id="button_holder">
+      <button class="config-download-button btn btn-primary btn-download" id="export">Download configuration</button>
+      
+      
+      
+      
+      
+      <a class="config-repository-button btn btn-primary btn-download" target="_blank" href="https://github.com/statisticamd/sdg-data-moldova/tree/develop/indicator-config">
+        Go to repository
+      </a>
+      
+    </div>
+  </div>
+  <div class="row" id="results-status" role="status"></div>
+  <div class="row" id="editor_holder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@2.6.1/dist/jsoneditor.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.14.0/dist/js-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+  <script>
+    // For this page, it is helpful to have every single translation.
+    var allTranslations = {"data":{"0-17 years":"0-17 ani","0-17 years, children":"0-17 ani, copii","0-2 years":"0-2 ani","0-28 days":"0-28 zile","0-7 days":"0-7 zile","1,000 ha":"1 000 ha","1,000 people":"1 000 persoane","1,000 tons":"1 000 tone","1-9 employees":"1-9 angajaţi","10-49 employees":"10-49 angajaţi","15+ / Men":"15+ / Bărbați","15+ / Women":"15+ / Femei","15-24 / Both sexes":"15-24 / Ambele sexe","15-24 / Men":"15-24 / Bărbați","15-24 / Women":"15-24 / Femei","15-29 / Both sexes":"15-29 / Ambele sexe","15-29 / Men":"15-29 / Bărbați","15-29 / Women":"15-29 / Femei","15-34 / Both sexes":"15-34 / Ambele sexe","15-34 / Men":"15-34 / Bărbați","15-34 / Women":"15-34 / Femei","16-17 years":"16-17 ani","18 years and over":"18 ani și peste","18 years and over, adults":"18 ani și peste, adulți","25 and older":"25 și peste","25% of daily per capita total household consumption":"25% of daily per capita total household consumption","25+ / Men":"25+ / Bărbați","25+ / Women":"25+ / Femei","25-64 / Both sexes":"25-64 / Ambele sexe","25-64 / Men":"25-64 / Bărbați","25-64 / Women":"25-64 / Femei","3-6  years":"3-6 ani","57+ (women) / 62+ (men)":"57+ (femei) / 62+ (bărbați)","60 and over years":"60 ani și peste","60-69":"60-69","65+":"65+","7-15  years":"7-15 ani","75+":"75+","A Agriculture, forestry and fishing":"A agricultura, silvicultura și pescuit","ATU Gagauzia":"UTA Găgăuzia","ATU Găgăuzia":"UTA Găgăuzia","Abortion (per 1000 women of reproductive age)":"Avort (la 1000 femei de vârstă reproductivă)","Above-ground biomass reserves in forests, thousands m.c.":"Rezervele de biomasă supraterană în păduri, mii m.c.","Access mode":"Mod de accesare","Access to education":"Acces la învățământ","Access to electricity":"Acces la electricitate","Access to goods and services available to the public":"Acces la bunuri și servicii disponibile publicului","Access to internet":"Acces la internet","Access to justice":"Acces la justiție","Access to safely managed water sources":"Acces la surse gestionate sigur de apă","Access to services":"Acces la servicii","Access to sewerage":"Acces la canalizare","According to metadata codes":"Conform codurilor din metadate","Administrative officers":"Funcționari administrativi","Adults":"Adulți","Adults (18 - 100+ years)":"Adulți (18-100+ ani)","Advantaged":"Avantajați","Age":"Vârsta","Age group":"Grupa de vârstă","Age group (neglected)":"Grupa de vârstă (neglijați)","Age group (subjected to violence)":"Grupa de vârstă  (supuși violenței)","Age group / Sex":"Grupa de vârstă / Sexul","Age group 1 and Sex":"Grupa de vârstă 1 și Sex","Age group 2 and Sex":"Grupa de vârstă 2 și Sex","Age group of the victim":"Grupa de vârstă  a victimei","Age of the head of the household, years":"Vârsta capului gospodăriei, ani","Agriculture":"Agricultură","Agriculture sector":"Sectorul Agricultura","Agriculture, forestry and fishing":"Agricultura, silvicultura și pescuit","Aid for the cold period of the year":"Ajutorul pentru perioada rece a anului","Air":"Aerian","Amount (discharge) of water into rivers and estuaries":"Cantitatea (descărcarea) apei în râuri și estuare","Amount of groundwater in aquifers":"Cantitatea apei subterane din acvifere","Animals":"Animale","Annual net rate of change of forest area":"Rata netă anuală de schimbare a suprafeței forestiere","Area":"Mediu","Area of discrimination":"Domeniul de discriminare","Area of residence":"Mediul de reședință","Area of residence  of the respondents":"Mediu de reședință al respondenților","Area of residence (neglected)":"Mediul de reședință (neglijați)","Area of residence (subjected to violence)":"Mediul de reședință (supuși violenței)","Asylum seekers":"Solicitanți azil","Availability":"Disponibilitate","Average tariff status, type of products":"Statut tarifar mediu, tipul produselor","B Mining and quarrying":"B Industria extractivă","Basarabeasca":"Basarabeasca","Basel convention":"Basel Convention","Begging":"Cerșit","Beneficiary status - foreign citizen":"Statut de beneficiar - cetățean străin","Bio-fuel and waste":"Biocombustibili și deșeuri","Births":"Nașteri","Births/Deaths":"Nașteri/Decese","Blackmail":"Șantajul","Both sexes":"Ambele sexe","Boys":"Băieți","Brigandage":"Tâlhăria","Brut":"Brut","Bsb":"BSB","Bulgarians":"Bulgari","By association":"Discriminare prin asociere","By levels":"Pe nivele","C Manufacturing industry":"C Industria prelucrătoare","Cadastral offices / services":"Birourile/serviciile cadastrale","Capabilities of the health sector":"Capacități ale sectorului de sănătate","Carbon monoxide":"Oxid de carbon","Categories of petitioners":"Categorii de petiționari","Category":"Category","Center":"Centru","Center region":"Regiunea Centru","Central public authorities":"Autorități publice centrale","Centralized":"Centralizat","Centralized surface sources":"Surse centralizate de suprafață","Child rights":"Drepturile copilului","Children":"Copii","Children (0 - 17 years)":"Copii (0-17 ani)","Church":"Biserica","Cities":"Urbe","Citizenship":"Cetățenie","City":"Orașe","Civil status":"Statut matrimonial","Civil status offices":"Oficiile stării civile","Classes of ES":"Clase SE","Classes of disasters":"Clase SE","Clerks and assistants":"Grefieri și asistenți","Coal":"Cărbune","Combination measles-mumps-rubella vaccine (MMR)":"Vaccinul combinat împotriva rujeolă-oreion-rubeolă (ROR)","Commercial sex worker":"Lucrători ale sexului comercial","Commitments":"Angajamente","Communal services":"Serviciile comunale","Components of integrated water resources management (iwrm)":"Componente ale Managementului Integrat al Resurselor de Apă (IWRM)","Construction":"Construcții","Consumption purpose":"Scopul consumului","Context/reason":"Contextul/motivul","Conventions":"Convenții","Cooling spaces":"Răcirea spațiilor","Cooperation and partnership":"Cooperare și parteneriate","Countries of destination":"Ţări de destinaţie","Countries of exploitation":"Țările de exploatare","Court":"Judecătoria","Court of Appeal":"Curtea de Apel","Courts":"Instanțele de judecată","Criteria of discrimination":"Criterii de discriminare","Customs":"Vama","Cyprus":"Cipru","Czech":"Cehia","D Production and supply of electric energy and heat, gas, hot water and airconditioning":"D Producția și furnizarea de energie electrica și termica, gaze, apa calda și aer condiționat","Data source":"Sursa de date","Data supplier":"Furnizor de date","Deaths":"Decese","Decentralized water supply sources (wells)":"Surse descentralizate de alimentare cu apă (fîntîni)","Depending on the income level (art. 21 law 198)":"În dependența de nivelul de venit (art. 21 Legea 198)","Development regions":"Regiuni de dezvoltare","Dimension of crisis mobility":"Dimensiunile mobilității ale crizelor","Diphtheria and tetanus toxin (DT) vaccine at 7 years":"Vaccinul cu anatoxine difterică şi tetanică (DT) la 7 ani","Diphtheria and tetanus toxin (Td) vaccine at 15 years":"Vaccinul cu anatoxine difterică şi tetanică (Td) la 15 ani","Diphtheria-tetanus-pertussis (DTP) vaccine":"Vaccinul diftero-tetano-pertusis (DTP)","Direct":"Discriminare directă","Disabilities":"Dizabilități","Disability":"Dizabilitate","Disability (neglected)":"Dizabilitate (neglijați)","Disability (subjected to violence)":"Dizabilitate (supuși violenței)","Disadvantaged":"Dezavantajați","Disaster type":"tip de dezastru","Disbursement":"Debursări","Discrimination criteria":"Criterii de discriminare","Discrimination on the labour marke":"Discriminare în câmpul muncii","Domestic violence":"Violenţa în familie","Drinking water":"apa potabilă","Duration of arrest":"Durata aflării în arest","E Water supply, sewerage, waste management and remediation activities":"E Distribuția apei; salubritate, gestionarea deșeurilor, activități de decontaminare","Early neonatal mortality (per 1000 live births)":"Mortalitatea neonatală precoce (la 1000 născuți-vii)","Economic activities":"Activități economice","Edineț":"Edineț","Education type":"education type","Educational institutions":"Instituțiile de învățământ","Electricity":"Energie electrică","Emergency contravention cases":"Urgență cauze contravenționale","Emergency criminal cases":"Urgență cauze penale","Emission sectors":"Sectoare de emisie","Employed in the agricultural sector":"Angajați în sectorul agrar","Employed in the non-agricultural sector":"Angajați în sectorul non-agrar","Employment status":"Statutul ocupațional","Energy sector":"Sectorul Energie","Engaging in criminal activities":"Antrenarea în activități criminale","Entities in which they were discriminated against":"Entități în care au fost discriminați","Ethnical affiliation":"Apartenență etnică","Ethnicity":"Etnie","Ethnicity of the head of the household":"Etnia capului gospodăriei","Execution":"Execuție","Exercise of parental rights":"Exercitarea drepturilor părintești","Existence of a criminal record":"Existența antecedentelor penale","Existence of disability":"Existența dizabilității","F construction":"F Construcții","Farmers":"Fermieri","Fatal accidents - by economic activities":"Accidente mortale - după activități economice","Fatal accidents - by sex":"Accidente mortale - după sex","Favorable environment":"Mediu favorabil","Fire inspections":"Inspecțiile antiincendiare","Firearms and explosive substances":"Arme de foc şi substanţe explozive","Fires":"Incendii","Food preparation":"Pregătirea alimentelor","Food preparation - rural":"Pregătirea alimentelor - rural","Food preparation - total":"Pregătirea alimentelor -","Food preparation - urban":"Pregătirea alimentelor - urban","For the cold period":"Pentru perioada rece","Foreign citizenship":"Cetățeni străini","Forest area included in the forest management certification system, independently verified, thousands ha":"Suprafața forestieră inclusă în cadrul sistemului de certificare a modului de gestionare a pădurilor, verificat independent, mii ha","Form of discrimination":"Forma de discriminare","Form of violence":"Formă de violență","Forms of exploitation":"Forme de exploatare","Forms of ownership":"Forme de proprietate","From  with disability":"Din total cu dizabilitate","From 15 to 16 years":"De la 15 ani până la 16 ani","From 16 to 17 years":"De la 16 ani până la 17 ani","From 17 to 18 years":"De la 17 ani până la 18 ani","From 18 to 21 years":"De la 18 ani până la 21 ani","From 21 to 30 years":"De la 21 ani până la 30 ani","From 3 to 6 months":"De la 3 la 6 luni","From 30 to 40 years":"De la 30 ani până la 40 ani","From 40 to 50 years":"De la 40 ani până la 50 ani","From 50 to 60 years":"De la 50 ani până la 60 ani","From 6 to 12 months":"De la 6 luni până la 12 luni","From the state budget":"Din bugetul de stat","Fully available":"Integral disponibil","Function type":"Tip funcție","Funding":"Finanțare","G Wholesale and retail trade; repair of motor vehicles and motorcycles":"G Comerț cu ridicata și cu amânuntul; întreținerea și repararea autovehiculelor și a motocicletelor","Gagauz":"Găgăuz","General and  specific objectives":"Obiective generale și  specifice","Geographical regions":"Regiuni geografice","Germany":"Germania","Girls":"Fete","Grants":"Granturi","Greece":"Grecia","Gross":"Brut","Gross/Net":"Brut/Net","Group":"Grupa","Groups of persons":"Grupe de persoane","Gymnasium":"Gimnazial","H Transportation and storage":"H Transport și depozitare","Harassment":"Hărțuire","Hate speech":"Discurs de ură","Hepatitis B vaccine (HEPB)":"Vaccinul contra hepatitei B (HEPB)","High-risk population categories":"Categorii de populație cu risc sporit","Higher":"Superioare","Hire your own":"Angajați cont propriu","Home heating systems - rural":"Sisteme de încălzire a locuințelor - rural","Home heating systems - total":"Sisteme de încălzire a locuințelor -","Home heating systems - urban":"Sisteme de încălzire a locuințelor - urban","Hooliganism":"Huliganismul","Household type":"Tipul gospodăriei","Humanitarian protection":"Protecție umanitară","Hydrocarbs":"Hidrocarburi","I Accomodation and food service activities":"I Activități de cazare și alimentație publică","I quintile, area of residence":"Chintila I, Mediul de reședință","II age group (global)":"II Grupa de vârstă  (global)","III age group (global)":"III Grupa de vârstă  (global)","Including children":"Inclusiv copii","Including children (0-17 years)":"Inclusiv copii (0-17 ani)","Incomes":"Venituri","Index":"Indice","Indicators":"Indicatori","Indirect":"Discriminare indirectă","Individuals":"Persoane fizice","Industrial processes and use of products sector":"Sectorul Procesele industriale şi utilizarea produselor","Industrial purposes":"scopuri industriale","Industry":"Industrie","Ingredients":"Ingrediente","Injecting drug users":"Utilizatori de droguri injectabile","Injured human dignity":"Lezarea demnității umane","Injured right":"Dreptul lezat","Instigation to discrimination":"Instigare la discriminare","Institutions":"Instituții","Institutions where have been made payments":"Instituțiile unde s-au efectuat plăți","Insured":"Asigurați","Insured/Uninsured":"Asigurați/Neasigurați","Integrated government policies  / based on data":"Politici integrate guvernamentale / bazate pe date","Intellectual":"Intelectuală","International organisations":"Organizații internaționale","Internet access":"Acces la internet","Irrigation":"Irigare","Issuing construction permits":"Eliberarea autorizațiilor de construcție","Italy":"Italia","J Informații și comunicații":"J Informații și comunicații","Jealousy":"Gelozie","Jews":"Evrei","Judges":"Judecători","K Financial and insurance activities":"K activități financiare și de asigurări","Kg/person":"Kg/persoană","Kidnapping a person":"Răpirea unei persoane","L Real estate activities":"L Tranzacții imobiliare","Language":"Limbă","Lead":"Conducere","Lease":"Locaţiune","Legacy":"Moştenire","Legal basis":"Baza legală","Legal entities":"Persoane juridice","Legislators, executive members and other officials":"Legislatori, membri ai executivului și alți demnitari","Legislators, executive members and other officials and heads/leaders":"Legislatori, membri ai executivului și alți demnitari și conducători","Level of education":"Nivelul de studii","Level of education of the head of the household":"Nivelul de instruire a capului gospodăriei","Level of eutrophication in rivers":"Nivelul de eutrofizare în râuri","Level of public institutions":"Nivel instituții publice","Levels of education":"Nivele de educaţie","Lighting and use of electrical appliances":"Iluminat și utilizarea aparatelor electrice","Local public authorities":"Autorități publice locale","Local public authorities, level I":"Autorități publice locale, nivelul I","Local public authorities, level II":"Autorități publice locale, nivelul II","Location":"Locația","M Professional, scientific and technical activities":"M Activități profesionale, științifice și tehnice","Man":"Bărbat","Management tools":"Instrumente de management","Manufacturing":"Industria prelucrătoare","Marital status":"Starea civilă","Maternal mortality (per 1000 women of reproductive age)":"Mortalitatea maternă (la 1000 femei de vârstă reproductivă)","Maternity":"Maternitate","Means of committing":"Mijloace de săvîrșire","Medical institutions":"Instituțiile medicale","Men":"Bărbați","Men who have sex with men":"Bărbaţi care practică sex cu bărbaţii","Mental":"Mintală","Mental disability":"Dizabilitatea mintală","Migrants' rights":"Drepturile migranţilor","Migration context":"Context migrațional","Minamata convention":"Minamata Convention","Mining and quarrying":"Industria extractivă","Mixt":"Mixt","Modern contraception (women of reproductive age use modern methods of contraception)":"Contracepția modernă (femei de vârstă reproductivă folosesc metode moderne de contracepție)","Modes of transport":"Moduri de transport","Moldovan/Romanian":"Moldovean/Român","Montreal protocol":"Montreal Protocol","More than 12 months":"Mai mult de 12 luni","Mortgage":"Ipotecă","Mun. Chisinau":"Mun. Chișinău","N Administrative and support service activities":"N activități de servicii administrative și activități de servicii suport","Nationality":"Naționalitate","Natural":"Natural","Natural  (by genres)":"Natural (pe genuri)","Natural (by types)":"Natural (pe genuri)","Natural gas":"Gaze naturale","Natural gas / liquefied gas":"Gaz natural/gaz lichefiat","Natural gas, electricity":"Gaz natural, electricitate","Net":"Net","Nitrate concentration - mgn / l":"Concentraţia de nitraţi – mgn/l","Nitrogen dioxide":"Dioxid de azot","Non-fatal accidents - by economic activities":"Accidente nemortale - după activități economice","Non-fatal accidents - by sex":"Accidente nemortale - după sex","Non-performing loans rate (without reserves) in relation to the total regulated capital":"Rata creditelor neperformante (fără rezerve) in raport cu capitalul total reglementat","Nonstate":"Nestatale","North":"Nord","Northern region":"Regiunea Nord","Not available":"Nedisponibil","Notary offices":"Birourile notariale","Number of children subjected to violence, at the end of the year":"Numărul copiilor supuși violenței, la sfârșitul anului","Number of dentists per 10 000 population":"Numărul de stomatologi și dentiști la 10 000 populație","Number of neglected children, at the end of the year":"Numărul copiilor neglijați, la sfîrșitul anului","Number of paramedical personnel per 10 000 population":"Numărul personalului medical la 10 000 populație","Number of pharmacists per 10 000 population":"Numărul de farmaciști la 10 000 populație","O Public administration and defence; compulsory social security":"O Administrație publica și apărare; asigurări sociale obligatorii","Occupational status":"Statut ocupațional","Occupations":"Ocupaţii","Of deposits, including current":"De depozite, inclusiv curente","Of which industrial sector":"Din care sectorul industrie","Opinion":"Opinie","Optional health education curriculum, including sexual":"Curiculum opțională de educație pentru sănătate, inclusiv sexuală","Oral polio vaccine (OPV)":"Vaccinul oral contra poliomielitei (VPO)","Ordered":"La comandă","Other":"Alte","Other (areas with multifunctional management, resource reservations, landscape reservations, nature reserves, etc.)":"Altele (arii cu management multifuncţional,  rezervaţiile de resurse, rezervaţii peisajere, rezervaţii naturale etc.)","Other activities":"Alte activități","Other areas":"Alte domenii","Other authorities":"Alte autorități","Other criteria":"Alte criterii","Other documents":"Alte documente","Other ethnicity":"Altă etnie","Other forms":"Alte forme","Other incomes":"Alte venituri","Other means":"Alte mijloace","Other occupations":"Alte ocupații","Other occupations - of which, non-skilled workers":"Alte ocupații - din care muncitori necalificați","Other reasons":"Alte motive","Other rights (encumbrance)":"Alte drepturi (grevare)","Over 100 Mbps":"Peste 100 Mbps","P education":"P Învățământ","Part":"Parțial","Partly available":"Parțial disponibil","Passport offices":"Birourile de pașapoarte","Pensioner status":"Statut de pensionar","Pentavalent combined vaccine against hepatitis b, tetanus diphtheria, pertussis, and haemophilus influenzae type B infection (HEPB + DTP + HIB)":"Vaccinul combinat pentavalent contra hepatitei b, difteriei tetanusului, pertusis, și infecției cu haemophilus influenzae tip B (HEPB+DTP+HIB)","People with disabilities":"Persoane cu dizabilități","People with disability":"Persoane cu dizabilitate","People without disabilities":"Persoane fără dizabilități","People without disability":"Persoane fără dizabilitate","Persons in a position of responsibility":"Persoane cu funcție de răspundere","Persons with disabilities":"Persoane cu dizabilități","Petrol products":"Produse petroliere","Phosphate concentration - mgn / l":"Concentraţia de fosfaţi – mgn/l","Physical":"Fizică","Physical disability":"Dizabilitatea fizică","Physics":"Fizică","Place of production":"Locul producerii","Place of residence":"Loc de trai","Place of work":"Locul de muncă","Plants":"Plante","Pneumococcal vaccine (PC)":"Vaccinul pneumococic (PC)","Poland":"Polonia","Police":"Poliția","Police inspectorate":"Inspectoratul de politie","Policy areas":"Domenii de politici","Political affiliation":"Apartenență politică","Polyclinic":"Policlinica","Poors, 40%":"Săraci, 40%","Population with usual residence":"Populația cu reședință obișnuită","Portugal":"Portugalia","Preferential tariff status, type of products":"Statut tarifar preferențial, tipul produselor","Premeditated severe injuries":"Leziuni, corporale grave","Primary":"Primare","Primary and below":"Primare și mai jos","Primary care":"Asistența primară","Product sectors":"Sectoare ale produselor","Production and supply of electric energy and heat, gas and hot water":"Producția și furnizarea de energie electrică și termică, gaze şi apă caldă","Professional":"Profesional","Professional status":"Statut profesional","Proportion of forest area located in legally protected areas":"Proporția de suprafață forestieră situată în zonele protejate legal","Proportion of forest area managed in accordance with long-term sustainable forest management plans":"Proporția de suprafață forestieră gospodărită în conformitate cu planuri de gestionare durabilă  a pădurilor pe termen lung","Prosecution":"Procuratura","Psychological":"Psihologică","Public":"Publică","Public administration; education; health and social work":"Administrație publică; învățământ; sănătate și asistență socială","Public procurement":"Achizițiile publice","Q Health and social work":"Q Sănătate și asistenta sociala","Qualified and assimilated workers":"Muncitori calificați și asimilați","Qualified civil cases":"Calificată cauze civile","Qualified contravention cases":"Calificată cauze contravenționale","Qualified criminal cases":"Calificată cauze penale","Qualified workers in agriculture, forestry, aquaculture, pisciculture and fishing":"Lucrători calificați în agricultura, silvicultura, acvacultura, piscicultura și pescuit","Quality of water-related ecosystems":"Calitatea ecosistemelor legate de apă","Quarrel":"Ceartă","Quintile I, by area of residence":"Chintila I, pe medii","Quintiles on consumption expenditures":"Chintile pe cheltuielile de consum","R Arts, entertainment and recreation":"R Arta, activități de recreere și de agrement","Racial segregation":"Segregare rasială","Railway":"Feroviar","Rare species":"Specii rare","Rase":"Rasă","Rate":"Rata","Rate of liquid assets relative to short-term liabilities":"Rata activelor lichide în raport cu pasivele pe termen scurt","Rate of net open foreign exchange position at total regulated capital":"Rata poziției valutare deschise nete la capitalul total reglementat","Ratio of own funds of level I in relation to risk-weighted assets":"Rata fondurilor proprii de nivel I în raport cu activele ponderate la risc","Ratio of own funds of level I in relation to total assets":"Rata fondurilor proprii de nivel I în raport cu total active","Rayon/ ATU":"Raion/ UAT","Rayons":"Raioane","Rayons list":"lista raioanelor","Rayons/Municipalities that have treatment plants":"Raioanele/Municipiile care dețin stații de epurare","Reason related to family relationships":"Motiv legat de relaţii familiare","Refugees":"Refugiați","Refuse of reasonable accommodation":"Refuz în acomodare rezonabilă","Regardless of income level (art. 20 law 198)":"Indiferent de nivelul de venit (art. 20 legea 198)","Regions":"Regiuni","Regions and rayons":"Regiuni și raioane","Registration of the transport and issuance of the driving license":"Înregistrarea transportului și eliberarea permisului de conducere","Religion":"Religia","Religion/belief":"Religie/convingeri","Remittances / gdp ()":null,"Republic of Moldova":"Republica Moldova","Requested authority":"Autoritatea solicitată","Resident popupation":"Populația stabilă","Residential sector (population)":"Sector rezidențial","Responsible for monitoring":"Responsabil pentru monitorizare","Retirees":"Pensionari","Return on assets":"Rentabilitatea activelor","Revenge":"Răzbunare","River":"Fluvial","Road":"Rutier","Robbery":"Jaf","Roma":"Romi","Roma ethnicity":"Etnia romă","Romania":"România","Rotavirus (RV) vaccine":"Vaccinul contra infecţiei cu rotavirusuri  (RV)","Rotterdam convention":"Rotterdam Convention","Rum":"Rom","Rural, 1st quintile":"Rural, quintila 1","Rural, quintile I":"Rural, chintila I","Russian":"Rus","Russian Federation":"Federația Rusă","Russians":"Ruși","S Other service activities":"S Alte activități de servicii","Safe, regular and regulated migration":"Migrație sigură, ordonată și regulată","Sale":"Vânzare-cumpărare","Sampling of human organs, tissues or cells":"Prelevare de organe, țesuturi sau celule umane","Sanitary-epidemiological inspections":"Inspecțiile sanitar-epidemiologice","School":"Școala","Secondary":"Secundare","Secondary and above":"Secundar și mai sus","Secondary incomplete":"Medii incomplete","Secondary school":"Mediu general","Secondary specialized":"Mediu de specialitate","Secondary vocational":"Secundar profesional","Sectors":"Sectoare","Self-employed":"Angajați pe cont propriu","Sensory":"Senzorială","Services":"Servicii","Sex":"Sex","Sex (15-24 years)":"Sex (15-24 ani)","Sex (15-29 years)":"Sex (15-29 ani)","Sex (15-34 years)":"Sex (15-34 ani)","Sex (neglected)":"Sex (neglijați)","Sex (subjected to violence)":"Sex (supuși violenței)","Sex of the head of the household":"Sexul capului gospodăriei","Sex of the petitioner":"Sexul petiționarului","Sex/gender":"Sex/gen","Sexual":"Sexuală","Sexual assault":"Agresiune sexuală","Sexual orientation":"Orientarea sexuală","Share of non-performing loans in total loans granted":"Ponderea creditelor neperformante în totalul creditelor acordate","Shop":"Magazin","Size of enterprise":"Mărimea întreprinderii","Social aid":"Ajutor social","Social and biological":"Biologico-social","Social and economic status":"Statut socio-economic","Social assistance":"Asistența socială","Social contributions":"Contribuții sociale","Social origin":"Origine socială","Social status":"Statut social","Social-economic wellbeing":"Bunăstarea socio-economică","Socio-economic status":"Statutul socio-economic","Socio-economic status of pupils":"Statut socio-economic al elevilor","Solids":"Substanțe solide","Sources":"Surse","Sources of financing":"Surse de finanțare","South":"Sud","Southern region":"Regiunea Sud","Space heating":"Incălzirea spațiilor","Spain":"Spania","Spatial extent of water-related ecosystems":"Extensia spațială a ecosistemelor legate de apă","Specialists in various fields of activity":"Specialiști în diverse domenii de activitate","Speeds":"Viteze","Stat":"De stat","Stateless":"Apatrizi","Statistical regions":"Regiuni statistice","Status of persons":"Statutul persoanei","Stockholm convention":"Stockholm Convention","Street":"Strada","Studies":"Studii","Sub-indicators":"Sub-indicatori","Sulphur dioxide":"Dioxid de sulf","Support of development partners":"Cu suportul partenerilor de dezvoltare","Supreme Court of Justice":"Curtea Supremă de Justuție","Surrogate":"Mamă-surogat","Tax inspectorates":"Inspectoratele fiscale","Taxes":"Impozite","Taxi":"Taximetre","Technical overhaul of cars":"Revizia tehnică a automobilelor","Technicians and other middle-level  qualification specialists":"Tehnicieni și alți specialiști cu nivel mediu de calificare","Technogenic":"Tehnogen","Temporary protection":"Protecție temporă","The basis for the registration of the property right":"Baza înregistrării dreptului de proprietate","The existence of disability":"Existența dizabilității","Thermal energy":"Energie termică","To borrow":"De împrumut","Tools (row, axe, hammer etc.)":"Instrumente (rangă, topor, ciocan etc.)","Top level lead":"Conducere nivel superior","Total, by area of residence":"Total, pe medii de reședință","Total, quintile I":"Total, chintila I","Town hall":"Primăria","Toxicity class":"Clasa de toxicitate","Trade donation":"Donaţie-schimb","Trade-union activity":"Activitate sindicală","Transport registration and driver qualification":"Înregistrarea transportului și calificarea conducătorilor auto","Transportation and storage; information and communication":"Transport și depozitare; informații și comunicații","Transportation type":"transportation type","Trolleybuses":"Troleibuze","Tuberculosis vaccine (BCG)":"Vaccinul contra tuberculozei (BCG)","Turkey":"Turcia","Type":"Tip","Type B haemophilus influenzae (HIB) vaccine":"Vaccinul contra infecţiei cu haemophilus influenzae tip B (HIB)","Type of aid":"Tipul de prestație","Type of allowance":"Tipul prestaţiei","Type of economic activity of waste producer":"Tipul de activitate economică a producătorului de deșeuri","Type of land rights":"Tipul drepturilor asupra terenurilor","Type of legal document justifying the right":"Tipul documentul legal justificator al dreptului","Type of property right":"Tipul de drept patrimonial","Type of qualified assistance":"Tipul asistenței calificate","Type of technology":"Tipul tehnologiei","Type of the source":"Tipul sursei","Type of vaccine":"Tipuri de vaccin","Types":"Tipuri","Types of accounts":"Tipuri de conturi","Types of crimes":"Tipuri de infracțiuni","Types of critical infrastructure":"Tipuri de infrastructura critică","Types of ecosystems":"Tipuri ecosisteme","Types of energy":"Tipuri de energie","Types of income":"Tipuri de venituri","Types of losses":"Tipuri de pierderi","Types of losses in critical infrastructure":"Tipuri de pierderi la infrastructura critică","Types of resources":"Tipuri de resurse","Types of treatment":"Tipuri de epurare","Types of waste":"Tipuri de deșeuri","USD":"USD","Ucrainian":"Ucrainean","Ukrainians":"Ucraineni","Undefined":"Lipsă date","Under 2 Mbps":"Sub 2 mbps","Underground centralized sources":"Surse centralizate subterane","Uninsured":"Neasigurați","Up to 15 years":"Pînă la 15 ani","Up to 15 years old":"Până la 15 ani","Up to 18 years":"Pînă la 18 ani","Up to 18 years old":"Până la 18 ani","Up to 3 months":"Până la 3 luni","Up to 45 years (18-44)":"Pînă la 45 ani (18-44)","Up to and including 15 years":"Până la 15 ani inclusiv","Urban, quintile I":"Urban, chintila I","Victimization":"Victimizare","Volume of personal remittances (in usd)":"Volumul remiterilor personale (în dolari americani)","Waste circulation":"Mișcarea deșeurilor","Waste sector":"Sectorul Deșeuri","Water heating":"Încălzirea apei","Water quality":"Calitatea apei","Water quality in water bodies, according to hydrochemical indicators,":"Calitatea apei în corpurile de apă, conform indicatorilor hidrochimici,","Wealthy, 60%":"Înstăriți, 60%","Wellbeing quintile":"Quintile de bunăstare","Wetlands of international importance":"Zone umede de importanţă internaţională","White weapons (knife, sharp objects)":"Arme albe (cuţit, obiect înţepător)","Whole":"Integral","Wholesale and retail trade; accomodation and food service activities":"Comerț cu ridicata și amănuntul; activități de cazare și alimentație publică","With children up to 18 years":"Cu copii până la 18 ani","With disabilities":"Cu dizabilități","Without children up to 18 years":"Fără copii până la 18 ani","Woman":"Femeie","Woman/man":"Femei/bărbați","Women":"Femei","Wood, waste and coal":"Lemne, deșeuri și cărbune","Work":"Muncă","Work inspection":"Inspecția muncii","Workers in the field of services and trade":"Lucrători în domeniul serviciilor și în comerț","Year":"Anul","age-related":"age-related","aged 0-17 years":"în vârstă de 0-17 ani","aged 1-5 years":"aged 1-5 years","aged 1-6 years":"aged 1-6 years","aged 10-15 years":"aged 10-15 years","aged 12-15 years":"în vârstă de 12-15 ani","aged 16-17 years":"în vârstă de 16-17 ani","aged 18-39 years":"în vârstă de 18-39 ani","aged 40-62 years":"în vârstă de 40-62 ani","aged 5-11 years":"în vârstă de 5-11 ani","aged 6-9 years":"aged 6-9 years","aged 7-9 years":"aged 7-9 years","air transport":"air transport","alone":"alone","alone and jointly with someone else":"alone and jointly with someone else","any contraceptive method":"any contraceptive method","arable land":"arable land","bachelor":"bachelor","bank services":"bank services","before age 15":"before age 15","before age 18":"before age 18","by other laws":"by other laws","cancer":"cancer","cardiovascular disease":"cardiovascular disease","case":"case","child with two parents":"child with two parents","chronic respiratory disease":"chronic respiratory disease","diabetes":"diabetes","disabled":"disabled","domestic material consumption":"domestic material consumption","domestic material consumption per GDP":"domestic material consumption per GDP","domestic material consumption per capita":"domestic material consumption per capita","dram":"dram","economically active population":"economically active population","economically inactive  population":"economically inactive population","education":"education","electricity supply":"electricity supply","electricity transport":"electricity transport","employed":"employed","employees in the agricultural sector":"angajati în sectorul agrar","employees in the non-agricultural sector":"angajati în sectorul non-agrar","equal to or greater than 10 Mbit/s":"equal to or greater than 10 Mbit/s","equal to or greater than 2 Mbit/s and less than 10 Mbit/s":"equal to or greater than 2 Mbit/s and less than 10 Mbit/s","equal to or greater than 256 kbit/s and less than 2 Mbit/s":"equal to or greater than 256 kbit/s and less than 2 Mbit/s","excluding ftscfts":"fără FTSCFTS","female":"femeie","freight volumes":"freight volumes","from 6 months to 1 year":"from 6 months to 1 year","garbage disposal":"garbage disposal","growth rates of household expenditure or income per capita among the bottom 40 per cent of the population":"growth rates of household expenditure or income per capita among the bottom 40 per cent of the population","growth rates of household expenditure or income per capita among the total population":"growth rates of household expenditure or income per capita among the total population","have achieved 100 per cent birth registration":"have achieved 100 per cent birth registration","have achieved 80 per cent death registration":"have achieved 80 per cent death registration","have conducted at least one population and housing census in the last 10 years":"have conducted at least one population and housing census in the last 10 years","health":"health","healthcare":"healthcare","high":"high","high plant species registered in the Red Book of RA":"high plant species registered in the Red Book of RA","household access to centralized sewerage system":"household access to centralized sewerage system","household access to centralized water supply":"household access to centralized water supply","household access to garbage disposal":"household access to garbage disposal (garbage collector system and/or disposal by truck,  garbage piled up for disposal)","in case of losing a breadwinner":"in case of losing a breadwinner","included in the specially protected natural areas":"inclus în ariile naturale speciale prpotejate","infectious and parasitic diseases":"infectious and parasitic diseases","internet accessibility for household":"internet accessibility for household","internet accessibility for household members":"internet accessibility for household members","jointly with someone else":"jointly with someone else","junior medical personnel":"junior medical personnel","kg per capita":"kg per capita","kg/mln. dram":"kg/mln. dram","landline telephone":"landline telephone","left without parental care":"left without parental care","liter":"liter","local governments":"local governments","long-term service":"long-term service","lower secondary":"lower secondary","male":"Bărbat","man-made disaster":"man-made disaster","master":"master","middle vocational":"middle vocational","mln. USD":"mln. USD","mln. dram":"mln. dram","modern contraceptive methods":"modern  contraceptive methods","mole - H - ion/liter":"mole - H - ion/liter","national parliaments":"national parliaments","natural disaster":"natural disaster","number":"număr","number of teachers per computer":"number of teachers per computer","of which  passenger taxi":"of which  passenger taxi","official grants":"official grants","old age":"old age","on privileged terms":"on privileged terms","other employed":"other employed","other inactive population":"other inactive population","overweight":"overweight","paramedical personnel":"paramedical personnel","partially":"partially","passenger volume":"passenger volume","pensioners":"pensioners","per 1,000 life births":"per 1,000 life births","per 1,000 population":"per 1,000 population","per 1,000 women":"per 1,000 women","per 10,000 population":"per 10,000 population","per 100,000 live births":"per 100,000 live births","per 100,000 population":"per 100,000 population","per capita":"per capita","per million population":"per million population","perennial plants":"perennial plants","person":"person","physical violence":"physical violence","physicians":"physicians","pipelines":"pipelines","post-graduate education, second stage (master's degree)":"post-graduate education, second stage (master's degree)","postal service":"postal service","pre-specialized (vocational) education":"pre-specialized (vocational) education","preliminary vocational":"preliminary vocational","proportion of GDP":"proportion of GDP","proportion of households with primary reliance on clean fuels and technology":"proportion of households with primary reliance on clean fuels and technology","proportion of schools connected to the Internet":"proportion of schools connected to the Internet","public transportation":"public transportation","railway transport":"railway transport","regions, thousands tons":"Regiuni de dezvoltare, mii tone","registered in the Red Book of RA":"registered in the Red Book of RA","related to military service":"related to military service","road transport":"road transport","sewerage":"sewerage","sexual violence":"sexual violence","share of households with electricity supply":"share of households with electricity supply","single mother child":"single mother child","social protection":"social protection","social-biological disaster":"social-biological disaster","sown areas":"sown areas","specialized high education, first stage (bachelor's degree)":"specialized high education, first stage (bachelor's degree)","specialized secondary education":"specialized secondary education","students":"students","tax incomes and duties":"tax incomes and duties","total":"total","total  (15-24 years)":"total  (15-24 ani)","total  (15-29 years)":"total  (15-29 ani)","total  (15-34 years)":"total  (15-34 ani)","total to children aged 0-17 years with disabilities":"total to children aged 0-17 years with disabilities","total to the population of respective age":"total to the population of respective age","total to the total number of children with disabilities (aged 0-17 years)":"total to the total number of children with disabilities (aged 0-17 years)","unemployment":"unemployment","unit":"unit","up to 1 year old":"up to 1 year old","up to 51 years old":"up to 51 years old","up to 6 months":"up to 6 months","urban":"urban","wage employed":"wage employed","wasting":"wasting","water supply":"water supply","yes=1, no=0":"da=1, nu=0"}};
+
+    // Dynamic filtering functionality.
+    var configSearch = document.getElementById('config-search');
+    var configSearchButton = document.getElementById('config-search-button');
+    var configResetButton = document.getElementById('config-reset-button');
+    var resultsStatus = document.getElementById('results-status');
+    var itemSelector = 'div[data-schemapath="root"] > .well > div > div > .row';
+    configSearchButton.addEventListener('click', performSearch);
+    configSearch.addEventListener('keyup', function(e) {
+      if (e.key === "Enter") {
+        performSearch();
+      }
+    });
+    configResetButton.addEventListener('click', resetSearch);
+    function performSearch() {
+      var keywords = configSearch.value.toLowerCase();
+      var numResults = 0;
+      if (keywords.length > 0) {
+        var noMatches = true;
+        $(itemSelector).each(function(item) {
+          var title = $(this).find('label').first().text().toLowerCase();
+          if (title.includes(keywords)) {
+            noMatches = false;
+            $(this).show();
+            numResults += 1;
+          }
+          else {
+            $(this).hide();
+          }
+        });
+        if (noMatches) {
+          $(resultsStatus).text('There are no settings that match those keywords.');
+        }
+        else {
+          var settingsText = (numResults > 1) ? 'settings' : 'setting';
+          $(resultsStatus).text(numResults + ' matching ' + settingsText + ' found.');
+        }
+      }
+      else {
+        resetSearch();
+      }
+    };
+    function resetSearch() {
+      configSearch.value = '';
+      $(resultsStatus).text('');
+      $(itemSelector).show();
+    }
+
+    
+    
+    var schema = {"type":"object","title":"Open SDG indicator configuration","description":"This form will produce an indicator's configuration for your Open SDG implementation.","properties":{"composite_breakdown_label":{"type":"string","title":"Composite breakdown label","description":"Used as a label for the COMPOSITE_BREAKDOWN column, if it appears in the indicator data.","links":[{"rel":"More information on the composite breakdown label setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#composite-breakdown-label"}]},"computation_units":{"type":"string","title":"Unit of measurement","description":"Unit of measurement which displays below the indicator chart.","links":[{"rel":"More information on the units of measurement setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"copyright":{"type":"string","title":"Copyright","description":"Copyright which displays below the indicator chart.","links":[{"rel":"More information on the copyright setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#footer"}]},"data_footnote":{"type":"string","format":"markdown","title":"Footnote","description":"Footnote which displays below the indicator chart.","links":[{"rel":"More information on the footnote setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#footer"}]},"data_non_statistical":{"title":"Non-statistical data","type":"boolean","description":"Whether the indicator is statistical (can be charted/graphed) or not.","format":"checkbox","links":[{"rel":"More information the non-statistical setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"data_notice_class":{"title":"Data notice - class","type":"string","description":"A CSS class to apply to the data notice for this indicator.","links":[{"rel":"More information on the data notice setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_notice_heading":{"title":"Data notice - heading","type":"string","description":"A title to display above the data notice for this indicator.","links":[{"rel":"More information on the data notice heading setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_notice_text":{"title":"Data notice - text","type":"string","format":"markdown","description":"Text to display as a data notice for this indicator, intended to contain very important information which site viewers must keep in mind when using the data provided.","links":[{"rel":"More information on the data notice text setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#data-notice"}]},"data_show_map":{"title":"Show map","type":"boolean","description":"Whether the indicator should display a Map tab.","format":"checkbox","links":[{"rel":"More information on the map setting","href":"https://open-sdg.readthedocs.io/en/latest/maps/#metadata-field-data_show_map"}]},"data_start_values":{"options":{"collapsed":true},"type":"array","title":"Starting values","description":"Disaggregation values for a an indicator to start with already selected","items":{"type":"object","title":"Starting value","properties":{"field":{"type":"string","minLength":1,"title":"Field","description":"The field (column) name."},"value":{"type":"string","minLength":1,"title":"Value","description":"The value in that field to pre-select."}}},"links":[{"rel":"More information on the starting values setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#starting-values"}]},"embedded_feature_footer":{"type":"string","format":"markdown","title":"Embedded feature - Footer","description":"A footer that displays below the embedded feature. Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed footer setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_html":{"type":"string","format":"textarea","title":"Embedded feature - HTML","description":"Any HTML to display in another tab, after Chart/Table/etc.","links":[{"rel":"More information on the embed HTML setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_tab_title":{"type":"string","title":"Embedded feature - Tab Title","description":"A title for the embedded feature tab (ie, Chart/Table/[this]). Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed tab title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_title":{"type":"string","title":"Embedded feature - Title","description":"A title that displays above the embedded feature. Only used with either embedded_feature_url or embedded_feature_html.","links":[{"rel":"More information on the embed title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"embedded_feature_url":{"type":"string","format":"url","title":"Embedded feature - URL","description":"Any URL to display as an iframe in another tab, after Chart/Table/etc.","links":[{"rel":"More information on the embed URL setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#embedded-feature-metadata"}]},"expected_disaggregations":{"options":{"collapsed":true},"type":"array","title":"Expected disaggregations","description":"An optional list of disaggregations (ie, data column names) to use when calculating the disaggregation status statistics.","items":{"type":"string","title":"Expected disaggregation"},"links":[{"rel":"More information on the expected disaggregation setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"footer_fields":{"options":{"collapsed":true},"type":"array","title":"Footer fields","description":"Additional arbitrary information to display beneath the graph/table.","items":{"type":"object","title":"Footer field","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label":{"type":"string","title":"Label","description":"The label for the field"},"value":{"type":"string","title":"Value","description":"The value/content for the field"}}}]}},"graph_annotations":{"options":{"collapsed":true},"type":"array","title":"Graph annotations","description":"This can be used to add line annotations to the graph, such as target lines to show the progress towards the 2030 goal for an indicator.","items":{"type":"object","title":"Graph annotation","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"value":{"type":"number","minimum":0,"title":"Value","description":"The value at which to draw the line. For horizontal lines, this number corresponds to your actual data. For vertical lines, this number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."},"endValue":{"type":"number","title":"End value","description":"Optionally add a different ending value for the line."},"description":{"type":"string","title":"Description","description":"A description of the annotation to be read by screenreaders."},"mode":{"type":"string","title":"Mode","description":"Whether the line will be vertical or horizontal.","enum":["horizontal","vertical"]},"borderColor":{"type":"string","format":"color","title":"Line color","default":"#949494","description":"The color of the line.","links":[{"rel":"More information on the border color setting","href":"https://github.com/chartjs/chartjs-plugin-annotation/blob/master/README.md"}]},"borderDash":{"type":"array","title":"Line dash type","description":"The type of line dash.","default":[10,5],"items":{"type":"number"},"minItems":2,"links":[{"rel":"More information on the line dash setting","href":"https://github.com/chartjs/chartjs-plugin-annotation/blob/master/README.md"}]},"label":{"type":"object","title":"Label","description":"A text label for the annotation.","properties":{"position":{"type":"string","title":"Position","description":"Placement of the label along the line.","enum":["top","bottom","left","right","center"]},"content":{"type":"string","minLength":1,"title":"Content","description":"Text of the line label."},"fontColor":{"type":"string","format":"color","title":"Label color","description":"Color for the label text.","default":"#000000"},"backgroundColor":{"type":"string","format":"color","default":"#ffffff","title":"Background color","description":"Background color for the label text."}}},"highContrast":{"type":"object","title":"High contrast options","description":"High-contrast overrides of certain color.","properties":{"borderColor":{"type":"string","format":"color","default":"#ffffff","title":"High-contrast line color","description":"The color of the line in high-contrast mode."},"label":{"type":"object","title":"High contrast label","description":"High-contrast version of the label.","properties":{"fontColor":{"type":"string","format":"color","default":"#ffffff","title":"High-contrast label color","description":"Color for the label text in high-contrast mode."},"backgroundColor":{"type":"string","format":"color","default":"#000000","title":"High-contrast background color","description":"Background color for the label text in high-contrast mode."}}}}}}}]},"links":[{"rel":"More information on the graph annotations setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#graph-metadata"}]},"graph_limits":{"options":{"collapsed":true},"type":"array","title":"Graph limits","description":"A list of min/max limits controlling the lowest/highest values to be shown on the y-axis.","items":{"type":"object","title":"Graph limit","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"minimum":{"type":"number","minimum":0,"title":"Minimum","description":"Minimum value for the y axis."},"maximum":{"type":"number","minimum":0,"title":"Maximum","description":"Maximum value for the y axis."}}}]},"links":[{"rel":"More information on the graph limits setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#graph-metadata"}]},"graph_series_breaks":{"options":{"collapsed":true},"type":"array","title":"Graph series breaks","description":"A list of series break (ie, a gap among the years) lines to display on the graph.","items":{"type":"object","title":"Series break","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label_content":{"type":"string","title":"Label content","default":"indicator.annotation_series_break","description":"The text to display for this series break."},"value":{"type":"number","title":"Value","description":"The numeric value at which to place the series break. This number should be between 0 (the left side of the chart) and the number of years minus 1 (the right side of the chart)."}}}]},"links":[{"rel":"More information on the graph target lines setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#graph_series_breaks"}]},"graph_stacked_disaggregation":{"type":"string","title":"Stacked disaggregation","description":"This can be used with the bar graph type to place a certain disaggregation into the same stacked bars.","links":[{"rel":"More information on the stacked disaggregation setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"graph_target_lines":{"options":{"collapsed":true},"type":"array","title":"Graph target lines","description":"A list of target lines to display on the graph.","items":{"type":"object","title":"Target line","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"label_content":{"type":"string","title":"Label content","default":"indicator.annotation_2030_target","description":"The text to display for this target line."},"value":{"type":"number","title":"Value","description":"The numeric value at which to place the target line."}}}]},"links":[{"rel":"More information on the graph target lines setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#graph_target_lines"}]},"graph_title":{"type":"string","title":"Graph title","description":"The title that displays above the graph/chart.","links":[{"rel":"More information on the graph title setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"graph_titles":{"options":{"collapsed":true},"type":"array","title":"Graph titles","description":"As an alternative to `graph_title`, this can be used to set specific titles for particular units and/or series.","items":{"type":"object","title":"Graph title","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"title":{"type":"string","minLength":1,"title":"Title","description":"The graph title."}}}]}},"graph_type":{"type":"string","title":"Graph type","description":"What type of graph to use for the indicator.","enum":["line","bar","binary"],"links":[{"rel":"More information on the graph titles setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"indicator_available":{"type":"string","title":"Indicator available","description":"An optional sub-title for the indicator, which displays below the indicator name. Intended for cases where the available data is slightly different than the indicator name.","links":[{"rel":"More information on the indicator available setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"indicator_name":{"type":"string","title":"Indicator name","description":"The name for the indicator, which displays at the top of the indicator page.","links":[{"rel":"More information on the indicator name setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"indicator_number":{"type":"string","title":"Indicator number","description":"The number (or 'id') for the indicator.","links":[{"rel":"More information on the indicator number setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"indicator_tabs":{"options":{"collapsed":true},"type":"object","title":"Indicator tabs","description":"Assign content for the indicator tabs, if the override box is checked. Otherwise this indicator will use the assignments set in your site configuration.","properties":{"override":{"type":"boolean","title":"Override site configuration","description":"If checked, the site-wide indicator tab configuration will be ignored for this indicator.","format":"checkbox"},"tab_1":{"type":"string","title":"Tab 1","description":"What to display in the first tab","$ref":"#/definitions/indicator_tabs_options"},"tab_2":{"type":"string","title":"Tab 2","description":"What to display in the second tab","$ref":"#/definitions/indicator_tabs_options"},"tab_3":{"type":"string","title":"Tab 3","description":"What to display in the third tab","$ref":"#/definitions/indicator_tabs_options"},"tab_4":{"type":"string","title":"Tab 4","description":"What to display in the fourth tab","$ref":"#/definitions/indicator_tabs_options"}}},"national_geographical_coverage":{"type":"string","title":"National geographical coverage","description":"A label used in the absence of any disaggregation.","links":[{"rel":"More information on the geographical coverage setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-for-statistical-indicators"}]},"page_content":{"type":"string","format":"markdown","title":"Page content","description":"Content which displays in the main content area of the indicator page."},"permalink":{"type":"string","title":"Permalink","description":"Overrides the normal path of the indicator page. Not recommended, execpt for 'standalone' indicators.","links":[{"rel":"More information the permalink setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#standalone-indicators"}]},"placeholder":{"title":"Placeholder indicator","type":"string","description":"Entering text here identifies this as a 'placeholder' indicator. The text will be displayed on the goal page, in place of a link to the indicator page.","format":"textarea","links":[{"rel":"More information the placeholder setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#placeholder"}]},"precision":{"options":{"collapsed":true},"type":"array","title":"Precision rules","description":"Control the number of decimal places for data in this indicator.","items":{"type":"object","title":"Precision rule","allOf":[{"$ref":"#/definitions/series_unit_constraint"},{"properties":{"decimals":{"type":"number","title":"Decimals","description":"The number of decimal places"}}}]}},"progress_status":{"type":"string","title":"Progress status","enum":["not_available","challenges_remain","approaching_target","target_achieved"],"description":"The progress status of the indicator.","links":[{"rel":"More information on the progress status setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#progress-status"}]},"publications":{"options":{"collapsed":true},"type":"array","title":"Publications","description":"This setting controls the content of the 'Related publications' tab. It can contain any number of publications. You may have much of this information in the indicator metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple publications.","items":{"type":"object","title":"Publication","properties":{"title":{"type":"string","title":"Title"},"link":{"type":"string","title":"Link"},"description":{"type":"string","title":"description","format":"markdown"},"date":{"type":"string","title":"Date"}}},"links":[{"rel":"More information on the publications setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#publications"}]},"related_indicators":{"options":{"collapsed":true},"type":"array","title":"Related indicators","description":"This setting controls the 'Related indicators' tab. Specify indicators by using their indicator numbers, such as: 1.1.1","items":{"type":"string","title":"Related indicator"},"links":[{"rel":"More information on the related_indicators setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#related_indicators"}]},"reporting_status":{"type":"string","title":"Reporting status","enum":["complete","inprogress","notstarted","notapplicable"],"description":"The reporting status of the indicator.","links":[{"rel":"More information on the reporting status setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#mandatory-fields"}]},"sort":{"type":"string","title":"Sort order","description":"Override the default order in which this indicator is displayed in lists. This can be left blank, and it will be automatically determined.","links":[{"rel":"More information on the sort setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#sorting-in-lists"}]},"sources":{"options":{"collapsed":true},"type":"array","title":"Sources","description":"This setting controls the content of the 'Sources' tab. It can contain any number sources. You may have much of this information in the metadata, but this configuration is available to supplement the metadata with a more structured way to list multiple sources.","items":{"type":"object","title":"Source","properties":{"organisation":{"type":"string","title":"Organisation"},"periodicity":{"type":"string","title":"Periodicity"},"earliest_available":{"type":"string","title":"Earliest available data"},"geographical_coverage":{"type":"string","title":"Geographical coverage"},"url":{"type":"string","title":"URL"},"url_text":{"type":"string","title":"URL text"},"release_date":{"type":"string","title":"Release date"},"next_release":{"type":"string","title":"Next release"},"statistical_classification":{"type":"string","title":"Statistical classification"},"contact":{"type":"string","title":"Contact"},"other_info":{"type":"string","title":"Other information","format":"markdown"},"logo":{"type":"string","title":"Path to logo image"}}},"links":[{"rel":"More information on the sources setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#sources"}]},"standalone":{"title":"Standalone indicator","type":"boolean","description":"Whether the indicator is standalone (separate from the SDGs) or not.","format":"checkbox","links":[{"rel":"More information the standalone setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#standalone-indicators"}]},"tags":{"options":{"collapsed":true},"type":"array","title":"Tags","description":"An optional list of 'tags' to display under an indicator when it is listed on its goal page.","items":{"type":"string","title":"Tag"},"links":[{"rel":"More information on the tags setting","href":"https://open-sdg.readthedocs.io/en/latest/metadata-format/#recommended-special-fields"}]},"x_axis_label":{"type":"string","title":"X axis label","description":"A label beneath the X axis on charts. This overrides the same site configuration setting.","links":[{"rel":"More information on the X axis label setting","href":"https://open-sdg.readthedocs.io/en/latest/indicator-configuration/#x_axis_label"}]}},"additionalProperties":true,"definitions":{"series_unit_constraint":{"type":"object","properties":{"series":{"type":"string","title":"Series","description":"Limit to this particular series"},"unit":{"type":"string","title":"Unit","description":"Limit to this particular unit"}}},"indicator_tabs_options":{"enum":["","chart","table","map","embed","hide"],"options":{"enum_titles":["","Chart","Table","Map","Embed","Hide this tab"]}}}};
+    
+      
+        
+      
+    
+
+    function normalizeCurrentValue(key, value) {
+      // This space for backwards-compat fixes.
+      return value;
+    }
+
+    // Change the theme to create div instead of H3 elements for headers.
+    JSONEditor.defaults.themes.bootstrap3.prototype.getHeader = function(text) {
+      var el = document.createElement('div')
+      if (typeof text === 'string') {
+        el.textContent = text;
+      } else {
+        el.appendChild(text);
+      }
+      el.classList.add('je-header');
+      return el;
+    }
+
+    var editor = new JSONEditor(document.getElementById('editor_holder'), {
+      theme: 'bootstrap3',
+      iconlib: 'fontawesome4',
+      disable_array_delete_all_rows: true,
+      disable_array_delete_last_row: true,
+      disable_array_reorder: true,
+      disable_edit_json: true,
+      disable_properties: true,
+      required_by_default: true,
+
+      // The schema for the editor
+      schema: schema
+    });
+
+    function collapseButtonClick() {
+      var title = this.getAttribute('title');
+      this.setAttribute('aria-expanded', title === 'Collapse');
+      var ariaLabel = this.getAttribute('aria-label');
+      if (title === 'Collapse') {
+        ariaLabel = ariaLabel.replace('Expand', 'Collapse');
+      }
+      else {
+        ariaLabel = ariaLabel.replace('Collapse', 'Expand');
+      }
+      this.setAttribute('aria-label', ariaLabel);
+    }
+
+    function propertyEditorTranslationLinks(propertyEditor) {
+      try {
+        if (typeof propertyEditor.value === 'undefined') {
+          return;
+        }
+        switch (propertyEditor.schema.type) {
+          case 'string':
+            if (isTranslationKey(propertyEditor.value)) {
+              addTranslationLink(propertyEditor);
+            }
+            break;
+          case 'array':
+          case 'object':
+            if (typeof propertyEditor.editors !== 'undefined') {
+              var editorKeys = Object.keys(propertyEditor.editors);
+              for (var i = 0; i < editorKeys.length; i++) {
+                var editorKey = editorKeys[i];
+                propertyEditorTranslationLinks(propertyEditor.editors[editorKey]);
+              }
+            }
+            if (typeof propertyEditor.rows !== 'undefined') {
+              for (var i = 0; i < propertyEditor.rows.length; i++) {
+                propertyEditorTranslationLinks(propertyEditor.rows[i]);
+              }
+            }
+            break;
+        }
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to add translation links: ' + propertyEditor.formname);
+      }
+    }
+
+    function propertyEditorAccessibilityFixes(propertyEditor) {
+      try {
+        // Variety of accessibility fixes.
+        switch (propertyEditor.schema.type) {
+          case 'string':
+          case 'integer':
+          case 'boolean':
+          case 'number':
+            propertyEditor.input.setAttribute('id', propertyEditor.formname);
+            propertyEditor.label.setAttribute('for', propertyEditor.formname);
+            if (typeof propertyEditor.description !== 'undefined') {
+              var descriptionId = propertyEditor.formname + '-description';
+              propertyEditor.description.setAttribute('id', descriptionId);
+              propertyEditor.input.setAttribute('aria-describedby', descriptionId);
+            }
+            break;
+          case 'array':
+          case 'object':
+            var toggleButton = (propertyEditor.schema.type === 'array') ? propertyEditor.toggle_button : propertyEditor.collapse_control;
+            var headerId = propertyEditor.formname + '-header';
+            propertyEditor.header.setAttribute('id', headerId);
+            var headerText = propertyEditor.header.innerHTML;
+            if (typeof propertyEditor.description !== 'undefined') {
+              var descriptionId = propertyEditor.formname + '-description';
+              propertyEditor.description.setAttribute('id', descriptionId);
+            }
+            if (typeof toggleButton !== 'undefined') {
+              toggleButton.setAttribute('aria-label', 'Activate to Collapse the ' + headerText + ' section.')
+              collapseButtonClick.call(toggleButton);
+              toggleButton.addEventListener('click', collapseButtonClick);
+              if (typeof propertyEditor.description !== 'undefined') {
+                toggleButton.setAttribute('aria-describedby', descriptionId);
+              }
+            }
+            if (typeof propertyEditor.editors !== 'undefined') {
+              var editorKeys = Object.keys(propertyEditor.editors);
+              for (var i = 0; i < editorKeys.length; i++) {
+                var editorKey = editorKeys[i];
+                propertyEditorAccessibilityFixes(propertyEditor.editors[editorKey]);
+              }
+            }
+            if (typeof propertyEditor.rows !== 'undefined') {
+              for (var i = 0; i < propertyEditor.rows.length; i++) {
+                propertyEditorAccessibilityFixes(propertyEditor.rows[i]);
+              }
+            }
+            break;
+        }
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to do accessibility fixes: ' + propertyEditor.formname);
+      }
+    }
+
+    // Set values according to this site's configuration.
+    
+      try {
+        var currentValue = normalizeCurrentValue('composite_breakdown_label', "");
+        var propertyEditor = editor.getEditor('root.composite_breakdown_label');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: composite_breakdown_label');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.composite_breakdown_label'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('computation_units', "Per 100 000 population");
+        var propertyEditor = editor.getEditor('root.computation_units');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: computation_units');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.computation_units'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('copyright', "");
+        var propertyEditor = editor.getEditor('root.copyright');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: copyright');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.copyright'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_footnote', "");
+        var propertyEditor = editor.getEditor('root.data_footnote');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_footnote');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_notice_class', "");
+        var propertyEditor = editor.getEditor('root.data_notice_class');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_notice_class');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_class'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_notice_heading', "");
+        var propertyEditor = editor.getEditor('root.data_notice_heading');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_notice_heading');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_heading'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_notice_text', "");
+        var propertyEditor = editor.getEditor('root.data_notice_text');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_notice_text');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_text'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_start_values', []);
+        var propertyEditor = editor.getEditor('root.data_start_values');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_start_values');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.data_start_values'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('embedded_feature_footer', "");
+        var propertyEditor = editor.getEditor('root.embedded_feature_footer');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: embedded_feature_footer');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_footer'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('embedded_feature_html', "");
+        var propertyEditor = editor.getEditor('root.embedded_feature_html');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: embedded_feature_html');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_html'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('embedded_feature_tab_title', "");
+        var propertyEditor = editor.getEditor('root.embedded_feature_tab_title');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: embedded_feature_tab_title');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_tab_title'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('embedded_feature_title', "");
+        var propertyEditor = editor.getEditor('root.embedded_feature_title');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: embedded_feature_title');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_title'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('embedded_feature_url', "");
+        var propertyEditor = editor.getEditor('root.embedded_feature_url');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: embedded_feature_url');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_url'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('expected_disaggregations', []);
+        var propertyEditor = editor.getEditor('root.expected_disaggregations');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: expected_disaggregations');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.expected_disaggregations'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('footer_fields', []);
+        var propertyEditor = editor.getEditor('root.footer_fields');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: footer_fields');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.footer_fields'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_annotations', []);
+        var propertyEditor = editor.getEditor('root.graph_annotations');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_annotations');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_annotations'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_limits', []);
+        var propertyEditor = editor.getEditor('root.graph_limits');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_limits');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_limits'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_series_breaks', []);
+        var propertyEditor = editor.getEditor('root.graph_series_breaks');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_series_breaks');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_series_breaks'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_stacked_disaggregation', "");
+        var propertyEditor = editor.getEditor('root.graph_stacked_disaggregation');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_stacked_disaggregation');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_stacked_disaggregation'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_target_lines', []);
+        var propertyEditor = editor.getEditor('root.graph_target_lines');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_target_lines');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_target_lines'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_title', "13.1.1.b. Number of deaths as a result of exceptional circumstances per  100,000 population (indicator 1.5.1.a/11.5.1.b)");
+        var propertyEditor = editor.getEditor('root.graph_title');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_title');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_titles', []);
+        var propertyEditor = editor.getEditor('root.graph_titles');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_titles');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_titles'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_type', "line");
+        var propertyEditor = editor.getEditor('root.graph_type');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_type');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_available', "Number of deaths as a result of exceptional circumstances per  100,000 population (indicator 1.5.1.a/11.5.1.b)");
+        var propertyEditor = editor.getEditor('root.indicator_available');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_available');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.13-1-1-b-title");
+        var propertyEditor = editor.getEditor('root.indicator_name');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_name');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_name'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_number', "13.1.1.b");
+        var propertyEditor = editor.getEditor('root.indicator_number');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_number');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_tabs'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Republic of Moldova");
+        var propertyEditor = editor.getEditor('root.national_geographical_coverage');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_geographical_coverage');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.national_geographical_coverage'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('page_content', "");
+        var propertyEditor = editor.getEditor('root.page_content');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: page_content');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.page_content'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('permalink', "");
+        var propertyEditor = editor.getEditor('root.permalink');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: permalink');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.permalink'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('placeholder', "");
+        var propertyEditor = editor.getEditor('root.placeholder');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: placeholder');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.placeholder'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('precision', []);
+        var propertyEditor = editor.getEditor('root.precision');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: precision');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.precision'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('progress_status', "not_available");
+        var propertyEditor = editor.getEditor('root.progress_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: progress_status');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('publications', []);
+        var propertyEditor = editor.getEditor('root.publications');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: publications');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.publications'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('related_indicators', []);
+        var propertyEditor = editor.getEditor('root.related_indicators');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: related_indicators');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.related_indicators'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('reporting_status', "notstarted");
+        var propertyEditor = editor.getEditor('root.reporting_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: reporting_status');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.reporting_status'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('sort', "");
+        var propertyEditor = editor.getEditor('root.sort');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: sort');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.sort'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('sources', []);
+        var propertyEditor = editor.getEditor('root.sources');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: sources');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.sources'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.standalone'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('tags', []);
+        var propertyEditor = editor.getEditor('root.tags');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: tags');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.tags'));
+
+    
+      try {
+        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var propertyEditor = editor.getEditor('root.x_axis_label');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: x_axis_label');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.x_axis_label'));
+
+    
+
+    function isTranslationKey(text) {
+      var parts = text.split('.');
+      if (parts.length !== 2) {
+        return false;
+      }
+      if (typeof allTranslations[parts[0]] === 'undefined') {
+        return false;
+      }
+      if (typeof allTranslations[parts[0]][parts[1]] === 'undefined') {
+        return false;
+      }
+      return true;
+    }
+
+    function addTranslationLink(propertyEditor) {
+      var parts = propertyEditor.value.split('.');
+      var translationLink = '';
+      translationLink = translationLink.replace('[id]', '13-1-1-b');
+      translationLink = translationLink.replace('[group]', parts[0]);
+      translationLink = translationLink.replace('[key]', parts[1]);
+      translationLink = translationLink.replace('[language]', 'ro');
+      var element = document.createElement('a');
+      element.setAttribute('target', '_blank');
+      element.setAttribute('href', translationLink);
+      element.setAttribute('class', 'translation-link');
+      element.innerHTML = 'Go to translation for ' + propertyEditor.key;
+      propertyEditor.addLink(element);
+    }
+
+    function SaveAsFile(t,f,m) {
+      try {
+        var b = new Blob([t],{type:m});
+        saveAs(b, f);
+      } catch (e) {
+        window.open("data:"+m+"," + encodeURIComponent(t), '_blank','');
+      }
+    }
+
+    document.getElementById('export').addEventListener('click', function() {
+      var errors = editor.validate();
+      if (errors.length) {
+        var alertText = 'Please correct the errors listed below';
+        var fieldNames = []
+        for (i = 0; i < errors.length; i++) {
+          var error = errors[i];
+          fieldNames.push(error.path.replace('root.', ''));
+        }
+        alert(alertText + ' (' + fieldNames.join(', ') + ').');
+      }
+      else {
+        var config = editor.getValue();
+        var yaml = jsyaml.safeDump(config);
+        SaveAsFile(yaml, '13-1-1-b.yml', 'text/plain;charset=utf-8');
+      }
+    });
+
+    function addNewTabMessage(link) {
+      if (!link.querySelector('.sr-only')) {
+        link.insertAdjacentHTML('beforeend', ' <span>(opens in a new tab)</span>');
+      }
+    }
+
+    document.querySelectorAll('a[target="_blank"]').forEach(function(link) {
+      addNewTabMessage(link);
+    });
+  </script>
+</div>
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="/sdg-site-moldova/ro/contact-us">menu.contact_us</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">general.twitter</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">general.facebook</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">menu.cookies</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/sdg-site-moldova/ro/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = '';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = '';</script>
+
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412143601'></script>
+
+
+    
+    
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412143601"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+</body>
+</html>

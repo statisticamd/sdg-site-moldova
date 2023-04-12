@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412083022">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412090038">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -189,25 +189,25 @@ layout-indicator
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Starea raportării</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/about">About</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/sdg-site-moldova/ro/faq">FAQ</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/news">Updates</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">Actualizari</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Cauta</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Cauta">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Cautare site" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -226,7 +226,7 @@ layout-indicator
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      Romana
+      Română
     </button>
     <ul class="dropdown-menu"><li>
             <a class="dropdown-item" href="/sdg-site-moldova/13-a-1/">
@@ -282,8 +282,8 @@ data-event-label="high"
         <fieldset>
           <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select">Select all</button>
-            <button data-type="clear">Clear all</button>
+            <button data-type="select">Selecteaza toate</button>
+            <button data-type="clear">Curata tot</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -339,9 +339,9 @@ data-event-label="high"
   
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country.adjective statistics, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Curata tot","clear_selections":"Ștergeți selecțiile","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Descărcați datele despre titlu (.csv)","download_headline_title":"Descărcați datele despre titlu ca CSV","download_source":"Descărcați datele sursă (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country.adjective statistics, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Selecteaza toate","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
 
-<script>translations['data'] = {"Year":"Year"};</script>
+<script>translations['data'] = null;</script>
 
 
 <div class="container">
@@ -350,17 +350,17 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item">
-            <a href="/sdg-site-moldova/ro/">Home</a>
+            <a href="/sdg-site-moldova/ro/">Acasa</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="/sdg-site-moldova/ro/goals">Goals</a>
+            <a href="/sdg-site-moldova/ro/goals">Obiective</a>
         </li>
         
         <li class="breadcrumb-item">
             <a href="/sdg-site-moldova/ro/13"
-               title="Goal 13 - Climate action"
-               aria-label="Goal  - ">
-               Goal 13
+               title="Obiectiv 13 - Climate action"
+               aria-label="Obiectiv  - ">
+               Obiectiv 13
             </a>
         </li>
         
@@ -377,7 +377,7 @@ data-event-label="high"
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
                 <a href="/sdg-site-moldova/ro/13" aria-label="View targets and indicators for Goal 13" title="View targets and indicators for Goal 13">
                     <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/13.png"
-                        alt="Climate action - Goal 13"
+                        alt="Climate action - Obiectiv 13"
                         id="goal-13"
                         class="goal-icon-image goal-icon-image-" />
                 </a>
@@ -1086,7 +1086,7 @@ data-event-label="Change to indicator.sources tab"
   </div>
 </div>
 
-  <a href="#top">Back to top</a>
+  <a href="#top">Inapoi sus</a>
 </div>
 
 <footer role="contentinfo">
@@ -1100,7 +1100,7 @@ data-event-label="Change to indicator.sources tab"
                         </li>
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/contact-us">Contact us</a>
+                            <a href="/sdg-site-moldova/ro/contact-us">Contactati-ne</a>
                             
                         </li>
                         <li>
@@ -1154,17 +1154,17 @@ data-event-label="Change to indicator.sources tab"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ascunde';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Cauta';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412083022'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412090038'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412083022"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412090038"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

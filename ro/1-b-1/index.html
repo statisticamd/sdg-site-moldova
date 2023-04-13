@@ -105,9 +105,9 @@ var translations = {
         
     <title>
         
-         1.b.1 -
+        Indicator 1.b.1 -
         
-        global_indicators.1-b-1-title - general.site_title
+        Pro-poor public social spending - Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412143601">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230413081440">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -157,20 +157,20 @@ layout-indicator
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = null;</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title"></h2>
-    <p class="internet-explorer-message-body"></p>
+    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag"></strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    
+    This is a development website. We welcome your <a href="mailto:sdg2030@statistica.gov.md">feedback</a>.
     
   </div>
 </div>
@@ -180,34 +180,34 @@ layout-indicator
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="" title="">
-    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="general.sdg - header.tag_line" />
+            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="Go to homepage" title="Go to homepage">
+    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/goals">general.goals</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">menu.reporting_status</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Statutul raportării</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/about">menu.about</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/faq">menu.faq</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/faq">Întrebări frecvente</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/news">menu.updates</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">Actualizari</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search"></label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="">
+        <label class="visually-hidden" for="indicator_search">Cauta</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Cauta">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Cautare site" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -226,11 +226,11 @@ layout-indicator
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      
+      Română
     </button>
     <ul class="dropdown-menu"><li>
             <a class="dropdown-item" href="/sdg-site-moldova/1-b-1/">
-              
+              English
             </a>
           </li></ul>
   </div>
@@ -242,10 +242,10 @@ layout-indicator
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/sdg-site-moldova/1-b-1/">
-                
+                English
             </a>
         </li></ul>
-</div></span><a title="" aria-label=""
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -275,15 +275,15 @@ data-event-label="high"
       >
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
           <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only"> <%=translations.t(fieldItem.label)%></span>
+          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.label)%></span>
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
       </button>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only"> - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select"></button>
-            <button data-type="clear"></button>
+            <button data-type="select">Selecteaza toate</button>
+            <button data-type="clear">Curata tot</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -294,10 +294,10 @@ data-event-label="high"
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' is selected
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          
+          No options available because of filters above
         </div>
       <% }%>
 
@@ -309,9 +309,9 @@ data-event-label="high"
   
   <% if(units.length > 1) { %>
   
-    <h4></h4>
+    <h4>Unit of Measurement</h4>
     <fieldset>
-      <legend class="sr-only"></legend>
+      <legend class="sr-only">Unit of Measurement</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -326,9 +326,9 @@ data-event-label="high"
   
   <% if(serieses.length > 1) { %>
   
-    <h4></h4>
+    <h4>Series</h4>
     <fieldset>
-      <legend class="sr-only"></legend>
+      <legend class="sr-only">Series</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
@@ -339,7 +339,7 @@ data-event-label="high"
   
 </script>
 
-<script>translations['indicator'] = null;</script>
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Curata tot","clear_selections":"Ștergeți selecțiile","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Descărcați datele despre titlu (.csv)","download_headline_title":"Descărcați datele despre titlu ca CSV","download_source":"Descărcați datele sursă (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country.adjective statistics, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Selecteaza toate","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
 
 <script>translations['data'] = {"0-17 years":"0-17 ani","0-17 years, children":"0-17 ani, copii","0-2 years":"0-2 ani","0-28 days":"0-28 zile","0-7 days":"0-7 zile","1,000 ha":"1 000 ha","1,000 people":"1 000 persoane","1,000 tons":"1 000 tone","1-9 employees":"1-9 angajaţi","10-49 employees":"10-49 angajaţi","15+ / Men":"15+ / Bărbați","15+ / Women":"15+ / Femei","15-24 / Both sexes":"15-24 / Ambele sexe","15-24 / Men":"15-24 / Bărbați","15-24 / Women":"15-24 / Femei","15-29 / Both sexes":"15-29 / Ambele sexe","15-29 / Men":"15-29 / Bărbați","15-29 / Women":"15-29 / Femei","15-34 / Both sexes":"15-34 / Ambele sexe","15-34 / Men":"15-34 / Bărbați","15-34 / Women":"15-34 / Femei","16-17 years":"16-17 ani","18 years and over":"18 ani și peste","18 years and over, adults":"18 ani și peste, adulți","25 and older":"25 și peste","25% of daily per capita total household consumption":"25% of daily per capita total household consumption","25+ / Men":"25+ / Bărbați","25+ / Women":"25+ / Femei","25-64 / Both sexes":"25-64 / Ambele sexe","25-64 / Men":"25-64 / Bărbați","25-64 / Women":"25-64 / Femei","3-6  years":"3-6 ani","57+ (women) / 62+ (men)":"57+ (femei) / 62+ (bărbați)","60 and over years":"60 ani și peste","60-69":"60-69","65+":"65+","7-15  years":"7-15 ani","75+":"75+","A Agriculture, forestry and fishing":"A agricultura, silvicultura și pescuit","ATU Gagauzia":"UTA Găgăuzia","ATU Găgăuzia":"UTA Găgăuzia","Abortion (per 1000 women of reproductive age)":"Avort (la 1000 femei de vârstă reproductivă)","Above-ground biomass reserves in forests, thousands m.c.":"Rezervele de biomasă supraterană în păduri, mii m.c.","Access mode":"Mod de accesare","Access to education":"Acces la învățământ","Access to electricity":"Acces la electricitate","Access to goods and services available to the public":"Acces la bunuri și servicii disponibile publicului","Access to internet":"Acces la internet","Access to justice":"Acces la justiție","Access to safely managed water sources":"Acces la surse gestionate sigur de apă","Access to services":"Acces la servicii","Access to sewerage":"Acces la canalizare","According to metadata codes":"Conform codurilor din metadate","Administrative officers":"Funcționari administrativi","Adults":"Adulți","Adults (18 - 100+ years)":"Adulți (18-100+ ani)","Advantaged":"Avantajați","Age":"Vârsta","Age group":"Grupa de vârstă","Age group (neglected)":"Grupa de vârstă (neglijați)","Age group (subjected to violence)":"Grupa de vârstă  (supuși violenței)","Age group / Sex":"Grupa de vârstă / Sexul","Age group 1 and Sex":"Grupa de vârstă 1 și Sex","Age group 2 and Sex":"Grupa de vârstă 2 și Sex","Age group of the victim":"Grupa de vârstă  a victimei","Age of the head of the household, years":"Vârsta capului gospodăriei, ani","Agriculture":"Agricultură","Agriculture sector":"Sectorul Agricultura","Agriculture, forestry and fishing":"Agricultura, silvicultura și pescuit","Aid for the cold period of the year":"Ajutorul pentru perioada rece a anului","Air":"Aerian","Amount (discharge) of water into rivers and estuaries":"Cantitatea (descărcarea) apei în râuri și estuare","Amount of groundwater in aquifers":"Cantitatea apei subterane din acvifere","Animals":"Animale","Annual net rate of change of forest area":"Rata netă anuală de schimbare a suprafeței forestiere","Area":"Mediu","Area of discrimination":"Domeniul de discriminare","Area of residence":"Mediul de reședință","Area of residence  of the respondents":"Mediu de reședință al respondenților","Area of residence (neglected)":"Mediul de reședință (neglijați)","Area of residence (subjected to violence)":"Mediul de reședință (supuși violenței)","Asylum seekers":"Solicitanți azil","Availability":"Disponibilitate","Average tariff status, type of products":"Statut tarifar mediu, tipul produselor","B Mining and quarrying":"B Industria extractivă","Basarabeasca":"Basarabeasca","Basel convention":"Basel Convention","Begging":"Cerșit","Beneficiary status - foreign citizen":"Statut de beneficiar - cetățean străin","Bio-fuel and waste":"Biocombustibili și deșeuri","Births":"Nașteri","Births/Deaths":"Nașteri/Decese","Blackmail":"Șantajul","Both sexes":"Ambele sexe","Boys":"Băieți","Brigandage":"Tâlhăria","Brut":"Brut","Bsb":"BSB","Bulgarians":"Bulgari","By association":"Discriminare prin asociere","By levels":"Pe nivele","C Manufacturing industry":"C Industria prelucrătoare","Cadastral offices / services":"Birourile/serviciile cadastrale","Capabilities of the health sector":"Capacități ale sectorului de sănătate","Carbon monoxide":"Oxid de carbon","Categories of petitioners":"Categorii de petiționari","Category":"Category","Center":"Centru","Center region":"Regiunea Centru","Central public authorities":"Autorități publice centrale","Centralized":"Centralizat","Centralized surface sources":"Surse centralizate de suprafață","Child rights":"Drepturile copilului","Children":"Copii","Children (0 - 17 years)":"Copii (0-17 ani)","Church":"Biserica","Cities":"Urbe","Citizenship":"Cetățenie","City":"Orașe","Civil status":"Statut matrimonial","Civil status offices":"Oficiile stării civile","Classes of ES":"Clase SE","Classes of disasters":"Clase SE","Clerks and assistants":"Grefieri și asistenți","Coal":"Cărbune","Combination measles-mumps-rubella vaccine (MMR)":"Vaccinul combinat împotriva rujeolă-oreion-rubeolă (ROR)","Commercial sex worker":"Lucrători ale sexului comercial","Commitments":"Angajamente","Communal services":"Serviciile comunale","Components of integrated water resources management (iwrm)":"Componente ale Managementului Integrat al Resurselor de Apă (IWRM)","Construction":"Construcții","Consumption purpose":"Scopul consumului","Context/reason":"Contextul/motivul","Conventions":"Convenții","Cooling spaces":"Răcirea spațiilor","Cooperation and partnership":"Cooperare și parteneriate","Countries of destination":"Ţări de destinaţie","Countries of exploitation":"Țările de exploatare","Court":"Judecătoria","Court of Appeal":"Curtea de Apel","Courts":"Instanțele de judecată","Criteria of discrimination":"Criterii de discriminare","Customs":"Vama","Cyprus":"Cipru","Czech":"Cehia","D Production and supply of electric energy and heat, gas, hot water and airconditioning":"D Producția și furnizarea de energie electrica și termica, gaze, apa calda și aer condiționat","Data source":"Sursa de date","Data supplier":"Furnizor de date","Deaths":"Decese","Decentralized water supply sources (wells)":"Surse descentralizate de alimentare cu apă (fîntîni)","Depending on the income level (art. 21 law 198)":"În dependența de nivelul de venit (art. 21 Legea 198)","Development regions":"Regiuni de dezvoltare","Dimension of crisis mobility":"Dimensiunile mobilității ale crizelor","Diphtheria and tetanus toxin (DT) vaccine at 7 years":"Vaccinul cu anatoxine difterică şi tetanică (DT) la 7 ani","Diphtheria and tetanus toxin (Td) vaccine at 15 years":"Vaccinul cu anatoxine difterică şi tetanică (Td) la 15 ani","Diphtheria-tetanus-pertussis (DTP) vaccine":"Vaccinul diftero-tetano-pertusis (DTP)","Direct":"Discriminare directă","Disabilities":"Dizabilități","Disability":"Dizabilitate","Disability (neglected)":"Dizabilitate (neglijați)","Disability (subjected to violence)":"Dizabilitate (supuși violenței)","Disadvantaged":"Dezavantajați","Disaster type":"tip de dezastru","Disbursement":"Debursări","Discrimination criteria":"Criterii de discriminare","Discrimination on the labour marke":"Discriminare în câmpul muncii","Domestic violence":"Violenţa în familie","Drinking water":"apa potabilă","Duration of arrest":"Durata aflării în arest","E Water supply, sewerage, waste management and remediation activities":"E Distribuția apei; salubritate, gestionarea deșeurilor, activități de decontaminare","Early neonatal mortality (per 1000 live births)":"Mortalitatea neonatală precoce (la 1000 născuți-vii)","Economic activities":"Activități economice","Edineț":"Edineț","Education type":"education type","Educational institutions":"Instituțiile de învățământ","Electricity":"Energie electrică","Emergency contravention cases":"Urgență cauze contravenționale","Emergency criminal cases":"Urgență cauze penale","Emission sectors":"Sectoare de emisie","Employed in the agricultural sector":"Angajați în sectorul agrar","Employed in the non-agricultural sector":"Angajați în sectorul non-agrar","Employment status":"Statutul ocupațional","Energy sector":"Sectorul Energie","Engaging in criminal activities":"Antrenarea în activități criminale","Entities in which they were discriminated against":"Entități în care au fost discriminați","Ethnical affiliation":"Apartenență etnică","Ethnicity":"Etnie","Ethnicity of the head of the household":"Etnia capului gospodăriei","Execution":"Execuție","Exercise of parental rights":"Exercitarea drepturilor părintești","Existence of a criminal record":"Existența antecedentelor penale","Existence of disability":"Existența dizabilității","F construction":"F Construcții","Farmers":"Fermieri","Fatal accidents - by economic activities":"Accidente mortale - după activități economice","Fatal accidents - by sex":"Accidente mortale - după sex","Favorable environment":"Mediu favorabil","Fire inspections":"Inspecțiile antiincendiare","Firearms and explosive substances":"Arme de foc şi substanţe explozive","Fires":"Incendii","Food preparation":"Pregătirea alimentelor","Food preparation - rural":"Pregătirea alimentelor - rural","Food preparation - total":"Pregătirea alimentelor -","Food preparation - urban":"Pregătirea alimentelor - urban","For the cold period":"Pentru perioada rece","Foreign citizenship":"Cetățeni străini","Forest area included in the forest management certification system, independently verified, thousands ha":"Suprafața forestieră inclusă în cadrul sistemului de certificare a modului de gestionare a pădurilor, verificat independent, mii ha","Form of discrimination":"Forma de discriminare","Form of violence":"Formă de violență","Forms of exploitation":"Forme de exploatare","Forms of ownership":"Forme de proprietate","From  with disability":"Din total cu dizabilitate","From 15 to 16 years":"De la 15 ani până la 16 ani","From 16 to 17 years":"De la 16 ani până la 17 ani","From 17 to 18 years":"De la 17 ani până la 18 ani","From 18 to 21 years":"De la 18 ani până la 21 ani","From 21 to 30 years":"De la 21 ani până la 30 ani","From 3 to 6 months":"De la 3 la 6 luni","From 30 to 40 years":"De la 30 ani până la 40 ani","From 40 to 50 years":"De la 40 ani până la 50 ani","From 50 to 60 years":"De la 50 ani până la 60 ani","From 6 to 12 months":"De la 6 luni până la 12 luni","From the state budget":"Din bugetul de stat","Fully available":"Integral disponibil","Function type":"Tip funcție","Funding":"Finanțare","G Wholesale and retail trade; repair of motor vehicles and motorcycles":"G Comerț cu ridicata și cu amânuntul; întreținerea și repararea autovehiculelor și a motocicletelor","Gagauz":"Găgăuz","General and  specific objectives":"Obiective generale și  specifice","Geographical regions":"Regiuni geografice","Germany":"Germania","Girls":"Fete","Grants":"Granturi","Greece":"Grecia","Gross":"Brut","Gross/Net":"Brut/Net","Group":"Grupa","Groups of persons":"Grupe de persoane","Gymnasium":"Gimnazial","H Transportation and storage":"H Transport și depozitare","Harassment":"Hărțuire","Hate speech":"Discurs de ură","Hepatitis B vaccine (HEPB)":"Vaccinul contra hepatitei B (HEPB)","High-risk population categories":"Categorii de populație cu risc sporit","Higher":"Superioare","Hire your own":"Angajați cont propriu","Home heating systems - rural":"Sisteme de încălzire a locuințelor - rural","Home heating systems - total":"Sisteme de încălzire a locuințelor -","Home heating systems - urban":"Sisteme de încălzire a locuințelor - urban","Hooliganism":"Huliganismul","Household type":"Tipul gospodăriei","Humanitarian protection":"Protecție umanitară","Hydrocarbs":"Hidrocarburi","I Accomodation and food service activities":"I Activități de cazare și alimentație publică","I quintile, area of residence":"Chintila I, Mediul de reședință","II age group (global)":"II Grupa de vârstă  (global)","III age group (global)":"III Grupa de vârstă  (global)","Including children":"Inclusiv copii","Including children (0-17 years)":"Inclusiv copii (0-17 ani)","Incomes":"Venituri","Index":"Indice","Indicators":"Indicatori","Indirect":"Discriminare indirectă","Individuals":"Persoane fizice","Industrial processes and use of products sector":"Sectorul Procesele industriale şi utilizarea produselor","Industrial purposes":"scopuri industriale","Industry":"Industrie","Ingredients":"Ingrediente","Injecting drug users":"Utilizatori de droguri injectabile","Injured human dignity":"Lezarea demnității umane","Injured right":"Dreptul lezat","Instigation to discrimination":"Instigare la discriminare","Institutions":"Instituții","Institutions where have been made payments":"Instituțiile unde s-au efectuat plăți","Insured":"Asigurați","Insured/Uninsured":"Asigurați/Neasigurați","Integrated government policies  / based on data":"Politici integrate guvernamentale / bazate pe date","Intellectual":"Intelectuală","International organisations":"Organizații internaționale","Internet access":"Acces la internet","Irrigation":"Irigare","Issuing construction permits":"Eliberarea autorizațiilor de construcție","Italy":"Italia","J Informații și comunicații":"J Informații și comunicații","Jealousy":"Gelozie","Jews":"Evrei","Judges":"Judecători","K Financial and insurance activities":"K activități financiare și de asigurări","Kg/person":"Kg/persoană","Kidnapping a person":"Răpirea unei persoane","L Real estate activities":"L Tranzacții imobiliare","Language":"Limbă","Lead":"Conducere","Lease":"Locaţiune","Legacy":"Moştenire","Legal basis":"Baza legală","Legal entities":"Persoane juridice","Legislators, executive members and other officials":"Legislatori, membri ai executivului și alți demnitari","Legislators, executive members and other officials and heads/leaders":"Legislatori, membri ai executivului și alți demnitari și conducători","Level of education":"Nivelul de studii","Level of education of the head of the household":"Nivelul de instruire a capului gospodăriei","Level of eutrophication in rivers":"Nivelul de eutrofizare în râuri","Level of public institutions":"Nivel instituții publice","Levels of education":"Nivele de educaţie","Lighting and use of electrical appliances":"Iluminat și utilizarea aparatelor electrice","Local public authorities":"Autorități publice locale","Local public authorities, level I":"Autorități publice locale, nivelul I","Local public authorities, level II":"Autorități publice locale, nivelul II","Location":"Locația","M Professional, scientific and technical activities":"M Activități profesionale, științifice și tehnice","Man":"Bărbat","Management tools":"Instrumente de management","Manufacturing":"Industria prelucrătoare","Marital status":"Starea civilă","Maternal mortality (per 1000 women of reproductive age)":"Mortalitatea maternă (la 1000 femei de vârstă reproductivă)","Maternity":"Maternitate","Means of committing":"Mijloace de săvîrșire","Medical institutions":"Instituțiile medicale","Men":"Bărbați","Men who have sex with men":"Bărbaţi care practică sex cu bărbaţii","Mental":"Mintală","Mental disability":"Dizabilitatea mintală","Migrants' rights":"Drepturile migranţilor","Migration context":"Context migrațional","Minamata convention":"Minamata Convention","Mining and quarrying":"Industria extractivă","Mixt":"Mixt","Modern contraception (women of reproductive age use modern methods of contraception)":"Contracepția modernă (femei de vârstă reproductivă folosesc metode moderne de contracepție)","Modes of transport":"Moduri de transport","Moldovan/Romanian":"Moldovean/Român","Montreal protocol":"Montreal Protocol","More than 12 months":"Mai mult de 12 luni","Mortgage":"Ipotecă","Mun. Chisinau":"Mun. Chișinău","N Administrative and support service activities":"N activități de servicii administrative și activități de servicii suport","Nationality":"Naționalitate","Natural":"Natural","Natural  (by genres)":"Natural (pe genuri)","Natural (by types)":"Natural (pe genuri)","Natural gas":"Gaze naturale","Natural gas / liquefied gas":"Gaz natural/gaz lichefiat","Natural gas, electricity":"Gaz natural, electricitate","Net":"Net","Nitrate concentration - mgn / l":"Concentraţia de nitraţi – mgn/l","Nitrogen dioxide":"Dioxid de azot","Non-fatal accidents - by economic activities":"Accidente nemortale - după activități economice","Non-fatal accidents - by sex":"Accidente nemortale - după sex","Non-performing loans rate (without reserves) in relation to the total regulated capital":"Rata creditelor neperformante (fără rezerve) in raport cu capitalul total reglementat","Nonstate":"Nestatale","North":"Nord","Northern region":"Regiunea Nord","Not available":"Nedisponibil","Notary offices":"Birourile notariale","Number of children subjected to violence, at the end of the year":"Numărul copiilor supuși violenței, la sfârșitul anului","Number of dentists per 10 000 population":"Numărul de stomatologi și dentiști la 10 000 populație","Number of neglected children, at the end of the year":"Numărul copiilor neglijați, la sfîrșitul anului","Number of paramedical personnel per 10 000 population":"Numărul personalului medical la 10 000 populație","Number of pharmacists per 10 000 population":"Numărul de farmaciști la 10 000 populație","O Public administration and defence; compulsory social security":"O Administrație publica și apărare; asigurări sociale obligatorii","Occupational status":"Statut ocupațional","Occupations":"Ocupaţii","Of deposits, including current":"De depozite, inclusiv curente","Of which industrial sector":"Din care sectorul industrie","Opinion":"Opinie","Optional health education curriculum, including sexual":"Curiculum opțională de educație pentru sănătate, inclusiv sexuală","Oral polio vaccine (OPV)":"Vaccinul oral contra poliomielitei (VPO)","Ordered":"La comandă","Other":"Alte","Other (areas with multifunctional management, resource reservations, landscape reservations, nature reserves, etc.)":"Altele (arii cu management multifuncţional,  rezervaţiile de resurse, rezervaţii peisajere, rezervaţii naturale etc.)","Other activities":"Alte activități","Other areas":"Alte domenii","Other authorities":"Alte autorități","Other criteria":"Alte criterii","Other documents":"Alte documente","Other ethnicity":"Altă etnie","Other forms":"Alte forme","Other incomes":"Alte venituri","Other means":"Alte mijloace","Other occupations":"Alte ocupații","Other occupations - of which, non-skilled workers":"Alte ocupații - din care muncitori necalificați","Other reasons":"Alte motive","Other rights (encumbrance)":"Alte drepturi (grevare)","Over 100 Mbps":"Peste 100 Mbps","P education":"P Învățământ","Part":"Parțial","Partly available":"Parțial disponibil","Passport offices":"Birourile de pașapoarte","Pensioner status":"Statut de pensionar","Pentavalent combined vaccine against hepatitis b, tetanus diphtheria, pertussis, and haemophilus influenzae type B infection (HEPB + DTP + HIB)":"Vaccinul combinat pentavalent contra hepatitei b, difteriei tetanusului, pertusis, și infecției cu haemophilus influenzae tip B (HEPB+DTP+HIB)","People with disabilities":"Persoane cu dizabilități","People with disability":"Persoane cu dizabilitate","People without disabilities":"Persoane fără dizabilități","People without disability":"Persoane fără dizabilitate","Persons in a position of responsibility":"Persoane cu funcție de răspundere","Persons with disabilities":"Persoane cu dizabilități","Petrol products":"Produse petroliere","Phosphate concentration - mgn / l":"Concentraţia de fosfaţi – mgn/l","Physical":"Fizică","Physical disability":"Dizabilitatea fizică","Physics":"Fizică","Place of production":"Locul producerii","Place of residence":"Loc de trai","Place of work":"Locul de muncă","Plants":"Plante","Pneumococcal vaccine (PC)":"Vaccinul pneumococic (PC)","Poland":"Polonia","Police":"Poliția","Police inspectorate":"Inspectoratul de politie","Policy areas":"Domenii de politici","Political affiliation":"Apartenență politică","Polyclinic":"Policlinica","Poors, 40%":"Săraci, 40%","Population with usual residence":"Populația cu reședință obișnuită","Portugal":"Portugalia","Preferential tariff status, type of products":"Statut tarifar preferențial, tipul produselor","Premeditated severe injuries":"Leziuni, corporale grave","Primary":"Primare","Primary and below":"Primare și mai jos","Primary care":"Asistența primară","Product sectors":"Sectoare ale produselor","Production and supply of electric energy and heat, gas and hot water":"Producția și furnizarea de energie electrică și termică, gaze şi apă caldă","Professional":"Profesional","Professional status":"Statut profesional","Proportion of forest area located in legally protected areas":"Proporția de suprafață forestieră situată în zonele protejate legal","Proportion of forest area managed in accordance with long-term sustainable forest management plans":"Proporția de suprafață forestieră gospodărită în conformitate cu planuri de gestionare durabilă  a pădurilor pe termen lung","Prosecution":"Procuratura","Psychological":"Psihologică","Public":"Publică","Public administration; education; health and social work":"Administrație publică; învățământ; sănătate și asistență socială","Public procurement":"Achizițiile publice","Q Health and social work":"Q Sănătate și asistenta sociala","Qualified and assimilated workers":"Muncitori calificați și asimilați","Qualified civil cases":"Calificată cauze civile","Qualified contravention cases":"Calificată cauze contravenționale","Qualified criminal cases":"Calificată cauze penale","Qualified workers in agriculture, forestry, aquaculture, pisciculture and fishing":"Lucrători calificați în agricultura, silvicultura, acvacultura, piscicultura și pescuit","Quality of water-related ecosystems":"Calitatea ecosistemelor legate de apă","Quarrel":"Ceartă","Quintile I, by area of residence":"Chintila I, pe medii","Quintiles on consumption expenditures":"Chintile pe cheltuielile de consum","R Arts, entertainment and recreation":"R Arta, activități de recreere și de agrement","Racial segregation":"Segregare rasială","Railway":"Feroviar","Rare species":"Specii rare","Rase":"Rasă","Rate":"Rata","Rate of liquid assets relative to short-term liabilities":"Rata activelor lichide în raport cu pasivele pe termen scurt","Rate of net open foreign exchange position at total regulated capital":"Rata poziției valutare deschise nete la capitalul total reglementat","Ratio of own funds of level I in relation to risk-weighted assets":"Rata fondurilor proprii de nivel I în raport cu activele ponderate la risc","Ratio of own funds of level I in relation to total assets":"Rata fondurilor proprii de nivel I în raport cu total active","Rayon/ ATU":"Raion/ UAT","Rayons":"Raioane","Rayons list":"lista raioanelor","Rayons/Municipalities that have treatment plants":"Raioanele/Municipiile care dețin stații de epurare","Reason related to family relationships":"Motiv legat de relaţii familiare","Refugees":"Refugiați","Refuse of reasonable accommodation":"Refuz în acomodare rezonabilă","Regardless of income level (art. 20 law 198)":"Indiferent de nivelul de venit (art. 20 legea 198)","Regions":"Regiuni","Regions and rayons":"Regiuni și raioane","Registration of the transport and issuance of the driving license":"Înregistrarea transportului și eliberarea permisului de conducere","Religion":"Religia","Religion/belief":"Religie/convingeri","Remittances / gdp ()":null,"Republic of Moldova":"Republica Moldova","Requested authority":"Autoritatea solicitată","Resident popupation":"Populația stabilă","Residential sector (population)":"Sector rezidențial","Responsible for monitoring":"Responsabil pentru monitorizare","Retirees":"Pensionari","Return on assets":"Rentabilitatea activelor","Revenge":"Răzbunare","River":"Fluvial","Road":"Rutier","Robbery":"Jaf","Roma":"Romi","Roma ethnicity":"Etnia romă","Romania":"România","Rotavirus (RV) vaccine":"Vaccinul contra infecţiei cu rotavirusuri  (RV)","Rotterdam convention":"Rotterdam Convention","Rum":"Rom","Rural, 1st quintile":"Rural, quintila 1","Rural, quintile I":"Rural, chintila I","Russian":"Rus","Russian Federation":"Federația Rusă","Russians":"Ruși","S Other service activities":"S Alte activități de servicii","Safe, regular and regulated migration":"Migrație sigură, ordonată și regulată","Sale":"Vânzare-cumpărare","Sampling of human organs, tissues or cells":"Prelevare de organe, țesuturi sau celule umane","Sanitary-epidemiological inspections":"Inspecțiile sanitar-epidemiologice","School":"Școala","Secondary":"Secundare","Secondary and above":"Secundar și mai sus","Secondary incomplete":"Medii incomplete","Secondary school":"Mediu general","Secondary specialized":"Mediu de specialitate","Secondary vocational":"Secundar profesional","Sectors":"Sectoare","Self-employed":"Angajați pe cont propriu","Sensory":"Senzorială","Services":"Servicii","Sex":"Sex","Sex (15-24 years)":"Sex (15-24 ani)","Sex (15-29 years)":"Sex (15-29 ani)","Sex (15-34 years)":"Sex (15-34 ani)","Sex (neglected)":"Sex (neglijați)","Sex (subjected to violence)":"Sex (supuși violenței)","Sex of the head of the household":"Sexul capului gospodăriei","Sex of the petitioner":"Sexul petiționarului","Sex/gender":"Sex/gen","Sexual":"Sexuală","Sexual assault":"Agresiune sexuală","Sexual orientation":"Orientarea sexuală","Share of non-performing loans in total loans granted":"Ponderea creditelor neperformante în totalul creditelor acordate","Shop":"Magazin","Size of enterprise":"Mărimea întreprinderii","Social aid":"Ajutor social","Social and biological":"Biologico-social","Social and economic status":"Statut socio-economic","Social assistance":"Asistența socială","Social contributions":"Contribuții sociale","Social origin":"Origine socială","Social status":"Statut social","Social-economic wellbeing":"Bunăstarea socio-economică","Socio-economic status":"Statutul socio-economic","Socio-economic status of pupils":"Statut socio-economic al elevilor","Solids":"Substanțe solide","Sources":"Surse","Sources of financing":"Surse de finanțare","South":"Sud","Southern region":"Regiunea Sud","Space heating":"Incălzirea spațiilor","Spain":"Spania","Spatial extent of water-related ecosystems":"Extensia spațială a ecosistemelor legate de apă","Specialists in various fields of activity":"Specialiști în diverse domenii de activitate","Speeds":"Viteze","Stat":"De stat","Stateless":"Apatrizi","Statistical regions":"Regiuni statistice","Status of persons":"Statutul persoanei","Stockholm convention":"Stockholm Convention","Street":"Strada","Studies":"Studii","Sub-indicators":"Sub-indicatori","Sulphur dioxide":"Dioxid de sulf","Support of development partners":"Cu suportul partenerilor de dezvoltare","Supreme Court of Justice":"Curtea Supremă de Justuție","Surrogate":"Mamă-surogat","Tax inspectorates":"Inspectoratele fiscale","Taxes":"Impozite","Taxi":"Taximetre","Technical overhaul of cars":"Revizia tehnică a automobilelor","Technicians and other middle-level  qualification specialists":"Tehnicieni și alți specialiști cu nivel mediu de calificare","Technogenic":"Tehnogen","Temporary protection":"Protecție temporă","The basis for the registration of the property right":"Baza înregistrării dreptului de proprietate","The existence of disability":"Existența dizabilității","Thermal energy":"Energie termică","To borrow":"De împrumut","Tools (row, axe, hammer etc.)":"Instrumente (rangă, topor, ciocan etc.)","Top level lead":"Conducere nivel superior","Total, by area of residence":"Total, pe medii de reședință","Total, quintile I":"Total, chintila I","Town hall":"Primăria","Toxicity class":"Clasa de toxicitate","Trade donation":"Donaţie-schimb","Trade-union activity":"Activitate sindicală","Transport registration and driver qualification":"Înregistrarea transportului și calificarea conducătorilor auto","Transportation and storage; information and communication":"Transport și depozitare; informații și comunicații","Transportation type":"transportation type","Trolleybuses":"Troleibuze","Tuberculosis vaccine (BCG)":"Vaccinul contra tuberculozei (BCG)","Turkey":"Turcia","Type":"Tip","Type B haemophilus influenzae (HIB) vaccine":"Vaccinul contra infecţiei cu haemophilus influenzae tip B (HIB)","Type of aid":"Tipul de prestație","Type of allowance":"Tipul prestaţiei","Type of economic activity of waste producer":"Tipul de activitate economică a producătorului de deșeuri","Type of land rights":"Tipul drepturilor asupra terenurilor","Type of legal document justifying the right":"Tipul documentul legal justificator al dreptului","Type of property right":"Tipul de drept patrimonial","Type of qualified assistance":"Tipul asistenței calificate","Type of technology":"Tipul tehnologiei","Type of the source":"Tipul sursei","Type of vaccine":"Tipuri de vaccin","Types":"Tipuri","Types of accounts":"Tipuri de conturi","Types of crimes":"Tipuri de infracțiuni","Types of critical infrastructure":"Tipuri de infrastructura critică","Types of ecosystems":"Tipuri ecosisteme","Types of energy":"Tipuri de energie","Types of income":"Tipuri de venituri","Types of losses":"Tipuri de pierderi","Types of losses in critical infrastructure":"Tipuri de pierderi la infrastructura critică","Types of resources":"Tipuri de resurse","Types of treatment":"Tipuri de epurare","Types of waste":"Tipuri de deșeuri","USD":"USD","Ucrainian":"Ucrainean","Ukrainians":"Ucraineni","Undefined":"Lipsă date","Under 2 Mbps":"Sub 2 mbps","Underground centralized sources":"Surse centralizate subterane","Uninsured":"Neasigurați","Up to 15 years":"Pînă la 15 ani","Up to 15 years old":"Până la 15 ani","Up to 18 years":"Pînă la 18 ani","Up to 18 years old":"Până la 18 ani","Up to 3 months":"Până la 3 luni","Up to 45 years (18-44)":"Pînă la 45 ani (18-44)","Up to and including 15 years":"Până la 15 ani inclusiv","Urban, quintile I":"Urban, chintila I","Victimization":"Victimizare","Volume of personal remittances (in usd)":"Volumul remiterilor personale (în dolari americani)","Waste circulation":"Mișcarea deșeurilor","Waste sector":"Sectorul Deșeuri","Water heating":"Încălzirea apei","Water quality":"Calitatea apei","Water quality in water bodies, according to hydrochemical indicators,":"Calitatea apei în corpurile de apă, conform indicatorilor hidrochimici,","Wealthy, 60%":"Înstăriți, 60%","Wellbeing quintile":"Quintile de bunăstare","Wetlands of international importance":"Zone umede de importanţă internaţională","White weapons (knife, sharp objects)":"Arme albe (cuţit, obiect înţepător)","Whole":"Integral","Wholesale and retail trade; accomodation and food service activities":"Comerț cu ridicata și amănuntul; activități de cazare și alimentație publică","With children up to 18 years":"Cu copii până la 18 ani","With disabilities":"Cu dizabilități","Without children up to 18 years":"Fără copii până la 18 ani","Woman":"Femeie","Woman/man":"Femei/bărbați","Women":"Femei","Wood, waste and coal":"Lemne, deșeuri și cărbune","Work":"Muncă","Work inspection":"Inspecția muncii","Workers in the field of services and trade":"Lucrători în domeniul serviciilor și în comerț","Year":"Anul","age-related":"age-related","aged 0-17 years":"în vârstă de 0-17 ani","aged 1-5 years":"aged 1-5 years","aged 1-6 years":"aged 1-6 years","aged 10-15 years":"aged 10-15 years","aged 12-15 years":"în vârstă de 12-15 ani","aged 16-17 years":"în vârstă de 16-17 ani","aged 18-39 years":"în vârstă de 18-39 ani","aged 40-62 years":"în vârstă de 40-62 ani","aged 5-11 years":"în vârstă de 5-11 ani","aged 6-9 years":"aged 6-9 years","aged 7-9 years":"aged 7-9 years","air transport":"air transport","alone":"alone","alone and jointly with someone else":"alone and jointly with someone else","any contraceptive method":"any contraceptive method","arable land":"arable land","bachelor":"bachelor","bank services":"bank services","before age 15":"before age 15","before age 18":"before age 18","by other laws":"by other laws","cancer":"cancer","cardiovascular disease":"cardiovascular disease","case":"case","child with two parents":"child with two parents","chronic respiratory disease":"chronic respiratory disease","diabetes":"diabetes","disabled":"disabled","domestic material consumption":"domestic material consumption","domestic material consumption per GDP":"domestic material consumption per GDP","domestic material consumption per capita":"domestic material consumption per capita","dram":"dram","economically active population":"economically active population","economically inactive  population":"economically inactive population","education":"education","electricity supply":"electricity supply","electricity transport":"electricity transport","employed":"employed","employees in the agricultural sector":"angajati în sectorul agrar","employees in the non-agricultural sector":"angajati în sectorul non-agrar","equal to or greater than 10 Mbit/s":"equal to or greater than 10 Mbit/s","equal to or greater than 2 Mbit/s and less than 10 Mbit/s":"equal to or greater than 2 Mbit/s and less than 10 Mbit/s","equal to or greater than 256 kbit/s and less than 2 Mbit/s":"equal to or greater than 256 kbit/s and less than 2 Mbit/s","excluding ftscfts":"fără FTSCFTS","female":"femeie","freight volumes":"freight volumes","from 6 months to 1 year":"from 6 months to 1 year","garbage disposal":"garbage disposal","growth rates of household expenditure or income per capita among the bottom 40 per cent of the population":"growth rates of household expenditure or income per capita among the bottom 40 per cent of the population","growth rates of household expenditure or income per capita among the total population":"growth rates of household expenditure or income per capita among the total population","have achieved 100 per cent birth registration":"have achieved 100 per cent birth registration","have achieved 80 per cent death registration":"have achieved 80 per cent death registration","have conducted at least one population and housing census in the last 10 years":"have conducted at least one population and housing census in the last 10 years","health":"health","healthcare":"healthcare","high":"high","high plant species registered in the Red Book of RA":"high plant species registered in the Red Book of RA","household access to centralized sewerage system":"household access to centralized sewerage system","household access to centralized water supply":"household access to centralized water supply","household access to garbage disposal":"household access to garbage disposal (garbage collector system and/or disposal by truck,  garbage piled up for disposal)","in case of losing a breadwinner":"in case of losing a breadwinner","included in the specially protected natural areas":"inclus în ariile naturale speciale prpotejate","infectious and parasitic diseases":"infectious and parasitic diseases","internet accessibility for household":"internet accessibility for household","internet accessibility for household members":"internet accessibility for household members","jointly with someone else":"jointly with someone else","junior medical personnel":"junior medical personnel","kg per capita":"kg per capita","kg/mln. dram":"kg/mln. dram","landline telephone":"landline telephone","left without parental care":"left without parental care","liter":"liter","local governments":"local governments","long-term service":"long-term service","lower secondary":"lower secondary","male":"Bărbat","man-made disaster":"man-made disaster","master":"master","middle vocational":"middle vocational","mln. USD":"mln. USD","mln. dram":"mln. dram","modern contraceptive methods":"modern  contraceptive methods","mole - H - ion/liter":"mole - H - ion/liter","national parliaments":"national parliaments","natural disaster":"natural disaster","number":"număr","number of teachers per computer":"number of teachers per computer","of which  passenger taxi":"of which  passenger taxi","official grants":"official grants","old age":"old age","on privileged terms":"on privileged terms","other employed":"other employed","other inactive population":"other inactive population","overweight":"overweight","paramedical personnel":"paramedical personnel","partially":"partially","passenger volume":"passenger volume","pensioners":"pensioners","per 1,000 life births":"per 1,000 life births","per 1,000 population":"per 1,000 population","per 1,000 women":"per 1,000 women","per 10,000 population":"per 10,000 population","per 100,000 live births":"per 100,000 live births","per 100,000 population":"per 100,000 population","per capita":"per capita","per million population":"per million population","perennial plants":"perennial plants","person":"person","physical violence":"physical violence","physicians":"physicians","pipelines":"pipelines","post-graduate education, second stage (master's degree)":"post-graduate education, second stage (master's degree)","postal service":"postal service","pre-specialized (vocational) education":"pre-specialized (vocational) education","preliminary vocational":"preliminary vocational","proportion of GDP":"proportion of GDP","proportion of households with primary reliance on clean fuels and technology":"proportion of households with primary reliance on clean fuels and technology","proportion of schools connected to the Internet":"proportion of schools connected to the Internet","public transportation":"public transportation","railway transport":"railway transport","regions, thousands tons":"Regiuni de dezvoltare, mii tone","registered in the Red Book of RA":"registered in the Red Book of RA","related to military service":"related to military service","road transport":"road transport","sewerage":"sewerage","sexual violence":"sexual violence","share of households with electricity supply":"share of households with electricity supply","single mother child":"single mother child","social protection":"social protection","social-biological disaster":"social-biological disaster","sown areas":"sown areas","specialized high education, first stage (bachelor's degree)":"specialized high education, first stage (bachelor's degree)","specialized secondary education":"specialized secondary education","students":"students","tax incomes and duties":"tax incomes and duties","total":"total","total  (15-24 years)":"total  (15-24 ani)","total  (15-29 years)":"total  (15-29 ani)","total  (15-34 years)":"total  (15-34 ani)","total to children aged 0-17 years with disabilities":"total to children aged 0-17 years with disabilities","total to the population of respective age":"total to the population of respective age","total to the total number of children with disabilities (aged 0-17 years)":"total to the total number of children with disabilities (aged 0-17 years)","unemployment":"unemployment","unit":"unit","up to 1 year old":"up to 1 year old","up to 51 years old":"up to 51 years old","up to 6 months":"up to 6 months","urban":"urban","wage employed":"wage employed","wasting":"wasting","water supply":"water supply","yes=1, no=0":"da=1, nu=0"};</script>
 
@@ -350,17 +350,17 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item">
-            <a href="/sdg-site-moldova/ro/">general.home</a>
+            <a href="/sdg-site-moldova/ro/">Acasa</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="/sdg-site-moldova/ro/goals">general.goals</a>
+            <a href="/sdg-site-moldova/ro/goals">Obiective</a>
         </li>
         
         <li class="breadcrumb-item">
             <a href="/sdg-site-moldova/ro/1"
-               title=" 1 - global_goals.1-short"
-               aria-label="  - ">
-                1
+               title="Obiectiv 1 - Fara saracie"
+               aria-label="Obiectiv  - ">
+               Obiectiv 1
             </a>
         </li>
         
@@ -375,9 +375,9 @@ data-event-label="high"
         <div class="row">
             
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/sdg-site-moldova/ro/1" aria-label=" 1" title=" 1">
+                <a href="/sdg-site-moldova/ro/1" aria-label="View targets and indicators for Goal 1" title="View targets and indicators for Goal 1">
                     <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/1.png"
-                        alt="global_goals.1-short -  1"
+                        alt="Fara saracie - Obiectiv 1"
                         id="goal-1"
                         class="goal-icon-image goal-icon-image-" />
                 </a>
@@ -387,9 +387,9 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                         1.b.1
+                        Indicator 1.b.1
                         
-                        <span class="lead-copy">global_indicators.1-b-1-title</span>
+                        <span class="lead-copy">Pro-poor public social spending</span>
                     </h1>
                 </div>
             </div>
@@ -415,7 +415,7 @@ data-event-label="high"
   data-indicatorid='indicator_1-b-1'
   data-id="1-b-1"
   data-country="Moldova"
-  data-charttitle="global_indicators.1-b-1-title"
+  data-charttitle="Pro-poor public social spending"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
@@ -460,7 +460,7 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.national_metadata tab"
 
-            >indicator.national_metadata</button>
+            >National Metadata</button>
         </li>
     
         
@@ -481,7 +481,7 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.global_metadata tab"
 
-            >indicator.global_metadata</button>
+            >Global Metadata</button>
         </li>
     
         
@@ -502,13 +502,13 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.sources tab"
 
-            >indicator.sources</button>
+            >Sources</button>
         </li>
     
     
     
         <li role="presentation" class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab"></a>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit Indicator</a>
         </li>
     
 </ul>
@@ -526,7 +526,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane active" id="national">
             <article>
-                <p>indicator.national_metadata_blurb</p>
+                <p>This table provides metadata for the actual indicator available from Moldova statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Moldovan statistics, this table should be consulted for information on national methodology and other Moldovan-specific metadata information.</p>
 
                 <table class="table metadata-content">
   <tbody>
@@ -835,7 +835,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane " id="global">
             <article>
-                <p>indicator.global_metadata_blurb</p>
+                <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
 
                 <table class="table metadata-content">
   <tbody>
@@ -1021,15 +1021,15 @@ data-event-label="Change to indicator.sources tab"
   
 
 
-  <a class="btn btn-primary" href="data"></a>
+  <a class="btn btn-primary" href="data">Edit Data</a>
   
 
   
-  <a class="btn btn-primary" href="metadata"></a>
+  <a class="btn btn-primary" href="metadata">Edit Metadata</a>
   
 
   
-  <a class="btn btn-primary" href="config"></a>
+  <a class="btn btn-primary" href="config">Edit Configuration</a>
   
 
 </div>
@@ -1042,7 +1042,7 @@ data-event-label="Change to indicator.sources tab"
   </div>
 </div>
 
-  <a href="#top"></a>
+  <a href="#top">Inapoi sus</a>
 </div>
 
 <footer role="contentinfo">
@@ -1052,25 +1052,25 @@ data-event-label="Change to indicator.sources tab"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org"></a>
+                            <a href="https://open-sdg.org">Built using Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/contact-us">menu.contact_us</a>
+                            <a href="/sdg-site-moldova/ro/contact-us">Contacte</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">general.twitter</a>
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">general.facebook</a>
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                             
                         </li>
                         <li>
-                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">menu.cookies</a>
+                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
@@ -1110,17 +1110,17 @@ data-event-label="Change to indicator.sources tab"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = '';</script>
+    translations['general']['hide'] = 'ascunde';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = '';</script>
+    translations['search']['search'] = 'Cauta';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412143601'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230413081440'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412143601"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230413081440"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title> 4 - global_goals.4-short - general.site_title</title>
+    <title>Obiectiv 4 - Quality education - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230412143601">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230413081440">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -152,20 +152,20 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = null;</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title"></h2>
-    <p class="internet-explorer-message-body"></p>
+    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag"></strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    
+    This is a development website. We welcome your <a href="mailto:sdg2030@statistica.gov.md">feedback</a>.
     
   </div>
 </div>
@@ -175,34 +175,34 @@ layout-goal
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="" title="">
-    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="general.sdg - header.tag_line" />
+            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="Go to homepage" title="Go to homepage">
+    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/goals">general.goals</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">menu.reporting_status</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Statutul raportării</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/about">menu.about</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/faq">menu.faq</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/faq">Întrebări frecvente</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/ro/news">menu.updates</a>
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">Actualizari</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search"></label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="">
+        <label class="visually-hidden" for="indicator_search">Cauta</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Cauta">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Cautare site" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -221,11 +221,11 @@ layout-goal
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      
+      Română
     </button>
     <ul class="dropdown-menu"><li>
             <a class="dropdown-item" href="/sdg-site-moldova/4/">
-              
+              English
             </a>
           </li></ul>
   </div>
@@ -237,10 +237,10 @@ layout-goal
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/sdg-site-moldova/4/">
-                
+                English
             </a>
         </li></ul>
-</div></span><a title="" aria-label=""
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -260,10 +260,10 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item" >
-            <a href="/sdg-site-moldova/ro/">general.home</a>
+            <a href="/sdg-site-moldova/ro/">Acasa</a>
         </li>
         <li class="breadcrumb-item" >
-            <a href="/sdg-site-moldova/ro/goals">general.goals</a>
+            <a href="/sdg-site-moldova/ro/goals">Obiective</a>
         </li>
         
         
@@ -276,10 +276,10 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/4.png" alt="global_goals.4-short -  4" id="goal-4" class="goal-icon-image goal-icon-image-" />
+                <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/4.png" alt="Quality education - Obiectiv 4" id="goal-4" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>global_goals.4-title</h1>
+                <h1>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</h1>
             </div>
         </div>
     </div>
@@ -299,11 +299,11 @@ data-event-label="high"
   <div class="container g-0 goal-showing-progress">
     <div class="row align-items-end">
       <div class="col">
-        <h2 class="goal-page-heading"></h2>
+        <h2 class="goal-page-heading">Tinte si indicatori</h2>
       </div>
       
       <div class="col-lg-2 d-none d-lg-block progress-column-header">
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true">How are we doing against the 2030 target?</span>
       </div>
       
     </div>
@@ -313,11 +313,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.1</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.1</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-1-title</span>
+            <span class="target-name">By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -334,25 +334,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1">global_indicators.4-1-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1">Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -374,25 +374,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.1.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.1.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2">global_indicators.4-1-2-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2">Completion rate (primary education, lower secondary education, upper secondary education)</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -410,11 +410,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.2</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.2</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-2-title</span>
+            <span class="target-name">By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre‐primary education so that they are ready for primary education</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -431,25 +431,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-1">global_indicators.4-2-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-1">Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -471,25 +471,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.2.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.2.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-2">global_indicators.4-2-2-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-2">Participation rate in organized learning (one year before the official primary entry age), by sex</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -516,11 +516,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.3</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.3</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-3-title</span>
+            <span class="target-name">By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -537,25 +537,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1">global_indicators.4-3-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1">Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -579,11 +579,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.4</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.4</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-4-title</span>
+            <span class="target-name">By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -600,25 +600,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.4.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-4-1">global_indicators.4-4-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-4-1">Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -642,11 +642,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.5</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.5</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-5-title</span>
+            <span class="target-name">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -663,25 +663,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.5.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.5.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1">global_indicators.4-5-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1">Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -709,7 +709,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.5.1.a</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.5.1.a</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -720,14 +720,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -758,7 +758,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.5.1.b</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.5.1.b</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -769,14 +769,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -807,7 +807,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.5.1.c</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.5.1.c</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -818,14 +818,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -856,7 +856,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.5.1.e</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.5.1.e</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -867,14 +867,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -901,11 +901,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.6</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.6</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-6-title</span>
+            <span class="target-name">By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -922,25 +922,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.6.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.6.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-6-1">global_indicators.4-6-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-6-1">Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -964,11 +964,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.7</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.7</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-7-title</span>
+            <span class="target-name">By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -985,25 +985,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.7.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.7.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-7-1">global_indicators.4-7-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-7-1">Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -1027,11 +1027,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.a</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.a</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-a-title</span>
+            <span class="target-name">Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -1048,25 +1048,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.a.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.a.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1">global_indicators.4-a-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1">Proportion of schools offering basic services, by type of service</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -1094,7 +1094,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.a.1.b</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.a.1.b</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -1105,14 +1105,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -1143,7 +1143,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.a.1.c</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.a.1.c</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -1154,14 +1154,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -1188,11 +1188,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.b</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.b</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-b-title</span>
+            <span class="target-name">By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -1209,25 +1209,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.b.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1">global_indicators.4-b-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1">Volume of official development assistance flows for scholarships by sector and type of study</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -1251,11 +1251,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden"></span> 4.c</span>
+              <span class="target-number"><span class="visually-hidden">Tinta</span> 4.c</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">global_targets.4-c-title</span>
+            <span class="target-name">By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States</span>
           </div>
           
           <div class="col-lg-2 d-none d-lg-block"></div>
@@ -1272,25 +1272,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.c.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.c.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1">global_indicators.4-c-1-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1">Proportion of teachers with the minimum required qualifications, by education level</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -1318,7 +1318,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.c.1.a</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.c.1.a</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -1329,14 +1329,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -1367,7 +1367,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.c.1.b</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.c.1.b</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -1378,14 +1378,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status complete">
-    <span class="status-inner"></span>
+    <span class="status-inner">Raportat</span>
 </span>
 
 
@@ -1416,7 +1416,7 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden"></span> 4.c.1.c</span>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 4.c.1.c</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
@@ -1427,14 +1427,14 @@ data-event-label="high"
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label=""><li class="list-inline-item">
-        <span class="visually-hidden"></span>
+    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
+        <span class="visually-hidden">Indicator status</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner"></span>
+    <span class="status-inner">Explorarea surselor de date</span>
 </span>
 
 
@@ -1458,7 +1458,7 @@ data-event-label="high"
         <hr class="goal-page-target-rule" />
     
   </div>
-  <a href="#top"></a>
+  <a href="#top">Inapoi sus</a>
 </div>
 
 
@@ -1469,25 +1469,25 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org"></a>
+                            <a href="https://open-sdg.org">Built using Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site-moldova/ro/contact-us">menu.contact_us</a>
+                            <a href="/sdg-site-moldova/ro/contact-us">Contacte</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">general.twitter</a>
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">general.facebook</a>
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                             
                         </li>
                         <li>
-                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">menu.cookies</a>
+                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
@@ -1525,17 +1525,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = '';</script>
+    translations['general']['hide'] = 'ascunde';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = '';</script>
+    translations['search']['search'] = 'Cauta';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230412143601'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230413081440'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230412143601"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230413081440"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

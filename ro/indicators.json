@@ -238,12 +238,20 @@
           "status": "notstarted"
         },
         {
+          "id": "2-3-1-1",
+          "title": "global_indicators.2-3-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/2-3-1-1",
+          "status": "complete"
+        },
+        {
           "id": "2-3-2",
           "title": "Average income of small-scale food producers, by sex and indigenous status",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-3-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-4-1",
@@ -587,7 +595,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-2-1",
@@ -611,7 +619,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-4-1",
@@ -795,7 +803,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-4-1-2",
@@ -819,7 +827,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-6-1",
@@ -1027,7 +1035,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "7-3-1",
@@ -1036,6 +1044,22 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-3-1",
           "status": "notstarted"
+        },
+        {
+          "id": "7-3-1-a",
+          "title": "global_indicators.7-3-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/7-3-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "7-3-1-b",
+          "title": "global_indicators.7-3-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/7-3-1-b",
+          "status": "complete"
         },
         {
           "id": "7-a-1",
@@ -1083,7 +1107,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-4-1",
@@ -1123,7 +1147,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-6-1",
@@ -1131,7 +1155,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-7-1",
@@ -1139,6 +1163,22 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-7-1-a",
+          "title": "global_indicators.8-7-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-7-1-a",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-7-1-b",
+          "title": "global_indicators.8-7-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-7-1-b",
           "status": "notstarted"
         },
         {
@@ -1251,7 +1291,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-3-1",
@@ -1555,6 +1595,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-5-3",
+          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/11-5-3",
           "status": "notstarted"
         },
         {
@@ -2307,14 +2355,6 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-6-2",
-          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/17-6-2",
           "status": "notstarted"
         },
         {

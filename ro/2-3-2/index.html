@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230413134952">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230414075924">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -221,21 +221,14 @@ layout-indicator
 
 
 
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      Română
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site-moldova/2-3-2/">
-              English
+  <div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-moldova/2-3-2/">
+                English
             </a>
-          </li></ul>
-  </div>
+        </li></ul>
 </div>
-
 
 
                     <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
@@ -400,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>of the volume of agricultural production of small agricultural producers in total agricultural production</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -414,12 +426,12 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_2-3-2'
   data-id="2-3-2"
-  data-country="Moldova"
-  data-charttitle="Average income of small-scale food producers, by sex and indigenous status"
+  data-country="Republic of Moldova, without the left side of the river Nistru and the municipality of Bender"
+  data-charttitle="Share of small agricultural producers production volume in total  agricultural production"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Percent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -428,15 +440,469 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/2-3-2.csv" class="btn btn-primary btn-download" download="indicator_2-3-2.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/2-3-2.csv" class="btn btn-primary btn-download" download='indicator_2-3-2.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Share of small agricultural producers production volume in total  agricultural production</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value">65.1</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value">64.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value">64.3</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value">51.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">56.3</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">59.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">52.9</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">50.9</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">50.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">50.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">53.8</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">39.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">43.0</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Biroul Național de Statistică</p>
+    
+    
+    <p>Geographical Area: Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</p>
+    
+    
+    <p>Unit of Measurement: Percent, %</p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Share of small agricultural producers production volume in total  agricultural production</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -539,33 +1005,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicator information </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Volumul producției agricole produse de către micii producători agricoli raportat la total producția agricolă produsă de către producătorii agricoli de toate categoriile</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -579,68 +1031,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Indicator 2.3.2: ea volumului producției agricole a micilor producători agricoli în total  producția agricolă</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -704,6 +1107,154 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition and concepts </th>
+        <td>
+          
+            <p> Categoria micilor producători agricoli include gospodăriile populației și gospodăriile ţărăneşti (de fermier) cu suprafața terenurilor agricole până la 10 ha.                         Producția agricolă este determinată ca suma producţiei vegetale şi animaliere.</p>
+<p>Volumul producţiei vegetale constituie valoarea producţiei (recoltei globale a culturilor) agricole.</p>
+<p>Volumul producţiei animaliere se determină prin mărimile masei vii a prăsilei obţinute şi sporirii animalelor tinere crescute în curs de un an, a sporului în greutate al animalelor mature, precum şi a cantităţii de lapte, lână, ouă şi alte produse animaliere </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
+          
+            <p>Procent, %</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data sources </th>
+        <td>
+          
+            <p>Calculele producției globale agricole în baza datelor primite din cercetările statistice exhaustive a întreprinderilor agricole mari și medii și selective a micilor producători agricoli</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p>Biroul Național de Statistică</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
+          
+            <p>Ministerul Agriculturii și Industriei Alimentare</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
+          
+            <p>Volumul producției globale agricole a micilor producători agricoli în prețuri comparabile/total  volumul producției globale agricole în prețuri comparabile*100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -731,6 +1282,22 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comparability/deviation from international standards </th>
+        <td>
+          
+            <p>Spre deosebire de indicatorul global, unde micii producători sunt definiți  conform definiției propuse de FAO, pentru calcularea indicatorului național  este utilizată definiția națională fără dezagregare pe sexe și statutul indigen</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -848,7 +1415,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator </th>
         <td>
           
-            <p>Indicator 2.3.2: Average income of small-scale food producers, by sex and indigenous status</p>
+            <p>Indicator 2.3.2: Venitul mediu al producătorilor agricoli mici, pe sex și statutul indigen</p>
 
           
         </td>
@@ -864,7 +1431,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Target </th>
         <td>
           
-            <p>Target 2.3: By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment</p>
+            <p>Target 2.2999999999999998: Până în 2030, dublarea productivității agricole și veniturilor a micilor  producători agricoli, în special femei, populațiile indigene, fermieri de  familie, păstori și pescari, inclusiv prin accesul sigur și egal la terenuri,  alte resurse și factori de producție, cunoștințe, servicii financiare, piețe  și oportunități pentru crearea valorii adăugate și angajarea în activități  non-agricole</p>
 
           
         </td>
@@ -875,19 +1442,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Metadata update </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -896,23 +1452,142 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">International organisations(s) responsible for global monitoring </th>
         <td>
           
-            <p>Food and Agriculture Organization (FAO)</p>
+            <p>Food and Agricultural Organization (FAO)</p>
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">Related indicators </th>
+        <th scope="row">UN designated tier </th>
         <td>
           
-            <p>SDG indicator 2.3.1</p>
+            <p>2</p>
 
           
         </td>
@@ -920,125 +1595,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1060,6 +1616,239 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Biroul Național de Statistică</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Trimestrial, anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://statbank.statistica.md/pxweb/pxweb/ro/40%20Statistica%20economica/40%20Statistica%20economica__16%20AGR__AGR010/?rxid=b2ff27d7-0b96-43c9-934b-42e1a2a9a774" target="_blank">
+                Link la sursa de date <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>Lungu Ludmila, Biroul Național de Statistică, tel.067770682, e-mail: ludmila.lungu@statistica.gov.md</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1170,12 +1959,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Cauta';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230413134952'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230414075924'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230413134952"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230414075924"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

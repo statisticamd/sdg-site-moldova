@@ -15,7 +15,7 @@
         },
         {
           "id": "1-1-1-1",
-          "title": "1.1.1.1. Ponderea populației aflate sub pragul internațional al sărăciei de 4,3 dolari SUA pe zi",
+          "title": "Ponderea populației aflate sub pragul internațional al sărăciei de 4,3 dolari SUA pe zi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-1-1-1",
@@ -47,7 +47,7 @@
         },
         {
           "id": "1-3-1-a",
-          "title": "1.3.1.a. Ponderea persoanelor de vârstă pensionară care beneficiază de pensie pentru limită de vârstă",
+          "title": "Ponderea persoanelor de vârstă pensionară care beneficiază de pensie pentru limită de vârstă",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-a",
@@ -55,7 +55,7 @@
         },
         {
           "id": "1-3-1-b",
-          "title": "1.3.1.b. Proporția copiilor acoperiți cu indemnizații adresate familiilor cu copii (indemnizație lunară pentru îngrijirea copilului până la împlinirea vârstei de 2 ani persoanelor neasigurate, indemnizații pentru îngrijirea copilului persoanelor asigurate)",
+          "title": "Proporția copiilor acoperiți cu indemnizații adresate familiilor cu copii (indemnizație lunară pentru îngrijirea copilului până la împlinirea vârstei de 2 ani persoanelor neasigurate, indemnizații pentru îngrijirea copilului persoanelor asigurate)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-b",
@@ -67,6 +67,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "1-3-1-f",
+          "title": "global_indicators.1-3-1-f-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/1-3-1-f",
           "status": "complete"
         },
         {
@@ -355,7 +363,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-2",
@@ -411,7 +419,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-2",
@@ -420,6 +428,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-5-2",
           "status": "notstarted"
+        },
+        {
+          "id": "3-5-2-1",
+          "title": "global_indicators.3-5-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/3-5-2-1",
+          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -523,7 +539,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-1",
@@ -531,7 +547,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-2",
@@ -830,6 +846,14 @@
           "status": "complete"
         },
         {
+          "id": "5-4-1-1",
+          "title": "global_indicators.5-4-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-4-1-1",
+          "status": "complete"
+        },
+        {
           "id": "5-4-1-2",
           "title": "global_indicators.5-4-1-2-title",
           "description": "",
@@ -846,11 +870,35 @@
           "status": "notstarted"
         },
         {
+          "id": "5-5-1-a",
+          "title": "global_indicators.5-5-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-5-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-1-b",
+          "title": "global_indicators.5-5-1-b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-5-1-b",
+          "status": "complete"
+        },
+        {
           "id": "5-5-2",
           "title": "Ponderea femeilor în funcții de conducere",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-5-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-2-1",
+          "title": "global_indicators.5-5-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-5-2-1",
           "status": "complete"
         },
         {
@@ -876,6 +924,22 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-6-2",
           "status": "notstarted"
+        },
+        {
+          "id": "5-6-2-1",
+          "title": "global_indicators.5-6-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-6-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-6-2-2",
+          "title": "global_indicators.5-6-2-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-6-2-2",
+          "status": "complete"
         },
         {
           "id": "5-a-1",
@@ -972,6 +1036,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-3-2",
           "status": "notstarted"
+        },
+        {
+          "id": "6-3-2-1",
+          "title": "global_indicators.6-3-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/6-3-2-1",
+          "status": "complete"
         },
         {
           "id": "6-4-1",
@@ -1499,7 +1571,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-3-1",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "10-3-1-1",
+          "title": "global_indicators.10-3-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/10-3-1-1",
+          "status": "complete"
         },
         {
           "id": "10-4-1",
@@ -2286,6 +2366,14 @@
           "status": "notstarted"
         },
         {
+          "id": "16-2-1-1",
+          "title": "global_indicators.16-2-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-2-1-1",
+          "status": "complete"
+        },
+        {
           "id": "16-2-2",
           "title": "Numărul victimelor traficului de ființe umane la 100 mii populație, pe sexe, vârstă și forme de exploatare",
           "description": "",
@@ -2315,7 +2403,23 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-2",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "16-3-2-1",
+          "title": "global_indicators.16-3-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-3-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "16-3-2-3",
+          "title": "global_indicators.16-3-2-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-3-2-3",
+          "status": "complete"
         },
         {
           "id": "16-3-2-4",
@@ -2371,7 +2475,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-5-2",
@@ -2379,7 +2483,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-5-2-1",
@@ -2420,6 +2524,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-7-1",
           "status": "notstarted"
+        },
+        {
+          "id": "16-7-1-a",
+          "title": "global_indicators.16-7-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-7-1-a",
+          "status": "complete"
         },
         {
           "id": "16-7-1-c",
@@ -2475,7 +2587,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-b-1",
@@ -2483,7 +2595,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-b-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

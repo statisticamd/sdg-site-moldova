@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230511060317">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230512094834">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -431,7 +431,7 @@ data-event-label="high"
   data-charttitles="[]"
   data-measurementunit="per 100 000 population"
   data-xaxislabel=""
-  data-showdata="true"
+  data-showdata="false"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -448,455 +448,7 @@ data-event-label="high"
   data-precision="[]"
 >
   
-  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="serieses"></div>
-<div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Sub-categories</h4>
-    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
-  </span>
-  <div id="fields">
-    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    
-    <a href="https://statisticamd.github.io/sdg-data-moldova/en/headline/16-1-2.csv" class="btn btn-primary btn-download" download="indicator_16-1-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
-    <a href="https://statisticamd.github.io/sdg-data-moldova/en/data/16-1-2.csv" class="btn btn-primary btn-download" download='indicator_16-1-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
-
-    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
-
-    
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>16.1.2 Conflict-related deaths per 100,000 population</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">1.5</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-    
-  </div>
-
-  
-  <div id="datatableFooter">
-    
-    <p>Source: </p>
-    
-    
-    <p>Geographical Area: Republic of Moldova</p>
-    
-    
-    <p>Unit of Measurement: per 100 000 population</p>
-    
-    
-    <p>Footnote: </p>
-    
-  </div>
-  
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded mt-4" style="display:none;">
-
-    <div style="display: none;">
-    <span id="table-alternative">For tabular data alternative see Table tab.</span>
-  </div>
-  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link active"
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-chartview"
-          data-bs-target="#chartview"
-          aria-controls="chartview"
-          aria-describedby="table-alternative"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
-
-        
-      >Chart</button>
-    </li>
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link "
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-tableview"
-          data-bs-target="#tableview"
-          aria-controls="tableview"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
-
-        
-      >Table</button>
-    </li>
-    
-  </ul>
-  
-    <div class="tab-content data-view">
-    
-      
-        <div role="tabpanel" class="tab-pane active" id="chartview">
-          
-
-    <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
-      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
-    </div>
-
-    
-    <div id="selectionsChart">
-      <figure role="group">
-        <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">16.1.2 Conflict-related deaths per 100,000 population</h4>
-          <div id="chart" class="plot-container">
-            <canvas
-    role="img"
-    aria-labelledby="chart-heading"
-    aria-describedby="table-alternative chart-annotations"
-    tabindex="0"
- ></canvas>
-
-          </div>
-          <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>Geographical Area:</dt>
-        <dd>Republic of Moldova</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Footnote:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Data last updated:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-</div>
-
-        </div>
-      </figure>
-      <div id="chartSelectionDownload" class="clearfix">
-        <button
-          id="btnSave"
-          title="Download chart image as PNG"
-          aria-label="Download chart image as PNG"
-          class='btn btn-primary btn-download'>
-          Download chart image (.png)
-        </button><!--
-   --></div>
-    </div>
-
-
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="tableview">
-          <div style="display: none;">
-            <span id="column-sort-info">Click to sort by this column</span>
-          </div>
-          <div id="selectionsTable"></div>
-<dl id="tableTargetLines" class="clearfix"></dl>
-
-
-
-
-<div id="selectionTableFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>Geographical Area:</dt>
-        <dd>Republic of Moldova</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Footnote:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Data last updated:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-</div>
-
-<div id="tableSelectionDownload" class="clearfix"></div>
-
-        </div>
-      
-    
-  </div>
-  
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -1090,8 +642,25 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Definition and concepts </th>
+        <td>
           
+            <p> Conflict’ is defined as ‘armed conflict’ in reference to a terminology enshrined in International Humanitarian Law (IHL), and applied to situations based on the assessment of the United Nations (UN) and other internationally mandated entities. ‘Conflict-related deaths’ refers to direct and indirect deaths associated to armed conflict. </p>
+<p>There are 2 types of armed conflicts:</p>
+<p>1. International armed conflicts - exist whenever there is resort to armed force between two or more States.</p>
+<p>2.Non-international armed conflictsare protracted armed confrontations occurring between governmental armed forces and the forces of one or more armed groups, or between such groups arising on the territory of a State.</p>
+<p>Direct deaths are deaths where there are reasonable grounds to believe that they resulted directly from war operations and that the acts, decisions and/or purposes that caused these deaths were in furtherance of or under the guise of armed conflict.</p>
+<p>Indirect deaths are deaths resulting from a loss of access to essential goods and services (e.g. economic slowdown, shortages of medicines or reduced farming capacity that result in lack of access to adequate food, water, sanitation, health care and safe conditions of work) that are caused or aggravated by the situation of armed conflict.</p>
+<p>By definition, these deaths should be separated from other violent deaths which are, in principle, not connected to the situation of armed conflict (e.g. intentional and non-intentional homicides, self-defence, self-inflicted), but are still relevant to the implementation and measurement of SDG target 16.1 </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1146,6 +715,43 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p>Ministry of Internal Affairs</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
+          
+            <p>Ministry of Internal Affairs</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -1161,23 +767,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
           
-      
-      
-      
-        
+            <p>The total count of conflict-related deaths divided by the total population, expressed per 100.000 population</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
+  
       
       
       
@@ -1226,7 +828,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Apr 21, 2023
+            May 12, 2023
           
         </td>
         </tr>
@@ -1241,7 +843,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Apr 21, 2023
+            May 12, 2023
           
         </td>
         </tr>
@@ -1870,12 +1472,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230511060317'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230512094834'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230511060317"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230512094834"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

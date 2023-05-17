@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517132636">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517160043">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -671,6 +671,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.expected_disaggregations'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('footer_fields', []);
+        var propertyEditor = editor.getEditor('root.footer_fields');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: footer_fields');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.footer_fields'));
 
     
@@ -701,6 +713,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_limits'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_series_breaks', []);
+        var propertyEditor = editor.getEditor('root.graph_series_breaks');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_series_breaks');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_series_breaks'));
 
     
@@ -717,11 +741,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_stacked_disaggregation'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_target_lines', []);
+        var propertyEditor = editor.getEditor('root.graph_target_lines');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_target_lines');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_target_lines'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "global_indicators.11-a-1-title");
+        var currentValue = normalizeCurrentValue('graph_title', "11.a.1 Proportion of population living in cities that implement urban and  regional development plans integrating population projections and resource  needs");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -761,6 +797,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_available', "Proportion of population living in cities that implement urban and  regional development plans integrating population projections and resource  needs");
+        var propertyEditor = editor.getEditor('root.indicator_available');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_available');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
 
     
@@ -795,7 +843,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_geographical_coverage', "");
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Republic of Moldova");
         var propertyEditor = editor.getEditor('root.national_geographical_coverage');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -835,6 +883,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.permalink'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('placeholder', "");
+        var propertyEditor = editor.getEditor('root.placeholder');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: placeholder');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.placeholder'));
 
     
@@ -851,10 +911,46 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.precision'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('progress_status', "not_available");
+        var propertyEditor = editor.getEditor('root.progress_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: progress_status');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('publications', []);
+        var propertyEditor = editor.getEditor('root.publications');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: publications');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.publications'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('related_indicators', []);
+        var propertyEditor = editor.getEditor('root.related_indicators');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: related_indicators');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.related_indicators'));
 
     
@@ -885,6 +981,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.sort'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('sources', []);
+        var propertyEditor = editor.getEditor('root.sources');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: sources');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.sources'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.standalone'));
@@ -903,6 +1011,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.tags'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var propertyEditor = editor.getEditor('root.x_axis_label');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: x_axis_label');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.x_axis_label'));
 
     
@@ -1042,12 +1162,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517132636'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517160043'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517132636"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517160043"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

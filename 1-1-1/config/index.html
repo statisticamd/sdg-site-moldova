@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517101505">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517132636">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -487,7 +487,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "Unitatea de masura configurarea");
+        var currentValue = normalizeCurrentValue('computation_units', "Percent, %");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -501,7 +501,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('copyright', "Copyright configurare");
+        var currentValue = normalizeCurrentValue('copyright', "");
         var propertyEditor = editor.getEditor('root.copyright');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -515,7 +515,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_footnote', "Data footnote configurare");
+        var currentValue = normalizeCurrentValue('data_footnote', "Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified");
         var propertyEditor = editor.getEditor('root.data_footnote');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -545,7 +545,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_notice_heading', "data_notice_heading");
+        var currentValue = normalizeCurrentValue('data_notice_heading', "");
         var propertyEditor = editor.getEditor('root.data_notice_heading');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -559,7 +559,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_notice_text', "data_notice_text");
+        var currentValue = normalizeCurrentValue('data_notice_text', "");
         var propertyEditor = editor.getEditor('root.data_notice_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -589,7 +589,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('embedded_feature_footer', "embedded_feature_footer");
+        var currentValue = normalizeCurrentValue('embedded_feature_footer', "");
         var propertyEditor = editor.getEditor('root.embedded_feature_footer');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -617,7 +617,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('embedded_feature_tab_title', "embedded_feature_tab_title");
+        var currentValue = normalizeCurrentValue('embedded_feature_tab_title', "");
         var propertyEditor = editor.getEditor('root.embedded_feature_tab_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -631,7 +631,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('embedded_feature_title', "embedded_feature_title");
+        var currentValue = normalizeCurrentValue('embedded_feature_title', "");
         var propertyEditor = editor.getEditor('root.embedded_feature_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -645,7 +645,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('embedded_feature_url', "https://statistica.gov.md/ro/statistic_indicator_details/10#dissemination_calendar");
+        var currentValue = normalizeCurrentValue('embedded_feature_url', "");
         var propertyEditor = editor.getEditor('root.embedded_feature_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -757,7 +757,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "denumire grafic configurare");
+        var currentValue = normalizeCurrentValue('graph_title', "1.1.1. Proportion of the population below the international poverty line of $2.15 per  day");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +799,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_available', "indicator_available");
+        var currentValue = normalizeCurrentValue('indicator_available', "Proportion of the population below the international poverty line of $2.15 per day");
         var propertyEditor = editor.getEditor('root.indicator_available');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -813,7 +813,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "denumire indicator configurare");
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-1-1-title");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -839,23 +839,11 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('indicator_tabs', {"override":false,"tab_1":"","tab_2":"","tab_3":"","tab_4":""});
-        var propertyEditor = editor.getEditor('root.indicator_tabs');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: indicator_tabs');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_tabs'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_geographical_coverage', "Geographical coverage configurare");
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender");
         var propertyEditor = editor.getEditor('root.national_geographical_coverage');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -869,7 +857,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "page_content");
+        var currentValue = normalizeCurrentValue('page_content', "");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -925,7 +913,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', "target_achieved");
+        var currentValue = normalizeCurrentValue('progress_status', "not_available");
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1174,12 +1162,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517101505'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517132636'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517101505"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517132636"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

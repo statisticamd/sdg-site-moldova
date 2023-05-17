@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-1",
-          "title": "denumire indicator configurare",
+          "title": "Ponderea populației aflate sub pragul internațional al sărăciei, pe sexe, vârstă, statut ocupațional și mediu de reședință (urban/rural)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-1-1",
@@ -15,7 +15,7 @@
         },
         {
           "id": "1-1-1-1",
-          "title": "Ponderea populației aflate sub pragul internațional al sărăciei de 4,3 dolari SUA pe zi",
+          "title": "global_indicators.1-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-1-1-1",
@@ -2819,7 +2819,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-9-1",

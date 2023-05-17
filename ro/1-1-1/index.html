@@ -107,7 +107,7 @@ var translations = {
         
         Indicator 1.1.1 -
         
-        denumire indicator configurare - Indicatori pentru Obiectivele de Dezvoltare Durabilă
+        Ponderea populației aflate sub pragul internațional al sărăciei, pe sexe, vârstă, statut ocupațional și mediu de reședință (urban/rural) - Indicatori pentru Obiectivele de Dezvoltare Durabilă
     </title>
 
 
@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517101505">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517132636">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -382,7 +382,7 @@ data-event-label="high"
                         
                         Indicator 1.1.1
                         
-                        <span class="lead-copy">denumire indicator configurare</span>
+                        <span class="lead-copy">Ponderea populației aflate sub pragul internațional al sărăciei, pe sexe, vârstă, statut ocupațional și mediu de reședință (urban/rural)</span>
                     </h1>
                 </div>
             </div>
@@ -391,23 +391,11 @@ data-event-label="high"
 </div>
 <div id="main-content" class="container goal-1" role="main">
   
-<div class="row alert " id="data-notice">
-  <div class="col-xs-2 col-sm-1">
-    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-  </div>
-  <div class="col-xs-10 col-sm-11 data-notice">
-    <div class="notice-heading" role="alert"><p>data_notice_heading</p>
-</div>
-    <div><p>data_notice_text</p>
-</div>
-  </div>
-</div>
-
 
   
 <div class="row metadata-available-indicator">
   <div class="col-xs-12">
-    <h2>indicator_available</h2>
+    <h2>Proportion of the population below the international poverty line of $2.15 per day</h2>
   </div>
 </div>
 
@@ -429,13 +417,6 @@ data-event-label="high"
 
   
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <p>page_content</p>
-
-  </div>
-</div>
-
 
   
 
@@ -445,10 +426,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_1-1-1'
   data-id="1-1-1"
-  data-country="Geographical coverage configurare"
-  data-charttitle="denumire grafic configurare"
+  data-country="The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender"
+  data-charttitle="1.1.1. Proportion of the population below the international poverty line of $2.15 per  day"
   data-charttitles="[]"
-  data-measurementunit="Unitatea de masura configurarea"
+  data-measurementunit="Percent, %"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -462,7 +443,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total by area&quot;,&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Mediul de reședință&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Bărbați&quot;,&quot;Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15-24&quot;,&quot;25-34&quot;,&quot;35-44&quot;,&quot;45-54&quot;,&quot;55+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa de vârstă&quot;},{&quot;name&quot;:&quot;Age group 1 and Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;0-14 / Total&quot;,&quot;15+ / Total&quot;,&quot;15+ / Bărbați&quot;,&quot;15+ / Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa de vârstă 1 și Sex&quot;},{&quot;name&quot;:&quot;Age group 2 and Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15-24 / Total&quot;,&quot;15-24 / Bărbați&quot;,&quot;15-24 / Femei&quot;,&quot;25+ / Total&quot;,&quot;25+ / Bărbați&quot;,&quot;25+ / Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa de vârstă 2 și Sex&quot;},{&quot;name&quot;:&quot;Employment status&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Self-employers in agriculture&quot;,&quot;Employees in the agricultural sector&quot;,&quot;Employees in the non-agricultural sector&quot;,&quot;Self-employers in non-agricultural activities&quot;,&quot;Pensioners&quot;,&quot;Others&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Statutul ocupațional&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -493,15 +474,205 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/1-1-1.csv" class="btn btn-primary btn-download" download="indicator_1-1-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
     <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/1-1-1.csv" class="btn btn-primary btn-download" download='indicator_1-1-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
 
     
-    <h3>Nu sunt disponibile date despre titlu</h3>
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>1.1.1. Proportion of the population below the international poverty line of $2.15 per  day</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">3.3</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">2.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">3.4</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">2.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">2.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">1.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">1.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">1.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">1.3</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Biroul Național de Statistică</p>
+    
+    
+    <p>Aria geografică: The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</p>
+    
+    
+    <p>Unitatea de măsură: Percent, %</p>
+    
+    
+    <p>Notă de subsol: Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</p>
+    
+  </div>
   
 
 </div>
@@ -567,31 +738,6 @@ data-event-label="Change to Table tab"
       >Tabel</button>
     </li>
     
-    <li role="presentation"
-      class="
-        nav-item
-        
-        embedded-map
-      ">
-      <button
-        class="nav-link "
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-embeddedmapview"
-          data-bs-target="#embeddedmapview"
-          aria-controls="embeddedmapview"
-          data-no-disagg="true"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to embedded item tab"
-
-        
-      >embedded_feature_tab_title</button>
-    </li>
-    
   </ul>
   
     <div class="tab-content data-view">
@@ -609,7 +755,7 @@ data-event-label="Change to embedded item tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">denumire grafic configurare</h4>
+          <h4 id="chart-heading" class="chart-title">1.1.1. Proportion of the population below the international poverty line of $2.15 per  day</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -629,25 +775,22 @@ data-event-label="Change to embedded item tab"
     <dl>
         
         <dt>Sursă:</dt>
-        <dd>, source_organisation_2</dd>
+        <dd>Biroul Național de Statistică</dd>
         
 
         
         <dt>Aria geografică:</dt>
-        <dd>Geographical coverage configurare</dd>
+        <dd>The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
         <dd class="data-controlled-footer-field unit-from-data"></dd>
 
         
-        <dt>Copyright:</dt>
-        <dd>Copyright configurare</dd>
-        
 
         
         <dt>Notă de subsol:</dt>
-        <dd>Data footnote configurare</dd>
+        <dd>Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</dd>
         
 
         
@@ -710,25 +853,22 @@ data-event-label="Change to embedded item tab"
     <dl>
         
         <dt>Sursă:</dt>
-        <dd>, source_organisation_2</dd>
+        <dd>Biroul Național de Statistică</dd>
         
 
         
         <dt>Aria geografică:</dt>
-        <dd>Geographical coverage configurare</dd>
+        <dd>The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
         <dd class="data-controlled-footer-field unit-from-data"></dd>
 
         
-        <dt>Copyright:</dt>
-        <dd>Copyright configurare</dd>
-        
 
         
         <dt>Notă de subsol:</dt>
-        <dd>Data footnote configurare</dd>
+        <dd>Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</dd>
         
 
         
@@ -758,32 +898,6 @@ data-event-label="Change to embedded item tab"
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="embeddedmapview" class="embedded-map">
-          <div class="row">
-  <div class="col-xs-12">
-    
-      <h3>embedded_feature_title</h3>
-    
-    
-      <div class="embedded-map" id="embeddedmapframe">
-        <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-        <script>document.querySelector("li.nav-item.embedded-map").addEventListener("click",function(){ var pymParent = new pym.Parent('embeddedmapframe', 'https://statistica.gov.md/ro/statistic_indicator_details/10#dissemination_calendar', {});})</script>
-      </div>
-    
-    
-    
-      <div id="embedfooter" class="table-footer-text">
-        <p><p>embedded_feature_footer</p>
-</p>
-      </div>
-    
-  </div>
-</div>
 
         </div>
       
@@ -902,7 +1016,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Descrierea indicatorului disponibil </th>
         <td>
           
-            <p>SDG_INDICATOR_INFO</p>
+            <p>Ponderea populației sub pragul internațional de sărăcie este definit ca procentul populației care trăiește cu mai puțin de 2,15$ pe zi la prețurile internaționale din 2011.</p>
 
           
         </td>
@@ -910,59 +1024,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Obiectiv </th>
-        <td>
-          
-            <p>Meta 1: Poner fin a la pobreza en todas sus formas y en todo el mundo</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Ţinta națională </th>
-        <td>
-          
-            <p>Objetivo 1.1: De aquí a 2030, erradicar para todas las personas y en todo el mundo la pobreza extrema (actualmente se considera que sufren pobreza extrema las personas que viven con menos de 1,25 dólares de los Estados Unidos al día)</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Indicatorul disponibil </th>
-        <td>
-          
-            <p>Indicador 1.1.1: Proporción de la población que vive por debajo del umbral de pobreza internacional por sexo, edad, situación laboral y ubicación geográfica (urbana/rural)</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
       
       
       
@@ -978,10 +1039,10 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Raportor de date </th>
+        <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>CONTACT</p>
+            <p>Indicator 1.1.1: Ponderea populației aflate sub pragul internațional al sărăciei de 2,15 dolari SUA pe zi</p>
 
           
         </td>
@@ -994,156 +1055,6 @@ data-event-label="Change to indicator.sources tab"
       
         
           
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Definiție și concepte </th>
-        <td>
-          
-            <h2 id="definición">Definición:</h2>
-<p>El indicador “proporción de la población por debajo del umbral de pobreza internacional” se define como el porcentaje de la población que vive con menos de 1,90 dólares al día a precios internacionales de 2011. La línea de pobreza internacional se fija actualmente en 1,90 dólares al día a precios internacionales de 2011.</p>
-
-<h2 id="conceptos">Conceptos:</h2>
-<p>Al evaluar la pobreza en un país determinado y la mejor manera de reducirla, naturalmente uno se enfoca en una línea de pobreza que se considera apropiada para ese país. Pero, ¿cómo hablamos de manera significativa sobre “la pobreza global”? Las líneas de pobreza entre países varían en términos de su poder adquisitivo y tienen un fuerte gradiente económico, de modo que los países más ricos tienden a adoptar niveles de vida más altos al definir la pobreza. Pero para medir consistentemente la pobreza absoluta global en términos de consumo, necesitamos tratar a dos personas con el mismo poder adquisitivo sobre los productos básicos de la misma manera - ambos son pobres o no lo son - incluso si viven en países diferentes.</p>
-
-<p>Desde el Informe sobre el desarrollo mundial de 1990, el Banco Mundial se ha propuesto aplicar un estándar común para medir la pobreza extrema, anclado en lo que significa la pobreza en los países más pobres del mundo. El bienestar de las personas que viven en diferentes países se puede medir en una escala común ajustando las diferencias en el poder adquisitivo de las monedas. Para el Informe sobre el desarrollo mundial de 1990, se eligió el estándar de 1 dólar al día, medido a precios internacionales de 1985 y ajustado a la moneda local mediante PPA, porque era típico de las líneas de pobreza de los países de bajos ingresos en ese momento. A medida que evolucionan las diferencias en el costo de vida en todo el mundo, la línea de pobreza internacional debe actualizarse periódicamente utilizando nuevos datos de precios de PPA para reflejar estos cambios. El último cambio fue en octubre de 2015, cuando el Banco Mundial adoptó $ 1,90 como línea de pobreza internacional utilizando la PPA de 2011. Antes de eso, la actualización de 2008 estableció la línea de pobreza internacional en $ 1,25 utilizando la PPA de 2005. Las medidas de pobreza basadas en líneas de pobreza internacionales intentan mantener constante el valor real de la línea de pobreza en todos los países, como se hace al hacer comparaciones en el tiempo. Las primeras ediciones de los Indicadores de desarrollo mundial (WDI) del Banco Mundial’ utilizaban las PPA de las Penn World Tables para convertir los valores en moneda local al poder adquisitivo equivalente medido en dólares estadounidenses. En ediciones posteriores se utilizaron estimaciones de la PPA de consumo de 1993, 2005 y 2011 elaboradas por el Programa de Comparación Internacional (PCI) del Banco Mundial’.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">metadata_fields.PERIODICITY </th>
-        <td>
-          
-            <p>Annual</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Tipul sursei de date și metoda de colectare </th>
-        <td>
-          
-            <p>SRC_TYPE_COLL_METHOD</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Alte informații </th>
-        <td>
-          
-            <p>OTHER_METHOD</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
       
       
@@ -1204,10 +1115,15 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Data ultimei actualizări </th>
+        <th scope="row">Definiție și concepte </th>
         <td>
           
-            Mar 01, 2023
+            <p> Ponderea populației cu venit sub 2,15$ pe persoana zi la PPC (Paritatea Puterii de Cumpărare). </p>
+<p> Paritatea Puterii de Cumpărare (PPC) este o metodă folosită pentru a calcula o rată de schimb alternativă între monedele a două țări. PPC-ul măsoară puterea de cumpărare a unei monede, într-o unitate de măsură internațională (de regulă, dolari), deoarece bunurile și serviciile au prețuri diferite în unele țări comparativ cu altele.</p>
+<p> Pragul sărăciei de 2,15$ a fost reglementat în Hotărârea Guvernului RM Nr.288 (http://lex.justice.md/index.php?action=view&amp;view=doc&amp;lang=1&amp;id=300778) din 15.03.2005 cu privire la aprobarea Obiectivelor de Dezvoltare ale Mileniului în Republica Moldova până în 2015 și a Primului  Raport Național "Obiectivele de Dezvoltare ale Mileniului în Republica Moldova"</p>
+<p>(http://md.one.un.org/content/dam/unct/moldova/docs/pub/mdg/first%20mdg%20rom.pdf)</p>
+<p>  Anual BNS pune la dispoziția Băncii Mondiale baza de date a CBGC pentru calcule adiționale la nivel global (global poverty). </p>
+
           
         </td>
         </tr>
@@ -1219,16 +1135,197 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Ultima actualizare a metadatatelor </th>
+        <th scope="row">Unitatea de măsură </th>
         <td>
           
-            Mar 13, 2023
+            <p>Procent, %</p>
+
           
         </td>
         </tr>
         
       
   
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p>Cercetarea Bugetelor Gospodăriilor Casnice</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Biroul Național de Statistică</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p> Ministerul Muncii și Protecției Sociale </p>
+<p>Ministerul Dezvoltării Economice și Digitalizării</p>
+<p>Ministerul Agriculturii și Industriei Alimentare</p>
+<p>Ministerul Infrastructurii și Dezvoltării Regionale</p>
+<p>Ministerul Educației și Cercetării</p>
+<p>Ministerul Sănătății </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p>Numărul populației cu veniturile medii lunare pe o persoană mai mici decât valoarea pragului internațional al sărăciei (2,15$ pe persoana zi la PPC) / Numărul total al populației * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comparabilitate/abatere de la standardele internaționale </th>
+        <td>
+          
+            <p>Comparativ cu indicatorul global, pentru indicatorul național este utilizat PPS din 2011</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
   
   
   
@@ -1331,7 +1428,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)</p>
+            <p>Indicator 1.1.1: Ponderea populației aflate sub pragul internațional al sărăciei, pe sexe, vârstă, statut ocupațional și mediu de reședință (urban/rural)</p>
 
           
         </td>
@@ -1347,7 +1444,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</p>
+            <p>Target 1.1: Până în 2030, eradicarea sărăciei extreme pentru toți oamenii de pretutindeni, măsurată în prezent ca număr de persoane care trăiesc cu mai puțin de 1,25$  pe zi</p>
 
           
         </td>
@@ -1358,19 +1455,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1379,7 +1465,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>International Labour Organization (ILO)</p>
+            <p>Banca Mondială (BM)</p>
 
           
         </td>
@@ -1390,19 +1476,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Indicatori relevanți </th>
-        <td>
-          
-            <p>1.3.1, 8.2.1, 8.3.1, 8.5.1, 8.5.2, 10.4.1</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
   
   
   
@@ -1525,7 +1600,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>un_designated_tier</p>
+            <p>1</p>
 
           
         </td>
@@ -1561,244 +1636,8 @@ data-event-label="Change to indicator.sources tab"
     
     <div class="col-md-6">
       
-        <h4>Sursă 1</h4>
-      
       <table class="table metadata-content">
   <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Periodicitate </th>
-        <td>
-          
-            <p>source_periodicity_1</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link la sursa de date </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              
-              
-              
-              <a href="/sdg-site-moldova/www.statistica.md">
-                source_url_text_1
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Data diseminării </th>
-        <td>
-          
-            source_release_date_1
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-        <h4>Sursă 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -1856,12 +1695,49 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Producător de date </th>
         <td>
           
-            <p>source_organisation_2</p>
+            <p>Biroul Național de Statistică</p>
 
           
         </td>
         </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>Anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
       
   
       
@@ -1889,63 +1765,17 @@ data-event-label="Change to indicator.sources tab"
       
         
           
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Clasificarea statistică </th>
-        <td>
-          
-            <p>source_statistical_classification_2</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Contacte </th>
-        <td>
-          
-            <p>source_contact_2</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Alte informații privind sursele de date </th>
-        <td>
-          
-            <p>source_other_info_2</p>
-
-          
-        </td>
-        </tr>
-        
-      
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2112,12 +1942,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517101505'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517132636'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517101505"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517132636"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230512115727">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230517061717">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Health Sector Capacity Index ((1) national legislation, policies and  funding; (2) coordination and liaison with national focal points; (3)  surveillance; (4) response; (5) preparedness; (6) risk communication; (7)  human resources; (8) laboratory; (9) entry points; (10) zoonotic events; (11)  food safety; (12) chemical events; (13) radionuclear emergencies)Indicators after 2021 - legislation, national policies; coordination and liaison with national focal points; Financing; the laboratory; supervision; human resources; preparedness and response; providing medical assistance; infection prevention and control; risk communication; entry points; zoonotic events; food safety; chemical events; radionuclear emergencies</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,12 +426,12 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_3-d-1'
   data-id="3-d-1"
-  data-country="Moldova"
-  data-charttitle="Capacitatea și pregătirea pentru urgențele de sănătate conform Regulamentului Sanitar Internațional"
+  data-country="Republica Moldova"
+  data-charttitle="<p> 3.d.1 Health Sector Capacity Index ((1) national legislation, policies and  funding; (2) coordination and liaison with national focal points; (3)  surveillance; (4) response; (5) preparedness; (6) risk communication; (7)  human resources; (8) laboratory; (9) entry points; (10) zoonotic events; (11)  food safety; (12) chemical events; (13) radionuclear emergencies)</p> <p></p> <p>Indicators after 2021 - legislation, national policies; coordination and liaison with national focal points; financing; the laboratory; supervision; human resources; preparedness and response; providing medical assistance; infection prevention and control; risk communication; entry points; zoonotic events; food safety; chemical events; radionuclear emergencies </p>"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Percent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -421,15 +440,469 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Capabilities of the health sector&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;(01) national legislation, policies and funding;&quot;,&quot;(02) coordination and liaison with national focal points;&quot;,&quot;(03) supervision;&quot;,&quot;(04) the answer&quot;,&quot;(05) training;&quot;,&quot;(06) risk communication;&quot;,&quot;(07) human resources;&quot;,&quot;(08) the laboratory;&quot;,&quot;(09) entry points;&quot;,&quot;(10) zoonotic events;&quot;,&quot;(11) food safety;&quot;,&quot;(12) chemical events;&quot;,&quot;(13) radionuclear emergencies&quot;,&quot;funding&quot;,&quot;preparation and response&quot;,&quot;providing medical assistance&quot;,&quot;infection prevention and control&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Capacități ale sectorului de sănătate&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/3-d-1.csv" class="btn btn-primary btn-download" download="indicator_3-d-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/3-d-1.csv" class="btn btn-primary btn-download" download='indicator_3-d-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption><p> 3.d.1 Health Sector Capacity Index ((1) national legislation, policies and  funding; (2) coordination and liaison with national focal points; (3)  surveillance; (4) response; (5) preparedness; (6) risk communication; (7)  human resources; (8) laboratory; (9) entry points; (10) zoonotic events; (11)  food safety; (12) chemical events; (13) radionuclear emergencies)</p> <p></p> <p>Indicators after 2021 - legislation, national policies; coordination and liaison with national focal points; financing; the laboratory; supervision; human resources; preparedness and response; providing medical assistance; infection prevention and control; risk communication; entry points; zoonotic events; food safety; chemical events; radionuclear emergencies </p></caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Organizația Mondială a Sănătății</p>
+    
+    
+    <p>Aria geografică: Republica Moldova</p>
+    
+    
+    <p>Unitatea de măsură: Percent, %</p>
+    
+    
+    <p>Notă de subsol: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title"><p> 3.d.1 Health Sector Capacity Index ((1) national legislation, policies and  funding; (2) coordination and liaison with national focal points; (3)  surveillance; (4) response; (5) preparedness; (6) risk communication; (7)  human resources; (8) laboratory; (9) entry points; (10) zoonotic events; (11)  food safety; (12) chemical events; (13) radionuclear emergencies)</p> <p></p> <p>Indicators after 2021 - legislation, national policies; coordination and liaison with national focal points; financing; the laboratory; supervision; human resources; preparedness and response; providing medical assistance; infection prevention and control; risk communication; entry points; zoonotic events; food safety; chemical events; radionuclear emergencies </p></h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Organizația Mondială a Sănătății</dd>
+        
+
+        
+        <dt>Aria geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Organizația Mondială a Sănătății</dd>
+        
+
+        
+        <dt>Aria geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -547,83 +1020,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Indicator 3.d.1: Indicele capacității sectorului de sănătate ((1) legislația, politicile  și finanțarea națională; (2) coordonarea și legătura cu punctele focale  naționale; (3) supravegherea; (4) răspunsul; (5) pregătirea; (6) comunicarea  riscurilor; (7) resursele umane; (8) laboratorul; (9) punctele de intrare;  (10) evenimente zoonotice; (11) siguranța alimentelor; (12) evenimente  chimice; (13) urgențe radionucleare)Indicatorii dupa 2021 - legislația, politicile naționale; coordonarea și legătura cu punctele focale  naționale; Finanțarea; laboratorul; supravegherea; resursele umane; pregătirea și răspunsul; asigurarea asistenței medicale; profilaxia și controlul infecțiilor; comunicarea  riscurilor; punctele de intrare;  evenimente zoonotice; siguranța alimentelor; evenimente  chimice; urgențe radionucleare</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -687,8 +1096,152 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definiție și concepte </th>
+        <td>
+          
+            <p> Datele sunt colectate în baza unui chestionar. Procentul atributelor a 13  capacități de bază care au fost obținute la un anumit moment dat în timp. Cele  13 capacități de bază sunt:  (1) legislația, politicile și finanțarea  națională; (2) coordonarea și legătura cu punctele focale naționale; (3)  supravegherea; (4) răspunsul; (5) pregătirea; (6) comunicarea riscurilor; (7)  resursele umane; (8) laboratorul; (9) punctele de intrare; (10) evenimente  zoonotice; (11) siguranța alimentelor; (12) evenimente chimice; (13) urgențe  radionucleare.</p>
+<p>Din 2021 un nou SPAR instrumentariu a fost aplicat ( [IHR  State Party Self-Assessment Annual Reporting tool  (SPAR)](https://extranet.who.int/sph/spar)  ) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
+          
+            <p>Procent, %</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p> 1) Chestionar privind informațiile cheie - OMS (Instrument electronic de raportare anuală de autoevaluare a statelor părți (e-SPAR))</p>
+<p>2) Date administrative  -  ANSP </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Agenția Națională pentru Sănătate Publică</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p> Organizația Mondială a Sănătății</p>
+<p>Ministerul Sănătății </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p>Numărul răspunsurilor „da” la întrebările de nivelurile 1 și 2  raportat la  numărul total al răspunsurilor la întrebările pentru nivelurile 1 și 2, per  capacitate de bază.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +1394,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 3.d.1: International Health Regulations (IHR) capacity and health emergency preparedness</p>
+            <p>Indicator 3.d.1: Capacitatea și pregătirea pentru urgențele de sănătate conform Regulamentului  Sanitar Internațional</p>
 
           
         </td>
@@ -857,7 +1410,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 3.d: Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks</p>
+            <p>Target 3.d: Consolidarea capacității tuturor țărilor, în special a țărilor în curs de  dezvoltare, pentru avertizarea rapidă, reducerea  și gestionarea riscurilor  naționale și globale pentru sănătate</p>
 
           
         </td>
@@ -868,19 +1421,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2022-09-30</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,7 +1431,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>World Health Organization (WHO)</p>
+            <p>WHO</p>
 
           
         </td>
@@ -1019,8 +1561,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
+        <td>
           
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -1042,6 +1595,228 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p>Organizația Mondială a Sănătății</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link la sursa de date </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://extranet.who.int/e-spar" target="_blank">
+                Link la sursa de date <span class="visuallyhidden">se deschide în fereastră nouă</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1152,12 +1927,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230512115727'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230517061717'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230512115727"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230517061717"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

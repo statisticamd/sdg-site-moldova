@@ -1416,8 +1416,8 @@
     .status.complete {
       color: white;
       border: 1px solid transparent;
-      background-color: #2B2B2B;
-      background: #2B2B2B; }
+      background-color: #33cc33;
+      background: #33cc33; }
       .status.complete .status-inner {
         background-color: #33cc33;
         background: #33cc33; }
@@ -1735,7 +1735,7 @@
         background: #2B2B2B; }
         .layout-reportingstatus #main-content .statuses > div .status.complete .status-inner {
           background-color: #2B2B2B;
-          background: #2B2B2B; }
+          background: #33cc33; }
       .layout-reportingstatus #main-content .statuses > div .status.inprogress {
         color: white;
         border: 1px solid transparent;

@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518133409">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518144101">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Financial Soundness Indicators</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,12 +426,12 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_10-5-1'
   data-id="10-5-1"
-  data-country="Moldova"
-  data-charttitle="Indicatorii de stabilitate financiară"
+  data-country="Republica Moldova"
+  data-charttitle="10.5.1 Financial Soundness Indicators"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Percent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -421,15 +440,469 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Rata fondurilor proprii de nivel I în raport cu total active&quot;,&quot;Rata fondurilor proprii de nivel I în raport cu activele ponderate la risc&quot;,&quot;Rata creditelor neperformante (fără rezerve) in raport cu capitalul total reglementat&quot;,&quot;Ponderea creditelor neperformante în totalul creditelor acordate&quot;,&quot;Rentabilitatea activelor&quot;,&quot;Rate of liquid assets in relation to short-term liabilities&quot;,&quot;Rata poziției valutare deschise nete la capitalul total reglementat&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indicatori&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/10-5-1.csv" class="btn btn-primary btn-download" download="indicator_10-5-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/10-5-1.csv" class="btn btn-primary btn-download" download='indicator_10-5-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>10.5.1 Financial Soundness Indicators</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Banca Națională a Moldovei</p>
+    
+    
+    <p>Acoperirea geografică: Republica Moldova</p>
+    
+    
+    <p>Unitatea de măsură: Percent, %</p>
+    
+    
+    <p>Notă de subsol: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">10.5.1 Financial Soundness Indicators</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Banca Națională a Moldovei</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Banca Națională a Moldovei</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -547,6 +1020,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
+          
+            <p>Indicator 10.5.1: Indicatori privind stabilitatea financiară</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -612,38 +1101,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Procent, %</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -662,6 +1132,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p>Raport: Informație privind activitatea economico-financiară a băncilor din RM  - BNM</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -677,6 +1163,43 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Banca Națională a Moldovei</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p>Banca Națională a Moldovei</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -689,6 +1212,36 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p> Stabilitatea financiară este măsurată prin intermediul a șapte indicatori care  sunt calculați separat: </p>
+<p>  (1) Rata fondurilor proprii de nivel I în raport  cu total active</p>
+<p>  I0 Fonduri proprii la total active. Această rată este  calculată folosind Fondurile proprii de (Nivelul 1) de bază ca numărător și  activele totale ca numitor. Datele sunt compilate în conformitate cu liniile  directoare din Basel I sau Basel II, iar din trimestrul II 2018 - conform  Basel III.</p>
+<p>  (2) Rata fondurilor proprii de nivel I în raport cu activele  ponderate la risc </p>
+<p>  I2 Fondurile proprii de Nivelul 1 de bază la activele  ponderate la risc. Datele pentru acest indicator al Stabilității Financiare de  asemenea sunt compilate în conformitate cu liniile directoare din Basel I sau  Basel II, iar din trimestrul II 2018 - conform Basel III. Acesta măsoară  suficiența capitalului băncilor conform concepției capitalului de bază al  Comitetului pentru Supraveghere Bancară de la Basel (BCBS). </p>
+<p>  (3) Rata  creditelor neperformante nete în raport cu fondurile proprii totale: </p>
+<p>  I3  Credite neperformante nete, în raport cu fondurile proprii totale. Acest  indicator al Stabilității Financiare este calculat luând valoarea creditelor  neperformante (NPL) minus valoarea reducerilor calculate pentru pierderi la  credite neperformante ca numărător și valoarea fondurilor proprii ca numitor.  Capitalul este măsurat ca total capital și rezerve în bilanțul sectorial;  pentru datele consolidate transfrontaliere, poate fi utilizat și capitalul  total propriu. Acest indicator al Stabilității financiare este unul al ratei  al suficienței capitalului, fiind un indicator important ce reflectă  capacitatea capitalului bancar de a face față pierderilor din împrumuturile  neperformante. (4) Ponderea creditelor neperformante în totalul creditelor  acordate: </p>
+<p>  I4 Creditele neperformante la credite brute totale. Acest  indicator este calculate prin utilizarea valorii creditelor neperformante ca  numărător și valorii totale a portofoliului de credite (incluzând creditele  neperformante) ca numitor. Acest indicator este frecvent utilizat ca unul  proxy pentru a calitatea activelor și este destinat pentru identificarea  problemelor ce țin de calitatea activelor în portofoliului de credite. </p>
+<p>   (5) Rentabilitatea activelor: </p>
+<p>  I6 Rentabilitatea activelor este calculată  prin împărțirea venitului net înaintea articolelor și impozitelor  extraordinare (conform recomandărilor Ghidului FSI) la valoarea medie a  activelor totale (financiare și nefinanciare) pentru aceeași perioadă de  referință. Acest indicator al Stabilității Financiare este unul al  rentabilității bancare și este destinat măsurării eficienței utilizării de  către de ținătorii de depozite a activelor lor.</p>
+<p>  (6) Rata activelor  lichide în raport cu pasivele pe termen scurt </p>
+<p>  I11 Active lichide la  pasive pe termen scurt Acest indicator este calculat utilizând măsura de bază  a activelor lichide ca numărător și celor pasive pe termen scurt ca numitor.  Raportul poate fi calculat și luând ca numărător măsura largă a activelor  lichide. Acest indicator este o rată a activelor lichide și este destinat să  capteze nepotrivirea de lichidități între active și pasive, și oferă  informații despre măsura în care deponenții pot efectua retragerile fondurilor  pe termen fără a se confrunta cu probleme de lichidități.</p>
+<p>  (7) Rata  poziției valutare deschise nete la fondurile proprii totale</p>
+<p>  I12 Poziția  valutară deschisă netă în fonduri proprii. Poziția valutară deschisă calculată  în baza recomandării BCBS. Fondurile proprii ar trebui să reprezinte fonduri  proprii totale de bază sau fonduri proprii de nivel 1, deoarece poziția  valutară deschisă este un concept de supraveghere. Acest indicator este unul  al sensibilității la riscul de piață, care este conceput pentru a reflecta  expunerea deponenților la riscul de schimb comparativ cu capitalul. Măsoară  nepotrivirea activelor și pasivelor în valută pentru a evalua vulnerabilitatea  la fluctuațiile cursului de schimb.</p>
+<p>  [A se  vedea](http://data.imf.org/regular.aspx?key=61404865) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +1394,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 10.5.1: Financial Soundness Indicators</p>
+            <p>Indicator 10.5.1: Indicatorii de stabilitate financiară</p>
 
           
         </td>
@@ -857,7 +1410,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 10.5: Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations</p>
+            <p>Target 10.5: Perfecționarea reglementării și monitorizării piețelor și instituțiilor  financiare globale și consolidarea implementării acestor reglementări</p>
 
           
         </td>
@@ -868,19 +1421,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2022-04-12</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,23 +1431,142 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>International Monetary Fund</p>
+            <p>IMF</p>
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">Indicatori relevanți </th>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>Linkages with any other Goals and Targets: Recommendation II.2 of G-20 Data Gap Initiative &#x2013; 2 concerned FSIs. The G-20 economies were asked to report the seven FSIs required from Special Data Dissemination Standards Plus (SDDS Plus) adherent economies on a quarterly frequency, with a timeliness of one quarter. These are the same FSIs as covered by this SDG Indicator 10.5.1 except that the SDG indicator includes the FSI net open position in foreign exchange to capital instead of the residential real estate prices. The G-20 economies were also asked to voluntarily initiate regular collection of Concentration and Distribution Measures, depending on the results of their cost-benefit analysis and national priorities. The implementation of the two FSI-related recommendations was concluded at end-2021.</p>
+            <p>3</p>
 
           
         </td>
@@ -913,125 +1574,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1053,6 +1595,209 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p>Banca Națională a Moldovei</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>lunar</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1163,12 +1908,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518133409'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518144101'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518133409"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518144101"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

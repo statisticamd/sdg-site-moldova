@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518133409">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518144101">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Ratio of tax revenue to total national government expenditure</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,12 +426,12 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_17-1-2'
   data-id="17-1-2"
-  data-country="Moldova"
-  data-charttitle="Proporția bugetului public național finanțat din impozite și taxe"
+  data-country="Republica Moldova"
+  data-charttitle="17.1.2 Ratio of tax revenue to total national government expenditure"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Percent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -421,15 +440,469 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/17-1-2.csv" class="btn btn-primary btn-download" download="indicator_17-1-2.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/17-1-2.csv" class="btn btn-primary btn-download" download='indicator_17-1-2.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>17.1.2 Ratio of tax revenue to total national government expenditure</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value">52.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value">55.5</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value">56.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value">59.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">54.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">56.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">60.3</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">63.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">63.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">60.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">55.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">60.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">57.3</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Ministerul Finanțelor</p>
+    
+    
+    <p>Acoperirea geografică: Republica Moldova</p>
+    
+    
+    <p>Unitatea de măsură: Percent, %</p>
+    
+    
+    <p>Notă de subsol: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">17.1.2 Ratio of tax revenue to total national government expenditure</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Ministerul Finanțelor</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Ministerul Finanțelor</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -547,83 +1020,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Indicator 17.1.2: Raportul veniturilor din impozite și taxe în totalul cheltuielilor  bugetului public național</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -687,8 +1096,140 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definiție și concepte </th>
+        <td>
+          
+            <p> Conform metadatelor globale definiția exactă a acestui indicator este  „Proporția cheltuielilor interne ale Guvernului bugetar central finanțate din  taxe”. Guvernul bugetar central este descris în paragraful 2.81 din  [Clasificația statisticilor financiare guvernamentale  (GFS)”](https://www.imf.org/external/Pubs/FT/GFS/Manual/2014/gfsfinal.pdf)  elaborată de către FMI în 2014 și include entitățile puterii executive,  legislative și judecătorești. Această componentă a administrației publice este  de obicei acoperită de bugetul principal (sau general), veniturile și  cheltuielile căreia sunt reglementate și controlate de către MF în baza legii  bugetului adoptate. Veniturile sunt definite în capitulul 4, paragraful 4.21  din GFS, iar clasificarea asociată corespunzătoare în Capitolul 5. La rândul  său cheltuielile sunt definite în capitolul 4 (paragraful 4.23) din GFS în  timp clasificările asociate detaliate și  conceptele utilizate pentru  calcularea acestui indicator sunt expuse în Capitolele 6-8.</p>
+<p>  Datele pentru  acest indicator sunt colectate anual de către Departamentul Statistic al FMI,  în cadrul Tabelului 1 al chestionarului standardizat. Seriile de cheltuieli  GFS sunt raportate prin clasificarea economică din tabelele 2 și 3 (elemente  de la codul 31). Alternativ, pentru țările care raportează cheltuielile totale  în conformitate cu clasificarea funcțională (COFOG), din Tabelul GFS 7 poate  fi efectuat un calcul similar al indicatorului. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
+          
+            <p>Procent, %</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Ministerul Finanțelor</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p> 1) Ministerul Finanțelor </p>
+<p>  2) Fondul Monetar Internațional </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p>Veniturile din impozite și taxe (GFS Cod 11) raportate la total cheltuieli ale  bugetului public național *100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +1382,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 17.1.2: Proportion of domestic budget funded by domestic taxes</p>
+            <p>Indicator 17.1.2: Proporția bugetului public  național finanțat din impozite și taxe</p>
 
           
         </td>
@@ -857,7 +1398,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 17.1: Strengthen domestic resource mobilization, including through international support to developing countries, to improve domestic capacity for tax and other revenue collection</p>
+            <p>Target 17.1: Consolidarea mobilizării resurselor interne, inclusiv prin suportul  internațional pentru țările în curs de dezvoltare, pentru a îmbunătăți  capacitatea naționala de impozitare și colectarea altor venituri</p>
 
           
         </td>
@@ -868,19 +1409,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,23 +1419,142 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>International Monetary Fund (IMF) Statistics Department (Government Finance Division)</p>
+            <p>International Monetary Fund (IMF)</p>
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">Indicatori relevanți </th>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>Indicator 17.1.1: Total government revenue as a proportion of GDP, by source </p>
+            <p>1</p>
 
           
         </td>
@@ -913,125 +1562,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1053,6 +1583,209 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p>Ministerul Finanțelor</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1163,12 +1896,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518133409'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518144101'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518133409"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518144101"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

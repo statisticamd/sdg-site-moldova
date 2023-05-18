@@ -2766,12 +2766,28 @@
           "status": "notstarted"
         },
         {
+          "id": "16-10-1-1",
+          "title": "global_indicators.16-10-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-10-1-1",
+          "status": "complete"
+        },
+        {
           "id": "16-10-2",
           "title": "Numărul de țări care adoptă și implementează garanții constituționale, statutare și / sau politice pentru accesul public la informații",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-10-2",
           "status": "notstarted"
+        },
+        {
+          "id": "16-10-2-1",
+          "title": "global_indicators.16-10-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-10-2-1",
+          "status": "complete"
         },
         {
           "id": "16-a-1",

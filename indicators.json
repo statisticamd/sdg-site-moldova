@@ -2766,12 +2766,28 @@
           "status": "notstarted"
         },
         {
+          "id": "16-10-1-1",
+          "title": "global_indicators.16-10-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/16-10-1-1",
+          "status": "complete"
+        },
+        {
           "id": "16-10-2",
           "title": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-10-2",
           "status": "notstarted"
+        },
+        {
+          "id": "16-10-2-1",
+          "title": "global_indicators.16-10-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/16-10-2-1",
+          "status": "complete"
         },
         {
           "id": "16-a-1",

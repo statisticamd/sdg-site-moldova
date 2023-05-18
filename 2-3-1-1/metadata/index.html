@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518115902">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230518133409">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -473,7 +473,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 2.3.1.1: NA</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 2.3.1.1. Share of sown areas in total arable land: NA</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -543,7 +543,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR_INFO', "Area of agricultural land sown by agricultural producers of all categories compared to the total area of arable land");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR_INFO', "Area of agricultural land sown by agricultural producers of all categories reported to the total area of arable land");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR_INFO');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -585,7 +585,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 2.3.1.1: Share of sown areas in total arable land</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 2.3.1.1. Share of sown areas in total arable land: </p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -767,7 +767,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Sown area – arable land sown with agricultural crops and the areas sown with agricultural crops between rows of orchards and vineyards.                                                                    Arable land - is the area that is ploughed or tilled regularly, each year or at longer time periods, generally to a crop rotation system, used for the cultivation of annual or perennial crops. This includes fallow arable land.");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Sown area – arable land sown with agricultural crops and the areas sown with agricultural crops between rows of orchards and vineyards.                                                                    Arable land - represents the agricultural land plots systematically processed (ploughed) and used for cultivation of annual or perennial crops");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -825,7 +825,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "1. Statistical survey \"Production obtained from crops harvested from the entire sown area\" (f. no. 29-agr);                                                                                                                             2. Survey of small agricultural producers \"Production and sale of vegetable production\" (f. no. 1-CMPA);                                                                                                                                          3. The land fund according to the land use mode, on January 1.");
+        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "<p> 1. Exhaustive statistical survey \"Production obtained from crops harvested from the entire sown area\";</p>  <p>2. Sample survey of small agricultural producers \"Production and sale of vegetable production\";                                                                                                                        </p>  <p>3. Land Cadastre of Republic of Moldova </p>");
         var propertyEditor = editor.getEditor('root.SOURCE_TYPE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -965,7 +965,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Area sown with agricultural crops compared to the total area of arable land * 100");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Area sown with agricultural crops reported to the total area of arable land * 100");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1063,7 +1063,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "The national indicator is complementary to the global one and supplies  information regarding the level of fields' use for agricultural purpose, reflecting the efforts undertaken in agriculture");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "The national indicator is complementary to the global one and supplies information regarding the level of fields' use for agricultural purpose, reflecting the efforts undertaken in agriculture");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1105,7 +1105,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-04-13");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-05-18");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1268,12 +1268,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518115902'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230518133409'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518115902"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230518133409"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -710,6 +710,22 @@
           "status": "notstarted"
         },
         {
+          "id": "4-1-1-c-i",
+          "title": "national_indicators.4-1-1-c(i)-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-i",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-ii",
+          "title": "national_indicators.4-1-1-c(ii)-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
+          "status": "complete"
+        },
+        {
           "id": "4-1-2",
           "title": "Rata de absolvire (învățământ primar, învățământ secundar inferior, învățământ secundar superior)",
           "description": "",
@@ -731,7 +747,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-2-2",
@@ -859,6 +875,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-a-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "4-a-1-d",
+          "title": "Ponderea instituțiilor de învățământ general adaptate necesităților persoanelor cu dizabilități",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-a-1-d",
           "status": "complete"
         },
         {
@@ -1046,6 +1070,14 @@
           "status": "complete"
         },
         {
+          "id": "5-5-2-2",
+          "title": "Ponderea femeilor  în serviciul public",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-5-2-2",
+          "status": "complete"
+        },
+        {
           "id": "5-5-2-3",
           "title": "Ponderea femeilor judecători",
           "description": "",
@@ -1222,12 +1254,20 @@
           "status": "notstarted"
         },
         {
+          "id": "6-4-1-1",
+          "title": "Consumul apei pentru necesități de producție și potabile",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/6-4-1-1",
+          "status": "complete"
+        },
+        {
           "id": "6-4-2",
           "title": "Nivelul stresului hidric: ponderea apei captate din totalul resurselor de apă disponibile",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "6-5-1",
@@ -1470,6 +1510,14 @@
           "status": "notstarted"
         },
         {
+          "id": "8-8-2-1",
+          "title": "Numărul de convenții colective încheiate la nivel instituțional în conformitate cu sursele documentare ale Organizației Internaționale a Muncii și cu legislația națională",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-8-2-1",
+          "status": "complete"
+        },
+        {
           "id": "8-9-1",
           "title": "Ponderea turismului în PIB și rata de creștere",
           "description": "",
@@ -1707,7 +1755,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-c-1",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "9-c-1-1",
+          "title": "national_indicators.9-c-1-1--title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/9-c-1-1",
+          "status": "complete"
         }]
     }
   },
@@ -1915,6 +1971,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-2-1-2",
+          "title": "2  Ponderea unităților de transport public accesibile persoanelor cu dizabilități",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/11-2-1-2",
           "status": "notstarted"
         },
         {
@@ -2902,6 +2966,14 @@
           "status": "complete"
         },
         {
+          "id": "16-7-1-b",
+          "title": "Raportul dintre proporția pozițiilor ocupate în autoritățile publice (centrale și locale) de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/16-7-1-b",
+          "status": "notstarted"
+        },
+        {
           "id": "16-7-1-c",
           "title": "Raportul dintre proporția pozițiilor ocupate în sistemul judiciar de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație",
           "description": "",
@@ -3051,7 +3123,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-7-1",

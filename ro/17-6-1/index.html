@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230523145827">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230523154020">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,6 +393,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Numărul de abonați cu acces la Internet în bandă largă la puncte fixe, la 100 de locuitori</h2>
+  </div>
+</div>
+
 
   
 
@@ -407,29 +413,481 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_17-6-1'
   data-id="17-6-1"
-  data-country="Moldova"
-  data-charttitle="Numărul abonaților cu acces la Internet în banda larga, la 100 de locuitori, după viteza de acces"
-  data-charttitles="[]"
-  data-measurementunit=""
+  data-country="Republica Moldova"
+  data-charttitle="17.6.1. Numărul de abonați cu acces la Internet în bandă largă la puncte fixe, la 100 de locuitori"
+  data-charttitles="null"
+  data-measurementunit="abonați / 100 locuitori"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap="false"
-  data-startvalues="[]"
-  data-graphlimits="[]"
+  data-showmap=""
+  data-startvalues="null"
+  data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="[]"
+  data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Mediul de reședință&quot;},{&quot;name&quot;:&quot;Regions&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Mun. Chișinău&quot;,&quot;Nord&quot;,&quot;Centru&quot;,&quot;Sud&quot;,&quot;UTA Găgăuzia&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Regiuni&quot;},{&quot;name&quot;:&quot;Speeds&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Sub 2 mbps&quot;,&quot;2-10 mbps&quot;,&quot;10-30 mbps&quot;,&quot;30-100 mbps&quot;,&quot;Peste 100 Mbps&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Viteze&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="[]"
+  data-precision="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/17-6-1.csv" class="btn btn-primary btn-download" download="indicator_17-6-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a href="https://statisticamd.github.io/sdg-data-moldova/ro/data/17-6-1.csv" class="btn btn-primary btn-download" download='indicator_17-6-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>17.6.1. Numărul de abonați cu acces la Internet în bandă largă la puncte fixe, la 100 de locuitori</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">17.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">18.8</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">19.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">21.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">22.8</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">25.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">27.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">29.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">30.7</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Agenția Națională pentru Reglementare în Comunicații Electronice și Tehnologia  Informației</p>
+    
+    
+    <p>Acoperirea geografică: Republica Moldova</p>
+    
+    
+    <p>Unitatea de măsură: abonați / 100 locuitori</p>
+    
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">17.6.1. Numărul de abonați cu acces la Internet în bandă largă la puncte fixe, la 100 de locuitori</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Agenția Națională pentru Reglementare în Comunicații Electronice și Tehnologia  Informației</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Agenția Națională pentru Reglementare în Comunicații Electronice și Tehnologia  Informației</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -547,6 +1005,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
+          
+            <p>Indicator 17.6.1: Numărul abonaților cu acces la Internet în bandă largă la puncte fixe,  la 100 locuitori</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -612,38 +1086,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
           
-      
-      
-      
-        
+            <p>abonați / 100 locuitori</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -662,6 +1117,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p>Datele de la providerii de Internet se colectează în baza raportului  anual f.nr. CE-2 ”Rețele și servicii fixe”, elaborat și generalizat de  ANRCETI</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -677,6 +1148,43 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Agenția Națională pentru Reglementare în Comunicații Electronice și Tehnologia  Informației</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p>Ministerul Dezvoltării Economice și Digitalizării</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -689,6 +1197,26 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p> Numărul specificat de abonați, care au acces la Internet în bandă largă la puncte  fixe, raportat la numărul populației  cu resedinta obisnuita la inceputul anului de raportare * 100. </p>
+<p>  Abonat = orice persoană  fizică sau juridică care a încheiat un contract cu furnizorul de servicii  publice de comunicații electronice în vederea furnizării unor asemenea  servicii (Legea comunicațiilor electronice, nr.241 din 15.11.2007); </p>
+<p>   Acces în bandă largă = este definită conform Recomandării I.113 a Sectorului  de standardizare al Uniunii Internaționale a Telecomunicațiilor drept  "capacitatea de transfer d edate mai mare decât acea a fluxului primar ISDN,  la 2.0 Mbps". </p>
+<p>  Internet la puncte fixe = acces la Internet și servicii  prin intermediul unor platforme tehnologice bazate pe rețele de cablu sau  radio acces fix.</p>
+<p>  Notă: în indicator nu sunt incluse abonamentele care au  acces la comunicații de date (inclusiv pe Internet) prin intermediul rețelelor  mobile-celulare. Indicatorul include atât abonații din rândul populației, cât  și abonații  - persoane juridice/ organizații. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +1369,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 17.6.1: Fixed Internet broadband subscriptions per 100 inhabitants, by speed</p>
+            <p>Indicator 17.6.1: Numărul abonaților cu acces la Internet în banda larga, la 100 de locuitori,   după viteza de acces</p>
 
           
         </td>
@@ -857,7 +1385,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 17.6: Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</p>
+            <p>Target 17.6: Consolidarea cooperării regionale și internaționale nord-sud, sud-sud și  triunghiulare  privind accesul la știință, tehnologie și inovații și  îmbunătățirea schimbului de cunoștințe în condiții agreate de comun acord,  inclusiv printr-o mai bună coordonare între mecanismele existente, în special  la nivelul Organizației Națiunilor Unite, și printr-un mecanism global de  facilitare a tehnologiei</p>
 
           
         </td>
@@ -868,19 +1396,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -900,12 +1417,131 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
       
       <tr>
-        <th scope="row">Indicatori relevanți </th>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>4.4.1, 4.5.1, 9.c.1, 17.8.1</p>
+            <p>1</p>
 
           
         </td>
@@ -913,125 +1549,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1053,6 +1570,209 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p>Agenția Națională pentru Reglementare în Comunicații Electronice și Tehnologia  Informației</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>trimestrial, anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1144,8 +1864,6 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -1163,12 +1881,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230523145827'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230523154020'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230523145827"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230523154020"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

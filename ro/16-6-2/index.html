@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230524195930">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230524204006">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Ponderea populației satisfăcute de calitatea serviciilor publice accesate (servicii de sănătate, educație, documentarea populației)</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,10 +426,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_16-6-2'
   data-id="16-6-2"
-  data-country="Moldova"
-  data-charttitle="Ponderea populației satisfăcute de ultima experiență de accesare a serviciilor publice"
+  data-country="Republica Moldova"
+  data-charttitle="16.6.2. Ponderea populației satisfăcute de calitatea serviciilor publice accesate"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Procent, %"
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -421,10 +440,10 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Mediul de reședință&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Bărbați&quot;,&quot;Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Disability&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;xx&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Dizabilitate&quot;},{&quot;name&quot;:&quot;Access&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;mode Electronic&quot;,&quot;At the counter&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Access&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -547,83 +566,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Indicator 16.6.2: Ponderea populației satisfăcute de calitatea serviciilor publice  accesate (servicii de sănătate, educație, documentarea populației)</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -687,8 +642,152 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definiție și concepte </th>
+        <td>
+          
+            <p> Indicatorul măsoară satisfacția populației  de calitatea serviciilor publice,  bazată pe ultima experiență de accesare a acestora (ultimele 12 luni), în  următoarele trei domenii: a) sănătate; b) educație și c) servicii publice,  denumite conform metadatelor globale ca „servicii administrative”. Indicatorul  este  bazat pe cercetare, care reflectă percepțiile generale ale cetățenilor  în vârstă de 18 ani + bazate pe experiențe cu privire la măsura  disponibilității și a calității serviciilor care au fost efectiv acordate  participanților la cercetare. Respondenții sunt rugați să relateze asupra  ultimei experiențe cu fiecare serviciu și dea o apreciere pe marginea celor  cinci „criterii”, sau standarde pentru un serviciul anumit: (1) accesul, (2)  accesibilitatea, (3) calitatea facilităților, (4) tratamentul egal, (5)  atitudinea personalului medical (amabilitate și tratare), calitatea predării  personalului didactic, promptitudinea acordării serviciilor publice.  Ultimă  întrebare fiind adresată respondenților despre gradul lor general de  satisfacție pentru fiecare dintre servicii.</p>
+<p>  Întrebările privind  serviciile de sănătate, educație și serviciile publice pot fi introduse în  cercetările existente, folosind elementele suplimentare din aceste cercetări  demografice pentru dezagregarea în ulterioară a rezultatelor. Această metodă  de „complementare modulară” permite, de asemenea, încrucișarea nivelurilor de  satisfacție cu alte variabile socio-economice aflate în cercetarea mai largă,  cum ar fi starea de sănătate a respondentului. Aceasta permite o analiză mai  cuprinzătoare a disparităților în furnizarea serviciilor și ajută la  identificarea factorilor specifici care influențează nivelul de satisfacție. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
+          
+            <p>Procent, %</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p> 1) Module complementare ad-hoc la Cercetări în gospodării privind nivelul de  trai (de tipul CBGC)</p>
+<p>  2) Alte cercetări realizate de către diferite  agenții și entități </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>1) Biroul Național de Statistică</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p>Cancelaria de Stat</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p> Indicatorul este calculat în doi pași: 1) Calcularea scorului mediu de  satisfacție pentru serviciile de sănătate, educație și serviciile publice  conform a cinci „criterii”, sau standarde, care sunt specificate mai jos în  cadrul definiției acestui indicator;</p>
+<p>  2) Convertirea scorului mediul al  serviciilor de sănătate, educație  și serviciilor publice în procente </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +940,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 16.6.2: Proportion of population satisfied with their last experience of public services</p>
+            <p>Indicator 16.6.2: Ponderea populației satisfăcute de calitatea serviciilor publice accesate  (servicii de sănătate, educație, documentarea populației)</p>
 
           
         </td>
@@ -857,7 +956,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 16.6: Develop effective, accountable and transparent institutions at all levels</p>
+            <p>Target 16.6: Dezvoltarea instituțiilor eficiente, responsabile și transparente la toate  nivelurile</p>
 
           
         </td>
@@ -868,19 +967,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,30 +977,142 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>United Nations Development Programme (UNDP) </p>
+            <p>UNDP</p>
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">Indicatori relevanți </th>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>SDG indicator 16.6.2, measured from citizen surveys, is an important complement to other SDG indicators assessing various aspects of public service provision that draw from administrative sources, such as SDG 3.8.1 on coverage of essential health services<sup><a href="#footnote-2" id="footnote-ref-2">[1]</a></sup> and SDG 4.a.1 on school facilities<sup><a href="#footnote-3" id="footnote-ref-3">[2]</a></sup>. While these indicators focus on similar attributes as those measured by SDG 16.6.2, such as &#x2018;accessibility&#x2019; and &#x2018;quality of facilities&#x2019;, they may not reflect people&#x2019;s actual experience of education facilities or healthcare services due to the methodological challenges of collecting quality data from administrative sources. </p>
-<p>Amongst SDG indicators assessing various aspects of public service provision, indicator 1.4.1, which measures the &#x201C;proportion of population living in households with access to basic services&#x201D; has particular relevance to indicator 16.6.2:</p>
-<p>&#x2022; Indicator 1.4.1 measures &#x2018;Access to Basic Health Care Services&#x2019; by drawing on readily available data reported on SDG indicator 3.7.1 on access to reproductive health (Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods). Indicator 16.6.2 therefore provides important additional information by (1) broadening the scope of measurement from reproductive health to &#x2018;basic healthcare services&#x2019; as internationally defined, and (2) by assessing five key attributes of healthcare service provision not assessed by 1.4.1, namely access, affordability, quality of facilities, equal treatment for everyone and doctor&#x2019;s attitude, and (3) by using survey data to measure people&#x2019;s satisfaction with healthcare services based on their last experience.</p>
-<p>&#x2022; Indicator 1.4.1 also measures &#x2018;Access to Basic Education&#x2019; by drawing on readily available data reported on SDG indicator 4.1.1 on educational achievements (Percentage of children/young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics). Indicator 16.6.2 therefore provides important additional information by (1) assessing four key attributes of education service provision not assessed by 1.4.1, namely access, affordability, quality of facilities and equal treatment for everyone, and (2) by using survey data (SDG 4.1.1 uses test scores) to measure people&#x2019;s satisfaction with education services based on their first-hand experience with such services.</p>
-<p>Indicator 16.6.2 can also be used to complement SDG target 10.2 on the promotion of the &#x201C;social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status&#x201D;, which only has one indicator measuring economic exclusion (SDG 10.2.1 &#x2013; Proportion of people living below 50 per cent of median income, by age, sex and persons with disabilities). Indicator 16.6.2 therefore provides important additional information to measure progress against this target by providing data on social inclusion. </p>
-<p>Similarly, 16.6.2 can also be used to complement SDG target 10.3 on &#x201C;Ensuring equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action in this regard&#x201D;, which only has one indicator measuring felt discrimination on various grounds (SDG 10.3.1 Proportion of the population reporting having personally felt discriminated against or harassed within the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law). Thus indicator 16.6.2 provides important additional information to measure progress against this target by helping to identify in which service area the incidence of discrimination is highest. </p>
-<p>Finally, SDG 16.6.2, with its focus on &#x2018;accessibility&#x2019;, &#x2018;equal treatment&#x2019; and other important attributes of public services, provides important complementary information to analyze results on SDG 16.5.1 on the &#x2018;Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months&#x2019;. In other words, people may resort to bribery when the quality of public service provision is too poor, as revealed by SDG 16.6.2. </p>
-<div class="footnotes"><div><sup class="footnote-number" id="footnote-2">1</sup><p> 3.8.1 Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population) <a href="#footnote-ref-2">&#x2191;</a></p></div><div><sup class="footnote-number" id="footnote-3">2</sup><p> 4.A.1 Proportion of schools with access to: (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions) <a href="#footnote-ref-3">&#x2191;</a></p></div></div>
+            <p>3</p>
 
           
         </td>
@@ -920,125 +1120,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1060,6 +1141,210 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p> 1) Cancelaria de Stat</p>
+<p>  2) Programul Națiunilor Unite pentru Dezvoltare  (PNUD) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>O dată la 2 ani</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1170,12 +1455,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230524195930'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230524204006'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230524195930"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230524204006"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

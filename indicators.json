@@ -3179,7 +3179,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-10-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-11-1",
@@ -3187,7 +3187,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-11-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-11-1-1",
@@ -3331,6 +3331,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-19-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "17-19-2-b",
+          "title": "Rate of births and deaths registration",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/17-19-2-b",
           "status": "complete"
         }]
     }

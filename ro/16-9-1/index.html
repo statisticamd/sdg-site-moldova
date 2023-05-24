@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230524195930">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230524204006">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Ponderea copiilor în vârstă de până la 5 ani care dispun de certificat de naștere</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,10 +426,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_16-9-1'
   data-id="16-9-1"
-  data-country="Moldova"
-  data-charttitle="Ponderea copiilor în vârstă de până la 5 ani, nașterea cărora a fost înregistrată de o autoritate civilă, pe vârste"
+  data-country="Republica Moldova"
+  data-charttitle="16.9.1. Ponderea copiilor în vârstă de până la 5 ani care dispun de certificat de naștere"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="număr"
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -421,10 +440,10 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -547,6 +566,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
+          
+            <p>Indicator 16.9.1: Ponderea copiilor în vârstă de până la 5 ani care dispun de certificat  de naștere</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -612,38 +647,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
           
-      
-      
-      
-        
+            <p>număr</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -662,6 +678,23 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p> 1)  date administrative privind actele de stare civilă -ASP</p>
+<p>  2) date  demografice privind numărul populației - BNS </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -677,6 +710,44 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p> 1) Agenția Servicii Publice</p>
+<p>  2) Biroul Național de Statistică </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p>Ministerul Sănătății, Muncii și Protecției Sociale</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -689,6 +760,22 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p>Numărul copiilor în vârstă de până la 5 ani care dispun de certificat de  naștere raportat la numărul total de copii în vârstă de până la 5 ani *100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +928,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 16.9.1: Proportion of children under 5 years of age whose births have been registered with a civil authority, by age</p>
+            <p>Indicator 16.9.1: Ponderea copiilor în vârstă de până la 5 ani, nașterea cărora a fost  înregistrată de o autoritate civilă, pe vârste</p>
 
           
         </td>
@@ -857,7 +944,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 16.9: By 2030, provide legal identity for all, including birth registration</p>
+            <p>Target 16.9: Până în 2030, asigurarea identității legale tuturor, inclusiv înregistrarea  nașterii</p>
 
           
         </td>
@@ -868,19 +955,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2021-12-06</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,7 +965,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>United Nations Children&apos;s Fund (UNICEF)</p>
+            <p>United Nations Statistics Division (UNSD), United Nations International  Children’s Emergency Fund (UNICEF)</p>
 
           
         </td>
@@ -1019,8 +1095,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
+        <td>
           
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -1042,6 +1129,210 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p> Biroul Național de Statistică</p>
+<p>  Departamentul Afaceri Economice și Sociale  al ONU (UNDESA) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1152,12 +1443,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230524195930'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230524204006'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230524195930"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230524204006"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

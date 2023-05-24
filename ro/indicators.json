@@ -343,7 +343,7 @@
         },
         {
           "id": "2-3-1-1",
-          "title": "Ponderea suprafețelor  însămânțate, în total terenuri arabile",
+          "title": "national_indicators.2-3-1-1- Ponderea suprafețelor  însămânțate în total terenuri arabile-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-3-1-1",
@@ -3179,7 +3179,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-10-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-11-1",
@@ -3187,7 +3187,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-11-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-11-1-1",
@@ -3331,6 +3331,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-19-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "17-19-2-b",
+          "title": "Rata înregistrării nașterilor și deceselor",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/17-19-2-b",
           "status": "complete"
         }]
     }

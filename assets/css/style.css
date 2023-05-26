@@ -1732,7 +1732,7 @@
         color: white;
         border: 1px solid transparent;
         background-color: #2B2B2B;
-        background: #2B2B2B; }
+        background: #33cc33; }
         .layout-reportingstatus #main-content .statuses > div .status.complete .status-inner {
           background-color: #2B2B2B;
           background: #33cc33; }
@@ -1790,7 +1790,7 @@
       background: #757575; }
     .layout-reportingstatus #main-content .goal-stats .complete {
       background-color: #2B2B2B;
-      background: #2B2B2B; }
+      background: #33cc33; }
   .layout-reportingstatus #main-content .divider {
     height: 15px; }
   .layout-reportingstatus #main-content .goal {

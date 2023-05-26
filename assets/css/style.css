@@ -1114,6 +1114,7 @@
   .card {
     border: none; }
     .card .card-body {
+        display: none;
       padding-left: 0; }
     .card .card-title {
       border-top: 2px solid;
@@ -1126,7 +1127,6 @@
       white-space: normal; }
   
   .zip-download-container {
-      display: none;
     margin-top: 20px; }
     .zip-download-container a.btn {
       margin-left: 10px;

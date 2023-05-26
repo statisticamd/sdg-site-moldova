@@ -1126,6 +1126,7 @@
       white-space: normal; }
   
   .zip-download-container {
+      display: none;
     margin-top: 20px; }
     .zip-download-container a.btn {
       margin-left: 10px;

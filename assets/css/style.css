@@ -1114,6 +1114,7 @@
   .card {
     border: none; }
     .card .card-body {
+        display: none;
       padding-left: 0; }
     .card .card-title {
       border-top: 2px solid;

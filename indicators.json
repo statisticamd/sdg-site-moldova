@@ -387,7 +387,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-a-2",
@@ -1446,11 +1446,43 @@
           "status": "notstarted"
         },
         {
+          "id": "8-4-1-a",
+          "title": "Volume of natural resources extracted per person (the same as 12.2.1.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-4-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-4-1-b",
+          "title": "Volume of natural resources extracted relative to GDP (the same as 12.2.1.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-4-1-b",
+          "status": "notstarted"
+        },
+        {
           "id": "8-4-2",
           "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-4-2-a",
+          "title": "Domestic material consumption per capita (the same as 12.2.2.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-4-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-4-2-b",
+          "title": "Domestic material consumption per GDP (the same as 12.2.2.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-4-2-b",
           "status": "notstarted"
         },
         {
@@ -1707,6 +1739,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-3-2-1",
+          "title": "Proportion of SMEs that accessed credit and/or loans during the year, including by industry sector",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/9-3-2-1",
           "status": "notstarted"
         },
         {
@@ -2222,11 +2262,43 @@
           "status": "notstarted"
         },
         {
+          "id": "12-2-1-a",
+          "title": "Volume of natural resources extracted per person (the same as 8.4.1.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/12-2-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "12-2-1-b",
+          "title": "Volume of natural resources extracted relative to GDP (the same as 8.4.1.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/12-2-1-b",
+          "status": "notstarted"
+        },
+        {
           "id": "12-2-2",
           "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-2-2-a",
+          "title": "Consumption of natural resources per capita (the same as 8.4.2.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/12-2-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "12-2-2-b",
+          "title": "Consumption of natural resources per GDP (the same as 8.4.2.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/12-2-2-b",
           "status": "notstarted"
         },
         {

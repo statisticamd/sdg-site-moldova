@@ -387,7 +387,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-a-2",
@@ -1446,11 +1446,43 @@
           "status": "notstarted"
         },
         {
+          "id": "8-4-1-a",
+          "title": "Volumul resurselor naturale extrase pe o persoană (identic cu 12.2.1.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-4-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-4-1-b",
+          "title": "Volumul resurselor naturale extrase raportate la PIB (identic cu 12.2.1.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-4-1-b",
+          "status": "notstarted"
+        },
+        {
           "id": "8-4-2",
           "title": "Consumul intern de resurse naturale, consumul intern de resurse naturale pe o persoană și consumul intern de resurse naturale raportat la PIB",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-4-2-a",
+          "title": "Consumul de resurse naturale pe o persoană (identic cu 12.2.2.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-4-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-4-2-b",
+          "title": "Consumul de resurse naturale raportate la PIB (identic cu 12.2.2.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/8-4-2-b",
           "status": "notstarted"
         },
         {
@@ -1707,6 +1739,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-3-2-1",
+          "title": "Cota întreprinderilor mici și mijlocii care au accesat credite și/sau împrumuturi pe parcursul anului, inclusiv în sectorul industrie",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/9-3-2-1",
           "status": "notstarted"
         },
         {
@@ -2222,11 +2262,43 @@
           "status": "notstarted"
         },
         {
+          "id": "12-2-1-a",
+          "title": "Volumul resurselor naturale extrase pe o persoană (identic cu 8.4.1.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/12-2-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "12-2-1-b",
+          "title": "Volumul resurselor naturale extrase raportate la PIB (identic cu 8.4.1.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/12-2-1-b",
+          "status": "notstarted"
+        },
+        {
           "id": "12-2-2",
           "title": "Consumul intern de resurse naturale, consumul de resurse naturale pe o persoană, consumul de resurse naturale raportate la PIB",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-2-2-a",
+          "title": "Consumul de resurse naturale pe o persoană (identic cu 8.4.2.a)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/12-2-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "12-2-2-b",
+          "title": "Consumul de resurse naturale raportate la PIB (identic cu 8.4.2.b)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/12-2-2-b",
           "status": "notstarted"
         },
         {

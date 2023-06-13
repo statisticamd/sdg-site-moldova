@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230531081757">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230613194344">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -767,7 +767,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> Particulate matter with fraction 10 mkm (PM-10) in urban localities represents  air pollution mainly in fine duster, and includes a combination of solid and  liquid particulates characterised via their reduced dimensions - up to 10 mkm.  About 60% of PM10 is composed of particulate of type PM2.5, with diameter  under 2.5 microns. According to the World Health Organization, exposure to  fine particulate (PM2.5) has the most significant impact on human health as  compared to other pollutants. </p>  <p>   Atmosphere air quality monitoring: The operation network for atmospheric air  quality monitoring includes 18 stationary posts, 17 of which are located in 5  industrialised centres: Chisinau - 6 posts, Balti-2, Tiraspol-3, Bender-4,  Ribnita-2, and 1 transborder station in Leova town.</p>  <p>  The samples are taken  at those 17 stations 3 times per day (07:00, 13:00 and 19:00), analysing the  basic pollutants (solid matters, sulphur dioxide, carbon monoxide and nitrogen  dioxide) and the specific ones (soluble sulphates, nitrogen oxide, aldehyde,  phenol and  benzo(a)pyrene). The program of observation, collection of samples  and chemical analysis is carried out according to the methodology   \"Руководство по контролю загрязнения атмосферы, РД 52.04. 186-89-Москва 1991”  - Guidelines for atmospheric air pollution control. The air pollution  level is  assesses according to the value of mean concentration as compared to the  maximum admissible concentration (CMA), and the quality of air is estimated  through air pollution complex index (IPA). </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> Particulate matter with fraction 10 mkm (PM-10) in urban localities represents  air pollution mainly in fine duster, and includes a combination of solid and  liquid particulates characterised via their reduced dimensions - up to 10 mkm.  About 60% of PM10 is composed of particulate of type PM2.5, with diameter  under 2.5 microns. According to the World Health Organization, exposure to  fine particulate (PM2.5) has the most significant impact on human health as  compared to other pollutants. In 2015, the average level of PM2.5 in cities  was 15 micrograms per cubic meter and 16.7, in 2016. </p>  <p>   Atmosphere air quality monitoring: The operation network for atmospheric air  quality monitoring includes 18 stationary posts, 17 of which are located in 5  industrialised centres: Chisinau - 6 posts, Balti-2, Tiraspol-3, Bender-4,  Ribnita-2, and 1 transborder station in Leova town.</p>  <p>  The samples are taken  at those 17 stations 3 times per day (07:00, 13:00 and 19:00), analysing the  basic pollutants (solid matters, sulphur dioxide, carbon monoxide and nitrogen  dioxide) and the specific ones (soluble sulphates, nitrogen oxide, aldehyde,  phenol and  benzo(a)pyrene). The program of observation, collection of samples  and chemical analysis is carried out according to the methodology   \"Руководство по контролю загрязнения атмосферы, РД 52.04. 186-89-Москва 1991”  - Guidelines for atmospheric air pollution control. [The air pollution  level](http://mediu.gov.md/ro/content/protec%C8%9Bia-aerului-atmosferic) is  assesses according to the value of mean concentration as compared to the  maximum admissible concentration (CMA), and the quality of air is estimated  through air pollution complex index (IPA). </p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1091,7 +1091,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2023-05-17");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2023-06-13");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1105,7 +1105,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-05-17");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-06-13");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1268,12 +1268,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230531081757'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230613194344'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230531081757"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230613194344"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

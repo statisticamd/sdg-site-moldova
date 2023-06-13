@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230531081757">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230613194344">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -191,9 +191,9 @@ layout-indicator
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/sdg-site-moldova/goals">Goals</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/reporting-status">Reporting status</a>
+    <a class="nav-link" href="/sdg-site-moldova/reporting-status">Reporting Status</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site-moldova/about">About test</a>
+    <a class="nav-link" href="/sdg-site-moldova/about">About</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/sdg-site-moldova/faq">FAQ</a>
 </li><li class="nav-item ">
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Change in water-use efficiency over time</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,10 +426,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_6-4-1'
   data-id="6-4-1"
-  data-country="Moldova"
-  data-charttitle="Change in water-use efficiency over time"
+  data-country="The Republic of Moldova, including the left side of the river Nistru and the municipality of Bender"
+  data-charttitle="6.4.1. Change in water-use efficiency over time"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="lei/m3"
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -421,10 +440,10 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Economic activities&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Agriculture, forestry and fishing&quot;,&quot;Mining and quarrying&quot;,&quot;Manufacturing&quot;,&quot;Production and supply of electric energy and heat, gas and hot water&quot;,&quot;Other activities&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Economic activities&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -547,83 +566,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Indicator 6.4.1: in water-use efficiency over time</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -687,6 +642,166 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition and concepts </th>
+        <td>
+          
+            <p> Water use efficiency us defined as the volume of used water as related to the  added value of certain major sector. The change in water use efficiency  represents the evolution over time (change) in the value of this  ratio/proportion. The 3 major economic sectors are considered:  1.  Agriculture, forestry and fishery (NACE rev.2, section A); 2. Extractive  industry, Processing industry, Production and supply of electricity, heating,  gas, hot water and air conditioning, Constructions  (NACE rev.2, sections C B,  C, D and F); 3. other service sectors (NACE rev.2, sections E and G-T).  Efficiency is estimated for each of the 3 major sectors. For agriculture  -  water use efficiency will be estimated for irrigation (land irrigation,  including irrigation during the vegetation period and all types of irrigation  during the period up to vegetation), production needs in agricultural sector  (livestock complex, repairing workshops, technical service of transport and  mechanisms. etc.)</p>
+<p>  Used water means the water abstracted or received and  used for the purpose of economic activity of manufacturing production,  executing works and providing services. Water may be used for production  needs, agriculture needs (incl. irrigation)</p>
+<p>  Abstracted water: water  obtained from aquatic objects located within the borders of the Republic of  Moldova. The abstracted water is extracted from surface source (rivers,  lakes), underground sources. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
+          
+            <p>lei/m3</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data sources </th>
+        <td>
+          
+            <p> 1. Survey "Water use" according to form no. 1 - gospodăria apelor (water management)</p>
+<p>2. National Accounts data </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p> 1. Agency “Apele Moldovei” (Waters of Moldova)</p>
+<p>2. National Buresu of Statistics </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
+          
+            <p>Ministry of Environment</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
+          
+            <p> The sum of the added value of three economic sectors, weighted at the rate of  water collected by each sector out of the total volume of collected water.  </p>
+<p> WUE = Awe* PA+Iwe* PI+Swe* PS</p>
+<p> where:</p>
+<p>  WUE = water use efficiency,  </p>
+<p>  Awe= water use efficiency in irrigated agriculture [USD/m3], </p>
+<p>  Iwe =  water use efficiency in industry [USD/m3], </p>
+<p>  Swe= water use efficiency in  services [USD/m3], </p>
+<p>  PA = Proportion of water used by agricultural sector  out of total use,</p>
+<p>  PI =Proportion of water used by industrial sector out  of total use  </p>
+<p>  PS =Proportion of water used by services out of total use   </p>
+<p>  Each of these elements is calculated separately (see global  metadata) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -727,18 +842,33 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
-      
-      
-      
-        
+            Jun 13, 2023
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
           
+            Jun 13, 2023
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1031,8 +1161,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">UN designated tier </th>
+        <td>
           
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -1054,6 +1195,220 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Agency “Apele Moldovei” (Waters of Moldova)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>Dumitru Proca, main specialist, Water Resources Management Division, Agency “Apele Moldovei”, tel.022-280752, email: dima.proca@apele. gov.md</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1164,12 +1519,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230531081757'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230613194344'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230531081757"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230613194344"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

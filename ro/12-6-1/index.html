@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230531081757">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230613194344">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -393,8 +393,27 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Numărul de companii care publică rapoarte privind consumul rațional de resurse</h2>
+  </div>
+</div>
+
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -407,10 +426,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_12-6-1'
   data-id="12-6-1"
-  data-country="Moldova"
-  data-charttitle="Numărul companiilor care publică rapoarte privind consumul durabil de resurse"
+  data-country="Republica Moldova, fără partea stângă a Nistrului și mun. Bender"
+  data-charttitle="12.6.1. Numărul de companii care publică rapoarte privind consumul rațional de resurse"
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Număr"
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -421,10 +440,10 @@ data-event-label="high"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -547,6 +566,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Indicatorul disponibil </th>
+        <td>
+          
+            <p>Indicator 12.6.1: Numărul companiilor care publică rapoarte privind consumul rațional de  resurse</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -612,38 +647,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unitatea de măsură </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Număr</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -662,6 +678,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
+          
+            <p>Rapoartele companiilor din țară</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -677,6 +709,43 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Furnizor de date </th>
+        <td>
+          
+            <p>Programul Națiunilor Unite pentru Mediu (UNEP)/ Conferința Națiunilor Unite  pentru Comerț și Dezvoltare (Conferința Națiunilor Unite pentru Comerț și  Dezvoltare (UNCTAD))</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Responsabil pentru monitorizare </th>
+        <td>
+          
+            <p>Ministerul Mediului</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -689,6 +758,34 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Formula de calcul </th>
+        <td>
+          
+            <p> Scopul indicatorului este de a măsura contribuția companiilor la dezvoltarea durabilă. Pentru a calcula indicatorul, se va lua în considerare companiile care publică informații de sustenabilitate care acoperă următoarele detalii despre sustenabilitate, care sunt împărțite în criterii minime și avansate:</p>
+<p>   1) Criterii minime:</p>
+<p>   Cadrul instituțional și de guvernare: • Evaluare materială; • Strategia de sustenabilitate și/sau principiile legate de sustenabilitate; • Abordarea managementului pentru soluţionarea subiectelor materiale; • Structura de guvernare, inclusiv pentru problemele economice, de mediu și sociale</p>
+<p>   • Impacturi, riscuri, oportunități cheie; • Practici de combatere a fraudei, anticorupție și anti-concurență.</p>
+<p>Economic: • Măsurarea directă a performanței economice (venituri, profit net, valoare adăugată, plăți către acționari); • Măsurarea indirectă a performanței economice (investiții comunitare, investiții în infrastructură sau alt impact economic local important)</p>
+<p>   Mediu:• Consumul de energie și eficiența energetică; • Utilizarea deșeurilor, generarea apei uzate, practici integrate de gestionare a resurselor de deșeuri sau de reciclare/reutilizare și eficiență a apei; •  A emisiilor de gaze cu efect de seră; • Alte emisii și efluenți, inclusiv substanțe care distrug ozonul, oxizi de azot (NOX), oxizi de sulf (SOX) și substanțe chimice; • Generarea deșeurilor, inclusiv deșeurilor periculoase; • Practici de minimizare și reciclare a deșeurilor; • Utilizarea și/sau producerea de substanțe chimice periculoase</p>
+<p>Social: • Sănătate și securitate în muncă; • Numărul total de angajați, în funcție de tipul contractului și sex; • Instruirea angajaților; • Practici de muncă incorecte și ilegale și alte aspecte referitoare la drepturile omului; • Diversitatea, egalitatea de șanse și discriminarea în organele de guvernare și în rândul angajaților; • Drepturile lucrătorilor și contractele colective.</p>
+<p>   Metodologia respectivă permite aplicarea principiului „respectați sau explicați” pentru standardul minim, ceea ce permite entităților raportoare să evidențieze de ce anumite informații nu sunt relevante pentru companiile lor și le va face mai accesibile pentru companiile mici. Cu toate acestea, acest lucru nu s-ar aplica problemelor care au fost identificate ca fiind materiale pentru companie, care ar trebui raportate.</p>
+<p>2) Cerințe avansate: includeți informațiile/indicatorii complementari pentru criteriile minime, care sunt:</p>
+<p>   Cadrul instituțional și de guvernanță: • Detalii despre lanțul de aprovizionare; • Detalii despre implicarea părților interesate în legătură cu performanța sustenabilității; • Detalii despre remunerare</p>
+<p>   Economic:• Politici și practici durabile de achiziții publice; • Procentul sau proporția de achiziții/furnizori locali; • Donații de caritate</p>
+<p>    Mediul: • Evaluarea mediului de aprovizionare; • Consumul de materiale, furnizarea de materiale și materiale reciclate sau folosite; • Intensitatea energetică și sursele regenerabile de energie; • Intensitatea apei și managementul integrat al resurselor de apă; • intensitatea GES; • Intensitatea deșeurilor; • Impactul asupra biodiversităţii; • Angajamentul furnizorului și al consumatorului/clientului pentru problemele de mediu</p>
+<p>   Social: • Evaluarea socială a furnizorilor; • Impactul comunității locale; • Angajamentul furnizorilor și consumatorilor pentru problemele de durabilitate </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -841,7 +938,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 12.6.1: Number of companies publishing sustainability reports</p>
+            <p>Indicator 12.6.1: Numărul de companii care publică rapoarte de sustenabilitate</p>
 
           
         </td>
@@ -857,7 +954,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Ţinta națională </th>
         <td>
           
-            <p>Target 12.6: Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle</p>
+            <p>Target 12.6: Încurajarea companiilor, în special a companiilor mari și transnaționale, să  adopte practici durabile și să integreze informațiile privind durabilitatea în ciclul de raportare</p>
 
           
         </td>
@@ -868,19 +965,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Actualizare metadate </th>
-        <td>
-          
-            <p>2023-03-31</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -889,24 +975,142 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>United Nations Conference on Trade and Development (UNCTAD)</p>
-<p>United Nations Environment Programme (UNEP)</p>
+            <p>UNEP,  UNCTAD</p>
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">Indicatori relevanți </th>
+        <th scope="row">Categoria indicatorului (UN designated tier) </th>
         <td>
           
-            <p>Not applicable</p>
+            <p>2</p>
 
           
         </td>
@@ -914,125 +1118,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1054,6 +1139,220 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Producător de date </th>
+        <td>
+          
+            <p>Programul Națiunilor Unite pentru Mediu (UNEP)/ Conferința Națiunilor Unite  pentru Comerț și Dezvoltare (Conferința Națiunilor Unite pentru Comerț și  Dezvoltare (UNCTAD))</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicitate </th>
+        <td>
+          
+            <p>anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contacte </th>
+        <td>
+          
+            <p>Daniel Tentiuc, consultant principal, Serviciul politici în domeniul economiei circulare și instrumente economice, Ministerul Mediului, tel. 022 204 578, e-mail: daniel.tentiuc@mediu.gov.md</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
             </article>
@@ -1164,12 +1463,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230531081757'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230613194344'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230531081757"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230613194344"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

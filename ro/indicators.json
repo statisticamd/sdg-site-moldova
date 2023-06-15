@@ -351,7 +351,7 @@
         },
         {
           "id": "2-3-1-1",
-          "title": "national_indicators.2-3-1-1- Ponderea suprafețelor  însămânțate în total terenuri arabile-title",
+          "title": "Ponderea suprafețelor  însămânțate, în total terenuri arabile",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-3-1-1",
@@ -726,19 +726,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-i",
-          "title": "national_indicators.4-1-1-c(i)-title",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/4-1-1-c-i",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-ii",
           "title": "national_indicators.4-1-1-c(ii)-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-i",
+          "title": "national_indicators.4-1-1-c(i)-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-i",
           "status": "complete"
         },
         {
@@ -831,7 +831,7 @@
         },
         {
           "id": "4-5-1-d",
-          "title": "Indicele parității (femeie/bărbat, rural/urban, chintila inferioară/superioară și altele, cum ar fi statutul de dizabilitate, persoane indigene și cele afectate de conflicte, de îndată ce devin disponibile date) pentru toți indicatorii de învățământ din această listă, care pot fi dezagregați",
+          "title": "global_indicators.4-5-1-d-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-5-1-d",
@@ -2719,7 +2719,7 @@
         },
         {
           "id": "14-4-1-1",
-          "title": "national_indicators.14-4-1-1--title",
+          "title": "Numărul de contravenții înregistrate privind pescuitul ilegal",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/14-4-1-1",

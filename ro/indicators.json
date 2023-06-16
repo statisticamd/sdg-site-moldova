@@ -455,7 +455,7 @@
         },
         {
           "id": "3-2-1-1",
-          "title": "global_indicators.3-2-1-1-title",
+          "title": "Rata mortalității infantile la 1 000 născuți vii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-2-1-1",
@@ -588,6 +588,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-8-1",
           "status": "complete"
+        },
+        {
+          "id": "3-8-1-1",
+          "title": "Ponderea populației care a beneficiat de medicamente esențiale naționale compensate din fondurile de asigurări obligatorii de asistență medicală",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/3-8-1-1",
+          "status": "notstarted"
         },
         {
           "id": "3-8-2",
@@ -783,7 +791,7 @@
         },
         {
           "id": "4-3-1-1",
-          "title": "Rata de participare a tinerilor și adulților în educația formală și non-formală în ultimele 12 luni, pe sexe",
+          "title": "global_indicators.4-3-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-3-1-1",
@@ -3063,7 +3071,7 @@
         },
         {
           "id": "16-3-2-2",
-          "title": "Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și Consiliului pentru prevenirea și eliminarea discriminării și asigurarea egalității, implementate de către autoritățile și instituțiile sesizate (care rezultă din acțiunile procesuale)",
+          "title": "Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și Consiliului pentru egalitate, implementate de către autoritățile și instituțiile sesizate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-2-2",
@@ -3163,7 +3171,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-6-2",

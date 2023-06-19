@@ -1,8 +1,8 @@
 ---
-layout: categorii
-permalink: /ro/categories/
-title: Categorii
-language: ro
+layout: categories
+language: en
+permalink: /categories/
+title: Categories
 ---
-
-Translation needed.
+## Postări după categorie
+Iată o listă de postări, grupate pe categorii:

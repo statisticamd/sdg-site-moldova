@@ -1,8 +1,9 @@
 ---
-layout: noutati
-title: Noutăți și evenimente
-permalink: /ro/news/
-language: ro
+layout: news
+title: News & Events
+language: en
+permalink: /news/
 ---
 
-Translation needed.
+## Stiri si evenimente
+Consultați această pagină pentru știri referitoare la raportarea statisticilor noastre pentru indicatorii globali și oportunități de a contribui la măsurarea atingerii obiectivelor de dezvoltare durabilă

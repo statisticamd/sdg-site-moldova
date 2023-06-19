@@ -1,6 +1,6 @@
 ---
-title: Frequently Asked Questions (FAQ)
-language: en
+title: Întrebări frecvente
+language: ro
 permalink: /faq/
 layout: page
 ---

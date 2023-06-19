@@ -1,8 +1,8 @@
 ---
 layout: categories
-language: en
+language: ro
 permalink: /categories/
-title: Categories
+title: Categorii
 ---
 ## Postări după categorie
 Iată o listă de postări, grupate pe categorii:

@@ -1,7 +1,7 @@
 ---
 layout: news
-title: News & Events
-language: en
+title: Noutăți și evenimente
+language: ro
 permalink: /news/
 ---
 

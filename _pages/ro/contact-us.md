@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact us
-language: en
+title: Contacte
+language: ro
 permalink: /contact-us/
 ---
 

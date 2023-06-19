@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Cookies and privacy
-language: en
+title: Cookies
+language: ro
 permalink: /about/cookies-and-privacy/
 ---
 

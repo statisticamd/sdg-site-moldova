@@ -2,7 +2,7 @@
 layout: news
 title: Noutăți și evenimente
 language: ro
-permalink: /news/
+permalink: /ro/news/
 ---
 
 ## Stiri si evenimente

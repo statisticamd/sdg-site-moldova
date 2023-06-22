@@ -1,7 +1,7 @@
 ---
 title: Despre
 language: ro
-permalink: /about/
+permalink: /ro/about/
 layout: page
 ---
 

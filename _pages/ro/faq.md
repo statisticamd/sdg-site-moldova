@@ -1,7 +1,7 @@
 ---
 title: Întrebări frecvente
 language: ro
-permalink: /faq/
+permalink: /ro/faq/
 layout: page
 ---
 

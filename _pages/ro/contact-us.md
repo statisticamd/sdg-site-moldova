@@ -2,7 +2,7 @@
 layout: page
 title: Contacte
 language: ro
-permalink: /contact-us/
+permalink: /ro/contact-us/
 ---
 
 ### Suntem interesați de feedback-ul dumneavoastră cu privire la această platformă web și conținutul acesteia.

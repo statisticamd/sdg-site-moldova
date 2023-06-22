@@ -2,7 +2,7 @@
 layout: page
 title: Cookies
 language: ro
-permalink: /about/cookies-and-privacy/
+permalink: /ro/about/cookies-and-privacy/
 ---
 
 Mai jos este o descriere a datelor colectate atunci când utilizați acest site web și pentru ce sunt utilizate.

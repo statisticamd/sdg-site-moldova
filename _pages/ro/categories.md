@@ -1,7 +1,7 @@
 ---
 layout: categories
 language: ro
-permalink: /categories/
+permalink: /ro/categories/
 title: Categorii
 ---
 ## Postări după categorie

@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230619114509">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230622160239">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -527,6 +527,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_non_statistical', "fals");
+        var propertyEditor = editor.getEditor('root.data_non_statistical');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_non_statistical');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
 
     
@@ -757,7 +769,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "11.2.1.3 Road accident rate per 100,000 population");
+        var currentValue = normalizeCurrentValue('graph_title', "national_indicators.11-2-1-3-graph");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,7 +811,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_available', "Road accident rate per 100,000 population");
+        var currentValue = normalizeCurrentValue('indicator_available', "national_indicators.11-2-1-3-title");
         var propertyEditor = editor.getEditor('root.indicator_available');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1162,12 +1174,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230619114509'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230622160239'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230619114509"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230622160239"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

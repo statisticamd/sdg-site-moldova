@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230619114509">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20230622160239">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -767,7 +767,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "event, produced as a result of the violation of the traffic rules, in which one or more vehicles in circulation on the public road were involved, resulting in injury to health, bodily integrity, the death of one or more persons or material damage was caused");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Event, produced as a result of the violation of the traffic rules, in which one or more vehicles in circulation on the public road were involved, resulting in injury to health, bodily integrity, the death of one or more persons or material damage was caused");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -825,7 +825,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "1)Administrative statistical data of the MAI 2) Demographic data regarding thenumber of popultion NBS");
+        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "<p> 1)Administrative statistical data of the MAI </p>  <p>2) Demographic data regarding thenumber of popultion NBS </p>");
         var propertyEditor = editor.getEditor('root.SOURCE_TYPE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -909,7 +909,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('INST_MANDATE', "Ministry of Health, Labour an Social Protesction");
+        var currentValue = normalizeCurrentValue('INST_MANDATE', "Ministry of Internal Affairs");
         var propertyEditor = editor.getEditor('root.INST_MANDATE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -965,7 +965,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Total number of road traffic injuries an fatalitie aut of total population *100 000");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Total number of road accidents related to the total population *100 000");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1063,7 +1063,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "The indicator is composet of two parts: number of road traffic accidents related to total number population *100 000");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "National indicator");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1105,7 +1105,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-04-21");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-06-22");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1268,12 +1268,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230619114509'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20230622160239'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230619114509"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20230622160239"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

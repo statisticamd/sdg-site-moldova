@@ -734,19 +734,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-ii",
-          "title": "(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-i",
           "title": "(i) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-i",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-ii",
+          "title": "(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
           "status": "complete"
         },
         {
@@ -979,7 +979,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-c-1-c",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1996,6 +1996,22 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-6-1",
           "status": "notstarted"
+        },
+        {
+          "id": "10-6-1-a",
+          "title": "Ponderea reprezentării  Republicii Moldova  în cadrul organizațiilor internaționale",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/10-6-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "10-6-1-b",
+          "title": "Ponderea drepturilor de vot ale țării în cadrul organizațiilor internaționale",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/10-6-1-b",
+          "status": "complete"
         },
         {
           "id": "10-7-1",

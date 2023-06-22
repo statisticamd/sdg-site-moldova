@@ -734,19 +734,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-ii",
-          "title": "(ii) Proportion of children and youth at the end of lower secondary achieving at least a minimum proficiency level in mathematics",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/4-1-1-c-ii",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-i",
           "title": "(i) Proportion of children and youth at the end of lower secondary achieving at least a minimum proficiency level in reading",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-1-c-i",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-ii",
+          "title": "(ii) Proportion of children and youth at the end of lower secondary achieving at least a minimum proficiency level in mathematics",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-1-1-c-ii",
           "status": "complete"
         },
         {
@@ -979,7 +979,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-c-1-c",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1996,6 +1996,22 @@
           "keywords": "",
           "href": "/sdg-site-moldova/10-6-1",
           "status": "notstarted"
+        },
+        {
+          "id": "10-6-1-a",
+          "title": "Share of representation of the Republic of Moldova in international organizations",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/10-6-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "10-6-1-b",
+          "title": "Share of voting rights of the country in international organisations",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/10-6-1-b",
+          "status": "complete"
         },
         {
           "id": "10-7-1",

@@ -2083,7 +2083,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-c-1",
@@ -2771,6 +2771,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-7-1-1",
+          "title": "Fisheries as a proportion of GDP",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/14-7-1-1",
           "status": "notstarted"
         },
         {

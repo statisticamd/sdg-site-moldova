@@ -22,7 +22,7 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Republic of Moldova
+  name: Moldova
   adjective: Moldovan
 create_goals:
   previous_next_links: false

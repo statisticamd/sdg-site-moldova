@@ -134,6 +134,14 @@
           "status": "notstarted"
         },
         {
+          "id": "1-4-2-a",
+          "title": "Proportion of the adult population with secure land rights",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/1-4-2-a",
+          "status": "complete"
+        },
+        {
           "id": "1-4-2-b",
           "title": "Proportion of adult population who perceive their tenure rights to land as being secure",
           "description": "",
@@ -1147,6 +1155,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-a-1-a",
+          "title": "Proportion of the population of the agricultural sector with ownership or other property rights over agricultural land",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/5-a-1-a",
           "status": "notstarted"
         },
         {
@@ -3524,6 +3540,14 @@
           "keywords": "",
           "href": "/sdg-site-moldova/17-18-1",
           "status": "notstarted"
+        },
+        {
+          "id": "17-18-1-1",
+          "title": "Proportion of sustainable development indicators produced at the national level",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/17-18-1-1",
+          "status": "complete"
         },
         {
           "id": "17-18-2",

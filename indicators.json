@@ -223,7 +223,7 @@
         },
         {
           "id": "1-a-1-1",
-          "title": "national_indicators.1-a-1-1--title",
+          "title": "Proportion of means allocated from the national public budget for the Social Aid Programme (social aid and cold-weather aid) in total national public budget expenditure",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-a-1-1",
@@ -791,7 +791,7 @@
         },
         {
           "id": "4-3-1-1",
-          "title": "global_indicators.4-3-1-1-title",
+          "title": "Gross enrollment rate in tertiary education",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-3-1-1",
@@ -1150,6 +1150,14 @@
           "status": "notstarted"
         },
         {
+          "id": "5-a-1-b",
+          "title": "Proportion of women with ownership or other property rights over agricultural land",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/5-a-1-b",
+          "status": "complete"
+        },
+        {
           "id": "5-a-2",
           "title": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
           "description": "",
@@ -1435,7 +1443,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-b-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "7-b-1-2",
@@ -1903,7 +1911,7 @@
         },
         {
           "id": "9-c-1-1",
-          "title": "national_indicators.9-c-1-1--title",
+          "title": "Internet access penetration rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-c-1-1",
@@ -2271,7 +2279,7 @@
         },
         {
           "id": "11-6-2-1",
-          "title": "Quantity of emissions of polluting substances in the air from mobile sources (by sources), thousand tonnes, reported per person",
+          "title": "Quantity of emissions of polluting substances in the air from mobile sources (by sources), kg reported per person",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-6-2-1",

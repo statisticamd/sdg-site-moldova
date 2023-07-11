@@ -223,7 +223,7 @@
         },
         {
           "id": "1-a-1-1",
-          "title": "national_indicators.1-a-1-1--title",
+          "title": "Ponderea mijloacelor alocate din bugetul public național pentru programul de ajutor social (ajutor social și ajutor pentru perioada rece a anului) în totalul cheltuielilor bugetului public național",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-a-1-1",
@@ -791,7 +791,7 @@
         },
         {
           "id": "4-3-1-1",
-          "title": "global_indicators.4-3-1-1-title",
+          "title": "Rata brută de cuprindere în învățământul terțiar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-3-1-1",
@@ -1150,6 +1150,14 @@
           "status": "notstarted"
         },
         {
+          "id": "5-a-1-b",
+          "title": "Ponderea femeilor  cu drepturi  de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/5-a-1-b",
+          "status": "complete"
+        },
+        {
           "id": "5-a-2",
           "title": "Proporția țărilor unde există cadrul legislativ (inclusiv dreptul cutumiar) care garantează femeilor drepturi egale la proprietate și/sau control asupra pământurilor",
           "description": "",
@@ -1435,7 +1443,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-b-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "7-b-1-2",
@@ -1903,7 +1911,7 @@
         },
         {
           "id": "9-c-1-1",
-          "title": "national_indicators.9-c-1-1--title",
+          "title": "Rata de penetrare a serviciilor de acces la Internet",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-c-1-1",
@@ -2271,7 +2279,7 @@
         },
         {
           "id": "11-6-2-1",
-          "title": "Cantitatea de emisii de substanțe poluante în aer de la sursele mobile (pe surse), mii tone, raportate pe o persoană",
+          "title": "Cantitatea de emisii de substanțe poluante în aer de la sursele mobile (pe surse), kg raportate pe o persoană",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-6-2-1",
@@ -2359,7 +2367,7 @@
         },
         {
           "id": "12-1-1-1",
-          "title": "12.1.1.1. Numărul de politici naționale care integrează aspectele economiei „verzi”, producției și consumului durabil (PCD)",
+          "title": "Numărul de politici naționale care integrează aspectele economiei „verzi”, producției și consumului durabil (PCD)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-1-1-1",
@@ -3175,7 +3183,7 @@
         },
         {
           "id": "16-5-2-1",
-          "title": "16.5.2.1. Indicatorul privind „Controlul asupra corupției”  (de la „-2,5” la „2,5”)",
+          "title": "Indicatorul privind „Controlul asupra corupției”  (de la „-2,5” la „2,5”)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-5-2-1",
@@ -3183,7 +3191,7 @@
         },
         {
           "id": "16-5-2-2",
-          "title": "16.5.2.2. Indicatorul privind „Calitatea regulatorie” (de la „-2,5” la „2,5”)",
+          "title": "Indicatorul privind „Calitatea regulatorie” (de la „-2,5” la „2,5”)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-5-2-2",

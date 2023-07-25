@@ -230,6 +230,9 @@ reporting_status:
     - value: inprogress
       label: status.in_progress
       hide_on_goal_pages: false
+    - value: divided
+      label: status.divided
+      hide_on_goal_pages: false   
 repository_url_data: 'https://github.com/statisticamd/sdg-data-moldova'
 repository_url_site: 'https://github.com/statisticamd/sdg-site-moldova'
 search_index_boost: []

@@ -28,8 +28,7 @@ permalink: /ro/news/
 - [Tineretul în CSI: portret statistic](https://statistica.gov.md/ro/tineretul-in-csi-portret-statistic-editiile-2018-2021-9877_60062.html) 
 
 ## Quiz
--[Quiz Testează-ți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
+- [Quiz Testează-ți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
 
 ## Alte noutăți relevante
-
 - [Noutăți relevante](https://statistica.gov.md/ro/obiectivele-de-dezvoltare-durabila-183.html)

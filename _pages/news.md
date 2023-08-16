@@ -1,6 +1,6 @@
 ---
 layout: news
-title: News & Events
+title: Reports and publications
 language: en
 permalink: /news/
 ---
@@ -28,7 +28,7 @@ permalink: /news/
 - [Youth in the CIS: statistical portrait](https://statistica.gov.md/en/youth-in-the-commonwealth-of-independent-states-edition-2018-2019-9877_60062.html) 
 
 ## Quiz
--[Quiz Test your knowledge about Sustainable Development Goals (in Rom.)](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
+- [Quiz Test your knowledge about Sustainable Development Goals (in Rom.)](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
 
 ## Other relevant news
 - [Relevant news](https://statistica.gov.md/en/sustainable-development-goals-183.html)

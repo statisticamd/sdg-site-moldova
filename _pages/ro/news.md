@@ -2,7 +2,7 @@
 layout: news
 title: Rapoarte și publicații
 language: ro
-permalink: /ro/publications/
+permalink: /ro/news/
 ---
 
 ## Cadrul normativ

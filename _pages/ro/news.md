@@ -6,7 +6,7 @@ permalink: /ro/news/
 ---
 
 ## Cadrul normativ
-- [HG cu privire la aprobarea cadrului național de monitorizare a implementării Agendei de Dezvoltare Durabilă 2030](https://www.legis.md/cautare/getResults?doc_id=135555&lang=ro) (HG nr. 953 din 28.12.2022)
+- [Hotărârea Guvernului nr 953/2022 cu privire la aprobarea cadrului național de monitorizare a implementării Agendei de Dezvoltare Durabilă 2030](https://www.legis.md/cautare/getResults?doc_id=135555&lang=ro)
 - [Strategia Națională de Dezvoltare „Moldova Europeană 2030”](https://gov.md/ro/moldova2030)
 
 ## Rapoarte de Evaluare Națională Voluntară
@@ -22,12 +22,14 @@ permalink: /ro/news/
 - [Raport de evaluare intermediară a Strategiei naționale de dezvoltare „Moldova 2020", septembrie 2017](http://cancelaria.gov.md/sites/default/files/raport_evaluare_md2020_rom.pdf)
 - [Notă de concept privind viziunea Strategiei Naționale de Dezvoltare „Moldova 2030”, ediția 2017](http://cancelaria.gov.md/sites/default/files/viziunea_snd_2030_clean.pdf)
 
+## Publicații
+- [Tinerii în țările CSI și ODD](https://statistica.gov.md/ro/publicatia-tinerii-din-csi-si-odd-editia-2021-9877_60059.html) 
+- [Monitorizarea indicatorilor ODD în țările CSI](https://statistica.gov.md/ro/culegerile-monitorizarea-indicatorilor-odd-in-regiunea-csi-eidtiile-2019-9877_60060.html) 
+- [Tineretul în CSI: portret statistic](https://statistica.gov.md/ro/tineretul-in-csi-portret-statistic-editiile-2018-2021-9877_60062.html) 
+
 ## Quiz
--[Quiz> testeazăți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
+-[Quiz Testează-ți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
 
 ## Alte noutăți relevante
 
 - [Noutăți relevante](https://statistica.gov.md/ro/obiectivele-de-dezvoltare-durabila-183.html)
-
-
-

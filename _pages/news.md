@@ -6,7 +6,7 @@ permalink: /news/
 ---
 
 ## Legal framework
-- [Government Decision regarding the approval of the national framework for monitoring the implementation of the 2030 Sustainable Development Agenda](https://www.legis.md/cautare/getResults?doc_id=135555&lang=ro) (HG nr. 953 din 28.12.2022)
+- [Government Decision nr. 953/2022 regarding the approval of the national framework for monitoring the implementation of the 2030 Sustainable Development Agenda](https://www.legis.md/cautare/getResults?doc_id=135555&lang=ro)
 - [National Development Strategy "European Moldova 2030" (in Rom.)](https://gov.md/ro/moldova2030)
 
 ## Rapoarte de Evaluare Națională Voluntară
@@ -28,8 +28,7 @@ permalink: /news/
 - [Youth in the CIS: statistical portrait](https://statistica.gov.md/en/youth-in-the-commonwealth-of-independent-states-edition-2018-2019-9877_60062.html) 
 
 ## Quiz
--[Quiz: Test your knowledge about Sustainable Development Goals (in Rom.)](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
+-[Quiz Test your knowledge about Sustainable Development Goals (in Rom.)](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
 
 ## Other relevant news
-
 - [Relevant news](https://statistica.gov.md/en/sustainable-development-goals-183.html)

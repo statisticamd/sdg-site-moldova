@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: page
 title: Rapoarte și publicații
 language: ro
 permalink: /ro/news/
@@ -25,7 +25,7 @@ permalink: /ro/news/
 ## Publicații
 - [Tinerii în țările CSI și ODD](https://statistica.gov.md/ro/publicatia-tinerii-din-csi-si-odd-editia-2021-9877_60059.html) 
 - [Monitorizarea indicatorilor ODD în țările CSI](https://statistica.gov.md/ro/culegerile-monitorizarea-indicatorilor-odd-in-regiunea-csi-eidtiile-2019-9877_60060.html) 
-- [Tineretul în CSI: portret statistic](https://statistica.gov.md/ro/tineretul-in-csi-portret-statistic-editiile-2018-2021-9877_60062.html) 
+- [Tineretul în CSI - portret statistic](https://statistica.gov.md/ro/tineretul-in-csi-portret-statistic-editiile-2018-2021-9877_60062.html) 
 
 ## Quiz
 - [Quiz Testează-ți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)

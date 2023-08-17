@@ -1,6 +1,6 @@
 ---
 layout: page
-title: News and events
+title: Documents and news
 language: en
 permalink: /news/
 ---

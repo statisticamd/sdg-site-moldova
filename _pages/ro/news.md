@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rapoarte și publicații
+title: Documente și noutăți
 language: ro
 permalink: /ro/news/
 ---

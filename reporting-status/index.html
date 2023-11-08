@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231108124345">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231108132403">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -282,7 +282,33 @@ data-event-label="high"
 
   <div>
   
+  <ul class="nav nav-tabs reporting-status-view" role="tablist">
+    <li role="presentation" class="nav-item active">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#goalsview" aria-controls="goalsview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change reporting status view"
+data-event-label="Change reporting status view to goals"
+>Reporting status</button>
+    </li>
+    
 
+    
+      <li role="presentation" class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#disaggregationsview" aria-controls="disaggregationsview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change reporting status view"
+data-event-label="Change reporting status view to disaggregations"
+>Disaggregation status</button>
+      </li>
+      
+
+    
+  </ul>
+  
+
+  
+  <div class="tab-content reporting-status-view">
+    <div role="tabpanel" class="tab-pane active" id="goalsview">
   
   <div class="goal goal-overall">
     <div class="details">
@@ -1811,11 +1837,1150 @@ data-event-label="high"
     <br style="clear:both;">
 </div>
   
-
+    </div>
   
 
   
 
+  
+    <div role="tabpanel" class="tab-pane" id="disaggregationsview">
+      <div class="goal goal-overall">
+    <div class="details">
+        <h2 class="status-goal">
+            Overall disaggregation status
+        </h2>
+        <span class="total"><span>436</span> indicators</span>
+        <div class="summary">
+            <div class="statuses">
+            
+            <div>
+                <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+            </div>
+            
+            
+            <div>
+                <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+            </div>
+            
+            
+            <div>
+                <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+            </div>
+            
+            
+            <div>
+                <span class="status notapplicable"><span class="status-inner">436</span></span><strong>Out of scope</strong><span class="value">100%</span>
+            </div>
+            <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+            
+            
+            
+            
+            <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+            
+            
+            
+            
+            
+            <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+            
+            
+            
+            
+            
+            <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+            
+            
+            
+            
+            
+            <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+            </div>
+    </div>
+    <br style="clear:both;">
+</div>
+      <h2>Status by goal</h2><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/1" title="View targets and indicators for Goal 1" aria-label="View targets and indicators for Goal 1">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/1.png" alt="No poverty - Goal 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/1">No poverty</a>
+        </h3>
+        <span class="total">35 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">35</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/2" title="View targets and indicators for Goal 2" aria-label="View targets and indicators for Goal 2">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/2">Zero hunger</a>
+        </h3>
+        <span class="total">17 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">17</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/3" title="View targets and indicators for Goal 3" aria-label="View targets and indicators for Goal 3">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/3">Good health and well-being</a>
+        </h3>
+        <span class="total">36 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">36</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/4" title="View targets and indicators for Goal 4" aria-label="View targets and indicators for Goal 4">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/4">Quality education</a>
+        </h3>
+        <span class="total">32 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">32</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/5" title="View targets and indicators for Goal 5" aria-label="View targets and indicators for Goal 5">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/5.png" alt="Gender equality - Goal 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/5">Gender equality</a>
+        </h3>
+        <span class="total">27 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">27</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/6" title="View targets and indicators for Goal 6" aria-label="View targets and indicators for Goal 6">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/6">Clean water and sanitation</a>
+        </h3>
+        <span class="total">19 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">19</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/7" title="View targets and indicators for Goal 7" aria-label="View targets and indicators for Goal 7">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/7.png" alt="Affordable and clean energy - Goal 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/7">Affordable and clean energy</a>
+        </h3>
+        <span class="total">11 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">11</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/8" title="View targets and indicators for Goal 8" aria-label="View targets and indicators for Goal 8">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/8.png" alt="Decent work and economic growth - Goal 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/8">Decent work and economic growth</a>
+        </h3>
+        <span class="total">29 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">29</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/9" title="View targets and indicators for Goal 9" aria-label="View targets and indicators for Goal 9">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/9">Industry, innovation and infrastructure</a>
+        </h3>
+        <span class="total">27 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">27</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/10" title="View targets and indicators for Goal 10" aria-label="View targets and indicators for Goal 10">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/10.png" alt="Reduced inequalities - Goal 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/10">Reduced inequalities</a>
+        </h3>
+        <span class="total">22 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">22</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/11" title="View targets and indicators for Goal 11" aria-label="View targets and indicators for Goal 11">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/11.png" alt="Sustainable cities and communities - Goal 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/11">Sustainable cities and communities</a>
+        </h3>
+        <span class="total">30 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">30</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/12" title="View targets and indicators for Goal 12" aria-label="View targets and indicators for Goal 12">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/12.png" alt="Responsible consumption and production - Goal 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/12">Responsible consumption and production</a>
+        </h3>
+        <span class="total">25 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">25</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/13" title="View targets and indicators for Goal 13" aria-label="View targets and indicators for Goal 13">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/13.png" alt="Climate action - Goal 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/13">Climate action</a>
+        </h3>
+        <span class="total">17 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">17</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/14" title="View targets and indicators for Goal 14" aria-label="View targets and indicators for Goal 14">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/14.png" alt="Life below water - Goal 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/14">Life below water</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">13</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/15" title="View targets and indicators for Goal 15" aria-label="View targets and indicators for Goal 15">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/15.png" alt="Life on land - Goal 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/15">Life on land</a>
+        </h3>
+        <span class="total">22 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">22</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/16" title="View targets and indicators for Goal 16" aria-label="View targets and indicators for Goal 16">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/16.png" alt="Peace, justice and strong institutions - Goal 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/16">Peace, justice and strong institutions</a>
+        </h3>
+        <span class="total">40 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">40</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/sdg-site-moldova/17" title="View targets and indicators for Goal 17" aria-label="View targets and indicators for Goal 17">
+        <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/sdg-site-moldova/17">Partnerships for the goals</a>
+        </h3>
+        <span class="total">34 indicators</span>
+        <div class="summary">
+            <div class="statuses">
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fully disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partially disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Not disaggregated</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">34</span></span><strong>Out of scope</strong><span class="value">100%</span>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                <span class="complete" style="width:0.0%" title="Fully disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partially disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Not disaggregated: 0%"></span>
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Out of scope: 100%"></span>
+                </div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div>
+    </div>
+
+    
+  
+
+  
+  </div>
   
 
   </div>
@@ -1889,12 +3054,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231108124345'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231108132403'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231108124345"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231108132403"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

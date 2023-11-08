@@ -1438,6 +1438,22 @@
       .status.notstarted .status-inner {
         background-color: white;
         background: white; }
+    .status.divided {
+      color: #0b0c0c;
+      border: 1px solid #0b0c0c;
+      background-color: white;
+      background: white; }
+      .status.divided .status-inner {
+        background-color: white;
+        background: white; }
+    .status.notrelevant {
+      color: #0b0c0c;
+      border: 1px solid #0b0c0c;
+      background-color: white;
+      background: white; }
+      .status.notrelevant .status-inner {
+        background-color: white;
+        background: white; }
     .status.notapplicable {
       color: #0b0c0c;
       border: 1px solid #0b0c0c;
@@ -1471,6 +1487,24 @@
     background: black;
     color: white !important; }
     body.contrast-high .status.notstarted .status-inner {
+      background-color: black !important;
+      background: black !important;
+      color: white !important; }
+  body.contrast-high .status.divided {
+    border: 1px solid white;
+    background-color: black;
+    background: black;
+    color: white !important; }
+    body.contrast-high .status.divided .status-inner {
+      background-color: black !important;
+      background: black !important;
+      color: white !important; }
+  body.contrast-high .status.notrelevant {
+    border: 1px solid white;
+    background-color: black;
+    background: black;
+    color: white !important; }
+    body.contrast-high .status.notrelevant .status-inner {
       background-color: black !important;
       background: black !important;
       color: white !important; }
@@ -1753,6 +1787,22 @@
         .layout-reportingstatus #main-content .statuses > div .status.notstarted .status-inner {
           background-color: white;
           background: white; }
+      .layout-reportingstatus #main-content .statuses > div .status.divided {
+        color: #0b0c0c;
+        border: 1px solid #0b0c0c;
+        background-color: white;
+        background: white; }
+        .layout-reportingstatus #main-content .statuses > div .status.divided .status-inner {
+          background-color: white;
+          background: white; }
+      .layout-reportingstatus #main-content .statuses > div .status.notrelevant {
+        color: #0b0c0c;
+        border: 1px solid #0b0c0c;
+        background-color: white;
+        background: white; }
+        .layout-reportingstatus #main-content .statuses > div .status.notrelevant .status-inner {
+          background-color: white;
+          background: white; }
       .layout-reportingstatus #main-content .statuses > div .status.notapplicable {
         color: #0b0c0c;
         border: 1px solid #0b0c0c;
@@ -1786,6 +1836,12 @@
     .layout-reportingstatus #main-content .goal-stats .notstarted {
       background-color: white;
       background: white; }
+    .layout-reportingstatus #main-content .goal-stats .divided {
+      background-color: white;
+      background: white; }
+      .layout-reportingstatus #main-content .goal-stats .notrelevant {
+        background-color: white;
+        background: white; }
     .layout-reportingstatus #main-content .goal-stats .inprogress {
       background-color: #757575;
       background: #757575; }
@@ -1862,6 +1918,12 @@
     .layout-reportingstatus.contrast-high #main-content .goal-stats .notstarted {
       background-color: black;
       background: black; }
+    .layout-reportingstatus.contrast-high #main-content .goal-stats .divided {
+      background-color: black;
+      background: black; }
+    .layout-reportingstatus.contrast-high #main-content .goal-stats .notrelevant {
+      background-color: black;
+      background: black; }
     .layout-reportingstatus.contrast-high #main-content .goal-stats .inprogress {
       background-color: #767676;
       background: #767676; }
@@ -1898,6 +1960,24 @@
       background: black;
       color: white !important; }
       .layout-reportingstatus.contrast-high #main-content .statuses .status.notstarted .status-inner {
+        background-color: black !important;
+        background: black !important;
+        color: white !important; }
+    .layout-reportingstatus.contrast-high #main-content .statuses .status.divided {
+      border: 1px solid white;
+      background-color: black;
+      background: black;
+      color: white !important; }
+      .layout-reportingstatus.contrast-high #main-content .statuses .status.divided .status-inner {
+        background-color: black !important;
+        background: black !important;
+        color: white !important; }        
+      .layout-reportingstatus.contrast-high #main-content .statuses .status.notrelevant {
+      border: 1px solid white;
+      background-color: black;
+      background: black;
+      color: white !important; }
+      .layout-reportingstatus.contrast-high #main-content .statuses .status.notrelevant .status-inner {
         background-color: black !important;
         background: black !important;
         color: white !important; }

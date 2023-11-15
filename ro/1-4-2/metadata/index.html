@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115201216">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115204540">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -473,7 +473,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 1.4.2: Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 1.4.2.a: Proportion of total adult population with secure tenure rights to land with legally recognized documentation</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -487,7 +487,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 1.4: By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</p>");
+        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 1.4: By 2030, ensure that all men and women, in particular the poor and the  vulnerable, have equal rights to economic resources, as well as access to  basic services, ownership and control over land and other forms of property,  inheritance, natural resources, appropriate new technology and financial  services, including microfinance.</p>");
         var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -501,7 +501,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "<p>2021-08-01</p>");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -515,7 +515,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>UN-Habitat and World Bank</p>");
+        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "World Bank (WB), UN-Habitat");
         var propertyEditor = editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -529,7 +529,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>This indicator is Goal 1, and is also particularly related to Goal 5, 5.a.1 (access to agricultural land) and 5.a.2 (legal framework for land governance). Tenure security also matters for Goal 2, Target 2.3 (2.3.1 and 2.3.2 addressing smallholder farmers; Target 2.4 (2.4.1 on agricultural area), to Goal 11, to target 11.1 (access to affordable housing/upgrading slums) and target 11.3 (sustainable urbanization/settlement planning). Land tenure also influences land use and is thus key to achieving Goal 14 (b) to provide access to small-scale fishers and marine resources, and to Goal 15 on the sustainable use of land and natural resources. Similarly, land is a significant source of conflict, and thus also matters for Goal 16 for promoting peace and inclusive societies and institutions.</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1268,12 +1268,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115201216'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115204540'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115201216"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115204540"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

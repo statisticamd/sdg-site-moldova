@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115201216">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115204540">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -473,7 +473,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 9.5.1: Research and development expenditure as a proportion of GDP</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 9.5.1: Share of research and development expenditure in GDP</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -487,7 +487,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 9.5: Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending</p>");
+        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 9.5: Enhance scientific research, upgrade the technological capabilities of  industrial sectors in all countries, in particular developing countries,  including, by 2030, encouraging innovation and substantially increasing the  number of research and development workers per 1 million people and public and  private research and development spending</p>");
         var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -501,7 +501,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2023-03-31");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -515,7 +515,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>UNESCO Institute for Statistics (UIS)</p>");
+        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "United Nations Educational Scientific and Cultural Organization (UNESCO)");
         var propertyEditor = editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -529,7 +529,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>Linkages with goals and targets: 2a, 3b, 12a, 14a, 17.6, 17.7</p>\n<p>Linkages with indicators: 3.b.2 Total net official development assistance to medical research and basic health sectors; 14.a.1 Proportion of total research budget allocated to research in the field of marine technology</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1268,12 +1268,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115201216'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115204540'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115201216"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115204540"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

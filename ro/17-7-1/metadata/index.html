@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115201216">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231115204540">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -471,74 +471,14 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 17.7.1: Total amount of funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies</p>");
-        var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_INDICATOR__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET__GLOBAL', "<p>Target 17.7: Promote the development, transfer, dissemination and diffusion of environmentally sound technologies to developing countries on favourable terms, including on concessional and preferential terms, as mutually agreed</p>");
-        var propertyEditor = editor.getEditor('root.SDG_TARGET__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_TARGET__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2023-03-31");
-        var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: META_LAST_UPDATE__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_CUSTODIAN_AGENCIES__GLOBAL', "<p>United Nations Environment Programme (UNEP)</p>");
-        var propertyEditor = editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_CUSTODIAN_AGENCIES__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>United Nations Environment Programme (UNEP) has identified a number of SDGs where uptake of Environmentally Sound Technologies (ESTs) contributes to their achievement: Goal 7 on ensuring access to affordable, reliable, sustainable and modern energy for all; Goal 8 on the promotion of sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all; Goal 12 on sustainable consumption and production patterns, and Goal 13 on taking urgent action to combat climate change and its impacts.</p>");
-        var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: SDG_RELATED_INDICATORS__GLOBAL');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
@@ -764,12 +704,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115201216'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231115204540'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115201216"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231115204540"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

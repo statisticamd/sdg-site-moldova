@@ -742,19 +742,19 @@
           "status": "notrelevant"
         },
         {
-          "id": "4-1-1-c-ii",
-          "title": "(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-i",
           "title": "(i) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-i",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-ii",
+          "title": "(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-ii",
           "status": "complete"
         },
         {

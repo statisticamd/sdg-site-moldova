@@ -43,7 +43,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1",
-          "status": "notapplicable"
+          "status": "divided"
         },
         {
           "id": "1-3-1-a",
@@ -2259,6 +2259,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-5-3",
+          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/11-5-3",
           "status": "notstarted"
         },
         {

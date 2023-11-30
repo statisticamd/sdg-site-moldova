@@ -23,6 +23,8 @@ permalink: /ro/news/
 - [Notă de concept privind viziunea Strategiei Naționale de Dezvoltare „Moldova 2030”, ediția 2017](http://cancelaria.gov.md/sites/default/files/viziunea_snd_2030_clean.pdf)
 
 ## Publicații
+- [Moldova în cifre, breviar statistic](https://statistica.gov.md/ro/moldova-in-cifre-breviar-statistic-editiile-2006-2023-9877_59483.html)
+- [Balanţa energetică a Republicii Moldova](https://statistica.gov.md/ro/balanta-energetica-a-republicii-moldova-editiile-2007-2022-9668_59503.html)
 - [Tinerii în țările CSI și ODD](https://statistica.gov.md/ro/publicatia-tinerii-din-csi-si-odd-editia-2021-9877_60059.html) 
 - [Monitorizarea indicatorilor ODD în țările CSI](https://statistica.gov.md/ro/culegerile-monitorizarea-indicatorilor-odd-in-regiunea-csi-eidtiile-2019-9877_60060.html) 
 - [Tineretul în CSI - portret statistic](https://statistica.gov.md/ro/tineretul-in-csi-portret-statistic-editiile-2018-2021-9877_60062.html) 

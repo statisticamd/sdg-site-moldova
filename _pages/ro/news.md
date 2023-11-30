@@ -11,11 +11,11 @@ permalink: /ro/news/
 
 ## Rapoarte de Evaluare Națională Voluntară
 - [Raportul de Evaluare Națională Voluntară, ediția 2020](https://statistica.gov.md/public/files/SDG/docs/VNR_rom.pdf)
-
-- [Anexă statistică la Raportul de Evaluare Națională, ediția 2020](https://statistica.gov.md/public/files/SDG/docs/SDG_in_Moldova_ro.pdf)
+    - [Anexă statistică la Raportul de Evaluare Națională, ediția 2020](https://statistica.gov.md/public/files/SDG/docs/SDG_in_Moldova_ro.pdf)
 
 
 ## Rapoarte și documente relevante
+- [Raport național de progres privind implementarea Agendei de Dezvoltare Durabilă, septembrie 2023](https://cancelaria.gov.md/ro/content/guvernul-publicat-raportul-national-de-progres-privind-implementarea-agendei-de-dezvoltare)
 - [Raportul „Naționalizarea indicatorilor pentru ODD”, martie 2017](https://statistica.gov.md/public/files/SDG/docs/Indicators_ONU_RO.pdf)
 - [Ghid privind naționalizarea Obiectivelor de Dezvoltare Durabilă, iulie 2017](https://www.undp.org/ro/moldova/publications/ghid-privind-na%C8%9Bionalizarea-obiectivelor-de-dezvoltare-durabil%C4%83)
 - [Raportul „Adoptarea Agendei 2030 de Dezvoltarea Durabilă la contextul Republicii Moldova”, iulie 2017](https://www.undp.org/ro/moldova/publications/adaptarea-agendei-2030-de-dezvoltarea-durabil%C4%83-la-contextul-republicii-moldova)
@@ -31,4 +31,4 @@ permalink: /ro/news/
 - [Quiz Testează-ți cunoștințele despre Obiectivele Dezvoltării Durabile](http://statistica.gov.md/ro/quiz-test-de-verificare-a-cunoasterii-obiectivelor-de-dezvoltare-145_59225.html)
 
 ## Alte noutăți relevante
-- [Noutăți relevante](https://statistica.gov.md/ro/obiectivele-de-dezvoltare-durabila-183.html)
+- [Noutăți relevante ODD în Republica Moldova](https://statistica.gov.md/ro/obiectivele-de-dezvoltare-durabila-183.html)

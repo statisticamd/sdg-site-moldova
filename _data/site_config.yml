@@ -209,8 +209,8 @@ progress_status:
   status_heading: ''
   status_help: ''
   status_types: []
-remote_data_prefix: 'https://statisticamd.github.io/sdg-data-moldova'
-#remote_data_prefix: 'https://sdg.statistica.md/sdg-data-moldova'
+#remote_data_prefix: 'https://statisticamd.github.io/sdg-data-moldova'
+remote_data_prefix: 'https://sdg.statistica.md/sdg-data-moldova'
 reporting_status:
   title: status.reporting_status
   description: status.description

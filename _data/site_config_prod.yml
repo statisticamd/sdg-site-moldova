@@ -16,9 +16,8 @@
 
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://statistica-md.github.io/sdg-data/"
 #remote_data_prefix: "https://statisticamd.github.io/sdg-data-moldova/"
-#remote_data_prefix: "https://sdg.statistica.md/sdg-data-moldova/"
+remote_data_prefix: "https://sdg.statistica.md/sdg-data-moldova/"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.

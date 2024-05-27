@@ -5,4 +5,3 @@ gem "html-proofer", "3.19.4"
 gem "jekyll-remote-theme"
 gem "deep_merge"
 gem "jekyll-open-sdg-plugins", "2.1.0"
-gem install bundler -v 2.4.22

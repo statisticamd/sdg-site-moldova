@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'en',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Goal 5 - Gender equality - Indicators For The Sustainable Development Goals</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
@@ -123,13 +136,13 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231214175810">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240728205427">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +152,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
@@ -234,7 +250,7 @@ layout-goal
             </a>
         </li></ul>
 </div></span><a title="Enable high contrast" aria-label="Enable high contrast"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
@@ -272,7 +288,11 @@ data-event-label="high"
                 <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/5.png" alt="Gender equality - Goal 5" id="goal-5" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Achieve gender equality and empower all women and girls</h1>
+                <h1>
+                    
+                        Achieve gender equality and empower all women and girls
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -332,7 +352,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-1-1">Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-1-1/">Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex</a></span>
               
 
 
@@ -401,7 +421,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-2-1">Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-2-1/">Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age</a></span>
               
 
 
@@ -453,7 +473,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-2-2">Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-2-2/">Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence</a></span>
               
 
 
@@ -522,7 +542,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-3-1">Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-3-1/">Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18</a></span>
               
 
 
@@ -610,7 +630,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1">Proportion of time spent on unpaid domestic and care work, by sex, age and location</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1/">Proportion of time spent on unpaid domestic and care work, by sex, age and location</a></span>
               
 
 
@@ -662,7 +682,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1-1">Proportion of female personal assistants (caring for people with severe disabilities)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1-1/">Proportion of female personal assistants (caring for people with severe disabilities)</a></span>
               
 
 
@@ -714,7 +734,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1-2">Coverage of children up to 3 years old with early education</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-4-1-2/">Coverage of children up to 3 years old with early education</a></span>
               
 
 
@@ -802,7 +822,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-1-a">Proportion of seats held by women in the national parliament</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-1-a/">Proportion of seats held by women in the national parliament</a></span>
               
 
 
@@ -854,7 +874,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-1-b">Proportion of seats held by women in local public administration</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-1-b/">Proportion of seats held by women in local public administration</a></span>
               
 
 
@@ -906,7 +926,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2">Proportion of women in managerial positions</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2/">Proportion of women in managerial positions</a></span>
               
 
 
@@ -958,7 +978,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-1">Proportion of women in government</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-1/">Proportion of women in government</a></span>
               
 
 
@@ -1010,7 +1030,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-2">Proportion of women in public service</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-2/">Proportion of women in public service</a></span>
               
 
 
@@ -1062,7 +1082,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-3">Proportion of female judges</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-5-2-3/">Proportion of female judges</a></span>
               
 
 
@@ -1131,7 +1151,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-1">Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-1/">Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care</a></span>
               
 
 
@@ -1202,7 +1222,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-2-1">Existence in the country of legislative-normative framework guaranteeing women and men aged 15-49 years old access to sexual and reproductive health, information and education</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-2-1/">Existence in the country of legislative-normative framework guaranteeing women and men aged 15-49 years old access to sexual and reproductive health, information and education</a></span>
               
 
 
@@ -1254,7 +1274,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-2-2">Implementation in the country of the legislative-normative framework, which guarantees women and men aged 15-49 years old access to sexual and reproductive health, information and education</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-6-2-2/">Implementation in the country of the legislative-normative framework, which guarantees women and men aged 15-49 years old access to sexual and reproductive health, information and education</a></span>
               
 
 
@@ -1342,7 +1362,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-a-1-a">Proportion of the population of the agricultural sector with ownership or other property rights over agricultural land</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-a-1-a/">Proportion of the population of the agricultural sector with ownership or other property rights over agricultural land</a></span>
               
 
 
@@ -1394,7 +1414,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-a-1-b">Proportion of women with ownership or other property rights over agricultural land</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-a-1-b/">Proportion of women with ownership or other property rights over agricultural land</a></span>
               
 
 
@@ -1482,7 +1502,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-b-1">Proportion of individuals who own a mobile telephone, by sex</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-b-1/">Proportion of individuals who own a mobile telephone, by sex</a></span>
               
 
 
@@ -1534,7 +1554,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-b-1-1">Average number of mobile telephones by 100 households</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-b-1-1/">Average number of mobile telephones by 100 households</a></span>
               
 
 
@@ -1622,7 +1642,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/5-c-1-1">Availability of public resources' monitoring and allocation systems for gender equality and women's empowerment</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/5-c-1-1/">Availability of public resources' monitoring and allocation systems for gender equality and women's empowerment</a></span>
               
 
 
@@ -1706,7 +1726,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
@@ -1728,12 +1747,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231214175810'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240728205427'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231214175810"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240728205427"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

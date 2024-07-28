@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'ro',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Obiectiv 4 - Educație de calitate - Indicatori pentru Obiectivele de Dezvoltare Durabilă</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
@@ -123,13 +136,13 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231214175810">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240728205427">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +152,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
@@ -234,7 +250,7 @@ layout-goal
             </a>
         </li></ul>
 </div></span><a title="Activează contrastul înalt" aria-label="Activează contrastul înalt"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
@@ -272,7 +288,11 @@ data-event-label="high"
                 <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/4.png" alt="Educație de calitate - Obiectiv 4" id="goal-4" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Garantarea unei educaţii de calitate şi promovarea oportunităţilor de învăţare de-a lungul vieţii pentru toţi</h1>
+                <h1>
+                    
+                        Garantarea unei educaţii de calitate şi promovarea oportunităţilor de învăţare de-a lungul vieţii pentru toţi
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -351,7 +371,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1-c-ii">(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1-c-ii/">(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii</a></span>
               
 
 
@@ -403,7 +423,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1-c-i">(i) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-1-c-i/">(i) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii</a></span>
               
 
 
@@ -455,7 +475,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2">Rata de absolvire (învățământ primar, învățământ secundar inferior, învățământ secundar superior)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2/">Rata de absolvire (învățământ primar, învățământ secundar inferior, învățământ secundar superior)</a></span>
               
 
 
@@ -507,7 +527,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2-1">Rata brută de admisie în ultimul an de studiu al învățământului primar și al învățământului gimnazial</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-1-2-1/">Rata brută de admisie în ultimul an de studiu al învățământului primar și al învățământului gimnazial</a></span>
               
 
 
@@ -576,7 +596,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-1">Proporția copiilor cu vârsta cuprinsă între 24 și 59 de luni care sunt pe cale de dezvoltare în ceea ce privește sănătatea, învățarea și bunăstarea psihosocială, pe sexe</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-1/">Proporția copiilor cu vârsta cuprinsă între 24 și 59 de luni care sunt pe cale de dezvoltare în ceea ce privește sănătatea, învățarea și bunăstarea psihosocială, pe sexe</a></span>
               
 
 
@@ -628,7 +648,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-2">Rata de încadrare în educația organizată (cu un an înainte de vârsta oficială de intrare în școala primară), pe sexe</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-2-2/">Rata de încadrare în educația organizată (cu un an înainte de vârsta oficială de intrare în școala primară), pe sexe</a></span>
               
 
 
@@ -697,7 +717,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1">Rata de participare a tinerilor și adulților în educația formală și non-formală în ultimele 12 luni, pe sexe</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1/">Rata de participare a tinerilor și adulților în educația formală și non-formală în ultimele 12 luni, pe sexe</a></span>
               
 
 
@@ -749,7 +769,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1-1">Rata brută de cuprindere în învățământul terțiar</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-3-1-1/">Rata brută de cuprindere în învățământul terțiar</a></span>
               
 
 
@@ -818,7 +838,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-4-1">Ponderea tinerilor și adulților cu cunoștințe TIC, după tipul acestora</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-4-1/">Ponderea tinerilor și adulților cu cunoștințe TIC, după tipul acestora</a></span>
               
 
 
@@ -906,7 +926,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-a">Indicele parității în învățământul primar  (nivelul 1)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-a/">Indicele parității în învățământul primar  (nivelul 1)</a></span>
               
 
 
@@ -958,7 +978,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-b">Indicele parității în învățământul gimnazial (nivelul 2)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-b/">Indicele parității în învățământul gimnazial (nivelul 2)</a></span>
               
 
 
@@ -1010,7 +1030,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-c">Indicele parității  în învățământul secundar general (liceal) și profesional tehnic (nivelul 3)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-c/">Indicele parității  în învățământul secundar general (liceal) și profesional tehnic (nivelul 3)</a></span>
               
 
 
@@ -1062,7 +1082,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-d">Indicele parității în învățământul terțiar</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-d/">Indicele parității în învățământul terțiar</a></span>
               
 
 
@@ -1114,7 +1134,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-e">Indicele parității al copiilor cu dizabilități încadrați în învățământul primar și secundar general</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-5-1-e/">Indicele parității al copiilor cu dizabilități încadrați în învățământul primar și secundar general</a></span>
               
 
 
@@ -1219,7 +1239,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-7-1">Măsura în care (i) educația privind cetățenia globală și (ii) educația pentru dezvoltare durabilă, sunt integrate în (a) politicile educaționale naționale, (b) curriculum, (c) instruirea profesorilor și (d) evaluarea studenților</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-7-1/">Măsura în care (i) educația privind cetățenia globală și (ii) educația pentru dezvoltare durabilă, sunt integrate în (a) politicile educaționale naționale, (b) curriculum, (c) instruirea profesorilor și (d) evaluarea studenților</a></span>
               
 
 
@@ -1307,7 +1327,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-a">Ponderea instituțiilor de învățământ cu acces la electricitate</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-a/">Ponderea instituțiilor de învățământ cu acces la electricitate</a></span>
               
 
 
@@ -1359,7 +1379,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-b">Ponderea instituțiilor de învățământ primar și secundar general cu conexiune la Internet în scopuri pedagogice</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-b/">Ponderea instituțiilor de învățământ primar și secundar general cu conexiune la Internet în scopuri pedagogice</a></span>
               
 
 
@@ -1411,7 +1431,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-c">Ponderea instituțiilor de învățământ primar și secundar general cu acces la calculatoare în scopuri pedagogice</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-c/">Ponderea instituțiilor de învățământ primar și secundar general cu acces la calculatoare în scopuri pedagogice</a></span>
               
 
 
@@ -1463,7 +1483,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-d">Ponderea instituțiilor de învățământ general adaptate necesităților persoanelor cu dizabilități</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-d/">Ponderea instituțiilor de învățământ general adaptate necesităților persoanelor cu dizabilități</a></span>
               
 
 
@@ -1515,7 +1535,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-e">Ponderea instituțiilor de învățământ asigurate cu apă potabilă</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-e/">Ponderea instituțiilor de învățământ asigurate cu apă potabilă</a></span>
               
 
 
@@ -1567,7 +1587,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-f">Ponderea instituțiilor de învățământ cu acces la grup sanitar separat pentru fete și băieți</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-f/">Ponderea instituțiilor de învățământ cu acces la grup sanitar separat pentru fete și băieți</a></span>
               
 
 
@@ -1619,7 +1639,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-g">Ponderea instituțiilor de învățământ cu facilități de bază pentru spălarea mâinilor</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-a-1-g/">Ponderea instituțiilor de învățământ cu facilități de bază pentru spălarea mâinilor</a></span>
               
 
 
@@ -1688,7 +1708,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1">Volumul asistenței externe oficiale pentru dezvoltare pentru burse de studii, în funcție de domeniul de educație și tipul studiilor</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1/">Volumul asistenței externe oficiale pentru dezvoltare pentru burse de studii, în funcție de domeniul de educație și tipul studiilor</a></span>
               
 
 
@@ -1740,7 +1760,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1-1">Numărul de locuri bugetare în comanda de stat pentru înscrierea în învățământul superior, inclusiv formare profesională și tehnologia informației și comunicațiilor, programe tehnice, inginerești și științifice</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-b-1-1/">Numărul de locuri bugetare în comanda de stat pentru înscrierea în învățământul superior, inclusiv formare profesională și tehnologia informației și comunicațiilor, programe tehnice, inginerești și științifice</a></span>
               
 
 
@@ -1828,7 +1848,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-a">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul preșcolar</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-a/">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul preșcolar</a></span>
               
 
 
@@ -1880,7 +1900,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-b">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul primar</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-b/">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul primar</a></span>
               
 
 
@@ -1932,7 +1952,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-c">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul secundar general (clasele 5-12)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/4-c-1-c/">Ponderea personalului pedagogic cu studii în domeniul pedagogiei la nivelul secundar general (clasele 5-12)</a></span>
               
 
 
@@ -2022,7 +2042,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
@@ -2044,12 +2063,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231214175810'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240728205427'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231214175810"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240728205427"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

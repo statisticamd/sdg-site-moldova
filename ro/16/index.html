@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'ro',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Obiectiv 16 - Pace, justiție și instituții puternice - Indicatori pentru Obiectivele de Dezvoltare Durabilă</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
@@ -123,13 +136,13 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231214175810">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240728205427">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +152,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
@@ -234,7 +250,7 @@ layout-goal
             </a>
         </li></ul>
 </div></span><a title="Activează contrastul înalt" aria-label="Activează contrastul înalt"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
@@ -272,7 +288,11 @@ data-event-label="high"
                 <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/16.png" alt="Pace, justiție și instituții puternice - Obiectiv 16" id="goal-16" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Promovarea unor societăți pașnice și incluzive pentru o dezvoltare durabilă, a accesului la justiție pentru toţi şi crearea unor instituţii eficiente, responsabile şi incluzive la toate nivelurile</h1>
+                <h1>
+                    
+                        Promovarea unor societăți pașnice și incluzive pentru o dezvoltare durabilă, a accesului la justiție pentru toţi şi crearea unor instituţii eficiente, responsabile şi incluzive la toate nivelurile
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -332,7 +352,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-1">Numărul victimelor omorului intenționat la 100 mii populație, pe sexe și vârstă</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-1/">Numărul victimelor omorului intenționat la 100 mii populație, pe sexe și vârstă</a></span>
               
 
 
@@ -384,7 +404,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-2">Numărul deceselor cauzate de conflicte la 100 mii populație, pe sexe, vârste și cauză</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-2/">Numărul deceselor cauzate de conflicte la 100 mii populație, pe sexe, vârste și cauză</a></span>
               
 
 
@@ -436,7 +456,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-3">Proporția populației supuse (a) violentei fizice, (b) violenței psihologice și (c) violenței sexuale, în ultimele 12 luni</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-3/">Proporția populației supuse (a) violentei fizice, (b) violenței psihologice și (c) violenței sexuale, în ultimele 12 luni</a></span>
               
 
 
@@ -488,7 +508,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-3-1">Numărul de victime ale infracțiunilor de violență la 100 000 populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-3-1/">Numărul de victime ale infracțiunilor de violență la 100 000 populație</a></span>
               
 
 
@@ -540,7 +560,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-4">Ponderea persoanelor care se simt în siguranță când se plimbă singure în regiunea lor de reședință după lăsarea întunericului</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-1-4/">Ponderea persoanelor care se simt în siguranță când se plimbă singure în regiunea lor de reședință după lăsarea întunericului</a></span>
               
 
 
@@ -609,7 +629,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-1">Ponderea copiilor (1-17 ani) care au fost supuși pedepsei fizice și/sau agresiunii psihologice din partea îngrijitorilor, în ultima lună</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-1/">Ponderea copiilor (1-17 ani) care au fost supuși pedepsei fizice și/sau agresiunii psihologice din partea îngrijitorilor, în ultima lună</a></span>
               
 
 
@@ -661,7 +681,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-1-1">Numărul de copii victime ale violenței și neglijării, la sfârșitul anului</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-1-1/">Numărul de copii victime ale violenței și neglijării, la sfârșitul anului</a></span>
               
 
 
@@ -713,7 +733,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-2">Numărul victimelor traficului de ființe umane la 100 mii populație, pe sexe, vârstă și forme de exploatare</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-2/">Numărul victimelor traficului de ființe umane la 100 mii populație, pe sexe, vârstă și forme de exploatare</a></span>
               
 
 
@@ -765,7 +785,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-3">Ponderea tinerilor în vârstă de 18-29 ani care au fost supuși violenței sexuale până la 18 ani</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-2-3/">Ponderea tinerilor în vârstă de 18-29 ani care au fost supuși violenței sexuale până la 18 ani</a></span>
               
 
 
@@ -834,7 +854,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-1">Ponderea victimelor violenței care în ultimele 12 luni au raport despre victimizarea lor autorităților competente sau altor mecanisme oficial recunoscute de soluționare a conflictelor</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-1/">Ponderea victimelor violenței care în ultimele 12 luni au raport despre victimizarea lor autorităților competente sau altor mecanisme oficial recunoscute de soluționare a conflictelor</a></span>
               
 
 
@@ -886,7 +906,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2">Ponderea persoanelor aflate în arest preventiv în total persoane deținute în instituții penitenciare</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2/">Ponderea persoanelor aflate în arest preventiv în total persoane deținute în instituții penitenciare</a></span>
               
 
 
@@ -938,7 +958,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-1">Numărul de persoane care au beneficiat de asistență juridică garantată de stat</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-1/">Numărul de persoane care au beneficiat de asistență juridică garantată de stat</a></span>
               
 
 
@@ -990,7 +1010,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-2">Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și Consiliului pentru egalitate, implementate de către autoritățile și instituțiile sesizate</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-2/">Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și Consiliului pentru egalitate, implementate de către autoritățile și instituțiile sesizate</a></span>
               
 
 
@@ -1042,7 +1062,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-3">Ponderea cazurilor pierdute la CEDO, din numărul de cereri comunicate în fiecare an</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-3/">Ponderea cazurilor pierdute la CEDO, din numărul de cereri comunicate în fiecare an</a></span>
               
 
 
@@ -1094,7 +1114,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-4">Gradul de satisfacție a populației privind calitatea serviciilor în cadrul sistemului judiciar</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-3-2-4/">Gradul de satisfacție a populației privind calitatea serviciilor în cadrul sistemului judiciar</a></span>
               
 
 
@@ -1182,7 +1202,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-1">Valoarea fluxurilor financiare intrate și ieșite din țară ilegal ($ SUA)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-1/">Valoarea fluxurilor financiare intrate și ieșite din țară ilegal ($ SUA)</a></span>
               
 
 
@@ -1253,7 +1273,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-2-1">Numărul de arme deținute conform legislației la 100 000 populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-2-1/">Numărul de arme deținute conform legislației la 100 000 populație</a></span>
               
 
 
@@ -1305,7 +1325,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-2-2">Numărul de arme deținute ilegal confiscate</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-4-2-2/">Numărul de arme deținute ilegal confiscate</a></span>
               
 
 
@@ -1374,7 +1394,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-1">Ponderea persoanelor care au avut cel puțin un contact cu un funcționar public și care au plătit mită unui funcționar public sau au fost rugate să plătească mită de către acești funcționari publici în ultimele 12 luni</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-1/">Ponderea persoanelor care au avut cel puțin un contact cu un funcționar public și care au plătit mită unui funcționar public sau au fost rugate să plătească mită de către acești funcționari publici în ultimele 12 luni</a></span>
               
 
 
@@ -1426,7 +1446,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2">Ponderea antreprenorilor care au avut cel puțin un contact cu un funcționar public și care au plătit mită unui funcționar public sau au fost rugați să plătească mită de către acești funcționari publici în ultimele 12 luni</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2/">Ponderea antreprenorilor care au avut cel puțin un contact cu un funcționar public și care au plătit mită unui funcționar public sau au fost rugați să plătească mită de către acești funcționari publici în ultimele 12 luni</a></span>
               
 
 
@@ -1478,7 +1498,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2-1">Indicatorul privind „Controlul asupra corupției”  (de la „-2,5” la „2,5”)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2-1/">Indicatorul privind „Controlul asupra corupției”  (de la „-2,5” la „2,5”)</a></span>
               
 
 
@@ -1530,7 +1550,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2-2">Indicatorul privind „Calitatea regulatorie” (de la „-2,5” la „2,5”)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-5-2-2/">Indicatorul privind „Calitatea regulatorie” (de la „-2,5” la „2,5”)</a></span>
               
 
 
@@ -1599,7 +1619,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-1">Cheltuielile publice primare drept ca pondere din bugetul aprobat inițial, pe sectoare (sau pe coduri bugetare sau ceva similar)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-1/">Cheltuielile publice primare drept ca pondere din bugetul aprobat inițial, pe sectoare (sau pe coduri bugetare sau ceva similar)</a></span>
               
 
 
@@ -1651,7 +1671,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-2">Ponderea populației satisfăcute de ultima experiență de accesare a serviciilor publice</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-2/">Ponderea populației satisfăcute de ultima experiență de accesare a serviciilor publice</a></span>
               
 
 
@@ -1703,7 +1723,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-2-1">Ponderea populației care au accesat serviciile publice în format electronic din totalul beneficiarilor de servicii publice</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-6-2-1/">Ponderea populației care au accesat serviciile publice în format electronic din totalul beneficiarilor de servicii publice</a></span>
               
 
 
@@ -1791,7 +1811,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-a">Raportul dintre proporția pozițiilor ocupate în Parlament de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-a/">Raportul dintre proporția pozițiilor ocupate în Parlament de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
               
 
 
@@ -1843,7 +1863,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-b">Raportul dintre proporția pozițiilor ocupate în autoritățile publice (centrale și locale) de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-b/">Raportul dintre proporția pozițiilor ocupate în autoritățile publice (centrale și locale) de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
               
 
 
@@ -1895,7 +1915,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-c">Raportul dintre proporția pozițiilor ocupate în sistemul judiciar de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-1-c/">Raportul dintre proporția pozițiilor ocupate în sistemul judiciar de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație</a></span>
               
 
 
@@ -1947,7 +1967,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-2">Ponderea populației care consideră că procesul de luare a deciziilor este incluziv și participativ, pe sexe, vârstă, dizabilitate și grup de populație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-7-2/">Ponderea populației care consideră că procesul de luare a deciziilor este incluziv și participativ, pe sexe, vârstă, dizabilitate și grup de populație</a></span>
               
 
 
@@ -2052,7 +2072,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-9-1">Ponderea copiilor în vârstă de până la 5 ani, nașterea cărora a fost înregistrată de o autoritate civilă, pe vârste</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-9-1/">Ponderea copiilor în vârstă de până la 5 ani, nașterea cărora a fost înregistrată de o autoritate civilă, pe vârste</a></span>
               
 
 
@@ -2140,7 +2160,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-10-1-1">Indicele Libertății Presei</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-10-1-1/">Indicele Libertății Presei</a></span>
               
 
 
@@ -2211,7 +2231,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-10-2-1">Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-10-2-1/">Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație</a></span>
               
 
 
@@ -2280,7 +2300,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-a-1">Existența instituțiilor naționale independente pentru drepturile omului în conformitate cu Principiile de la Paris</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-a-1/">Existența instituțiilor naționale independente pentru drepturile omului în conformitate cu Principiile de la Paris</a></span>
               
 
 
@@ -2349,7 +2369,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-b-1">Ponderea populației care a comunicat că în ultimele 12 luni s-a simțit vreodată discriminată sau hărțuită în baza unui motiv interzis de dreptul internațional al drepturilor omului</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/16-b-1/">Ponderea populației care a comunicat că în ultimele 12 luni s-a simțit vreodată discriminată sau hărțuită în baza unui motiv interzis de dreptul internațional al drepturilor omului</a></span>
               
 
 
@@ -2439,7 +2459,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
@@ -2461,12 +2480,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231214175810'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240728205427'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231214175810"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240728205427"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

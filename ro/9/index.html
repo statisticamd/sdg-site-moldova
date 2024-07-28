@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'ro',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Obiectiv 9 - Industrie, inovație și infrastructură - Indicatori pentru Obiectivele de Dezvoltare Durabilă</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
@@ -123,13 +136,13 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20231214175810">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240728205427">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +152,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
@@ -234,7 +250,7 @@ layout-goal
             </a>
         </li></ul>
 </div></span><a title="Activează contrastul înalt" aria-label="Activează contrastul înalt"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
@@ -272,7 +288,11 @@ data-event-label="high"
                 <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/9.png" alt="Industrie, inovație și infrastructură - Obiectiv 9" id="goal-9" class="goal-icon-image goal-icon-image-" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Construirea unor infrastructuri rezistente, promovarea industrializării durabile şi încurajarea inovaţiei</h1>
+                <h1>
+                    
+                        Construirea unor infrastructuri rezistente, promovarea industrializării durabile şi încurajarea inovaţiei
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -332,7 +352,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-1">Ponderea populației rurale care locuiește în raza de 2 km față de un drum funcțional pentru toate anotimpurile</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-1/">Ponderea populației rurale care locuiește în raza de 2 km față de un drum funcțional pentru toate anotimpurile</a></span>
               
 
 
@@ -403,7 +423,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-a">Parcursul mărfurilor transportate, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-a/">Parcursul mărfurilor transportate, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
               
 
 
@@ -455,7 +475,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-b">Parcursul pasagerilor transportați, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-b/">Parcursul pasagerilor transportați, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
               
 
 
@@ -543,7 +563,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-1">Valoarea adăugată brută în industria prelucrătoare, ca proporție în PIB (dolari SUA, prețuri curente)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-1/">Valoarea adăugată brută în industria prelucrătoare, ca proporție în PIB (dolari SUA, prețuri curente)</a></span>
               
 
 
@@ -560,9 +580,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-național-proxy">Național proxy</span>
         </li></ul>
 
 
@@ -595,7 +612,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-2">Valoarea adăugată brută în industria prelucrătoare per populație ocupată în industria prelucrătoare (dolari SUA, prețuri constante)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-2/">Valoarea adăugată brută în industria prelucrătoare per populație ocupată în industria prelucrătoare (dolari SUA, prețuri constante)</a></span>
               
 
 
@@ -612,9 +629,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-național-proxy">Național proxy</span>
         </li></ul>
 
 
@@ -647,7 +661,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-a">Valoarea adăugată brută în industria prelucrătoare ca proporție în PIB (lei, prețuri curente)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-a/">Valoarea adăugată brută în industria prelucrătoare ca proporție în PIB (lei, prețuri curente)</a></span>
               
 
 
@@ -664,9 +678,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-global-divizat">Global divizat</span>
         </li></ul>
 
 
@@ -699,7 +710,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-b">Valoarea adăugată brută în industria prelucrătoare pe persoană (lei, prețuri constante)</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-b/">Valoarea adăugată brută în industria prelucrătoare pe persoană (lei, prețuri constante)</a></span>
               
 
 
@@ -716,9 +727,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-global-divizat">Global divizat</span>
         </li></ul>
 
 
@@ -751,7 +759,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-2">Ponderea populației ocupate în industria prelucrătoare în total populație ocupată</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-2/">Ponderea populației ocupate în industria prelucrătoare în total populație ocupată</a></span>
               
 
 
@@ -839,7 +847,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-1">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii, în total valoarea adăugată brută</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-1/">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii, în total valoarea adăugată brută</a></span>
               
 
 
@@ -856,9 +864,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-național-proxy">Național proxy</span>
         </li></ul>
 
 
@@ -891,7 +896,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-a">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii din sectorul industrie prelucrătoare, în total valoarea adăugată brută în industria prelucrătoare</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-a/">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii din sectorul industrie prelucrătoare, în total valoarea adăugată brută în industria prelucrătoare</a></span>
               
 
 
@@ -908,9 +913,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-global-divizat">Global divizat</span>
         </li></ul>
 
 
@@ -962,7 +964,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-1">Cota întreprinderilor mici și mijlocii care au accesat credite și/sau împrumuturi pe parcursul anului, inclusiv în sectorul industrie</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-1/">Cota întreprinderilor mici și mijlocii care au accesat credite și/sau împrumuturi pe parcursul anului, inclusiv în sectorul industrie</a></span>
               
 
 
@@ -1014,7 +1016,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-2">Ponderea valorii creditelor și împrumuturilor accesate de întreprinderile mici și mijlocii, pe parcursul anului, în total valoarea creditelor și împrumuturilor accesate de către întreprinderi,  inclusiv în sectorul industrie</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-2/">Ponderea valorii creditelor și împrumuturilor accesate de întreprinderile mici și mijlocii, pe parcursul anului, în total valoarea creditelor și împrumuturilor accesate de către întreprinderi,  inclusiv în sectorul industrie</a></span>
               
 
 
@@ -1102,7 +1104,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-1">1 Emisiile totale de CO2, pe sectoare, mii tone CO2 echivalent</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-1/">1 Emisiile totale de CO2, pe sectoare, mii tone CO2 echivalent</a></span>
               
 
 
@@ -1154,7 +1156,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-a">Emisiile totale de CO2 provenite de la arderea combustibilului</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-a/">Emisiile totale de CO2 provenite de la arderea combustibilului</a></span>
               
 
 
@@ -1206,7 +1208,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-b">Emisiile totale de CO2 raportate la o unitate de PIB</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-b/">Emisiile totale de CO2 raportate la o unitate de PIB</a></span>
               
 
 
@@ -1258,7 +1260,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-c">Emisiile de CO2 generate de sectorul industrial raportat la valoarea adăugată brută în industrie</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-c/">Emisiile de CO2 generate de sectorul industrial raportat la valoarea adăugată brută în industrie</a></span>
               
 
 
@@ -1327,7 +1329,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-1">Cheltuielile pentru cercetare și dezvoltare ca procent din PIB</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-1/">Cheltuielile pentru cercetare și dezvoltare ca procent din PIB</a></span>
               
 
 
@@ -1379,7 +1381,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-2">Cercetători (echivalent normă întreagă) la 1.000.000 locuitori</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-2/">Cercetători (echivalent normă întreagă) la 1.000.000 locuitori</a></span>
               
 
 
@@ -1448,7 +1450,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-a-1">Volumul suportului internațional oficial (asistenței externe oficiale plus alte fluxuri oficiale) acordate pentru dezvoltarea infrastructurii</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-a-1/">Volumul suportului internațional oficial (asistenței externe oficiale plus alte fluxuri oficiale) acordate pentru dezvoltarea infrastructurii</a></span>
               
 
 
@@ -1517,7 +1519,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-b-1">Ponderea valorii adăugate a industriei cu tehnologii avansate și medii-avansate în total valoarea adăugată</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-b-1/">Ponderea valorii adăugate a industriei cu tehnologii avansate și medii-avansate în total valoarea adăugată</a></span>
               
 
 
@@ -1534,9 +1536,6 @@ data-event-label="high"
 </span>
 
 
-        </li><li class="list-inline-item">
-        
-        <span class="tag tag-global-ajustat">Global ajustat</span>
         </li></ul>
 
 
@@ -1586,7 +1585,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1">Rata de acoperire a populației cu rețea mobilă, pe tehnologii</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1/">Rata de acoperire a populației cu rețea mobilă, pe tehnologii</a></span>
               
 
 
@@ -1638,7 +1637,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1-1">Rata de penetrare a serviciilor de acces la Internet</a></span>
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1-1/">Rata de penetrare a serviciilor de acces la Internet</a></span>
               
 
 
@@ -1728,7 +1727,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
@@ -1750,12 +1748,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20231214175810'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240728205427'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20231214175810"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240728205427"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

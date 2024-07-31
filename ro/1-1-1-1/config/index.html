@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240731100932">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240731151056">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -529,7 +529,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_footnote', "Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified.");
+        var currentValue = normalizeCurrentValue('data_footnote', "Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified");
         var propertyEditor = editor.getEditor('root.data_footnote');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -771,7 +771,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "1.1.1.1. Proportion of population below the international poverty line of $4.3 per day");
+        var currentValue = normalizeCurrentValue('graph_title', "national_indicators.1-1-1-1-graph");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -813,7 +813,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_available', "Proportion of population below the international poverty line of $4.3 per day");
+        var currentValue = normalizeCurrentValue('indicator_available', "national_indicators.1-1-1-1-title");
         var propertyEditor = editor.getEditor('root.indicator_available');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -853,18 +853,6 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('indicator_tabs', {"override":false,"tab_1":"","tab_2":"","tab_3":"","tab_4":""});
-        var propertyEditor = editor.getEditor('root.indicator_tabs');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: indicator_tabs');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_tabs'));
 
     
@@ -1029,7 +1017,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('tags', "National proxy");
+        var currentValue = normalizeCurrentValue('tags', []);
         var propertyEditor = editor.getEditor('root.tags');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1191,12 +1179,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240731100932'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240731151056'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240731100932"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240731151056"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240731151056">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240802105234">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -781,7 +781,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> The gross external debt of the Republic of Moldova, at a given time, is equal to outstanding amount of those actual currently, and not contingent liabilities of residents to non-residents that require payment (s) of principal/or and interest, by the debtor at some point (s) in the future.</p>  <p>The main components  of the external debt: (1) Portfolio investment - debt securities (which include debt securities issued to be placed by residents of Moldova, held by  non-residents, except for the ones held by non-resident parent enterprise / non-resident  branch and state securities issued to be placed on the internal market  of the Republic of Moldova, purchased by non-residents,  (2) Loans (IMF loans,  governmental loans, guaranteed loans, private loans), (3)  Special drawing rights (allocation of SDR), (4) Currency and deposits (deposits with the national banking system and/or other resident deposit taking financial corporations), (5) Trade credits and advances  (liabilities in the form of credits and advances extended by</p>  <p>suppliers or buyers in commercial transactions in goods or services), (6) Other  debt liabilities (historical debt for import of goods and services,  liabilities related to transactions in investments,  liabilities not yet extinguished in relations with non-residents), (7) Intercompany lending (liabilities of direct investment enterprises to their direct investors from abroad). </p>  <p>Type of debt: public debt and publicly  guaranteed debt (short-term, long- term), nonguaranteed private debt  (short-term, long-term).</p>  <p> The external debt of the Republic of Moldova is  compiled according to the manual “External Debt Statistics: Guide for Compilers and Users” recommended by IMF, edition 2013, which is in line with the VI edition of the Balance of Payments and International Investment  Position Manual (MBP6). According to the EDS 2013, the arrears on external loans and debt securities service, are considered as part of the original financial instrument stock generating the debt  ([see  here] (https://bnm.md/en/search?partitions[0]=677&post_types[677][0]=922 )). </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> The gross external debt of the Republic of Moldova, at a given time, is equal to outstanding amount of those actual currently, and not contingent liabilities of residents to non-residents that require payment (s) of principal/or and interest, by the debtor at some point (s) in the future.</p>  <p>The main components  of the external debt: (1) Portfolio investment - debt securities (which include debt securities issued to be placed by residents of Moldova, held by  non-residents, except for the ones held by non-resident parent enterprise / non-resident  branch and state securities issued to be placed on the internal market  of the Republic of Moldova, purchased by non-residents,  (2) Loans (IMF loans,  governmental loans, guaranteed loans, private loans), (3)  Special drawing rights (allocation of SDR), (4) Currency and deposits (deposits with the national banking system and/or other resident deposit taking financial corporations), (5) Trade credits and advances  (liabilities in the form of credits and advances extended by</p>  <p>suppliers or buyers in commercial transactions in goods or services), (6) Other  debt liabilities (historical debt for import of goods and services,  liabilities related to transactions in investments,  liabilities not yet extinguished in relations with non-residents), (7) Intercompany lending (liabilities of direct investment enterprises to their direct investors from abroad). </p>  <p>Type of debt: public debt and publicly  guaranteed debt (short-term, long- term), nonguaranteed private debt  (short-term, long-term).</p>  <p> The external debt of the Republic of Moldova is  compiled according to the manual “External Debt Statistics: Guide for Compilers and Users” recommended by IMF, edition 2013, which is in line with the VI edition of the Balance of Payments and International Investment  Position Manual (MBP6). According to the EDS 2013, the arrears on external loans and debt securities service, are considered as part of the original financial instrument stock generating the debt. </p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -979,7 +979,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "<p> The service of public external debt and publicly guaranteed debt (payments  made according to a timetable) as a proportion of exports of goods and  services. For this indicator, exclusively only the public debt and publicly  guaranteed debt will be considered.  </p>  <p>  The indicator is calculated by  [NBM](https://bnm.md/en/search?partitions[0]=677&post_types[677][0]=922). </p>");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "The service of public external debt and publicly guaranteed debt (payments  made) as a proportion of exports of goods and  services. For this indicator, exclusively only the public debt and publicly  guaranteed debt will be considered.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1105,7 +1105,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2023-05-18");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2024-08-01");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1119,7 +1119,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-05-18");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2024-08-01");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1281,12 +1281,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240731151056'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240802105234'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240731151056"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240802105234"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

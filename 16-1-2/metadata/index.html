@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240803144618">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240804205529">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -781,7 +781,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> Conflict’ is defined as ‘armed conflict’ in reference to a terminology enshrined in International Humanitarian Law (IHL), and applied to situations based on the assessment of the United Nations (UN) and other internationally mandated entities. ‘Conflict-related deaths’ refers to direct and indirect deaths associated to armed conflict. </p>  <p>There are 2 types of armed conflicts:</p>  <p>1. International armed conflicts - exist whenever there is resort to armed force between two or more States.</p>  <p>2.Non-international armed conflictsare protracted armed confrontations occurring between governmental armed forces and the forces of one or more armed groups, or between such groups arising on the territory of a State.</p>  <p>Direct deaths are deaths where there are reasonable grounds to believe that they resulted directly from war operations and that the acts, decisions and/or purposes that caused these deaths were in furtherance of or under the guise of armed conflict.</p>  <p>Indirect deaths are deaths resulting from a loss of access to essential goods and services (e.g. economic slowdown, shortages of medicines or reduced farming capacity that result in lack of access to adequate food, water, sanitation, health care and safe conditions of work) that are caused or aggravated by the situation of armed conflict.</p>  <p>By definition, these deaths should be separated from other violent deaths which are, in principle, not connected to the situation of armed conflict (e.g. intentional and non-intentional homicides, self-defence, self-inflicted), but are still relevant to the implementation and measurement of SDG target 16.1 </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -895,7 +895,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_SOURCE', "Ministry of Internal Affairs");
+        var currentValue = normalizeCurrentValue('DATA_SOURCE', "");
         var propertyEditor = editor.getEditor('root.DATA_SOURCE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -923,7 +923,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('INST_MANDATE', "Ministry of Internal Affairs");
+        var currentValue = normalizeCurrentValue('INST_MANDATE', "");
         var propertyEditor = editor.getEditor('root.INST_MANDATE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -979,7 +979,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "The total count of conflict-related deaths divided by the total population, expressed per 100.000 population");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1105,7 +1105,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2023-05-12");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2024-08-04");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1119,7 +1119,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-05-12");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2024-08-04");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1281,12 +1281,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240803144618'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240804205529'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240803144618"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240804205529"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

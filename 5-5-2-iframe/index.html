@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240805065326">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20240805155132">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -341,7 +341,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percent&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of managerial positions held by women&quot;,&quot;Proportion of women in senior and middle management positions&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Area of residence&quot;},{&quot;name&quot;:&quot;Economic activities&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Agriculture&quot;,&quot;Industry&quot;,&quot;Construction&quot;,&quot;Wholesale and retail trade; accomodation and food service activities&quot;,&quot;Transportation and storage; information and communication&quot;,&quot;Public administration; education; health and social work&quot;,&quot;Other activities&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Economic activities&quot;},{&quot;name&quot;:&quot;Forms of ownership&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Public&quot;,&quot;Other forms&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Forms of ownership&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Managerial positions held by women&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total - Proportion of managerial positions held by women&quot;,&quot;Urban - Proportion of managerial positions held by women&quot;,&quot;Rural - Proportion of managerial positions held by women&quot;,&quot;Agriculture - Proportion of managerial positions held by women&quot;,&quot;Industry - Proportion of managerial positions held by women&quot;,&quot;Construction - Proportion of managerial positions held by women&quot;,&quot;Wholesale and retail trade; accomodation and food service activities - Proportion of managerial positions held by women&quot;,&quot;Transportation and storage; information and communication - Proportion of managerial positions held by women&quot;,&quot;Public administration; education; health and social work - Proportion of managerial positions held by women&quot;,&quot;Other activities - Proportion of managerial positions held by women&quot;,&quot;Public property - Proportion of managerial positions held by women&quot;,&quot;Other forms of property - Proportion of managerial positions held by women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Managerial positions held by women&quot;},{&quot;name&quot;:&quot;Women in senior and middle management positions&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total - Proportion of women in senior and middle management positions&quot;,&quot;Urban - Proportion of women in senior and middle management positions&quot;,&quot;Rural - Proportion of women in senior and middle management positions&quot;,&quot;Agriculture - Proportion of women in senior and middle management positions&quot;,&quot;Industry - Proportion of women in senior and middle management positions&quot;,&quot;Construction - Proportion of women in senior and middle management positions&quot;,&quot;Wholesale and retail trade; accomodation and food service activities - Proportion of women in senior and middle management positions&quot;,&quot;Transportation and storage; information and communication - Proportion of women in senior and middle management positions&quot;,&quot;Public administration; education; health and social work - Proportion of women in senior and middle management positions&quot;,&quot;Other activities - Proportion of women in senior and middle management positions&quot;,&quot;Public property - Proportion of women in senior and middle management positions&quot;,&quot;Other forms of property - Proportion of women in senior and middle management positions&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Women in senior and middle management positions&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -376,577 +376,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/en/headline/5-5-2.csv" class="btn btn-primary btn-download" download="indicator_5-5-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
     <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/en/data/5-5-2.csv" class="btn btn-primary btn-download" download='indicator_5-5-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>5.5.2 Proportion of women in managerial positions</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col">Units</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td></td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>42.6</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>43.7</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>48.5</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>48.8</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>46.6</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>46.3</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>41.5</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>45.5</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>40.3</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>43.1</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>45.7</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>46.8</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>42.3</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>45.2</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>44.6</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>52.0</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td>44.6</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of managerial positions held by women</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td>47.3</td>
-          
-          
-          
-          <td>Percent</td>
-          
-          
-          
-          <td class="table-value">Proportion of women in senior and middle management positions</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source: National Bureau of Statistics</p>
-    
-    
-    <p>Geographical Area: Republica Moldova, inclusiv partea stângă a Nistrului și mun. Bender</p>
-    
-    
-    <p>Unit of Measurement: Percent, %</p>
-    
-    
-    <p>Footnote: <p> Breaks in time series:</p> <p>Starting with 2019 the data are not entirely compatible with previous period due to the methodological changes:</p> <p>From 2019 LFS is carried out on a new sampling plan, according to a new definition of employment and data are estimated using the number of usually resident  population.</p> <p>Data for 2014-2018 years were estimated using the number of usually resident population. </p></p>
-    
-  </div>
   
 
 </div>
@@ -1592,7 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Jun 15, 2023
+            Aug 05, 2024
           
         </td>
         </tr>
@@ -1607,7 +1045,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Jul 11, 2023
+            Aug 05, 2024
           
         </td>
         </tr>
@@ -1748,7 +1186,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata update </th>
         <td>
           
-            <p>2024-03-28</p>
+            <p>2024-08-02</p>
 
           
         </td>
@@ -1910,7 +1348,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">UN designated tier </th>
         <td>
           
-            <p>1</p>
+            <p>I</p>
 
           
         </td>
@@ -2095,7 +1533,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Contact details </th>
         <td>
           
-            <p>ALERGUS-SOLOVIOV Mariana, head, Employment Statistics Division, National Bureau of Statistics, mariana.alergus@statistica.gov.md , +373 67770786</p>
+            <p>ALERGUS-SOLOVIOV Mariana, head, Labour Force Statistics Division, National Bureau of Statistics, mariana.alergus@statistica.gov.md , +373 67770786</p>
 
           
         </td>
@@ -2217,12 +1655,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240805065326'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20240805155132'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240805065326"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20240805155132"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

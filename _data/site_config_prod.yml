@@ -21,4 +21,4 @@ remote_data_prefix: "https://statisticamd.github.io/sdg-data-moldova/"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: ''
+  ga_prod: 'G-0GYFNPKD7G'

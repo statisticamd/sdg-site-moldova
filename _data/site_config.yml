@@ -1,8 +1,8 @@
 analytics:
   ua: ''
   gtag: ''
-  gtm: 'G-0GYFNPKD7G'
-  ga_prod: ''
+  gtm: ''
+  ga_prod: 'G-0GYFNPKD7G'
 breadcrumbs:
   goal:
     - path: /

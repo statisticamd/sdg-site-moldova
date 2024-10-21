@@ -2,7 +2,7 @@ analytics:
   ua: ''
   gtag: ''
   gtm: ''
-  ga_prod: ''
+  ga_prod: 'G-0GYFNPKD7G'
 breadcrumbs:
   goal:
     - path: /

@@ -1,6 +1,6 @@
 analytics:
   ua: ''
-  gtag: ''
+  gtag: 'G-0GYFNPKD7G'
   gtm: ''
   ga_prod: ''
 breadcrumbs:

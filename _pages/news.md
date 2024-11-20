@@ -13,10 +13,11 @@ permalink: /news/
 - [Voluntary National Review Progress Report edition 2020](https://statistica.gov.md/files/files/SDG/docs/VNR_2020_Moldova_Report_English.pdf)
     - [Annex „Statistics for Sustainable Development Goals” edition 2020](https://statistica.gov.md/files/files/SDG/docs/Statistics_for_SDGS_Moldova.pdf)
 
-
-## Reports and relevant documents
+## National pogress reports
 
 - [National progress report on the implementation of the Sustainable Development Agenda, September 2023](https://cancelaria.gov.md/ro/content/guvernul-publicat-raportul-national-de-progres-privind-implementarea-agendei-de-dezvoltare) (in Rom.)
+
+## Reports and relevant documents
 - [Toolkit for the Nationalisation of Sustainable Development Goals, July 2017](https://statistica.gov.md/public/files/SDG/docs/Toolkit_ONU_EN.pdf)
 - [Adapting the 2030 Agenda on Sustainable Development to the context of the Republic of Moldova, July 2017](https://www.undp.org/moldova/publications/adapting-2030-agenda-sustainable-development-context-republic-moldova)
 - [Interim Evaluation Report of the National Development Strategy" Moldova 2020", September 2017](http://cancelaria.gov.md/sites/default/files/raport_evaluare_md2020_rom.pdf) (in Rom.)
@@ -34,3 +35,14 @@ permalink: /news/
 
 ## Relevant news
 - [Relevant news regarding SDG in Moldova](https://statistica.gov.md/en/sustainable-development-goals-183.html)
+
+## Useful inks
+- [State Chancellery](https://cancelaria.gov.md/node/3521)
+- [UN Database](https://unstats.un.org/sdgs/dataportal)
+- [UN Moldova](https://moldova.un.org/ro)
+- [UNSTATS](https://unstats.un.org/sdgs/)
+- [Eurostat](http://ec.europa.eu/eurostat/web/sdi)
+- [SDG Index](https://www.sdgindex.org/)
+- [CIS STAT](http://new.cisstat.org/sdg)
+- [World Bank](https://datatopics.worldbank.org/sdgs/)
+- [MDGs for Moldova, 2000-2015](https://statbank.statistica.md/PxWeb/pxweb/ro/30%20Statistica%20sociala/30%20Statistica%20sociala__ODM/ODM010100.px/?rxid=4eec3dd5-755a-4e4e-92de-3dc2d391f3a9)

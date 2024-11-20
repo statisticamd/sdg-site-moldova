@@ -13,9 +13,10 @@ permalink: /ro/news/
 - [Raportul de Evaluare Națională Voluntară, ediția 2020](https://statistica.gov.md/public/files/SDG/docs/VNR_rom.pdf)
     - [Anexă statistică la Raportul de Evaluare Națională, ediția 2020](https://statistica.gov.md/public/files/SDG/docs/SDG_in_Moldova_ro.pdf)
 
+## Rapoarte de progres
+- [Raport național de progres privind implementarea Agendei de Dezvoltare Durabilă, septembrie 2023](https://cancelaria.gov.md/ro/content/guvernul-publicat-raportul-national-de-progres-privind-implementarea-agendei-de-dezvoltare)
 
 ## Rapoarte și documente relevante
-- [Raport național de progres privind implementarea Agendei de Dezvoltare Durabilă, septembrie 2023](https://cancelaria.gov.md/ro/content/guvernul-publicat-raportul-national-de-progres-privind-implementarea-agendei-de-dezvoltare)
 - [Raportul „Naționalizarea indicatorilor pentru ODD”, martie 2017](https://statistica.gov.md/public/files/SDG/docs/Indicators_ONU_RO.pdf)
 - [Ghid privind naționalizarea Obiectivelor de Dezvoltare Durabilă, iulie 2017](https://www.undp.org/ro/moldova/publications/ghid-privind-na%C8%9Bionalizarea-obiectivelor-de-dezvoltare-durabil%C4%83)
 - [Raportul „Adoptarea Agendei 2030 de Dezvoltarea Durabilă la contextul Republicii Moldova”, iulie 2017](https://www.undp.org/ro/moldova/publications/adaptarea-agendei-2030-de-dezvoltarea-durabil%C4%83-la-contextul-republicii-moldova)
@@ -34,3 +35,14 @@ permalink: /ro/news/
 
 ## Alte noutăți relevante
 - [Noutăți relevante ODD în Republica Moldova](https://statistica.gov.md/ro/obiectivele-de-dezvoltare-durabila-183.html)
+
+## Linkuri utile
+- [Cancelaria de Stat](https://cancelaria.gov.md/node/3521)
+- [Portalul de date ODD a ONU](https://unstats.un.org/sdgs/dataportal)
+- [ONU Moldova](https://moldova.un.org/ro)
+- [Direcția Statistică a ONU](https://unstats.un.org/sdgs/)
+- [Eurostat](http://ec.europa.eu/eurostat/web/sdi)
+- [SDG Index](https://www.sdgindex.org/)
+- [CIS STAT](http://new.cisstat.org/sdg)
+- [Banca Mondială](https://datatopics.worldbank.org/sdgs/)
+- [Indicatorii revizuiti ai Obiectivelor Dezvoltarii Mileniului, 2000-2015](https://statbank.statistica.md/PxWeb/pxweb/ro/30%20Statistica%20sociala/30%20Statistica%20sociala__ODM/ODM010100.px/?rxid=4eec3dd5-755a-4e4e-92de-3dc2d391f3a9)

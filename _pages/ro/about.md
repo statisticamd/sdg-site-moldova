@@ -18,13 +18,13 @@ Cele 17 Obiective au fost adoptate de toate statele membre ale ONU în 2015, ca 
 ## Despre acest site
 Acest site se bazează pe platforma open source [Open SDG](https://open-sdg.org/).
     
-Alte țări sau organizații care doresc să refolosească platforma de raportare Open SDG sunt binevenite să facă acest lucru gratuit. [Ghidul de pornire rapidă a Open SDG](https://open-sdg.readthedocs.io/en/latest/quick-start/) oferă instrucțiuni tehnice despre cel mai rapid mod de a obține o copie a platformei Open SDG.
+Alte țări sau organizații care doresc să refolosească platforma de raportare Open SDG sunt binevenite să facă acest lucru gratuit. [Ghidul Open SDG](https://open-sdg.readthedocs.io/en/latest/quick-start/) oferă instrucțiuni tehnice despre instalarea platformei Open SDG.
 
-Dacă aveți comentarii, feedback sau doriți să vă implicați în comunitatea Open SDG, vă rugăm să trimiteți un e-mail la <opensdg@googlegroups.com> sau să contactați [Open SDG GitHub](https://github.com/open-sdg/open-sdg ).
+Dacă aveți comentarii, sugestii sau doriți să vă implicați în comunitatea Open SDG, vă rugăm să trimiteți un e-mail la <opensdg@outlook.com> sau să contactați [Open SDG GitHub](https://github.com/open-sdg/open-sdg ).
 
 ## Aveți nevoie de mai multe informații?
-Răspunsurile la unele întrebări specifice despre acest site web sunt incluse în pagina noastră [întrebări frecvente]({{ site.baseurl }}{% link _pages/faq.md %}).
+Răspunsurile la unele întrebări specifice despre acest site web sunt incluse în pagina noastră [întrebări frecvente]({{ site.baseurl }}{% link _pages/ro/faq.md %}).
 
 ## Feedback
-Pentru a oferi feedback cu privire la Obiectivele Dezvoltării Durabile, vă rugăm să ne [contactați]({{ site.baseurl }}/contact-us)
+Pentru a oferi feedback cu privire la Obiectivele Dezvoltării Durabile, vă rugăm să ne [contactați]({{ site.baseurl }}/ro/contact-us)
 

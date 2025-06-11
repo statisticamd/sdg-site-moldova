@@ -350,6 +350,14 @@
           "status": "complete"
         },
         {
+          "id": "2-2-4",
+          "title": "Prevalence of minimum dietary diversity, by population group (children aged 6 to 23.9 months and non-pregnant women aged 15 to 49 years)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/2-2-4/",
+          "status": "notstarted"
+        },
+        {
           "id": "2-3-1",
           "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
@@ -1654,6 +1662,14 @@
           "status": "complete"
         },
         {
+          "id": "8-9-2",
+          "title": "Employed persons in the tourism industries",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/8-9-2/",
+          "status": "notstarted"
+        },
+        {
           "id": "8-10-1",
           "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
           "description": "",
@@ -2059,7 +2075,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-7-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-2-2",

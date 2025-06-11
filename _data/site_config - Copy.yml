@@ -1,8 +1,8 @@
 analytics:
   ua: ''
-  gtag: ''
+  gtag: 'G-0GYFNPKD7G'
   gtm: ''
-  ga_prod: 'G-0GYFNPKD7G'
+  ga_prod: ''
 breadcrumbs:
   goal:
     - path: /
@@ -72,6 +72,8 @@ footer_menu:
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
+  - path: 'https://statistica.gov.md/en/terms-of-use-of-data-national-bureau-of-statistics-139_4417.html'
+    translation_key: general.terms
 frontpage_cards:
   - title: frontpage.download_all
     content: ''
@@ -111,7 +113,7 @@ graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
-graph_title_from_series: false
+graph_title_from_series: true
 header_language_toggle: links
 hide_empty_metadata: true
 hide_single_series: true
@@ -210,29 +212,30 @@ progress_status:
   status_help: ''
   status_types: []
 remote_data_prefix: 'https://statisticamd.github.io/sdg-data-moldova'
+#remote_data_prefix: 'https://sdg.statistica.md/sdg-data-moldova'
 reporting_status:
   title: status.reporting_status
   description: status.description
-  disaggregation_tabs: true
+  disaggregation_tabs: false
   status_types:
-    - value: notstarted
-      label: status.exploring_data_sources
-      hide_on_goal_pages: false
     - value: complete
       label: status.reported_online
+      hide_on_goal_pages: false
+    - value: notstarted
+      label: status.exploring_data_sources
       hide_on_goal_pages: false
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
     - value: notrelevant
       label: status.not_relevant
-      hide_on_goal_pages: false
+      hide_on_goal_pages: true
     - value: inprogress
       label: status.in_progress
       hide_on_goal_pages: false
     - value: divided
       label: status.divided_below
-      hide_on_goal_pages: false   
+      hide_on_goal_pages: true   
 repository_url_data: 'https://github.com/statisticamd/sdg-data-moldova'
 repository_url_site: 'https://github.com/statisticamd/sdg-site-moldova'
 search_index_boost: []

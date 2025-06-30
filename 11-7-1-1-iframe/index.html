@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250623061236">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250630201108">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -576,6 +576,18 @@ layout-indicator-iframe
           
           
           <td>2023</td>
+          
+          
+          
+          <td class="table-value">22.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
           
           
           
@@ -1035,8 +1047,10 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p> Total area of green spaces and plantations within the perimeters of urban  localities includes the area of green spaces existing within the perimeter of  the city (town) at the end of the year. Categories of green spaces: 1)  green  spaces of general use (squares, gardens, parks; forest-parks; green spaces  from drive routes); 2) green spaces with limited access (sport parks; green  spaces nearby pre-school institutions, education and scientific research  institutions; green spaces nearby the sanitary and curative institutions;  green spaces for children and youth recreation; green spaces from enterprises  and their protection areas; green spaces nearby dwellings); 3) green spaces  with specialised profile (botanic gardens; dendrology gardens; zoo parks and  gardens, parks for exhibitions; rose, lilac, alpine plants'  gardens, etc.;  plantations in cemeteries); 4) green spaces with utility functions  (plantations for land consolidation; water sources' protection plantations;  anti-fire protection plantations); 5) green spaces from tourist and recreation  zones.</p>
-<p>  Total area of streets, ways, quays and squares including the area  of sidewalks, as well the cumulated area of all streets and ways (boulevards,  roads, side streets, blind alleys, squares, including the ones near stadiums  and stations) with or without paving, located between the facades of  buildings, including the area of bridges, viaducts, access roads, existing by  the end of the reporting year within the perimeter of the city. Land surface  from the built-in areas of urban localities  is composed of the following land  fields: 1) area of fields on which residential districts are built, 2) area of  fields on which production and transport enterprises are built, 3) territories  between the residential districts and the neighbouring ones, fields occupied  by streets, squares, quays, 4) fields used to organizing population  recreation, space used for public utilities (parks, gardens, alleys, etc.), 5)  water surfaces except for swimming pools, cemeteries, land fields with special  destination, 6) fields in the expropriation zone (of railroad, roads, port  constructions, airport, etc.), 7) fields covered by constructions for state  defence (polygons, shooting fields, citadels, barracks), reservations and  assimilated fields taken out of mayoralties' jurisdiction. </p>
+            <p> The total area of green spaces within the perimeters of urban localities includes the surface area of all green spaces located within the city perimeter at the end of the year. Intra-urban green spaces are those situated within the built-up area of the city, as well as the adjoining green zones. The following are not considered green spaces: vegetation that is part of the forest fund, protective zones and strips along rivers and water bodies, protective belts located on agricultural land, shelterbelts and tree/shrub plantations along transport routes, areas designated as protected natural zones by the state, and protection zones of hydrometeorological stations and water intake points.</p>
+<p>Green spaces are classified by function, in accordance with Article 16 of Law 591/1999 on green spaces in urban and rural localities. Categories of green spaces: 1)  green  spaces of general use (squares, gardens, parks; forest-parks; green spaces  from drive routes); 2) green spaces with limited access (sport parks; green  spaces nearby pre-school institutions, education and scientific research  institutions; green spaces nearby the sanitary and curative institutions;  green spaces for children and youth recreation; green spaces from enterprises  and their protection areas; green spaces nearby dwellings); 3) green spaces  with specialised profile (botanic gardens; dendrology gardens; zoo parks and  gardens, parks for exhibitions; rose, lilac, alpine plants'  gardens, etc.;  plantations in cemeteries); 4) green spaces with utility functions  (plantations for land consolidation; water sources' protection plantations;  anti-fire protection plantations); 5) green spaces from tourist and recreation  zones.</p>
+<p>Total area of urban streets including the area  of sidewalks, refers to the area of all streets and ways (boulevards,  roads, side streets, blind alleys, squares, including the ones near stadiums  and stations) with or without paving, located between the facades of  buildings, including the area of bridges, viaducts, access roads, existing by  the end of the reporting year within the perimeter of the city. </p>
+<p>Land area  within the built up area of urban localities  is composed of the following land  fields: 1) area of fields on which residential districts are built, 2) area of  fields on which production and transport enterprises are built, 3) territories  between the residential districts and the neighbouring ones, fields occupied  by streets, squares, quays, 4) fields used to organizing population  recreation, space used for public utilities (parks, gardens, alleys, etc.), 5)  water surfaces except for swimming pools, cemeteries, land fields with special  destination, 6) fields in the expropriation zone (of railroad, roads, port  constructions, airport, etc.), 7) fields covered by constructions for state  defence (polygons, shooting fields, citadels, barracks), reservations and  assimilated fields taken out of local public authorithies' jurisdiction. </p>
 
           
         </td>
@@ -1118,7 +1132,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>Total area of green spaces and plantations within the perimeters of urban  localities  + Total area of streets, ways, quays, squares / built-up area  *100.</p>
+            <p>Total area of green spaces within the perimeters of urban localities + Total area of urban streets / Area of land within the built-up area  of urban localities * 100.</p>
 
           
         </td>
@@ -1164,7 +1178,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comparability with global indicator </th>
         <td>
           
-            <p>The notions used in the national indicator result from the statistical report  no 1- on housing infrastructure and greening  and include only the elements of  the definitions included in the global indicator, but are not equivalent. The  data sources for the national indicator (administrative data) and the global  one differ (geo-referenced data).</p>
+            <p>The  data sources for the national indicator (administrative data) and the global  one differ (geo-referenced data). The elements of the national definitions used differ from those of the global indicator definitions.</p>
 
           
         </td>
@@ -1201,7 +1215,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Aug 01, 2024
+            Jun 30, 2025
           
         </td>
         </tr>
@@ -1216,7 +1230,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Aug 01, 2024
+            Jun 30, 2025
           
         </td>
         </tr>
@@ -1374,7 +1388,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Link to global metadata </th>
         <td>
           
-            <p>http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-11.pdf</p>
+            <p>https://unstats.un.org/sdgs/metadata/files/Metadata-11-07-01.pdf</p>
 
           
         </td>
@@ -1628,7 +1642,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data sources </th>
         <td>
           
-            <p>Statistical report on housing infrastructure and greening</p>
+            <p>Statistical report No. 1-SVU “On urban street infrastructure and arrangement of urban green spaces (within city limits)”</p>
 
           
         </td>
@@ -1660,7 +1674,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data providers </th>
         <td>
           
-            <p>The specialized enterprises of the municipal and town halls, which carry out  the management of the municipal infrastructure and the greening activity</p>
+            <p> 1. Local public authorities (cities) and enterprises of any form of ownership that manage urban street infrastructure and carry out greening activities.</p>
+<p>2. National Agency for Land Reclamation </p>
 
           
         </td>
@@ -1676,7 +1691,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Institutional mandate </th>
         <td>
           
-            <p>National Bureau of Statistics</p>
+            <p> 1. Ministry of Infrastructure and Regional Development</p>
+<p>2. Ministry of Internal Affairs </p>
 
           
         </td>
@@ -1724,8 +1740,20 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
           
+            <p> Nadejda Cojocari, Head of Division, Social services statistics Division,</p>
+<p>e-mail: nadejda.cojocari@statistica.gov.md, tel. 067770652 </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1839,12 +1867,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250623061236'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250630201108'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250623061236"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250630201108"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

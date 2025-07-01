@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250630201108">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250701151821">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -358,7 +358,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Access&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;At the counter&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Access&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Access mode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;At the headquarters of the institution&quot;,&quot;Electronic&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Access mode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -543,7 +543,7 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value"></td>
+          <td class="table-value">81.8</td>
           
           
         </tr>
@@ -555,7 +555,7 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value"></td>
+          <td class="table-value">66.233</td>
           
           
         </tr>
@@ -567,7 +567,7 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value"></td>
+          <td class="table-value">66.367</td>
           
           
         </tr>
@@ -579,7 +579,19 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value"></td>
+          <td class="table-value">72.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
+          
+          
+          
+          <td class="table-value">74.4</td>
           
           
         </tr>
@@ -592,7 +604,7 @@ layout-indicator-iframe
   
   <div id="datatableFooter">
     
-    <p>Source: <p> 1.State Chancellery</p>  <p>  2.United Nations Development Programme (UNDP) </p></p>
+    <p>Source: Government Electronic Agency</p>
     
     
     <p>Geographical Area: The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</p>
@@ -708,7 +720,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd><p> 1.State Chancellery</p>  <p>  2.United Nations Development Programme (UNDP) </p></dd>
+        <dd>Government Electronic Agency</dd>
         
 
         
@@ -784,7 +796,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd><p> 1.State Chancellery</p>  <p>  2.United Nations Development Programme (UNDP) </p></dd>
+        <dd>Government Electronic Agency</dd>
         
 
         
@@ -1035,8 +1047,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p> The indicator measures the satisfaction of the population with the quality of  public services, based on the last experience of accessing such services (over  the last 12 months) in the following three areas: a) health; b) education and  c) public services, named according to the global metadata as „administrative  services”. The indicator is based on surveys, which reflect the general  perceptions of citizens aged 18 years + based on experiences regarding the  availability and quality of services which were effectively provided to survey  participants. The respondents are requested to tell about the last experiences  in relation to each service and to assess it according to the five „criteria”  or  standards for a certain service: (1) access, (2) accessibility, (3)  quality of facilities, (4) equal treatment, (5) attitude of medical personnel  (kindness and treatment), quality of teaching from teaching personnel,  promptness in provision of public services. The last question is addressed to  respondents about their general level of satisfaction with each of the  services.</p>
-<p>  The questions regarding the health, education and public  services may be introduced in existing surveys, using the additional elements  from these demographic surveys for subsequent disaggregation of results. This  method of „module completion” also allows to cross the levels of satisfactions  with other social-economic variables from the wider survey, such as the  respondent's health condition. This allows analysing more comprehensively the  disparities in service supply and helps to identify the specific factors which  influence the level of satisfaction. </p>
+            <p>Degree of satisfaction (sum of the weights of the grades of 5 and 6, where 6 represents - very satisfied)</p>
 
           
         </td>
@@ -1118,8 +1129,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p> The indicator is calculated in two steps: 1) Calculation of the average score  of satisfaction with health, education and public services according to five  „criteria” or standards, which are specified below within the definition of  this indicator;</p>
-<p>  2) Converting the average score of health, education, and  public services in percentage </p>
+            <p>Share of respondents who answered that they are satisfied or very satisfied with public services, out of total respondents</p>
 
           
         </td>
@@ -1160,19 +1170,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Comparability with global indicator </th>
-        <td>
-          
-            <p>The indicator is fully comparable with the global indicator</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1181,19 +1180,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Periodicity </th>
-        <td>
-          
-            <p>Once every 2 years</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1202,7 +1190,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Aug 05, 2024
+            Jul 01, 2025
           
         </td>
         </tr>
@@ -1217,7 +1205,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Sep 19, 2024
+            Jul 01, 2025
           
         </td>
         </tr>
@@ -1658,8 +1646,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data sources </th>
         <td>
           
-            <p> 1) Ad-hoc complementary modules to the Household surveys regarding the living  standard (HBS type)</p>
-<p>  2) Other surveys carried out by different agencies  and entities </p>
+            <p>Survey “Perception, assimilation and support by the population of eGovernment and Modernization of government services”</p>
 
           
         </td>
@@ -1675,8 +1662,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data producers </th>
         <td>
           
-            <p> 1.State Chancellery</p>
-<p>  2.United Nations Development Programme (UNDP) </p>
+            <p>Government Electronic Agency</p>
 
           
         </td>
@@ -1692,7 +1678,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data providers </th>
         <td>
           
-            <p>1.National Bureau of Statistics</p>
+            <p>Government Electronic Agency</p>
 
           
         </td>
@@ -1730,8 +1716,27 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
           
+            
+            
+            
+            
+            
+              <a href="https://www.egov.md/ro/node/40718" target="_blank">
+                Link to data source <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1871,12 +1876,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250630201108'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250701151821'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250630201108"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250701151821"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

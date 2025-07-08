@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250701151821">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250708114510">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -451,18 +451,6 @@ data-event-label="high"
 
   
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <p> ***Indicator non-statistic***</p>
-<p>Ministerul Justiției a elaborat un nou proiect de lege privind accesul la informație.  Noua lege urmează să transpună standardele internaționale în domeniu și anume,  Convenția de la Tromsø,  Directiva UE privind reutilizarea informațiilor din sectorul public, principiile administrației publice ale SIGMA, standardele Băncii Mondiale privind divulgarea proactivă a informațiilor publice etc.</p>
-<p>Proiectul de lege privind accesul la informație, elaborat de Ministerul Justiției, a fost plasat pentru consultare publică pe platforma particip.gov.md în perioada 09.01.2023-03.02.2023, fiind ajustat conform propunerilor parvenite. Proiectul de lege, care vine să îmbunătățească cadrul legal în Republica Moldova privind accesul la informație, a fost votat în prima lectură în cadrul ședinței Parlamentului din 11.05.2023.  </p>
-<p>Proiectul de lege a fost adoptat în lectură finală de către Parlament la data de 09.06.2023 (Legea nr. 148/2023 privind accesul la informațiile de interes public). </p>
-<p>Un indicator relevant acestui indicator este  INDICELE ACCESULUI LA INFORMAȚIE: măsurarea transparenței instituțiilor publice în Republica Moldova, studiu realizat de către Freedom House.  În cadrul acestui studiu a fost măsurată calitatea legislației și performanța instituțiilor publice în asigurarea accesului la informație în mod sistematic în baza unui șir de criterii și indicatori. Prin această abordare și analiza extinsă, s-a urmărit scopul de a face o evaluare obiectivă și detaliată a situației în domeniu. Rezultatele analizei se vor reflecta în Indicele Accesului la Informație în Republica Moldova, care reprezintă un indicator format din 3 elemente: INDICELE ACCESULUI LA INFORMAȚIE CADRUL LEGISLATIV 1. Corespunderea cadrului legislativ cu standardele internaționale , 2.  Nivelul de transparență proactivă  , 3.Eficiența accesului la informație la solicitare , CARE ÎN CUMUL CONSTITUIE 100%   SURSA (https://freedomhouse.org/sites/default/files/2022-11/fh-Moldova_Access-to-Info-Report-2022_Rom-v2.pdf). În anul 2021 a fost publicat primul raport prin care a fost analizat gradul de transparență al instituțiilor publice din Republica Moldova.</p>
-<p>În anul 2021 scorul a fost de 46 din 100, în anul 2022 - 47 din 100. </p>
-
-  </div>
-</div>
-
 
   
 
@@ -475,9 +463,9 @@ data-event-label="high"
   data-country="Republica Moldova, fără partea stângă a Nistrului și mun. Bender"
   data-charttitle="16.10.2.1. Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație"
   data-charttitles="[]"
-  data-measurementunit="număr"
+  data-measurementunit="procent"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -496,7 +484,491 @@ data-event-label="high"
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/16-10-2-1.csv" class="btn btn-primary btn-download" download="indicator_16-10-2-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/data/16-10-2-1.csv" class="btn btn-primary btn-download" download='indicator_16-10-2-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>16.10.2.1. Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">46.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">47.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">59.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
+          
+          
+          
+          <td class="table-value">61.0</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: <p> 1)  Consiliul Coordonator al Audiovizualului</p>  <p>  2) Comisia drepturile omului  și relații interetnice a Parlamentului </p></p>
+    
+    
+    <p>Acoperirea geografică: Republica Moldova, fără partea stângă a Nistrului și mun. Bender</p>
+    
+    
+    <p>Unitatea de măsură: procent</p>
+    
+    
+    <p>Notă de subsol: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            16.10.2.1. Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd><p> 1)  Consiliul Coordonator al Audiovizualului</p>  <p>  2) Comisia drepturile omului  și relații interetnice a Parlamentului </p></dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd><p> 1)  Consiliul Coordonator al Audiovizualului</p>  <p>  2) Comisia drepturile omului  și relații interetnice a Parlamentului </p></dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -714,7 +1186,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unitatea de măsură </th>
         <td>
           
-            <p>număr</p>
+            <p>procent</p>
 
           
         </td>
@@ -824,8 +1296,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Comparabilitatea cu indicatorul global </th>
+        <td>
           
+            <p>Indicator național</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1368,8 +1851,23 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Alte informații privind sursele de date </th>
+        <td>
           
+            <p> Ministerul Justiției a elaborat un nou proiect de lege privind accesul la informație.  Noua lege urmează să transpună standardele internaționale în domeniu și anume,  Convenția de la Tromsø,  Directiva UE privind reutilizarea informațiilor din sectorul public, principiile administrației publice ale SIGMA, standardele Băncii Mondiale privind divulgarea proactivă a informațiilor publice etc.</p>
+<p>Proiectul de lege privind accesul la informație, elaborat de Ministerul Justiției, a fost plasat pentru consultare publică pe platforma particip.gov.md în perioada 09.01.2023-03.02.2023, fiind ajustat conform propunerilor parvenite. Proiectul de lege, care vine să îmbunătățească cadrul legal în Republica Moldova privind accesul la informație, a fost votat în prima lectură în cadrul ședinței Parlamentului din 11.05.2023.  </p>
+<p>Proiectul de lege a fost adoptat în lectură finală de către Parlament la data de 09.06.2023 (Legea nr. 148/2023 privind accesul la informațiile de interes public). </p>
+<p>Un indicator relevant acestui indicator este  INDICELE ACCESULUI LA INFORMAȚIE: măsurarea transparenței instituțiilor publice în Republica Moldova, studiu realizat de către Freedom House.  În cadrul acestui studiu a fost măsurată calitatea legislației și performanța instituțiilor publice în asigurarea accesului la informație în mod sistematic în baza unui șir de criterii și indicatori. Prin această abordare și analiza extinsă, s-a urmărit scopul de a face o evaluare obiectivă și detaliată a situației în domeniu. Rezultatele analizei se vor reflecta în Indicele Accesului la Informație în Republica Moldova, care reprezintă un indicator format din 3 elemente: INDICELE ACCESULUI LA INFORMAȚIE CADRUL LEGISLATIV 1. Corespunderea cadrului legislativ cu standardele internaționale , 2.  Nivelul de transparență proactivă  , 3.Eficiența accesului la informație la solicitare , CARE ÎN CUMUL CONSTITUIE 100%   SURSA (https://freedomhouse.org/sites/default/files/2022-11/fh-Moldova_Access-to-Info-Report-2022_Rom-v2.pdf). În anul 2021 a fost publicat primul raport prin care a fost analizat gradul de transparență al instituțiilor publice din Republica Moldova.</p>
+<p>În anul 2021 scorul a fost de 46 din 100, în anul 2022 - 47 din 100. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1550,12 +2048,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250701151821'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250708114510'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250701151821"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250708114510"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250708114510">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250808141830">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -346,7 +346,7 @@ layout-indicator-iframe
   data-charttitles="[]"
   data-measurementunit="Procent, %"
   data-xaxislabel=""
-  data-showdata="true"
+  data-showdata="false"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -365,491 +365,7 @@ layout-indicator-iframe
   data-proxyseries="null"
 >
   
-  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
-  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
-  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="serieses"></div>
-<div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Subcategorii</h4>
-    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
-  </span>
-  <div id="fields">
-    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    
-    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/9-b-1.csv" class="btn btn-primary btn-download" download="indicator_9-b-1.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
-    
-    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/data/9-b-1.csv" class="btn btn-primary btn-download" download='indicator_9-b-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
-
-    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
-
-    
-    <h3>Date de titlu</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>9.b.1. Ponderea valorii adăugate brute a industriei cu tehnologii avansate și medii avansate, în total valoarea adăugată în industrie prelucrătoare</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td class="table-value">8.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td class="table-value">9.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td class="table-value">12.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td class="table-value">14.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td class="table-value">18.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value">16.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value">19.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td class="table-value">17.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">17.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">22.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">23.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">24.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">17.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2024</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-    
-  </div>
-
-  
-  <div id="datatableFooter">
-    
-    <p>Sursă: Biroul Național de Statistică</p>
-    
-    
-    <p>Acoperirea geografică: Republica Moldova, fără partea stângă a Nistrului și mun. Bender</p>
-    
-    
-    <p>Unitatea de măsură: Procent, %</p>
-    
-    
-    <p>Notă de subsol: </p>
-    
-  </div>
-  
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded mt-4" style="display:none;">
-
-    <div style="display: none;">
-    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
-  </div>
-  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link active"
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-chartview"
-          data-bs-target="#chartview"
-          aria-controls="chartview"
-          aria-describedby="table-alternative"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
-
-        
-      >Diagramă</button>
-    </li>
-    
-    <li role="presentation"
-      class="
-        nav-item
-        
-        
-      ">
-      <button
-        class="nav-link "
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-tableview"
-          data-bs-target="#tableview"
-          aria-controls="tableview"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
-
-        
-      >Tabel</button>
-    </li>
-    
-  </ul>
-  
-    <div class="tab-content data-view">
-    
-      
-        <div role="tabpanel" class="tab-pane active" id="chartview">
-          
-
-    <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
-      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
-    </div>
-
-    
-    <div id="selectionsChart">
-      <figure role="group">
-        <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">
-            9.b.1. Ponderea valorii adăugate brute a industriei cu tehnologii avansate și medii avansate, în total valoarea adăugată în industrie prelucrătoare
-          </h4>
-          <div id="chart" class="plot-container">
-            <canvas
-    role="img"
-    aria-labelledby="chart-heading"
-    aria-describedby="table-alternative chart-annotations"
-    tabindex="0"
- ></canvas>
-
-          </div>
-          <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Sursă:</dt>
-        <dd>Biroul Național de Statistică</dd>
-        
-
-        
-        <dt>Acoperirea geografică:</dt>
-        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Notă de subsol:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Data ultimei actualizări:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-    
-</div>
-
-        </div>
-      </figure>
-      <div id="chartSelectionDownload" class="clearfix">
-        <button
-          id="btnSave"
-          title="Descărcați imaginea diagramei ca PNG"
-          aria-label="Descărcați imaginea diagramei ca PNG"
-          class='btn btn-primary btn-download'>
-          Descărcați imaginea diagramei (.png)
-        </button><!--
-   --></div>
-    </div>
-
-
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="tableview">
-          <div style="display: none;">
-            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
-          </div>
-          <div id="selectionsTable"></div>
-<dl id="tableTargetLines" class="clearfix"></dl>
-
-
-
-
-<div id="selectionTableFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Sursă:</dt>
-        <dd>Biroul Național de Statistică</dd>
-        
-
-        
-        <dt>Acoperirea geografică:</dt>
-        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Notă de subsol:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Data ultimei actualizări:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-    
-</div>
-
-<div id="tableSelectionDownload" class="clearfix"></div>
-
-        </div>
-      
-    
-  </div>
-  
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -966,7 +482,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 9.b.1: ea valorii adăugate brute a industriei cu tehnologii avansate si  medii-avansate  în total valoarea adăugată in industrie prelucrătoare</p>
+            <p>Indicator 9.b.1: Ponderea valorii adăugate brute a industriei cu tehnologii avansate si  medii-avansate  în total valoarea adăugată in industrie prelucrătoare</p>
 
           
         </td>
@@ -1198,7 +714,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Periodicitate </th>
         <td>
           
-            <p>Anual</p>
+            <p>anual</p>
 
           
         </td>
@@ -1319,7 +835,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 9.b.1: Ponderea valorii adăugate a industriei cu tehnologii avansate și  medii-avansate în total valoarea adăugată în industrie prelucrătoare</p>
+            <p>Indicator 9.b.1: Ponderea valorii adăugate a industriei cu tehnologii avansate și  medii-avansate în total valoarea adăugată</p>
 
           
         </td>
@@ -1383,7 +899,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">metadata_fields.goal_meta_link_text </th>
         <td>
           
-            <p>Metadatele indicatorului global (PDF)</p>
+            <p>Metadatele ODD ale ONU (PDF)</p>
 
           
         </td>
@@ -1399,7 +915,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Agențiile de custodie ONU </th>
         <td>
           
-            <p>United Nations Industrial Development Organization (UNIDO), Competitive Industrial Performance (CIP) database</p>
+            <p>United Nations Industrial Development Organization (UNIDO)</p>
 
           
         </td>
@@ -1722,21 +1238,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Alte informații privind sursele de date </th>
-        <td>
-          
-            <p> https://w3.unece.org/SDG/en/Indicator?id=125 https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__92-SDG__01-sdgover/009_en_sdGoal9_r.px</p>
-<p>https://data.worldbank.org/indicator/NV.MNF.TECH.ZS.UN?end=2021&amp;locations=MD&amp;start=1990&amp;view=chart</p>
-<p>https://databank.worldbank.org/reports.aspx?source=2&amp;type=metadata&amp;series=NV.MNF.TECH.ZS.UN </p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
   
   
   
@@ -1845,12 +1348,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250708114510'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250808141830'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250708114510"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250808141830"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250919115509">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250923133756">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -996,7 +996,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "<p> The indicator is calculated in 2 steps:</p>  <p>  Step 1: Reporting simple  proportions of: (a) female judges, (b) young judges aged 44 years old and  younger, (c) judges with disabilities and (d) judges from the relevant  national groups of population (e.g. ethnic groups) in the: (i) Constitutional  Court / Supreme Court of Justice; (ii) Courts of Appeal and (iii) court  houses.</p>  <p>  Step 2: Generation of ratios to compare the proportion of (a)  female judges, (b) young judges aged 44 years old and younger, (c) judges with  disabilities and (d) judges from the relevant groups of population at the  national level in the judicial system at the level of all courts as compared  to the proportion of the same target groups in the working-age population. The  ratios should be calculated for all the levels of the courts, and namely:</p>  <p>   1. for female judges;</p>  <p>  2. for young judges aged 44 years old and  younger;</p>  <p>  3. for judges with disabilities; and </p>  <p>  4. for judges  belonging to the relevant groups of population (1 or more ratios, depending on  the national relevance).</p>  <p>  The same approach is used for generating the  ratios for court clerks:</p>  <p>  Step 1: Reporting simple proportions of: (a)  female court clerks, (b) young court clerks aged 44 years old and younger, (c)  court clerks with disabilities  (d) court clerks from relevant national groups  of population (e.g. ethnic groups) in: (i) the Constitutional Court / Supreme  Court of Justice; (ii) Courts of Appeal  (iii) court houses.</p>  <p>  Step 2:  Generating ratios that compare the proportion of (a) female court clerks, (b)  young court clerks aged 44 years old and younger, (c) court clerks with  disabilities  (d) court clerks from relevant national groups of population  from the judicial system of all court levels as compared to proportion of the  same target groups in the working-age population. The ratios should be  calculated for all the court levels, and namely:</p>  <p>  1. for female court  clerks;</p>  <p>  2. for young court clerks aged 44 years old and younger;</p>  <p>  3.  for court clerks with disabilities; and</p>  <p>  4. for court clerks belonging to  relevant groups of population  (1 or more ratios, depending on the national  relevance). </p>");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "<p> The indicator is calculated in 2 steps:</p>  <p>  Step 1: Reporting simple  proportions of: (a) female judges, (b) young judges aged 44 years old and  younger, (c) judges with disabilities and (d) judges from other relevant  national groups of population (e.g. ethnic groups) in the: (i) Constitutional  Court / Supreme Court of Justice; (ii) Higher-level courts (Courts of Appeal) and (iii) Lower-level courts.</p>  <p>  Step 2: Generation of ratios to compare the proportion of (a) female judges, (b) young judges aged 44 years old and younger, (c) judges with  disabilities and (d) judges from other relevant groups of population at the  national level in the judicial system at the level of all courts as compared  to the proportion of the same target groups in the working-age population. The  ratios should be calculated for all the levels of the courts, and namely for:</p>  <p>   1. Female judges;</p>  <p>  2. Young judges aged 44 years old and  younger;</p>  <p>  3. Judges with disabilities; </p>  <p>  4. Judges  belonging to the relevant groups of population (depending on  the national relevance).</p>  <p>  The same approach is used for generating the  ratios for court clerks:</p>  <p>  Step 1: Reporting simple proportions of: (a) female court clerks, (b) young court clerks aged 44 years old and younger, (c) court clerks with disabilities  (d) court clerks from other relevant national groups  of population (e.g. ethnic groups) in: (i) the Constitutional Court / Supreme  Court of Justice; (ii) Courts of Appeal  (iii)  Lower-level courts.</p>  <p>  Step 2:  Generating ratios that compare the proportion of (a) female court clerks, (b)  young court clerks aged 44 years old and younger, (c) court clerks with  disabilities  (d) court clerks from other relevant national groups of population  from the judicial system of all court levels as compared to proportion of the  same target groups in the working-age population. The ratios should be  calculated for all the court levels, and namely for:</p>  <p>  1. Female court clerks;</p>  <p>  2. Young court clerks aged 44 years old and younger;</p>  <p>  3.  Court clerks with disabilities; </p>  <p>  4. Court clerks belonging to other relevant groups of population  ( depending on the national  relevance). </p>");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1094,7 +1094,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "The indicator represents a part of the global indicator, the national version  of the indicator covers only partially the mentioned groups");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "At the national level, disability refers to the existence of a disability certificate (official status of a person recognized as having a disability). The number of registrars also includes the number of judicial assistants. At the national level, data are not available for some population groups, for example: ethnic groups.");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1136,7 +1136,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2024-08-01");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2025-09-23");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1150,7 +1150,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2024-08-01");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-09-23");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1303,12 +1303,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250919115509'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250923133756'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250919115509"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250923133756"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

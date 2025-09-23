@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250919115509">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20250923133756">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -996,7 +996,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Number of children, aged under 5 years old, whose height for the respective  age is smaller by two standard deviation from the median reference population, out of the total number of children aged under 5 years old * 100.");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Number of children under 5 years of age whose height-for-age is below two standard deviations from the median height-for-age according to WHO standards, divided by the total number of children under 5 years of age * 100.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1094,7 +1094,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "For 2012, the data source for data is the 2012 MICS Survey carried out at the national level, and starting from 2013 the data refer to the globally generated modelled estimates by UNICEF/WHO.");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1122,7 +1122,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('source_periodicity_1', "Once every few years");
+        var currentValue = normalizeCurrentValue('source_periodicity_1', "<p> Once every few years (surveys among the population’s households).</p>  <p>At the global level, modelled estimates are generated annually. </p>");
         var propertyEditor = editor.getEditor('root.source_periodicity_1');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1136,7 +1136,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2023-06-16");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2025-09-23");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1150,7 +1150,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2023-05-19");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-09-23");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1303,12 +1303,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250919115509'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20250923133756'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250919115509"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20250923133756"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

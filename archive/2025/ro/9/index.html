@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="ro" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=Promise%2CString.prototype.includes%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.find%2CObject.assign%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://statisticamd.github.io/sdg-data-moldova/ro',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
+  language: 'ro',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    
+    <title>Obiectiv 9 - Industrie, inovație și infrastructură - Indicatori pentru Obiectivele de Dezvoltare Durabilă</title>
+    
+
+
+
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+
+        <!--[if IE 9]>
+        <script src="/sdg-site-moldova/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/sdg-site-moldova/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/sdg-site-moldova/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-moldova/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/sdg-site-moldova/assets/img/favicons/favicon.ico" />
+
+        
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20251117133330">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+    
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0GYFNPKD7G"></script>
+<script >
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0GYFNPKD7G', {
+    'anonymize_ip': true,
+    'forceSSL': true,
+  });
+</script>
+
+        
+        
+
+        
+
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-ro
+layout-goal
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":null,"default_contrast":"Contrast implicit","disable_high_contrast":"Dezactivează contrastul înalt","disclaimer":"Salutăm <a href=\"mailto:%email_contacts.suggestions\">sugestiile Dvs</a>.","enable_high_contrast":"Activează contrastul înalt","hide_menu":"Ascunde meniul de navigare","high_contrast":"Contrast înalt","internet_explorer_message":"Am detectat că utilizați Internet Explorer pentru a vizita acest site web. Internet Explorer este acum eliminat treptat de Microsoft. Ca urmare, acest site web nu mai acceptă orice versiune de Internet Explorer. Unele funcții de pe acest site nu vor funcționa. Ar trebui să folosiți un alt browser precum Edge, Chrome, Firefox sau Safari. Dacă întâmpinați dificultăți la instalarea sau accesarea unui alt browser, vă rugăm să contactați echipa de asistență IT.","internet_explorer_message_title":"Acest browser de internet nu mai este acceptat","logo_title":"Acasă","show_menu":"Arată meniul de navigare","skip_link":"Treci la conținutul principal","tag_line":"17 Obiective pentru a transforma lumea","toggle_menu":"Comutare meniu. Faceți clic pentru a extinde sau restrânge meniul.","toggle_search":"Comutare de căutare. Faceți clic pentru a extinde sau restrânge bara de căutare."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Treci la conținutul principal</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">Acest browser de internet nu mai este acceptat</h2>
+    <p class="internet-explorer-message-body">Am detectat că utilizați Internet Explorer pentru a vizita acest site web. Internet Explorer este acum eliminat treptat de Microsoft. Ca urmare, acest site web nu mai acceptă orice versiune de Internet Explorer. Unele funcții de pe acest site nu vor funcționa. Ar trebui să folosiți un alt browser precum Edge, Chrome, Firefox sau Safari. Dacă întâmpinați dificultăți la instalarea sau accesarea unui alt browser, vă rugăm să contactați echipa de asistență IT.</p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag"></strong>
+    
+    Salutăm <a href="mailto:sdg2030@statistica.gov.md">sugestiile Dvs</a>.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/sdg-site-moldova/ro/" id="home" aria-label="Acasă" title="Acasă">
+    <img src="/sdg-site-moldova/assets/img/SDG_logo.png" alt="Obiectivele de Dezvoltare Durabilă - 17 Obiective pentru a transforma lumea" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Arată meniul de navigare">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/goals">Obiective</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/reporting-status">Gradul de disponibilitate</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/about">Despre</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/faq">Întrebări frecvente</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-moldova/ro/news">Documente și noutăți</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/sdg-site-moldova/ro/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Caută</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Caută">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Căutare site" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-moldova/9/">
+                English
+            </a>
+        </li></ul>
+</div>
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-moldova/9/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="Activează contrastul înalt" aria-label="Activează contrastul înalt"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+
+<div class="container">
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/sdg-site-moldova/ro/">Acasă</a>
+        </li>
+        <li class="breadcrumb-item" >
+            <a href="/sdg-site-moldova/ro/goals">Obiective</a>
+        </li>
+        
+        
+    </ol>
+</nav>
+  
+</div>
+
+<div class="heading goal-banner goal-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/ro/9.png" alt="Industrie, inovație și infrastructură - Obiectiv 9" id="goal-9" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 goal-details">
+                <h1>
+                    
+                        Construirea unor infrastructuri rezistente, promovarea industrializării durabile şi încurajarea inovaţiei
+                    
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="main-content" class="container" role="main">
+
+  
+
+
+
+  <div class="container g-0 goal-showing-progress">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Ținte și indicatori</h2>
+      </div>
+      
+      <div class="col-lg-2 d-none d-lg-block progress-column-header">
+        <span aria-hidden="true"></span>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Dezvoltarea infrastructurii calitative, fiabile, durabile și puternice, inclusiv infrastructura regională și transfrontalieră, pentru a sprijini dezvoltarea economică și bunăstarea oamenilor, cu accent pe accesul larg și echitabil pentru toți</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-1/">Ponderea populației rurale care locuiește în raza de 2 km față de un drum funcțional pentru toate anotimpurile</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name">Volumul transportului de pasageri și de mărfuri, după modul de transport</span>
+              
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.2.a</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-a/">Parcursul mărfurilor transportate, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.2.b</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-1-2-b/">Parcursul pasagerilor transportați, după modul de transport (aerian, rutier, feroviar, fluvial)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Promovarea industrializării incluzive și durabile și, până în 2030, sporirea semnificativă a ratei de ocupare și a Produsului Intern Brut în industrie, în conformitate cu circumstanțele naționale, și dublarea acestei cote în țările cel mai puțin dezvoltate</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name">Valoarea adăugată brută în industria prelucrătoare ca proporție în PIB și pe persoană</span>
+              
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-1/">Valoarea adăugată brută în industria prelucrătoare, ca proporție în PIB (dolari SUA, prețuri curente)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-2/">Valoarea adăugată brută în industria prelucrătoare per populație ocupată în industria prelucrătoare (dolari SUA, prețuri constante)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1.a</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-a/">Valoarea adăugată brută în industria prelucrătoare ca proporție în PIB (lei, prețuri curente)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1.b</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-1-b/">Valoarea adăugată brută în industria prelucrătoare pe persoană (lei, prețuri constante)</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-2-2/">Ponderea populației ocupate în industria prelucrătoare în total populație ocupată</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.3</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Creșterea accesului întreprinderilor mici industriale și de altă natură, în special din țările în curs de dezvoltare, la servicii financiare, inclusiv la credite accesibile, și integrarea acestora în lanțuri valorice și piețe externe</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name">Proporția industriilor de scară mică în valoarea adăugată totală a industriei</span>
+              
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-1/">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii, în total valoarea adăugată brută</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.1.a</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-1-a/">Contribuția valorii adăugate brute a întreprinderilor mici și mijlocii din sectorul industrie prelucrătoare, în total valoarea adăugată brută în industria prelucrătoare</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name">Proporția industriilor de scară mică care au accesat credite sau împrumuturi</span>
+              
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-1/">Cota întreprinderilor mici și mijlocii care au accesat credite și/sau împrumuturi pe parcursul anului, inclusiv în sectorul industrie</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.2.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-3-2-2/">Ponderea valorii creditelor și împrumuturilor accesate de întreprinderile mici și mijlocii, pe parcursul anului, în total valoarea creditelor și împrumuturilor accesate de către întreprinderi,  inclusiv în sectorul industrie</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Până în 2030, modernizarea infrastructurii și reabilitarea industriilor pentru a deveni durabile, cu eficiență sporită în utilizarea resurselor și adoptare sporită a tehnologiilor și proceselor industriale curate și ecologice, toate țările luând măsuri în conformitate cu capacitățile respective ale acestora</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name">Emisiile de CO2 per unitate de valoarea adăugată</span>
+              
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-1/">1 Emisiile totale de CO2, pe sectoare, mii tone CO2 echivalent</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1.a</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-a/">Emisiile totale de CO2 provenite de la arderea combustibilului</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1.b</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-b/">Emisiile totale de CO2 raportate la o unitate de PIB</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1.c</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-4-1-c/">Emisiile de CO2 generate de sectorul industrial raportat la valoarea adăugată brută în industrie</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-divizat">Global divizat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Întărirea cercetării științifice, modernizarea capacităților tehnologice ale sectoarelor industriale în toate țările, în special țările în curs de dezvoltare, până în 2030; încurajarea inovațiilor și creșterea semnificativă a numărului de angajați în cercetare și dezvoltare la 1 milion de locuitori și a cheltuielilor publice și private de cercetare și dezvoltare</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.5.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-1/">Cheltuielile pentru cercetare și dezvoltare ca procent din PIB</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.5.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-5-2/">Cercetători (echivalent normă întreagă) la 1.000.000 locuitori</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Facilitarea dezvoltării infrastructurii durabile și rezistente în țările în curs de dezvoltare prin suport consolidat financiar, tehnologic și tehnic pentru țările africane, țările cel mai puțin dezvoltate, țările în curs de dezvoltare fără ieșire la mare și statele insulare mici în curs de dezvoltare</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.a.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-a-1/">Volumul suportului internațional oficial (asistenței externe oficiale plus alte fluxuri oficiale) acordate pentru dezvoltarea infrastructurii</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Susținerea domeniului național de dezvoltare a tehnologiilor, cercetare și inovații în țările în curs de dezvoltare, inclusiv prin asigurarea unui mediu propice de politici pentru, inter alia, diversificarea industrială și adăugarea de valoare pentru mărfuri</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-b-1/">Ponderea valorii adăugate a industriei cu tehnologii avansate și medii-avansate în total valoarea adăugată</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Nu este disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global-ajustat">Global ajustat</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Ținta</span> 9.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Creșterea semnificativă a accesului la tehnologii informaționale și comunicații și depunerea de eforturi pentru a oferi acces universal și la un preț accesibil la Internet în țările cel mai puțin dezvoltate până în 2020</span>
+          </div>
+          
+          <div class="col-lg-2 d-none d-lg-block"></div>
+          
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1/">Rata de acoperire a populației cu rețea mobilă, pe tehnologii</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-global">Global</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.c.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site-moldova/ro/9-c-1-1/">Rata de penetrare a serviciilor de acces la Internet</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Etichete"><li class="list-inline-item">
+        <span class="visually-hidden">Statutul indicatorului</span>
+        
+
+
+
+<span class="status complete">
+    <span class="status-inner">Disponibil</span>
+</span>
+
+
+        </li><li class="list-inline-item">
+        
+        <span class="tag tag-național-proxy">Național proxy</span>
+        </li></ul>
+
+
+            </div>
+            
+            <div class="col-lg-2 goal-page-indicator-progress">
+              <span class="visually-hidden"></span>
+              
+    
+    
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+  </div>
+  <a href="#top">Sus</a>
+</div>
+
+
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">Creat în baza Open SDG</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/sdg-site-moldova/ro/contact-us">Contacte</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/statisticamd/" target="_blank">Twitter</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://www.facebook.com/statistica.md/" target="_blank">Facebook</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/sdg-site-moldova/ro/about/cookies-and-privacy/">Cookie</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://statistica.gov.md/en/terms-of-use-of-data-national-bureau-of-statistics-139_4417.html" target="_blank">Termeni și condiții</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/sdg-site-moldova/ro/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'ascunde';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Caută';</script>
+
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20251117133330'></script>
+
+
+    
+    
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20251117133330"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+</body>
+</html>

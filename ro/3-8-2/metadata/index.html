@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260213130211">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260512115633">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -504,7 +504,7 @@ data-event-label="high"
     // Set values according to this site's configuration.
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 3.8.2: Proportion of population with large household expenditures on health as a share of total household expenditure or income</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR__GLOBAL', "<p>Indicator 3.8.2: Proportion of population with positive out-of-pocket household expenditures on health exceeding 40 per cent of household discretionary budget<sup><a href=\"#footnote-2\" id=\"footnote-ref-2\">[1]</a></sup> </p><div class=\"footnotes\"><div><sup class=\"footnote-number\" id=\"footnote-2\">1</sup><p> Refinement of the indicator name to correct name approved by the IAEG-SDGs from the 2025 Comprehensive review and approved by the 57th session of the Statistical Commission in March 2026. <a href=\"#footnote-ref-2\">&#x2191;</a></p></div></div>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -552,7 +552,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>SDG indicators: 3.8.1; 1.1.1 and 1.2.1</p>");
+        var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS__GLOBAL', "<p>Financial hardship due to out-of-pocket (OOP) health spending is a key consequence of inadequate of financial risk protection mechanisms. SDG indicator 3.8.2 is designed to capture financial hardship due to OOP health spending which hinders progress towards the universal health coverage target 3.8. It should always be interpreted together with the other SDG UHC indicator, SDG UHC indicator, 3.8.1, which measures service coverage.</p>\n<p>Financial hardship induced by OOP health spending also deters efforts to eradicate poverty and reduce inequalities between and within countries and as such other relevant SDG indicators include 1.1.1; 1.2.1; 10.1.1; 10.2.1</p>");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -566,7 +566,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2023-05-15");
+        var currentValue = normalizeCurrentValue('META_LAST_UPDATE__GLOBAL', "2026-03-27");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE__GLOBAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -799,12 +799,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260213130211'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260512115633'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260213130211"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260512115633"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

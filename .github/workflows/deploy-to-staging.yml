@@ -5,7 +5,7 @@ on:
     branches:
       - develop
   repository_dispatch:
-    types: rebuild-staging
+    types:  [rebuild-staging, data-updated]
   #schedule:
   #  - cron: '10 0 * * *'
 

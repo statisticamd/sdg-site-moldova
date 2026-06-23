@@ -49,7 +49,7 @@ custom_js:
 data_edit_url: data
 data_fields:
   units: ''
-  series: national_geographical_coverage
+  series: ''
 date_formats: []
 disclaimer:
   phase: ''
@@ -113,7 +113,7 @@ graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
-graph_title_from_series: false
+graph_title_from_series: true
 header_language_toggle: links
 hide_empty_metadata: true
 hide_single_series: true

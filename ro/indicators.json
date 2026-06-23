@@ -54,28 +54,12 @@
           "status": "complete"
         },
         {
-          "id": "1-3-1-b",
-          "title": "Proporția copiilor acoperiți cu indemnizații adresate familiilor cu copii (indemnizație lunară pentru îngrijirea copilului până la împlinirea vârstei de 2 ani persoanelor neasigurate, indemnizații pentru îngrijirea copilului persoanelor asigurate)",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/1-3-1-b/",
-          "status": "notstarted"
-        },
-        {
           "id": "1-3-1-c",
           "title": "Proporția femeilor beneficiare de indemnizații de maternitate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-c/",
           "status": "complete"
-        },
-        {
-          "id": "1-3-1-d",
-          "title": "Proporția persoanelor cu dizabilități care beneficiază de prestații sociale (pensii și alocații sociale de stat de dizabilitate)",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/1-3-1-d/",
-          "status": "notstarted"
         },
         {
           "id": "1-3-1-e",
@@ -140,14 +124,6 @@
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-4-2-a/",
           "status": "complete"
-        },
-        {
-          "id": "1-4-2-b",
-          "title": "Ponderea populației adulte care își percepe drepturile sale asupra pământului ca fiind sigure",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/1-4-2-b/",
-          "status": "notstarted"
         },
         {
           "id": "1-5-1",
@@ -270,14 +246,6 @@
           "status": "complete"
         },
         {
-          "id": "1-a-3-1",
-          "title": "Ponderea cheltuielilor publice pentru protecție socială în PIB",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/1-a-3-1/",
-          "status": "complete"
-        },
-        {
           "id": "1-b-1",
           "title": "Cheltuieli publice sociale pentru susținerea persoanelor aflate în sărăcie",
           "description": "",
@@ -303,11 +271,11 @@
         },
         {
           "id": "2-1-2",
-          "title": "Prevalența insecurității alimentare moderate sau severe în rândul populației, în baza Scării de Experiență în Insecuritatea Alimentară (FIES)",
+          "title": "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-1-2/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-2-1",
@@ -566,14 +534,6 @@
           "status": "complete"
         },
         {
-          "id": "3-5-2-1",
-          "title": "Prevalența consumului nociv de alcool",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/3-5-2-1/",
-          "status": "complete"
-        },
-        {
           "id": "3-6-1",
           "title": "Rata mortalității determinată de accidente rutiere",
           "description": "",
@@ -703,11 +663,11 @@
         },
         {
           "id": "3-b-3",
-          "title": "Proporția instituțiilor medico-sanitare care dispun de setul de bază al medicamentelor esențiale disponibile și accesibile în mod permanent",
+          "title": "Health product access index",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-b-3/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-c-1",
@@ -791,11 +751,11 @@
         },
         {
           "id": "4-2-2",
-          "title": "Rata de încadrare în educația organizată (cu un an înainte de vârsta oficială de intrare în școala primară), pe sexe",
+          "title": "Participation rate in organized learning (one year before the official primary entry age), by sex",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-2-2/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-3-1",
@@ -1150,14 +1110,6 @@
           "status": "complete"
         },
         {
-          "id": "5-6-2-2",
-          "title": "Implementarea cadrului normativ care garantează femeilor și bărbaților în vârstă de 15-49 ani accesul la sănătatea sexuală și reproductivă, informare și educare",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/5-6-2-2/",
-          "status": "complete"
-        },
-        {
           "id": "5-a-1",
           "title": "(a) Ponderea populației agricole cu drepturi de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole, pe sexe și (b) ponderea femeilor cu drepturi de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole, după tipul de posesiune",
           "description": "",
@@ -1166,16 +1118,8 @@
           "status": "notstarted"
         },
         {
-          "id": "5-a-1-a",
-          "title": "5.a.1.a .Ponderea populației din sectorul agrar cu drepturi de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/5-a-1-a/",
-          "status": "notstarted"
-        },
-        {
           "id": "5-a-1-b",
-          "title": "Ponderea femeilor  cu drepturi  de proprietate sau alte drepturi patrimoniale asupra terenurilor agricole",
+          "title": "global_indicators.5-a-1-b-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-a-1-b/",
@@ -1271,11 +1215,11 @@
         },
         {
           "id": "6-2-1-b",
-          "title": "Ponderea populației care utilizează o instalație de spălare a mâinilor cu săpun și apă",
+          "title": "global_indicators.6-2-1-b-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-2-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-3-1",
@@ -1471,7 +1415,7 @@
         },
         {
           "id": "7-b-1-2",
-          "title": "Volumul investițiilor străine directe în dezvoltarea durabilă a infrastructurii și tehnologiilor",
+          "title": "global_indicators.7-b-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-b-1-2/",
@@ -1631,11 +1575,11 @@
         },
         {
           "id": "8-8-2-1",
-          "title": "Numărul de convenții colective încheiate la nivel instituțional în conformitate cu sursele documentare ale Organizației Internaționale a Muncii și cu legislația națională",
+          "title": "global_indicators.8-8-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-8-2-1/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-9-1",
@@ -1695,15 +1639,15 @@
         },
         {
           "id": "8-10-2",
-          "title": "Procentul de adulți (15+ ani) care dispun de un cont la o bancă sau altă instituție financiară sau cu un prestator de servicii de bani mobili",
+          "title": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-10-2/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-10-2-1",
-          "title": "Conturi bancare la 100 000 populație (18+)",
+          "title": "global_indicators.8-10-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-10-2-1/",
@@ -2055,7 +1999,7 @@
         },
         {
           "id": "10-7-1",
-          "title": "Ponderea costurilor de angajare la muncă peste hotare în veniturile lunare în țara de destinație",
+          "title": "Recruitment cost borne by employee as a proportion of monthly income earned in country of destination",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-7-1/",
@@ -2175,7 +2119,7 @@
         },
         {
           "id": "11-2-1-1",
-          "title": "Ponderea localităților care au acces la transport rutier și/sau feroviar prin servicii regulate",
+          "title": "global_indicators.11-2-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-2-1-1/",
@@ -2183,7 +2127,7 @@
         },
         {
           "id": "11-2-1-2",
-          "title": "Ponderea unităților de transport public accesibile persoanelor cu dizabilități",
+          "title": "global_indicators.11-2-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-2-1-2/",
@@ -2199,7 +2143,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "Rata consumului de teren raportată la rata de creștere a populației",
+          "title": "Ratio of land consumption rate to population growth rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-3-1/",
@@ -2215,7 +2159,7 @@
         },
         {
           "id": "11-3-2",
-          "title": "Proporția orașelor în care structurile funcționează în mod regulat și pe o bază democratică, asigurând participarea directă a societății civile la planificarea urbană și managementul urban",
+          "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-3-2/",
@@ -2287,7 +2231,7 @@
         },
         {
           "id": "11-5-3-b",
-          "title": "Numărul de întreruperi ale serviciilor de bază în urma situațiilor excepționale",
+          "title": "global_indicators.11-5-3-b-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-5-3-b/",
@@ -2295,7 +2239,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proporția deșeurilor municipale solide colectate regulat, cu depozitare și evacuare finală adecvată în total deșeuri municipale generate, pe orașe",
+          "title": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-6-1/",
@@ -2335,7 +2279,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "Ponderea victimelor abuzului fizic sau hărțuirii sexuale, în ultimele 12 luni, pe sexe, vârstă, statut de dizabilitate și locul de survenire",
+          "title": "Proportion of persons victim of non-sexual or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-7-2/",
@@ -2759,7 +2703,7 @@
         },
         {
           "id": "14-2-1",
-          "title": "Numărul de țări care utilizează abordări bazate pe ecosistem pentru gestionarea zonelor marine",
+          "title": "Number of countries using ecosystem-based approaches to managing marine areas",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/14-2-1/",
@@ -2815,7 +2759,7 @@
         },
         {
           "id": "14-7-1-1",
-          "title": "Ponderea pescuitului în PIB",
+          "title": "global_indicators.14-7-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/14-7-1-1/",
@@ -2831,7 +2775,7 @@
         },
         {
           "id": "14-b-1",
-          "title": "Gradul de implementare a cadrului legal/normativ/de politici/instituțional care recunoaște și protejează drepturile de acces pentru pescarii de scară mică",
+          "title": "Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/14-b-1/",
@@ -3055,11 +2999,11 @@
         },
         {
           "id": "16-1-3",
-          "title": "Proporția populației supuse (a) violentei fizice, (b) violenței psihologice și (c) violenței sexuale, în ultimele 12 luni",
+          "title": "Proportion of population subjected to (a) physical violence, (b) psychological violence and/or (c) sexual violence in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-1-3/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-1-3-1",
@@ -3079,11 +3023,11 @@
         },
         {
           "id": "16-2-1",
-          "title": "Ponderea copiilor (1-17 ani) care au fost supuși pedepsei fizice și/sau agresiunii psihologice din partea îngrijitorilor, în ultima lună",
+          "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-2-1/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-2-1-1",
@@ -3103,7 +3047,7 @@
         },
         {
           "id": "16-2-3",
-          "title": "Ponderea tinerilor în vârstă de 18-29 ani care au fost supuși violenței sexuale până la 18 ani",
+          "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-2-3/",
@@ -3111,7 +3055,7 @@
         },
         {
           "id": "16-3-1",
-          "title": "Ponderea victimelor violenței care în ultimele 12 luni au raport despre victimizarea lor autorităților competente sau altor mecanisme oficial recunoscute de soluționare a conflictelor",
+          "title": "Proportion of victims of (a) physical, (b) psychological and/or (c) sexual violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-1/",
@@ -3167,7 +3111,7 @@
         },
         {
           "id": "16-4-1",
-          "title": "Valoarea fluxurilor financiare intrate și ieșite din țară ilegal ($ SUA)",
+          "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-4-1/",
@@ -3287,7 +3231,7 @@
         },
         {
           "id": "16-7-2",
-          "title": "Ponderea populației care consideră că procesul de luare a deciziilor este incluziv și participativ, pe sexe, vârstă, dizabilitate și grup de populație",
+          "title": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-7-2/",

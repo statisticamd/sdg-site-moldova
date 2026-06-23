@@ -39,3 +39,6 @@ exclude:
 
 include:
   - archive
+
+custom_js:
+  - /assets/js/custom.js

@@ -63,7 +63,7 @@
         },
         {
           "id": "1-3-1-e",
-          "title": "Proporția șomerilor care beneficiază de ajutor de șomaj din totalul de șomeri înregistrați",
+          "title": "Proporția șomerilor care beneficiază de indemnizație de șomaj din totalul de șomeri înregistrați",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-e/",
@@ -79,7 +79,7 @@
         },
         {
           "id": "1-3-1-g",
-          "title": "Proporția persoanelor vulnerabile beneficiare de prestații de asistență socială (ajutor social, ajutor pentru perioada rece)",
+          "title": "Proporția persoanelor vulnerabile beneficiare de cel puțin o plată sub formă monetară (ajutor social și/sau compensație pentru energie acordată în formă monetară)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-g/",
@@ -95,7 +95,7 @@
         },
         {
           "id": "1-3-1-i",
-          "title": "Acoperirea populației celei mai sărace (quintila 1) cu prestații de ajutor pentru perioada rece a anului",
+          "title": "Acoperirea populației celei mai sărace (quintila 1) cu prestații de compensație la energie",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-3-1-i/",
@@ -207,7 +207,7 @@
         },
         {
           "id": "1-a-1-1",
-          "title": "Ponderea mijloacelor alocate din bugetul public național pentru programul de ajutor social (ajutor social și ajutor pentru perioada rece a anului) în totalul cheltuielilor bugetului public național",
+          "title": "Ponderea mijloacelor alocate din bugetul public național pentru programul de ajutor social și ajutor la contor (ajutor social, compensații la energie sub formă de plată monetară) în totalul cheltuielilor bugetului public național",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-a-1-1/",
@@ -295,7 +295,7 @@
         },
         {
           "id": "2-2-2-a",
-          "title": "Prevalența supraponderalilor printre copii în vârstă de până la 5 ani",
+          "title": "Prevalența supraponderalilor printre copiii în vârstă de până la 5 ani",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-2-2-a/",
@@ -303,7 +303,7 @@
         },
         {
           "id": "2-2-2-b",
-          "title": "Prevalența retardului ponderal printre copii în vârstă de până la 5 ani",
+          "title": "Prevalența retardului ponderal printre copiii în vârstă de până la 5 ani",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-2-2-b/",
@@ -439,7 +439,7 @@
         },
         {
           "id": "3-2-1-1",
-          "title": "Rata mortalității infantile la 1 000 născuți vii",
+          "title": "Rata mortalității infantile la 1 000 de născuți vii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-2-1-1/",
@@ -463,7 +463,7 @@
         },
         {
           "id": "3-3-1-1",
-          "title": "Decese HIV asociate la 100 000 populație",
+          "title": "Decese HIV asociate la 100 000 de populație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-3-1-1/",
@@ -599,7 +599,7 @@
         },
         {
           "id": "3-8-2-a",
-          "title": "Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 10% în total cheltuielile gospodăriilor",
+          "title": "Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 10 % în total cheltuielile gospodăriilor",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-8-2-a/",
@@ -607,7 +607,7 @@
         },
         {
           "id": "3-8-2-b",
-          "title": "Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 25% în total cheltuielile gospodăriilor",
+          "title": "Ponderea populației cu cheltuielile gospodăriilor pentru sănătate mai mari de 25 % în total cheltuielile gospodăriilor",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-8-2-b/",
@@ -711,7 +711,7 @@
         },
         {
           "id": "4-1-1-c-ii",
-          "title": "(ii) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
+          "title": "Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-ii/",
@@ -719,7 +719,7 @@
         },
         {
           "id": "4-1-1-c-i",
-          "title": "(i) Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
+          "title": "Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-i/",
@@ -799,7 +799,7 @@
         },
         {
           "id": "4-5-1-b",
-          "title": "Indicele parității în învățământul gimnazial (nivelul 2)",
+          "title": "Indicele parității în învățământul gimnazial (nivelul 2)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-5-1-b/",
@@ -863,7 +863,7 @@
         },
         {
           "id": "4-a-1-b",
-          "title": "Ponderea instituțiilor de învățământ primar și secundar general cu conexiune la Internet în scopuri pedagogice",
+          "title": "Ponderea instituțiilor de învățământ primar și secundar general cu conexiune la internet în scopuri pedagogice",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-a-1-b/",
@@ -1023,7 +1023,7 @@
         },
         {
           "id": "5-4-1-2",
-          "title": "Gradul de cuprindere a copiilor până la vârsta de 3 ani cu educație timpurie",
+          "title": "Gradul de cuprindere a copiilor până la vârsta de 3 ani în educația timpurie",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-4-1-2/",
@@ -1103,7 +1103,7 @@
         },
         {
           "id": "5-6-2-1",
-          "title": "Existența în țară a cadrului normativ care garantează femeilor și bărbaților în vârstă de 15-49 ani accesul la sănătatea sexuală și reproductivă, informare și educare",
+          "title": "Existența în țară a cadrului normativ care garantează femeilor și bărbaților în vârstă de 15-49 de ani accesul la sănătatea sexuală și reproductivă, informare și educare",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-6-2-1/",
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "6-3-2-a",
-          "title": "Proporția corpurilor de apă de suprafață care au atins clasa de „calitate bună” (conform parametrilor hidrochimici)",
+          "title": "Ponderea corpurilor de apă de suprafață care au atins clasa de „calitate bună” (conform parametrilor hidrochimici)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-3-2-a/",
@@ -1255,7 +1255,7 @@
         },
         {
           "id": "6-3-2-b",
-          "title": "Proporția corpurilor de apă subterane care au atins clasa de „calitate bună” (conform parametrilor chimici analitici, metale dizolvate, pesticide)",
+          "title": "Ponderea corpurilor de apă subterană care au atins clasa de „calitate bună” (conform parametrilor chimici analitici, metale dizolvate, pesticide)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-3-2-b/",
@@ -1407,7 +1407,7 @@
         },
         {
           "id": "7-b-1-1",
-          "title": "Volumul investițiilor în sectorul de eficiență energetică raportat la PIB",
+          "title": "Volumul investițiilor în sectorul energetic raportat la PIB",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-b-1-1/",
@@ -1815,7 +1815,7 @@
         },
         {
           "id": "9-4-1-1",
-          "title": "1 Emisiile totale de CO2, pe sectoare, mii tone CO2 echivalent",
+          "title": "Emisiile totale de CO2, pe sectoare, mii de tone CO2 echivalent",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-4-1-1/",
@@ -1919,7 +1919,7 @@
         },
         {
           "id": "10-1-1-b",
-          "title": "Ritmul de creștere a cheltuielilor pe o persoană ale 40% din populația cel mai puțin asigurate",
+          "title": "Ritmul de creștere a cheltuielilor pe o persoană ale 40 % din populația cel mai puțin asigurate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-1-1-b/",
@@ -2095,7 +2095,7 @@
         },
         {
           "id": "11-1-1-a",
-          "title": "Ponderea populației cu cheltuielile lunare pentru întreținerea locuinței care depășesc 30% din veniturile disponibile lunare ale gospodăriei (accesibilitate - locuință adecvată)",
+          "title": "Ponderea populației cu cheltuielile lunare pentru întreținerea locuinței care depășesc 30 % din veniturile disponibile lunare ale gospodăriei (accesibilitate – locuință adecvată)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-1-1-a/",
@@ -2103,7 +2103,7 @@
         },
         {
           "id": "11-1-1-b",
-          "title": "Ponderea persoanelor care trăiesc în locuințe a căror suprafață este sub norma de 9 m2 pentru fiecare persoană și a persoanelor de sexe diferite cu vârsta de peste 9 ani, care locuiesc în aceeași cameră, cu excepția soților (supraaglomerarea)",
+          "title": "Ponderea populației care trăiește în locuințe a căror suprafață este sub norma de 9 m2 pentru fiecare persoană și a persoanelor de sexe diferite cu vârsta de peste 9 ani, care locuiesc în aceeași cameră, cu excepția soților (supraaglomerarea)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-1-1-b/",
@@ -2255,7 +2255,7 @@
         },
         {
           "id": "11-6-2-1",
-          "title": "Cantitatea de emisii de substanțe poluante în aer de la sursele mobile (pe surse), kg raportate pe o persoană",
+          "title": "Cantitatea de emisii de substanțe poluante în aer de la sursele mobile (pe surse), mii de tone, raportate pe o persoană",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-6-2-1/",
@@ -2487,7 +2487,7 @@
         },
         {
           "id": "12-7-1-1",
-          "title": "Acțiuni privind asigurarea de achiziții publice ecologice",
+          "title": "Ponderea contractelor de achiziții care includ criterii sociale, de mediu, de inovare și de performanță",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-7-1-1/",
@@ -2927,7 +2927,7 @@
         },
         {
           "id": "15-8-1-1",
-          "title": "Existența actelor normative și a măsurilor privind prevenirea și reducerea apariției speciilor invazive pentru a controla și eradica speciile prioritare",
+          "title": "Existența actelor normative și a măsurilor privind prevenirea și reducerea apariției speciilor invazive pentru a controla și a eradica speciile prioritare",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/15-8-1-1/",
@@ -2943,7 +2943,7 @@
         },
         {
           "id": "15-9-1-1",
-          "title": "Gradul de implementare a acțiunilor din cadrul Planului al Strategiei de mediu pentru anii 2014-2023",
+          "title": "Gradul de implementare a Strategiei de mediu pentru anii 2024-2030",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/15-9-1-1/",
@@ -3079,7 +3079,7 @@
         },
         {
           "id": "16-3-2-2",
-          "title": "Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și Consiliului pentru egalitate, implementate de către autoritățile și instituțiile sesizate",
+          "title": "Ponderea recomandărilor Avocatului Poporului (inclusiv Avocatul Poporului pentru drepturile copilului) și ale Consiliului pentru egalitate, implementate de către autoritățile și instituțiile sesizate (care rezultă din acțiunile procesuale)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-2-2/",
@@ -3167,7 +3167,7 @@
         },
         {
           "id": "16-5-2-2",
-          "title": "Indicatorul privind „Calitatea regulatorie” (de la „-2,5” la „2,5”)",
+          "title": "Indicatorul privind „Calitatea regulatorie” (de la „- 2,5” la „2,5”)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-5-2-2/",
@@ -3191,7 +3191,7 @@
         },
         {
           "id": "16-6-2-1",
-          "title": "Ponderea populației care au accesat serviciile publice în format electronic din totalul beneficiarilor de servicii publice",
+          "title": "Numărul de accesări al unui serviciu public în format electronic sau la ghișeu de către populație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-6-2-1/",
@@ -3215,7 +3215,7 @@
         },
         {
           "id": "16-7-1-b",
-          "title": "Proporția pozițiilor din Parlamentul național comparativ cu distribuțiile naționale, după sex, vârstă, persoane cu dizabilități și grupuri de populație",
+          "title": "Raportul dintre proporția pozițiilor ocupate în autoritățile publice (centrale și locale) de către persoanele din anumite grupuri ale populației și proporția grupului respectiv în total populație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-7-1-b/",
@@ -3263,7 +3263,7 @@
         },
         {
           "id": "16-10-1-1",
-          "title": "Indicele Libertății Presei",
+          "title": "Indicele libertății presei",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-10-1-1/",
@@ -3279,7 +3279,7 @@
         },
         {
           "id": "16-10-2-1",
-          "title": "Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație",
+          "title": "Existența și gradul de implementare a cadrului normativ cu privire la accesul la informație inclusiv (i) rata cererilor de comunicare a informațiilor de interes public soluționate integral; (ii) ponderea furnizorilor de informații care respectă termenele legale de examinare a cererilor",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-10-2-1/",
@@ -3471,7 +3471,7 @@
         },
         {
           "id": "17-16-1-1",
-          "title": "Raportarea progreselor asupra aplicării cadrului de monitorizare a eficienței dezvoltării cu participarea mai multor parteneri, care acordă suport în atingerea de către țară a Obiectivelor de Dezvoltare Durabilă",
+          "title": "Raportarea progreselor asupra aplicării cadrului de monitorizare a eficienței dezvoltării cu participarea mai multor parteneri care acordă suport în atingerea ODD de către țară",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-16-1-1/",
@@ -3487,7 +3487,7 @@
         },
         {
           "id": "17-17-1-1",
-          "title": "Gradul de implementare a Strategiei de dezvoltare a societății civile",
+          "title": "Volumul resurselor financiare angajat în parteneriate public-private pentru infrastructură",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-17-1-1/",
@@ -3519,7 +3519,7 @@
         },
         {
           "id": "17-18-2-1",
-          "title": "Disponibilitatea legislației naționale în domeniul statisticii, conform Principiilor Fundamentale ale Statisticii Oficiale",
+          "title": "Disponibilitatea legislației naționale în domeniul statisticii, conform Principiilor fundamentale ale statisticii oficiale",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-18-2-1/",
@@ -3535,7 +3535,7 @@
         },
         {
           "id": "17-18-3-1",
-          "title": "Existența Planului anual de acțiuni pentru implementarea Strategiei Naționale de Dezvoltare a Sistemului Statistic Național, care este deplin finanțat și aflat în proces de implementare",
+          "title": "Existența Planului anual de acțiuni pentru implementarea Strategiei de dezvoltare a sistemului statistic național, care este deplin finanțat și se află în proces de implementare",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-18-3-1/",
@@ -3543,7 +3543,7 @@
         },
         {
           "id": "17-18-3-2",
-          "title": "Gradul de implementare și gradul de finanțare a Planului anual de acțiuni pentru implementarea Strategiei Naționale de Dezvoltare a Sistemului Statistic Național",
+          "title": "Gradul de implementare și gradul de finanțare a Planului anual de acțiuni pentru implementarea Strategiei de dezvoltare a sistemului statistic național",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-18-3-2/",

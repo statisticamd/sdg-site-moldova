@@ -1286,13 +1286,13 @@ var indicatorModel = function (options) {
  * Constants to be used in indicatorModel.js and helper functions.
  */
 var UNIT_COLUMN = 'Units';
-var SERIES_COLUMN = 'national_geographical_coverage';
+var SERIES_COLUMN = 'Series';
 var GEOCODE_COLUMN = 'GeoCode';
 var YEAR_COLUMN = 'Year';
 var VALUE_COLUMN = 'Value';
 // Note this headline color is overridden in indicatorView.js.
 var HEADLINE_COLOR = '#777777';
-var GRAPH_TITLE_FROM_SERIES = false;
+var GRAPH_TITLE_FROM_SERIES = true;
 
   /**
  * Model helper functions with general utility.
@@ -6127,7 +6127,7 @@ $(function() {
             this.currentDisaggregation = 0;
             this.displayedDisaggregation = 0;
             this.needsMapUpdate = false;
-            this.seriesColumn = 'national_geographical_coverage';
+            this.seriesColumn = 'Series';
             this.unitsColumn = 'Units';
             this.displayForm = false;
             this.updateDisaggregations(plugin.startValues);

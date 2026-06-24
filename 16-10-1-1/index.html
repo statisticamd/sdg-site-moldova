@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624121837">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624134635">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -283,25 +283,1685 @@ data-event-label="high"
 <div id="top" tabindex=-1></div>
 
 
+
+<script type="text/template" id="item_template">
+  <% _.each(fields, function(fieldItem) { %>
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
+      <button class='accessBtn' tabindex='0' aria-expanded='false'
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+        <% }%>
+      >
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
+          <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.label)%></span>
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
+      </button>
+      <div class="variable-options">
+        <fieldset>
+          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
+          <div>
+            <button data-type="select">Select all</button>
+            <button data-type="clear">Clear all</button>
+          </div>
+          <% _.each(fieldItem.values, function(item) { %>
+            <label>
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            </label>
+          <% }); %>
+        </fieldset>
+      </div>
+
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' is selected
+        </div>
+        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+          No options available because of filters above
+        </div>
+      <% }%>
+
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" id="units_template">
+  
+  <% if(units.length > 1) { %>
+  
+    <h4>Unit of Measurement</h4>
+    <fieldset>
+      <legend class="sr-only">Unit of Measurement</legend>
+      <% _.each(units, function(unitsItem, index) { %>
+        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script type="text/template" id="series_template">
+  
+  <% if(serieses.length > 1) { %>
+  
+    <h4>Series</h4>
+    <fieldset>
+      <legend class="sr-only">Series</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var isProxy = (proxySerieses.includes(seriesItem)) %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.adjective statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","proxy":"Proxy","proxy_description":"This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+
+<script>translations['data'] = {"Year":"Year"};</script>
+
+
 <div class="container">
+  
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/goals">Goals</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/16/"
+               title="Goal 16 - Peace, justice and strong institutions"
+               aria-label="Goal  - ">
+               Goal 16
+            </a>
+        </li>
+        
+    </ol>
+</nav>
 
-  <h1>16.10.1.1 </h1>
 
+  
+</div>
+<div class="heading goal-banner indicator goal-16">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/sdg-site-moldova/16/" aria-label="View targets and indicators for Goal 16" title="View targets and indicators for Goal 16">
+                    <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/16.png"
+                        alt="Peace, justice and strong institutions - Goal 16"
+                        id="goal-16"
+                        class="goal-icon-image goal-icon-image-" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
+            
+                <div>
+                    <h1>
+                        
+                        Indicator 16.10.1.1
+                        
+                        <span class="lead-copy">Press Freedom Index</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container goal-16" role="main">
   
 
   
 
-  <hr>
-
-  <!-- META LINK FIX (AICI ESTE REZOLVAREA TA) -->
   
 
-  <hr>
+  
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
 
-  <!-- DATA / CHART PLACEHOLDER (Open SDG îl completează automat dacă există plugin) -->
+
+    </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+<div class="row"
+  id="indicatorData"
+  data-indicatorid='indicator_16-10-1-1'
+  data-id="16-10-1-1"
+  data-country="The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender"
+  data-charttitle="16.10.1.1. Press Freedom Index"
+  data-charttitles="[]"
+  data-measurementunit="Score"
+  data-xaxislabel=""
+  data-showdata="true"
+  data-graphtype="line"
+  data-graphtypes="null"
+  data-geocoderegex=""
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
+  data-stackeddisaggregation=""
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
+  data-indicatordownloads="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Index&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Index (rank)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Index&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-compositebreakdownlabel=""
+  data-precision="[]"
+  data-proxy=""
+  data-proxyseries="null"
+>
+  
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/en/headline/16-10-1-1.csv" class="btn btn-primary btn-download" download="indicator_16-10-1-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/en/data/16-10-1-1.csv" class="btn btn-primary btn-download" download='indicator_16-10-1-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>16.10.1.1. Press Freedom Index</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value">73.99</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">74.65</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">72.15</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">71.17</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">69.59</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">69.99</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">68.79</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">68.84</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">68.39</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">73.47</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">77.62</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
+          
+          
+          
+          <td class="table-value">74.86</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Reporters Without Borders (RSF)</p>
+    
+    
+    <p>Geographical Area: The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</p>
+    
+    
+    <p>Unit of Measurement: Score</p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            16.10.1.1. Press Freedom Index
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Reporters Without Borders (RSF)</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>Reporters Without Borders (RSF)</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>The Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
+  
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.national_metadata tab"
+
+            >National Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
+
+            >Global Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources"
+                data-bs-target="#sources"
+                aria-controls="sources"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.sources tab"
+
+            >Sources</button>
+        </li>
+    
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit Indicator</a>
+        </li>
+    
+</ul>
+
+<div class="tab-content">
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>This table provides metadata for the actual indicator available from Moldovan statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available, this table should be consulted for information on national methodology and other Moldovan-specific metadata information.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
+          
+            <p>Indicator 16.10.1.1: World Press Freedom Index</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definition and concepts </th>
+        <td>
+          
+            <p>Press Freedom Index is available for journalists from 180 countries and is  determined by compiling the answers of experts in a questionnaire suggested by  RSF (Reporters without frontiers). The questionnaire is composed on 87  questions and is translated into 20 languages. Qualitative analysis is  combined with quantitative data regarding abuses and violence against  journalists during the evaluated period. The evaluation criteria and  indicators from the questionnaire are: 1) pluralism; 2) independence of  mass-media; 3) “self-censorship” existence and environment; 4) legislative  framework; 5) transparency, and 6) quality of infrastructure supporting  information production. Starting with the Index for 2013, countries are  attributed scores between 0 and 100, where 0 is the weakest score and 100 is  the best score. This makes the Index to be more informative and makes  easier the comparability of one year with another.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
+          
+            <p>Score</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
+          
+            Jul 08, 2025
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
+          
+            Sep 19, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="global">
+            <article>
+                <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
+          
+            <p>Indicator 16.10.1.1: NA</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Target </th>
+        <td>
+          
+            <p>Target 16.10: Ensure public access to information and protect fundamental freedoms, in  accordance with national legislation and international agreements</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">UN designated tier </th>
+        <td>
+          
+            <p>2</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to global metadata </th>
+        <td>
+          
+            <p>https://unstats.un.org/sdgs/metadata/files/Metadata-16-10-01.pdf</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">metadata_fields.goal_meta_link_text </th>
+        <td>
+          
+            <p>United Nations Sustainable Development Goals Metadata (PDF)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">International organisations(s) responsible for global monitoring </th>
+        <td>
+          
+            <p>Office of the United Nations High Commissioner for Human Rights (OHCHR)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources">
+            <article>
+                
+                <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4 class="sr-only">Source 1</h4>
+      
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data sources </th>
+        <td>
+          
+            <p><a href="https://rsf.org/en/index">Reporters Without Borders (RSF)</a></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data producers </th>
+        <td>
+          
+            <p>Reporters Without Borders (RSF)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p>Reporters Without Borders (RSF) is an independent NGO with consultative status  with the United Nations, United Nations Educational, Scientific and Cultural  Organization (UNESCO), the Council of Europe and the International  Organization of the Francophonie (OIF)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
+          
+            <p>National Council for Human Rights</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://rsf.org/en/index" target="_blank">
+                Link to data source <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
+
+            </article>
+        </div>
+        
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
+  
+  
+
+  
+  
+
+
+  <a class="btn btn-primary" href="data">Edit Data</a>
+  
+
+  
+  <a class="btn btn-primary" href="metadata">Edit Metadata</a>
+  
+
+  
+  <a class="btn btn-primary" href="config">Edit Configuration</a>
+  
+
+</div>
+
+        </div>
+    
+</div>
+
+</div>
+  </div>
+</div>
+
+  <a href="#top">Back to top</a>
+</div>
+
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
@@ -376,12 +2036,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624121837'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624134635'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624121837"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624134635"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

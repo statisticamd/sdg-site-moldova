@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624121837">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624134635">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -283,25 +283,1227 @@ data-event-label="high"
 <div id="top" tabindex=-1></div>
 
 
+
+<script type="text/template" id="item_template">
+  <% _.each(fields, function(fieldItem) { %>
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
+      <button class='accessBtn' tabindex='0' aria-expanded='false'
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+        <% }%>
+      >
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
+          <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.label)%></span>
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
+      </button>
+      <div class="variable-options">
+        <fieldset>
+          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
+          <div>
+            <button data-type="select">Select all</button>
+            <button data-type="clear">Clear all</button>
+          </div>
+          <% _.each(fieldItem.values, function(item) { %>
+            <label>
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            </label>
+          <% }); %>
+        </fieldset>
+      </div>
+
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' is selected
+        </div>
+        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+          No options available because of filters above
+        </div>
+      <% }%>
+
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" id="units_template">
+  
+  <% if(units.length > 1) { %>
+  
+    <h4>Unit of Measurement</h4>
+    <fieldset>
+      <legend class="sr-only">Unit of Measurement</legend>
+      <% _.each(units, function(unitsItem, index) { %>
+        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script type="text/template" id="series_template">
+  
+  <% if(serieses.length > 1) { %>
+  
+    <h4>Series</h4>
+    <fieldset>
+      <legend class="sr-only">Series</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var isProxy = (proxySerieses.includes(seriesItem)) %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country.adjective statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available, this table should be consulted for information on national methodology and other %country.adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","proxy":"Proxy","proxy_description":"This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+
+<script>translations['data'] = {"Year":"Year"};</script>
+
+
 <div class="container">
+  
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/goals">Goals</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-moldova/11/"
+               title="Goal 11 - Sustainable cities and communities"
+               aria-label="Goal  - ">
+               Goal 11
+            </a>
+        </li>
+        
+    </ol>
+</nav>
 
-  <h1>11.a.1 </h1>
 
+  
+</div>
+<div class="heading goal-banner indicator goal-11">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/sdg-site-moldova/11/" aria-label="View targets and indicators for Goal 11" title="View targets and indicators for Goal 11">
+                    <img src="https://statisticamd.github.io/sdg-translations/assets/img/goals/en/11.png"
+                        alt="Sustainable cities and communities - Goal 11"
+                        id="goal-11"
+                        class="goal-icon-image goal-icon-image-" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
+            
+                <div>
+                    <h1>
+                        
+                        Indicator 11.a.1
+                        
+                        <span class="lead-copy">national_indicators.11-a-1-title</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container goal-11" role="main">
   
 
   
 
-  <hr>
-
-  <!-- META LINK FIX (AICI ESTE REZOLVAREA TA) -->
   
 
-  <hr>
+  
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
 
-  <!-- DATA / CHART PLACEHOLDER (Open SDG îl completează automat dacă există plugin) -->
+
+    </div>
+</div>
+
+
+  
+
+
+  
+
+
+
+<div class="row"
+  id="indicatorData"
+  data-indicatorid='indicator_11-a-1'
+  data-id="11-a-1"
+  data-country="Republic of Moldova"
+  data-charttitle="national_indicators.11-a-1-graph"
+  data-charttitles="[]"
+  data-measurementunit="Number/dimensionless"
+  data-xaxislabel=""
+  data-showdata="false"
+  data-graphtype="line"
+  data-graphtypes="null"
+  data-geocoderegex=""
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
+  data-stackeddisaggregation=""
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
+  data-indicatordownloads="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-compositebreakdownlabel=""
+  data-precision="[]"
+  data-proxy=""
+  data-proxyseries="null"
+>
+  
+  <div id="indicator-main" class="indicator-main col-md-12">
+  
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.national_metadata tab"
+
+            >National Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
+
+            >Global Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources"
+                data-bs-target="#sources"
+                aria-controls="sources"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.sources tab"
+
+            >Sources</button>
+        </li>
+    
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit Indicator</a>
+        </li>
+    
+</ul>
+
+<div class="tab-content">
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>This table provides metadata for the actual indicator available from Moldovan statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available, this table should be consulted for information on national methodology and other Moldovan-specific metadata information.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
+          
+            <p>Indicator 11.a.1: Proportion of population living in cities that implement urban and  regional development plans integrating population projections and resource  needs</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definition and concepts </th>
+        <td>
+          
+            <p> Many urban related SDGs require global monitoring with the ‘city’ as the unit of analysis. In order to monitor the urban SDGs in particular, it is necessary to agree on a global/common definition of what constitutes a ‘city’. A standard city definition will assist in the monitoring of the SDGs by ensuring that the study areas for the spatial urban SDGs are standardized and easily reproducible, and will add clarity to the methodologies and approaches to the collection of data to support the land and rural related indicators. UN-Habitat in collaboration with New York University and the Joint Research Centre - European Commission has adopted two definitions of cities. </p>
+<p>The definitions are: </p>
+<p>a) City defined by the limit of its built-up area -New York University The Built-up area’ of a city is defined as the contiguous area occupied by buildings and other impervious surfaces including the urban vacant areas in and around them but excluding rural areas beyond the urban fringe. </p>
+<p></p>
+<p>b) Degree of Urbanization (DEGURBA) -European Commission-JRC Degree of urbanization is defined as the classification of local administrative units’ level 2 or communes into three types: Cities (densely populated), towns or suburbs (intermediate density) and rural areas (thinly populated areas) based on the share of the local population living in urban clusters and in urban centers. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
+          
+            <p>Number/dimensionless</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
+          
+            <p>X (S) =100 X - Min(X ) Max(X )- Min(X )</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Every two years</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
+          
+            Jun 22, 2025
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
+          
+            Jun 22, 2025
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="global">
+            <article>
+                <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
+          
+            <p>Indicator 11.a.1: Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Target </th>
+        <td>
+          
+            <p>Target 11.a: Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">UN designated tier </th>
+        <td>
+          
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to global metadata </th>
+        <td>
+          
+            <p>http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-11.pdf</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">metadata_fields.goal_meta_link_text </th>
+        <td>
+          
+            <p>United Nations Sustainable Development Goals Metadata (PDF)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">International organisations(s) responsible for global monitoring </th>
+        <td>
+          
+            <p>United Nations Human Settlements Programme (UN-Habitat)</p>
+<p>United Nations Population Fund (UNFPA)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Related indicators </th>
+        <td>
+          
+            <p>This Indicator is related to several Goals and Targets, particularly the following:</p>
+<p>1.4.2, 1.5.1, 2.3.1, 2.c.1, 5.2.1, 5a.1, 6.1.1, 6.2.1, 7.2.1, 7.3.1, 8.3.1, 8.5.1, 8.6.1, 9.1.1, 9.4.1, 9a.1, 10.4.1, 12.5.1, 13.1.1, 13b.1, 15.9.1, 16.7.1, 16a.1, 16b.1, 17.14.1, 17.17.1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
+          
+            <p>2025-04-23</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources">
+            <article>
+                
+                <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4 class="sr-only">Source 1</h4>
+      
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data sources </th>
+        <td>
+          
+            <p> There are several data sources that could be used:</p>
+<p>1. Official documents such as National Urban Plan, Frameworks, Strategies, etc. Available in national or regional administrations.</p>
+<p>2. Other supporting tools such as: baseline spatial data mapping, benchmarking, point-of-service surveys, performance monitoring and reporting, gap and</p>
+<p>content analysis.</p>
+<p>3. Database of national urban policies by United Nations - and other international organizations, UN-Habitat has developed a National Urban Policy Database as</p>
+<p>a repository of official urban policies documents and related; UN-Habitat has also developed the UrbanLex, a database of laws and policies on urban matters. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p> Ministry of Infrastructure and Regional Development</p>
+<p>National Bureau of Statistics </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Institutional mandate </th>
+        <td>
+          
+            <p>Ministry of Infrastructure and Regional Development</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            <p>Aliona Cucerca, senior consultant, Directorate of Policies and Regulations in the Field of Territorial Planning, Urbanism, Constructions and Housing, tel.022/250-659, e-mail: aliona.cucerca@midr.gov.md</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
+
+            </article>
+        </div>
+        
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
+  
+  
+
+  
+  
+
+
+  <a class="btn btn-primary" href="data">Edit Data</a>
+  
+
+  
+  <a class="btn btn-primary" href="metadata">Edit Metadata</a>
+  
+
+  
+  <a class="btn btn-primary" href="config">Edit Configuration</a>
   
 
 </div>
+
+        </div>
+    
+</div>
+
+</div>
+  </div>
+</div>
+
+  <a href="#top">Back to top</a>
+</div>
+
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
@@ -376,12 +1578,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624121837'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624134635'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624121837"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624134635"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

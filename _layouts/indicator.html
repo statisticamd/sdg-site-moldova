@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <h1>{{ page.indicator_number }} {{ page.indicator_name }}</h1>
+
+  {% if page.goal_target %}
+    <p><strong>Target:</strong> {{ page.goal_target }}</p>
+  {% endif %}
+
+  {% if page.description %}
+    <div class="indicator-description">
+      {{ page.description }}
+    </div>
+  {% endif %}
+
+  <hr>
+
+  <!-- META LINK FIX (AICI ESTE REZOLVAREA TA) -->
+  {% if page.GOAL_META_LINK %}
+    <p>
+      <a href="{{ page.GOAL_META_LINK }}" target="_blank" rel="noopener noreferrer">
+        {{ page.GOAL_META_LINK_TEXT | default: "Metadatele indicatorului global" }}
+      </a>
+    </p>
+  {% endif %}
+
+  <hr>
+
+  <!-- DATA / CHART PLACEHOLDER (Open SDG îl completează automat dacă există plugin) -->
+  {% if page.content %}
+    <div class="indicator-content">
+      {{ page.content }}
+    </div>
+  {% endif %}
+
+</div>

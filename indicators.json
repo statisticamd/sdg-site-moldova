@@ -23,7 +23,7 @@
         },
         {
           "id": "1-2-1",
-          "title": "Proportion of population living below the national poverty line, by sex and age",
+          "title": "Absolute poverty rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-2-1/",
@@ -31,7 +31,7 @@
         },
         {
           "id": "1-2-2",
-          "title": "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+          "title": "Multidimensional poverty index",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-2-2/",
@@ -39,7 +39,7 @@
         },
         {
           "id": "1-3-1",
-          "title": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable",
+          "title": "national_indicators.1-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-3-1/",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-4-1",
-          "title": "Proportion of population living in households with access to basic services",
+          "title": "Proportion of population living in households with access to basic services, including electricity, safe water sources, sewage system, and Internet connection",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-4-1/",
@@ -111,7 +111,7 @@
         },
         {
           "id": "1-4-2",
-          "title": "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure",
+          "title": "national_indicators.1-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-4-2/",
@@ -127,7 +127,7 @@
         },
         {
           "id": "1-5-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "national_indicators.1-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-1/",
@@ -159,7 +159,7 @@
         },
         {
           "id": "1-5-2",
-          "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
+          "title": "Value of direct economic losses due to emergency situations as a proportion of GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-2/",
@@ -167,7 +167,7 @@
         },
         {
           "id": "1-5-3",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "national_indicators.1-5-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-3/",
@@ -191,7 +191,7 @@
         },
         {
           "id": "1-5-4",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 11.b.2/13.1.3)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-4/",
@@ -199,7 +199,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income",
+          "title": "national_indicators.1-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-a-1/",
@@ -215,7 +215,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "Proportion of total government spending on essential services (education, health and social protection)",
+          "title": "national_indicators.1-a-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-a-2/",
@@ -247,7 +247,7 @@
         },
         {
           "id": "1-b-1",
-          "title": "Pro-poor public social spending",
+          "title": "national_indicators.1-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-b-1/",
@@ -263,7 +263,7 @@
         
         {
           "id": "2-1-1",
-          "title": "Prevalence of undernourishment",
+          "title": "national_indicators.2-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-1-1/",
@@ -279,7 +279,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
+          "title": "Prevalence of stunting among children under 5 years of age",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-2-1/",
@@ -287,7 +287,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
+          "title": "national_indicators.2-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-2-2/",
@@ -311,7 +311,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
+          "title": "Prevalence of anaemia in women aged 15-49 years",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-2-3/",
@@ -327,7 +327,7 @@
         },
         {
           "id": "2-3-1",
-          "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
+          "title": "Labour productivity in agriculture",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-3-1/",
@@ -343,7 +343,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Average income of small-scale food producers, by sex and indigenous status",
+          "title": "Share of agricultural production volume of small agricultural producers in total agricultural production",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-3-2/",
@@ -351,7 +351,7 @@
         },
         {
           "id": "2-4-1",
-          "title": "Proportion of agricultural area under productive and sustainable agriculture",
+          "title": "Share of agricultural land using sustainable agricultural practices",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-4-1/",
@@ -359,7 +359,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
+          "title": "Number of plant and animal genetic resources for food and agriculture secured in ex situ, in situ/on-farm conservation in the medium and long term",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-5-1/",
@@ -367,7 +367,7 @@
         },
         {
           "id": "2-5-2",
-          "title": "Proportion of local breeds classified as being at risk of extinction",
+          "title": "Proportion of breeds and local varieties classified as at risk, not at risk, or at unknown risk of extinction",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-5-2/",
@@ -375,7 +375,7 @@
         },
         {
           "id": "2-a-1",
-          "title": "The agriculture orientation index for government expenditures",
+          "title": "Index of public expenditure orientation towards agriculture",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-a-1/",
@@ -383,7 +383,7 @@
         },
         {
           "id": "2-a-2",
-          "title": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
+          "title": "Value of external financial and technical assistance for agricultural sector development",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-a-2/",
@@ -391,7 +391,7 @@
         },
         {
           "id": "2-b-1",
-          "title": "Agricultural export subsidies",
+          "title": "national_indicators.2-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-b-1/",
@@ -399,7 +399,7 @@
         },
         {
           "id": "2-c-1",
-          "title": "Indicator of food price anomalies",
+          "title": "Food commodity price index (seasonal anomalies)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-c-1/",
@@ -415,7 +415,7 @@
         
         {
           "id": "3-1-1",
-          "title": "Maternal mortality ratio",
+          "title": "Maternal mortality ratio per 100,000 live births",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-1-1/",
@@ -431,7 +431,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Under‐5 mortality rate",
+          "title": "Under-5 mortality rate per 1,000 live births",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-2-1/",
@@ -447,7 +447,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Neonatal mortality rate",
+          "title": "Neonatal mortality rate per 1,000 live births",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-2-2/",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
+          "title": "HIV incidence per 100,000 uninfected persons",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-3-1/",
@@ -479,7 +479,7 @@
         },
         {
           "id": "3-3-3",
-          "title": "Malaria incidence per 1,000 population",
+          "title": "national_indicators.3-3-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-3-3/",
@@ -495,7 +495,7 @@
         },
         {
           "id": "3-3-5",
-          "title": "Number of people requiring interventions against neglected tropical diseases",
+          "title": "national_indicators.3-3-5-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-3-5/",
@@ -503,7 +503,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
+          "title": "Mortality rate from cardiovascular diseases, cancer, digestive diseases, diabetes and respiratory diseases among persons aged 30-70 years, per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-4-1/",
@@ -511,7 +511,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Suicide mortality rate",
+          "title": "Suicide mortality rate per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-4-2/",
@@ -519,7 +519,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
+          "title": "Coverage of interventions/services for psychoactive substance users, index",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-5-1/",
@@ -527,7 +527,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+          "title": "Annual alcohol consumption per person (15+ years)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-5-2/",
@@ -535,7 +535,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Death rate due to road traffic injuries",
+          "title": "Road traffic mortality rate per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-6-1/",
@@ -543,7 +543,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods",
+          "title": "Proportion of women of reproductive age (15-49 years) who have their need for family planning satisfied with modern methods",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-7-1/",
@@ -551,7 +551,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group",
+          "title": "Adolescent birth rate (ages 10-14 and 15-19) per 1,000 women of the respective age",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-7-2/",
@@ -559,7 +559,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Coverage of essential health services",
+          "title": "Coverage of essential health services, index",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-8-1/",
@@ -575,7 +575,7 @@
         },
         {
           "id": "3-8-2",
-          "title": "Proportion of population with large household expenditures on health as a share of total household expenditure or income",
+          "title": "national_indicators.3-8-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-8-2/",
@@ -615,7 +615,7 @@
         },
         {
           "id": "3-9-1",
-          "title": "Mortality rate attributed to household and ambient air pollution",
+          "title": "Mortality rate from indoor and ambient air pollution per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-1/",
@@ -623,7 +623,7 @@
         },
         {
           "id": "3-9-2",
-          "title": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",
+          "title": "Mortality rate from unsafe water, sanitation and hygiene sources per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-2/",
@@ -631,7 +631,7 @@
         },
         {
           "id": "3-9-3",
-          "title": "Mortality rate attributed to unintentional poisoning",
+          "title": "Mortality rate from unintentional poisoning per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-3/",
@@ -639,7 +639,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
+          "title": "Prevalence of tobacco use among the population aged 15 years and over",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-a-1/",
@@ -647,7 +647,7 @@
         },
         {
           "id": "3-b-1",
-          "title": "Proportion of the target population covered by all vaccines included in their national programme",
+          "title": "Proportion of population covered by vaccines in national immunization programmes (out of those registered with a family doctor)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-b-1/",
@@ -655,7 +655,7 @@
         },
         {
           "id": "3-b-2",
-          "title": "Total net official development assistance to medical research and basic health sectors",
+          "title": "Value of external financial and technical assistance for health science and innovation and development of basic health services",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-b-2/",
@@ -671,7 +671,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Health worker density and distribution",
+          "title": "Number of medical personnel per 10,000 population on average",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-c-1/",
@@ -679,7 +679,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "International Health Regulations (IHR) capacity and health emergency preparedness",
+          "title": "Health sector capacity index",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-d-1/",
@@ -687,7 +687,7 @@
         },
         {
           "id": "3-d-2",
-          "title": "Percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
+          "title": "national_indicators.3-d-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-d-2/",
@@ -703,7 +703,7 @@
         
         {
           "id": "4-1-1",
-          "title": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
+          "title": "national_indicators.4-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-1/",
@@ -727,7 +727,7 @@
         },
         {
           "id": "4-1-2",
-          "title": "Completion rate (primary education, lower secondary education, upper secondary education)",
+          "title": "Graduation rate from primary, lower secondary, upper secondary/general secondary and vocational secondary education",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-2/",
@@ -743,7 +743,7 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex",
+          "title": "national_indicators.4-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-2-1/",
@@ -759,7 +759,7 @@
         },
         {
           "id": "4-3-1",
-          "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
+          "title": "Participation rate of youth and adults in formal and non-formal education and training throughout life",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-3-1/",
@@ -775,7 +775,7 @@
         },
         {
           "id": "4-4-1",
-          "title": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
+          "title": "Proportion of youth and adults with ICT skills",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-4-1/",
@@ -783,7 +783,7 @@
         },
         {
           "id": "4-5-1",
-          "title": "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated",
+          "title": "national_indicators.4-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-5-1/",
@@ -831,7 +831,7 @@
         },
         {
           "id": "4-6-1",
-          "title": "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",
+          "title": "national_indicators.4-6-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-6-1/",
@@ -839,7 +839,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "Existence in the school curriculum of modules/curricular contents on: i) sustainable development; ii) human rights; iii) gender equality; iv) health education and their multidisciplinary approach",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-7-1/",
@@ -847,7 +847,7 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proportion of schools offering basic services, by type of service",
+          "title": "national_indicators.4-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-a-1/",
@@ -911,7 +911,7 @@
         },
         {
           "id": "4-b-1",
-          "title": "Volume of official development assistance flows for scholarships by sector and type of study",
+          "title": "Value of external financial assistance for study scholarships",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-b-1/",
@@ -927,7 +927,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proportion of teachers with the minimum required qualifications, by education level",
+          "title": "national_indicators.4-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-c-1/",
@@ -967,7 +967,7 @@
         
         {
           "id": "5-1-1",
-          "title": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex",
+          "title": "Existence of a legal framework for promoting, implementing and monitoring gender equality and non-discrimination",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-1-1/",
@@ -975,7 +975,7 @@
         },
         {
           "id": "5-2-1",
-          "title": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
+          "title": "Prevalence of violence against women and girls (aged 15-65) by intimate partner/spouse, in the last 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-2-1/",
@@ -983,7 +983,7 @@
         },
         {
           "id": "5-2-2",
-          "title": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",
+          "title": "Prevalence of sexual violence against women and girls aged 15-65 by persons other than the partner/spouse, in the last 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-2-2/",
@@ -991,7 +991,7 @@
         },
         {
           "id": "5-3-1",
-          "title": "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18",
+          "title": "Proportion of women aged 20-24 who were first married or in a union before age 15 and before age 18",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-3-1/",
@@ -999,7 +999,7 @@
         },
         {
           "id": "5-3-2",
-          "title": "Proportion of girls and women aged 15–49 years who have undergone female genital mutilation/cutting, by age",
+          "title": "national_indicators.5-3-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-3-2/",
@@ -1007,7 +1007,7 @@
         },
         {
           "id": "5-4-1",
-          "title": "Proportion of time spent on unpaid domestic and care work, by sex, age and location",
+          "title": "Proportion of time spent on unpaid domestic and care work",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-4-1/",
@@ -1031,7 +1031,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Proportion of seats held by women in (a) national parliaments and (b) local governments",
+          "title": "national_indicators.5-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-5-1/",
@@ -1087,7 +1087,7 @@
         },
         {
           "id": "5-6-1",
-          "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
+          "title": "Proportion of women aged 15-49 who make their own informed decisions regarding sexual relations, use of contraception and sexual and reproductive health",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-6-1/",
@@ -1095,7 +1095,7 @@
         },
         {
           "id": "5-6-2",
-          "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
+          "title": "national_indicators.5-6-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-6-2/",
@@ -1111,7 +1111,7 @@
         },
         {
           "id": "5-a-1",
-          "title": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
+          "title": "national_indicators.5-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-a-1/",
@@ -1119,7 +1119,7 @@
         },
         {
           "id": "5-a-2",
-          "title": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
+          "title": "national_indicators.5-a-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-a-2/",
@@ -1127,7 +1127,7 @@
         },
         {
           "id": "5-b-1",
-          "title": "Proportion of individuals who own a mobile telephone, by sex",
+          "title": "Proportion of population owning a mobile phone",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-b-1/",
@@ -1143,7 +1143,7 @@
         },
         {
           "id": "5-c-1",
-          "title": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment",
+          "title": "national_indicators.5-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/5-c-1/",
@@ -1183,7 +1183,7 @@
         },
         {
           "id": "6-2-1",
-          "title": "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water",
+          "title": "national_indicators.6-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-2-1/",
@@ -1207,7 +1207,7 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion of domestic and industrial wastewater flows safely treated",
+          "title": "Proportion of adequately treated wastewater from total discharged water, non-residential sector",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-3-1/",
@@ -1215,7 +1215,7 @@
         },
         {
           "id": "6-3-2",
-          "title": "Proportion of bodies of water with good ambient water quality",
+          "title": "national_indicators.6-3-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-3-2/",
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "6-4-1",
-          "title": "Change in water-use efficiency over time",
+          "title": "Trend in water use efficiency over time",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-4-1/",
@@ -1263,7 +1263,7 @@
         },
         {
           "id": "6-4-2",
-          "title": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+          "title": "Proportion of total freshwater withdrawal out of total available freshwater resources (Water Stress Index)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-4-2/",
@@ -1271,7 +1271,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of integrated water resources management",
+          "title": "Degree of implementation of integrated water resources management (from 0 to 100)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-5-1/",
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
+          "title": "Proportion of transboundary river (hydrographic) basin areas covered by international agreements",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-5-2/",
@@ -1287,7 +1287,7 @@
         },
         {
           "id": "6-6-1",
-          "title": "Change in the extent of water-related ecosystems over time",
+          "title": "Change in the extent of water-related ecosystems over time (indicators on spatial extent of water-related ecosystems, water quality of lakes, quantity of water in rivers, quality of water-related ecosystems, quantity of groundwater)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-6-1/",
@@ -1295,7 +1295,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan",
+          "title": "Value of external financial and technical assistance for water supply and sanitation sector development",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-a-1/",
@@ -1303,7 +1303,7 @@
         },
         {
           "id": "6-b-1",
-          "title": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management",
+          "title": "Proportion of local public authorities with community participation programmes/strategies and procedures for water and sanitation management",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-b-1/",
@@ -1327,7 +1327,7 @@
         },
         {
           "id": "7-1-2",
-          "title": "Proportion of population with primary reliance on clean fuels and technology",
+          "title": "Proportion of households by main energy sources used for household needs (cooking, heating)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-1-2/",
@@ -1343,7 +1343,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Renewable energy share in the total final energy consumption",
+          "title": "Share of renewable energy in gross final energy consumption",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-2-1/",
@@ -1351,7 +1351,7 @@
         },
         {
           "id": "7-3-1",
-          "title": "Energy intensity measured in terms of primary energy and GDP",
+          "title": "national_indicators.7-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-3-1/",
@@ -1375,7 +1375,7 @@
         },
         {
           "id": "7-a-1",
-          "title": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",
+          "title": "Value of external financial and technical assistance for energy efficiency development",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-a-1/",
@@ -1383,7 +1383,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
+          "title": "national_indicators.7-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-b-1/",
@@ -1423,7 +1423,7 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal employment in total employment, by sector and sex",
+          "title": "Proportion of informal employment in total employment",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-3-1/",
@@ -1431,7 +1431,7 @@
         },
         {
           "id": "8-4-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
+          "title": "national_indicators.8-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-4-1/",
@@ -1455,7 +1455,7 @@
         },
         {
           "id": "8-4-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+          "title": "national_indicators.8-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-4-2/",
@@ -1479,7 +1479,7 @@
         },
         {
           "id": "8-5-1",
-          "title": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities",
+          "title": "national_indicators.8-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-5-1/",
@@ -1495,7 +1495,7 @@
         },
         {
           "id": "8-5-2",
-          "title": "Unemployment rate, by sex, age and persons with disabilities",
+          "title": "Unemployment rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-5-2/",
@@ -1503,7 +1503,7 @@
         },
         {
           "id": "8-6-1",
-          "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
+          "title": "Proportion of youth not in employment, education or training (NEET rate)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-6-1/",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "8-7-1",
-          "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
+          "title": "national_indicators.8-7-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-7-1/",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "8-8-1",
-          "title": "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status",
+          "title": "Rate of work-related accidents per 100,000 employees",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-8-1/",
@@ -1543,7 +1543,7 @@
         },
         {
           "id": "8-8-2",
-          "title": "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",
+          "title": "national_indicators.8-8-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-8-2/",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "8-9-1",
-          "title": "Tourism direct GDP as a proportion of total GDP and in growth rate",
+          "title": "national_indicators.8-9-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-9-1/",
@@ -1583,7 +1583,7 @@
         },
         {
           "id": "8-10-1",
-          "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
+          "title": "national_indicators.8-10-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-10-1/",
@@ -1615,7 +1615,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Aid for Trade commitments and disbursements",
+          "title": "Value of external financial and technical assistance for trade sector development support",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-a-1/",
@@ -1623,7 +1623,7 @@
         },
         {
           "id": "8-b-1",
-          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
+          "title": "Existence of a national strategic framework for youth employment that has been developed and operationalized",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-b-1/",
@@ -1639,7 +1639,7 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion of the rural population who live within 2 km of an all-season road",
+          "title": "Proportion of rural population living within 2 km of an all-season road",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-1-1/",
@@ -1647,7 +1647,7 @@
         },
         {
           "id": "9-1-2",
-          "title": "Passenger and freight volumes, by mode of transport",
+          "title": "national_indicators.9-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-1-2/",
@@ -1671,7 +1671,7 @@
         },
         {
           "id": "9-2-1",
-          "title": "Manufacturing value added as a proportion of GDP and per capita",
+          "title": "national_indicators.9-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-2-1/",
@@ -1711,7 +1711,7 @@
         },
         {
           "id": "9-2-2",
-          "title": "Manufacturing employment as a proportion of total employment",
+          "title": "Proportion of employed population in manufacturing in total employed population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-2-2/",
@@ -1719,7 +1719,7 @@
         },
         {
           "id": "9-3-1",
-          "title": "Proportion of small-scale industries in total industry value added",
+          "title": "national_indicators.9-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-3-1/",
@@ -1743,7 +1743,7 @@
         },
         {
           "id": "9-3-2",
-          "title": "Proportion of small-scale industries with a loan or line of credit",
+          "title": "national_indicators.9-3-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-3-2/",
@@ -1767,7 +1767,7 @@
         },
         {
           "id": "9-4-1",
-          "title": "CO2 emission per unit of value added",
+          "title": "national_indicators.9-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-4-1/",
@@ -1807,7 +1807,7 @@
         },
         {
           "id": "9-5-1",
-          "title": "Research and development expenditure as a proportion of GDP",
+          "title": "Share of research and development expenditure in GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-5-1/",
@@ -1815,7 +1815,7 @@
         },
         {
           "id": "9-5-2",
-          "title": "Researchers (in full-time equivalent) per million inhabitants",
+          "title": "Researchers (full-time equivalent) per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-5-2/",
@@ -1823,7 +1823,7 @@
         },
         {
           "id": "9-a-1",
-          "title": "Total official international support (official development assistance plus other official flows) to infrastructure",
+          "title": "Value of external financial and technical assistance for infrastructure development",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-a-1/",
@@ -1831,7 +1831,7 @@
         },
         {
           "id": "9-b-1",
-          "title": "Proportion of medium and high-tech industry value added in total value added",
+          "title": "Share of gross value added of high and medium-high technology industries in total gross value added in manufacturing",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-b-1/",
@@ -1839,7 +1839,7 @@
         },
         {
           "id": "9-c-1",
-          "title": "Proportion of population covered by a mobile network, by technology",
+          "title": "Population coverage rate by mobile electronic communications networks",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-c-1/",
@@ -1863,7 +1863,7 @@
         
         {
           "id": "10-1-1",
-          "title": "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population",
+          "title": "national_indicators.10-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-1-1/",
@@ -1887,7 +1887,7 @@
         },
         {
           "id": "10-2-1",
-          "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
+          "title": "Proportion of population living below 50% of median consumption expenditure",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-2-1/",
@@ -1895,7 +1895,7 @@
         },
         {
           "id": "10-3-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the last 12 months on a basis prohibited under international human rights law (identical to 16.b.1)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-3-1/",
@@ -1911,7 +1911,7 @@
         },
         {
           "id": "10-4-1",
-          "title": "Labour share of GDP",
+          "title": "Share of labour costs in GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-4-1/",
@@ -1919,7 +1919,7 @@
         },
         {
           "id": "10-4-2",
-          "title": "Redistributive impact of fiscal policy",
+          "title": "national_indicators.10-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-4-2/",
@@ -1927,7 +1927,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "Financial Soundness Indicators",
+          "title": "Financial stability indicators",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-5-1/",
@@ -1935,7 +1935,7 @@
         },
         {
           "id": "10-6-1",
-          "title": "Proportion of members and voting rights of developing countries in international organizations",
+          "title": "national_indicators.10-6-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-6-1/",
@@ -1967,7 +1967,7 @@
         },
         {
           "id": "10-7-2",
-          "title": "Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people",
+          "title": "national_indicators.10-7-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-7-2/",
@@ -1999,7 +1999,7 @@
         },
         {
           "id": "10-7-3",
-          "title": "Number of people who died or disappeared in the process of migration towards an international destination",
+          "title": "national_indicators.10-7-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-7-3/",
@@ -2007,7 +2007,7 @@
         },
         {
           "id": "10-7-4",
-          "title": "Proportion of the population who are refugees, by country of origin",
+          "title": "Number of refugees per 100,000 inhabitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-7-4/",
@@ -2015,7 +2015,7 @@
         },
         {
           "id": "10-a-1",
-          "title": "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff",
+          "title": "national_indicators.10-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-a-1/",
@@ -2023,7 +2023,7 @@
         },
         {
           "id": "10-b-1",
-          "title": "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)",
+          "title": "Volume of external development assistance received by the country",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-b-1/",
@@ -2031,7 +2031,7 @@
         },
         {
           "id": "10-c-1",
-          "title": "Remittance costs as a proportion of the amount remitted",
+          "title": "national_indicators.10-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-c-1/",
@@ -2047,7 +2047,7 @@
         
         {
           "id": "11-1-1",
-          "title": "Proportion of urban population living in slums, informal settlements or inadequate housing",
+          "title": "national_indicators.11-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-1-1/",
@@ -2071,7 +2071,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
+          "title": "national_indicators.11-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-2-1/",
@@ -2111,7 +2111,7 @@
         },
         {
           "id": "11-4-1",
-          "title": "Total per capita expenditure on the preservation, protection and conservation of all cultural and natural heritage, by source of funding (public, private), type of heritage (cultural, natural) and level of government (national, regional, and local/municipal)",
+          "title": "national_indicators.11-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-4-1/",
@@ -2127,7 +2127,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "national_indicators.11-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-5-1/",
@@ -2159,7 +2159,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters",
+          "title": "Direct economic losses to critical infrastructure due to emergency situations as a proportion of GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-5-2/",
@@ -2167,7 +2167,7 @@
         },
         {
           "id": "11-5-3",
-          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+          "title": "national_indicators.11-5-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-5-3/",
@@ -2183,7 +2183,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
+          "title": "Annual mean concentration of particulate matter (PM10) in urban areas",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-6-2/",
@@ -2199,7 +2199,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
+          "title": "Area of land designated for nature protection, cultural heritage assets and recreational facilities per number of residents in localities, m2/inhabitant",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-7-1/",
@@ -2223,7 +2223,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space",
+          "title": "national_indicators.11-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-a-1/",
@@ -2231,7 +2231,7 @@
         },
         {
           "id": "11-b-1",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "national_indicators.11-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-b-1/",
@@ -2255,7 +2255,7 @@
         },
         {
           "id": "11-b-2",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 1.5.4/13.1.3)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-b-2/",
@@ -2271,7 +2271,7 @@
         
         {
           "id": "12-1-1",
-          "title": "Number of countries developing, adopting or implementing policy instruments aimed at supporting the shift to sustainable consumption and production",
+          "title": "national_indicators.12-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-1-1/",
@@ -2287,7 +2287,7 @@
         },
         {
           "id": "12-2-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
+          "title": "national_indicators.12-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-2-1/",
@@ -2311,7 +2311,7 @@
         },
         {
           "id": "12-2-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+          "title": "national_indicators.12-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-2-2/",
@@ -2335,7 +2335,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "(a) Food loss index and (b) food waste index",
+          "title": "national_indicators.12-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-3-1/",
@@ -2359,7 +2359,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
+          "title": "Compliance with reporting obligations under international agreements/commitments signed by the Republic of Moldova on hazardous chemicals and waste (number of reports submitted per convention versus number of mandatory reports)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-4-1/",
@@ -2367,7 +2367,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
+          "title": "national_indicators.12-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-4-2/",
@@ -2391,7 +2391,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "National recycling rate, tons of material recycled",
+          "title": "Share of recycled (production and consumption) waste from total waste generated",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-5-1/",
@@ -2415,7 +2415,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Degree of sustainable public procurement policies and action plan implementation",
+          "title": "national_indicators.12-7-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-7-1/",
@@ -2431,7 +2431,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "Existence in the school curriculum of modules/curricular contents on: i) sustainable development, ii) education for climate change and their multidisciplinary approach for forming the graduate profile",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-8-1/",
@@ -2439,7 +2439,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
+          "title": "Installed capacity of renewable electricity generation facilities, Watts per capita",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-a-1/",
@@ -2447,7 +2447,7 @@
         },
         {
           "id": "12-b-1",
-          "title": "Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability",
+          "title": "national_indicators.12-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-b-1/",
@@ -2463,7 +2463,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption)",
+          "title": "national_indicators.12-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-c-1/",
@@ -2479,7 +2479,7 @@
         
         {
           "id": "13-1-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "national_indicators.13-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-1/",
@@ -2511,7 +2511,7 @@
         },
         {
           "id": "13-1-2",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "national_indicators.13-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-2/",
@@ -2535,7 +2535,7 @@
         },
         {
           "id": "13-1-3",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 1.5.4/11.b.2)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-3/",
@@ -2551,7 +2551,7 @@
         },
         {
           "id": "13-2-1",
-          "title": "Number of countries with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
+          "title": "national_indicators.13-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-2-1/",
@@ -2567,7 +2567,7 @@
         },
         {
           "id": "13-2-2",
-          "title": "Total greenhouse gas emissions per year",
+          "title": "national_indicators.13-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-2-2/",
@@ -2575,7 +2575,7 @@
         },
         {
           "id": "13-3-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "national_indicators.13-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-3-1/",
@@ -2599,7 +2599,7 @@
         },
         {
           "id": "13-a-1",
-          "title": "Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025",
+          "title": "national_indicators.13-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-a-1/",
@@ -2607,7 +2607,7 @@
         },
         {
           "id": "13-b-1",
-          "title": "Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
+          "title": "national_indicators.13-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-b-1/",
@@ -2623,7 +2623,7 @@
         
         {
           "id": "14-1-1",
-          "title": "(a) Index of coastal eutrophication; and (b) plastic debris density",
+          "title": "national_indicators.14-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-1-1/",
@@ -2647,7 +2647,7 @@
         },
         {
           "id": "14-3-1",
-          "title": "Average marine acidity (pH) measured at agreed suite of representative sampling stations",
+          "title": "national_indicators.14-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-3-1/",
@@ -2655,7 +2655,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks within biologically sustainable levels",
+          "title": "national_indicators.14-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-4-1/",
@@ -2671,7 +2671,7 @@
         },
         {
           "id": "14-5-1",
-          "title": "Coverage of protected areas in relation to marine areas",
+          "title": "national_indicators.14-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-5-1/",
@@ -2679,7 +2679,7 @@
         },
         {
           "id": "14-6-1",
-          "title": "Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
+          "title": "national_indicators.14-6-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-6-1/",
@@ -2687,7 +2687,7 @@
         },
         {
           "id": "14-7-1",
-          "title": "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries",
+          "title": "Degree of implementation of policy in the aquaculture sector (Strategic Programme of the Aquaculture Sector 2026-2030)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-7-1/",
@@ -2695,7 +2695,7 @@
         },
         {
           "id": "14-a-1",
-          "title": "Proportion of total research budget allocated to research in the field of marine technology",
+          "title": "national_indicators.14-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-a-1/",
@@ -2711,7 +2711,7 @@
         },
         {
           "id": "14-c-1",
-          "title": "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources",
+          "title": "national_indicators.14-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/14-c-1/",
@@ -2727,7 +2727,7 @@
         
         {
           "id": "15-1-1",
-          "title": "Forest area as a proportion of total land area",
+          "title": "Forest area as a percentage of total land area",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-1-1/",
@@ -2735,7 +2735,7 @@
         },
         {
           "id": "15-1-2",
-          "title": "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type",
+          "title": "Proportion of important biodiversity areas in terrestrial and freshwater zones that are protected, disaggregated by ecosystem type",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-1-2/",
@@ -2743,7 +2743,7 @@
         },
         {
           "id": "15-2-1",
-          "title": "Progress towards sustainable forest management",
+          "title": "Indicators on progress in sustainable forest management",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-2-1/",
@@ -2775,7 +2775,7 @@
         },
         {
           "id": "15-3-1",
-          "title": "Proportion of land that is degraded over total land area",
+          "title": "Share of degraded land in total land area",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-3-1/",
@@ -2791,7 +2791,7 @@
         },
         {
           "id": "15-4-1",
-          "title": "Coverage by protected areas of important sites for mountain biodiversity",
+          "title": "national_indicators.15-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-4-1/",
@@ -2799,7 +2799,7 @@
         },
         {
           "id": "15-4-2",
-          "title": "Mountain Green Cover Index",
+          "title": "national_indicators.15-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-4-2/",
@@ -2807,7 +2807,7 @@
         },
         {
           "id": "15-5-1",
-          "title": "Red List Index",
+          "title": "Red List Index of species from the Red Book of the Republic of Moldova",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-5-1/",
@@ -2823,7 +2823,7 @@
         },
         {
           "id": "15-6-1",
-          "title": "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",
+          "title": "national_indicators.15-6-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-6-1/",
@@ -2839,7 +2839,7 @@
         },
         {
           "id": "15-7-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
+          "title": "Proportion of wildlife trade (including derived products and parts) that has been poached or trafficked through smuggling",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-7-1/",
@@ -2847,7 +2847,7 @@
         },
         {
           "id": "15-8-1",
-          "title": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
+          "title": "national_indicators.15-8-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-8-1/",
@@ -2863,7 +2863,7 @@
         },
         {
           "id": "15-9-1",
-          "title": "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets; and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accounting",
+          "title": "national_indicators.15-9-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-9-1/",
@@ -2879,7 +2879,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
+          "title": "Value of external financial and technical assistance for development allocated for conservation and sustainable use of terrestrial, aquatic and forest biodiversity and ecosystems",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-a-1/",
@@ -2887,7 +2887,7 @@
         },
         {
           "id": "15-b-1",
-          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
+          "title": "national_indicators.15-b-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-b-1/",
@@ -2895,7 +2895,7 @@
         },
         {
           "id": "15-c-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
+          "title": "national_indicators.15-c-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-c-1/",
@@ -2911,7 +2911,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
+          "title": "Number of victims of intentional homicide per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-1-1/",
@@ -2919,7 +2919,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
+          "title": "Number of conflict-related deaths per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-1-2/",
@@ -2943,7 +2943,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live",
+          "title": "Proportion of persons who feel safe walking alone in their neighbourhood",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-1-4/",
@@ -2967,7 +2967,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
+          "title": "Number of victims of human trafficking per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-2-2/",
@@ -2991,7 +2991,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Unsentenced detainees as a proportion of overall prison population",
+          "title": "Proportion of persons held in pre-trial detention from total persons detained in penitentiary institutions",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-3-2/",
@@ -3031,7 +3031,7 @@
         },
         {
           "id": "16-3-3",
-          "title": "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
+          "title": "national_indicators.16-3-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-3-3/",
@@ -3047,7 +3047,7 @@
         },
         {
           "id": "16-4-2",
-          "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
+          "title": "national_indicators.16-4-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-4-2/",
@@ -3071,7 +3071,7 @@
         },
         {
           "id": "16-5-1",
-          "title": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
+          "title": "Proportion of persons who made unofficial payments (bribes) in the last 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-5-1/",
@@ -3079,7 +3079,7 @@
         },
         {
           "id": "16-5-2",
-          "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
+          "title": "Proportion of entrepreneurs who made unofficial payments (bribes) in the last 12 months",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-5-2/",
@@ -3103,7 +3103,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
+          "title": "Executed state budget expenditures as a proportion of the initially approved budget",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-6-1/",
@@ -3111,7 +3111,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Proportion of population satisfied with their last experience of public services",
+          "title": "Degree of satisfaction of beneficiaries of public services (health services, education, population documentation)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-6-2/",
@@ -3127,7 +3127,7 @@
         },
         {
           "id": "16-7-1",
-          "title": "Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups",
+          "title": "national_indicators.16-7-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-7-1/",
@@ -3167,7 +3167,7 @@
         },
         {
           "id": "16-8-1",
-          "title": "Proportion of members and voting rights of developing countries in international organizations",
+          "title": "national_indicators.16-8-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-8-1/",
@@ -3175,7 +3175,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
+          "title": "Proportion of children under 5 years of age who have a birth certificate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-9-1/",
@@ -3183,7 +3183,7 @@
         },
         {
           "id": "16-10-1",
-          "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
+          "title": "national_indicators.16-10-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-10-1/",
@@ -3199,7 +3199,7 @@
         },
         {
           "id": "16-10-2",
-          "title": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
+          "title": "national_indicators.16-10-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-10-2/",
@@ -3215,7 +3215,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
+          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles, accreditation status (A, B, C)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-a-1/",
@@ -3223,7 +3223,7 @@
         },
         {
           "id": "16-b-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the last 12 months on a basis prohibited under international human rights law (identical to 10.3.1)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-b-1/",
@@ -3239,7 +3239,7 @@
         
         {
           "id": "17-1-1",
-          "title": "Total government revenue as a proportion of GDP, by source",
+          "title": "Share of national public budget revenues in GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-1-1/",
@@ -3247,7 +3247,7 @@
         },
         {
           "id": "17-1-2",
-          "title": "Proportion of domestic budget funded by domestic taxes",
+          "title": "Ratio of tax revenues in total national public budget expenditures",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-1-2/",
@@ -3255,7 +3255,7 @@
         },
         {
           "id": "17-2-1",
-          "title": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
+          "title": "national_indicators.17-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-2-1/",
@@ -3263,7 +3263,7 @@
         },
         {
           "id": "17-3-1",
-          "title": "Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income",
+          "title": "Share of foreign direct investment, external financial and technical development assistance in GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-3-1/",
@@ -3271,7 +3271,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+          "title": "Volume of personal remittances as a percentage of GDP (recalculated in USD)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-3-2/",
@@ -3279,7 +3279,7 @@
         },
         {
           "id": "17-4-1",
-          "title": "Debt service as a proportion of exports of goods and services",
+          "title": "Public and publicly guaranteed external debt service as a proportion of total export of goods and services",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-4-1/",
@@ -3287,7 +3287,7 @@
         },
         {
           "id": "17-5-1",
-          "title": "Number of countries that adopt and implement investment promotion regimes for developing countries, including the least developed countries",
+          "title": "national_indicators.17-5-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-5-1/",
@@ -3295,7 +3295,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
+          "title": "Number of fixed broadband Internet subscribers per 100 inhabitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-6-1/",
@@ -3303,7 +3303,7 @@
         },
         {
           "id": "17-7-1",
-          "title": "Total amount of funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
+          "title": "national_indicators.17-7-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-7-1/",
@@ -3311,7 +3311,7 @@
         },
         {
           "id": "17-8-1",
-          "title": "Proportion of individuals using the Internet",
+          "title": "Proportion of Internet users per 100 inhabitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-8-1/",
@@ -3319,7 +3319,7 @@
         },
         {
           "id": "17-9-1",
-          "title": "Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries",
+          "title": "Value of external financial and technical assistance (including through north-south, south-south and triangular cooperation) provided to the Republic of Moldova for capacity building and strategic planning",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-9-1/",
@@ -3327,7 +3327,7 @@
         },
         {
           "id": "17-10-1",
-          "title": "Worldwide weighted tariff-average",
+          "title": "Weighted average import tariff level in the Republic of Moldova",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-10-1/",
@@ -3335,7 +3335,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "Developing countries’ and least developed countries’ share of global exports",
+          "title": "Share of exports from the Republic of Moldova in global trade",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-11-1/",
@@ -3351,7 +3351,7 @@
         },
         {
           "id": "17-12-1",
-          "title": "Weighted average tariffs faced by developing countries, least developed countries and small island developing States",
+          "title": "national_indicators.17-12-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-12-1/",
@@ -3359,7 +3359,7 @@
         },
         {
           "id": "17-13-1",
-          "title": "Macroeconomic Dashboard",
+          "title": "national_indicators.17-13-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-13-1/",
@@ -3367,7 +3367,7 @@
         },
         {
           "id": "17-14-1",
-          "title": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
+          "title": "national_indicators.17-14-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-14-1/",
@@ -3383,7 +3383,7 @@
         },
         {
           "id": "17-15-1",
-          "title": "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation",
+          "title": "Extent of use of country-owned results frameworks and planning tools by development cooperation providers",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-15-1/",
@@ -3391,7 +3391,7 @@
         },
         {
           "id": "17-16-1",
-          "title": "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals",
+          "title": "national_indicators.17-16-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-16-1/",
@@ -3407,7 +3407,7 @@
         },
         {
           "id": "17-17-1",
-          "title": "Amount in United States dollars committed to public-private partnerships for infrastructure",
+          "title": "national_indicators.17-17-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-17-1/",
@@ -3423,7 +3423,7 @@
         },
         {
           "id": "17-18-1",
-          "title": "Statistical capacity indicator for Sustainable Development Goal monitoring",
+          "title": "national_indicators.17-18-1-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-18-1/",
@@ -3439,7 +3439,7 @@
         },
         {
           "id": "17-18-2",
-          "title": "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics",
+          "title": "national_indicators.17-18-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-18-2/",
@@ -3455,7 +3455,7 @@
         },
         {
           "id": "17-18-3",
-          "title": "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding",
+          "title": "national_indicators.17-18-3-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-18-3/",
@@ -3479,7 +3479,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
+          "title": "Value of external financial and technical assistance for strengthening the national statistical system",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-19-1/",
@@ -3487,7 +3487,7 @@
         },
         {
           "id": "17-19-2",
-          "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
+          "title": "national_indicators.17-19-2-title",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-19-2/",

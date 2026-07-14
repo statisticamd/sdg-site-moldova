@@ -147,7 +147,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-5-1-c",
@@ -159,7 +159,7 @@
         },
         {
           "id": "1-5-2",
-          "title": "Value of direct economic losses due to emergency situations as a proportion of GDP",
+          "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-2/",
@@ -191,7 +191,7 @@
         },
         {
           "id": "1-5-4",
-          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 11.b.2/13.1.3)",
+          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-4/",
@@ -243,6 +243,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-a-2-c/",
+          "status": "complete"
+        },
+        {
+          "id": "1-a-3-1",
+          "title": "Share of public expenditure on social protection as a proportion of GDP",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/1-a-3-1/",
           "status": "complete"
         },
         {
@@ -343,7 +351,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Share of agricultural production volume of small agricultural producers in total agricultural production",
+          "title": "Average income of small-scale food producers, by sex and indigenous status",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-3-2/",
@@ -359,7 +367,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Number of plant and animal genetic resources for food and agriculture secured in ex situ, in situ/on-farm conservation in the medium and long term",
+          "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-5-1/",
@@ -375,7 +383,7 @@
         },
         {
           "id": "2-a-1",
-          "title": "Index of public expenditure orientation towards agriculture",
+          "title": "The agriculture orientation index for government expenditures",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-a-1/",
@@ -383,7 +391,7 @@
         },
         {
           "id": "2-a-2",
-          "title": "Value of external financial and technical assistance for agricultural sector development",
+          "title": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-a-2/",
@@ -519,7 +527,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Coverage of interventions/services for psychoactive substance users, index",
+          "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-5-1/",
@@ -1271,7 +1279,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of implementation of integrated water resources management (from 0 to 100)",
+          "title": "Degree of integrated water resources management",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-5-1/",
@@ -1279,7 +1287,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Proportion of transboundary river (hydrographic) basin areas covered by international agreements",
+          "title": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-5-2/",
@@ -1295,7 +1303,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Value of external financial and technical assistance for water supply and sanitation sector development",
+          "title": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/6-a-1/",
@@ -1343,7 +1351,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Share of renewable energy in gross final energy consumption",
+          "title": "Renewable energy share in the total final energy consumption",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-2-1/",
@@ -1375,7 +1383,7 @@
         },
         {
           "id": "7-a-1",
-          "title": "Value of external financial and technical assistance for energy efficiency development",
+          "title": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/7-a-1/",
@@ -1615,7 +1623,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Value of external financial and technical assistance for trade sector development support",
+          "title": "Aid for Trade commitments and disbursements",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-a-1/",
@@ -1815,7 +1823,7 @@
         },
         {
           "id": "9-5-2",
-          "title": "Researchers (full-time equivalent) per 100,000 population",
+          "title": "Researchers (in full-time equivalent) per million inhabitants",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-5-2/",
@@ -1839,7 +1847,7 @@
         },
         {
           "id": "9-c-1",
-          "title": "Population coverage rate by mobile electronic communications networks",
+          "title": "Proportion of population covered by a mobile network, by technology",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-c-1/",
@@ -1927,7 +1935,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "Financial stability indicators",
+          "title": "Financial Soundness Indicators",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-5-1/",
@@ -2007,7 +2015,7 @@
         },
         {
           "id": "10-7-4",
-          "title": "Number of refugees per 100,000 inhabitants",
+          "title": "Proportion of the population who are refugees, by country of origin",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/10-7-4/",
@@ -2071,7 +2079,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "national_indicators.11-2-1-title",
+          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-2-1/",
@@ -2147,7 +2155,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-5-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-5-1-c",
@@ -2230,6 +2238,14 @@
           "status": "notstarted"
         },
         {
+          "id": "11-a-1-1",
+          "title": "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/11-a-1-1/",
+          "status": "notstarted"
+        },
+        {
           "id": "11-b-1",
           "title": "national_indicators.11-b-1-title",
           "description": "",
@@ -2255,11 +2271,19 @@
         },
         {
           "id": "11-b-2",
-          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 1.5.4/13.1.3)",
+          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-b-2/",
           "status": "complete"
+        },
+        {
+          "id": "11-c-1",
+          "title": "Total official development assistance and other official flows in support of urban infrastructure or urban infrastructure projects, by sector",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/11-c-1/",
+          "status": "notstarted"
         }]
     }
   },
@@ -2359,7 +2383,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Compliance with reporting obligations under international agreements/commitments signed by the Republic of Moldova on hazardous chemicals and waste (number of reports submitted per convention versus number of mandatory reports)",
+          "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-4-1/",
@@ -2431,7 +2455,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Existence in the school curriculum of modules/curricular contents on: i) sustainable development, ii) education for climate change and their multidisciplinary approach for forming the graduate profile",
+          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-8-1/",
@@ -2439,7 +2463,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Installed capacity of renewable electricity generation facilities, Watts per capita",
+          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/12-a-1/",
@@ -2499,7 +2523,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "13-1-1-c",
@@ -2535,7 +2559,7 @@
         },
         {
           "id": "13-1-3",
-          "title": "Proportion of local public authorities that adopt and implement local disaster risk reduction strategies in line with national strategies (identical to 1.5.4/11.b.2)",
+          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-3/",
@@ -2879,7 +2903,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "Value of external financial and technical assistance for development allocated for conservation and sustainable use of terrestrial, aquatic and forest biodiversity and ecosystems",
+          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/15-a-1/",
@@ -2911,7 +2935,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population",
+          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-1-1/",
@@ -2919,7 +2943,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Number of conflict-related deaths per 100,000 population",
+          "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-1-2/",
@@ -2967,7 +2991,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Number of victims of human trafficking per 100,000 population",
+          "title": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-2-2/",
@@ -2991,7 +3015,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Proportion of persons held in pre-trial detention from total persons detained in penitentiary institutions",
+          "title": "Unsentenced detainees as a proportion of overall prison population",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-3-2/",
@@ -3027,7 +3051,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-3-2-4/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-3-3",
@@ -3103,7 +3127,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Executed state budget expenditures as a proportion of the initially approved budget",
+          "title": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-6-1/",
@@ -3111,7 +3135,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Degree of satisfaction of beneficiaries of public services (health services, education, population documentation)",
+          "title": "Proportion of population satisfied with their last experience of public services",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-6-2/",
@@ -3215,7 +3239,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles, accreditation status (A, B, C)",
+          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-a-1/",
@@ -3239,7 +3263,7 @@
         
         {
           "id": "17-1-1",
-          "title": "Share of national public budget revenues in GDP",
+          "title": "Total government revenue as a proportion of GDP, by source",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-1-1/",
@@ -3247,7 +3271,7 @@
         },
         {
           "id": "17-1-2",
-          "title": "Ratio of tax revenues in total national public budget expenditures",
+          "title": "Proportion of domestic budget funded by domestic taxes",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-1-2/",
@@ -3271,7 +3295,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "Volume of personal remittances as a percentage of GDP (recalculated in USD)",
+          "title": "Volume of remittances (in United States dollars) as a proportion of total GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-3-2/",
@@ -3279,7 +3303,7 @@
         },
         {
           "id": "17-4-1",
-          "title": "Public and publicly guaranteed external debt service as a proportion of total export of goods and services",
+          "title": "Debt service as a proportion of exports of goods and services",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-4-1/",
@@ -3295,7 +3319,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Number of fixed broadband Internet subscribers per 100 inhabitants",
+          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-6-1/",
@@ -3327,7 +3351,7 @@
         },
         {
           "id": "17-10-1",
-          "title": "Weighted average import tariff level in the Republic of Moldova",
+          "title": "Worldwide weighted tariff-average",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-10-1/",
@@ -3335,7 +3359,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "Share of exports from the Republic of Moldova in global trade",
+          "title": "Developing countries’ and least developed countries’ share of global exports",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-11-1/",

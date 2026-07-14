@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624134635">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -546,7 +546,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_footnote', "<p> 2024:</p>  <p>President of the Parliament: 52 years old, male</p>  <p>Presidents of the standing parliamentary committees:</p>  <p>1. Committee on Legal Affairs, Appointments and Immunities – 42 years old, female</p>  <p>2. Committee on Economy, Budget and Finance – 34 years old, male</p>  <p>3. Committee on National Security, Defense and Public Order – 46 years old, male</p>  <p>4. Committee on Foreign Policy and European Integration – 49 years old, female</p>  <p>5. Committee on Human Rights and Interethnic Relations – 41 years old, male</p>  <p>6. Committee on Public Administration and Regional Development – 53 years old, female</p>  <p>7. Committee on Environment, Climate and Green Transition – 65 years old, male</p>  <p>8. Committee on Culture, Education, Research, Youth, Sports and Mass Media – 56 years old, female</p>  <p>9. Committee on Agriculture and Food Industry – 36 years old, male</p>  <p>10. Committee on Social Protection, Health and Family – 49 years old, male</p>  <p>11. Committee on Public Finance Control – 60 years old, female </p>");
+        var currentValue = normalizeCurrentValue('data_footnote', "<p> 2025:</p> \n<p>President of the Parliament: 53 years old, male</p> \n<p>Presidents of the standing parliamentary committees:</p> \n<p>1. Committee on Legal Affairs, Appointments and Immunities – 43 years old, female</p> \n<p>2. Committee on Economy, Budget and Finance – 35 years old, male</p> \n<p>3. Committee on National Security, Defense and Public Order – 47 years old, male</p> \n<p>4. Committee on Foreign Policy  – 43 years old, female</p> \n<p>5. Committee on Human Rights and Interethnic Relations – 42 years old, male</p> \n<p>6. Committee on Public Administration and Regional Development – 53 years old, female</p> \n<p>7. Committee on Environment, Climate and Green Transition – 66 years old, male</p> \n<p>8. Committee on Culture, Education, Research, Youth, Sports and Mass Media – 57 years old, female</p> \n<p>9. Committee on Agriculture and Food Industry – 38 years old, male</p> \n<p>10. Committee on Social Protection, Health and Family – 50 years old, male</p> \n<p>11. Committee on Public Finance Control – 49 years old, female</p>                                                                   12. Committee on European Integration – 44 years old, male </p>\n");
         var propertyEditor = editor.getEditor('root.data_footnote');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -828,6 +828,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_available', "national_indicators.16-7-1-a-title");
+        var propertyEditor = editor.getEditor('root.indicator_available');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_available');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
 
     
@@ -1189,12 +1201,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624134635'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624134635"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

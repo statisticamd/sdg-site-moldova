@@ -121,7 +121,7 @@ var translations = {
         
         Indicator 10.5.1 -
         
-        Indicatori privind stabilitatea financiară - Indicatori pentru Obiectivele de Dezvoltare Durabilă
+        Indicatorii de stabilitate financiară - Indicatori pentru Obiectivele de Dezvoltare Durabilă
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624134635">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -295,7 +295,7 @@ layout-indicator-iframe
                         
                         Indicator 10.5.1
                         
-                        <span class="lead-copy">Indicatori privind stabilitatea financiară</span>
+                        <span class="lead-copy">Indicatorii de stabilitate financiară</span>
                     </h1>
                 </div>
             </div>
@@ -306,6 +306,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Indicatori privind stabilitatea financiară</h2>
+  </div>
+</div>
+
 
   
 
@@ -352,7 +358,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Rata fondurilor proprii de nivel I în raport cu total active&quot;,&quot;Rata fondurilor proprii de nivel I în raport cu activele ponderate la risc&quot;,&quot;Rata creditelor neperformante (fără rezerve) in raport cu capitalul total reglementat&quot;,&quot;Ponderea creditelor neperformante în totalul creditelor acordate&quot;,&quot;Rentabilitatea activelor&quot;,&quot;Rata activelor lichide în raport cu pasivele pe termen scurt&quot;,&quot;Rata poziției valutare deschise nete la capitalul total reglementat&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indicatori&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ratio of Tier 1 own funds to total assets&quot;,&quot;Ratio of Tier 1 own funds to risk-weighted assets&quot;,&quot;Ratio of net non-performing loans less of provisions to own funds&quot;,&quot;Ponderea creditelor neperformante în totalul creditelor acordate&quot;,&quot;Rentabilitatea activelor&quot;,&quot;The ratio of liquid assets to short-term liabilities&quot;,&quot;Ratio of net open foreign exchange position to own funds&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indicatori&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -582,6 +588,18 @@ layout-indicator-iframe
           
           
           <td>2024</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
           
           
           
@@ -1117,15 +1135,15 @@ data-event-label="Change to indicator.sources tab"
 <p>  I0 Fonduri proprii la total active. Această rată este  calculată folosind Fondurile proprii de (Nivelul 1) de bază ca numărător și  activele totale ca numitor. Datele sunt compilate în conformitate cu liniile  directoare din Basel I sau Basel II, iar din trimestrul II 2018 - conform  Basel III.</p>
 <p>  (2) Rata fondurilor proprii de nivel I în raport cu activele  ponderate la risc </p>
 <p>  I2 Fondurile proprii de Nivelul 1 de bază la activele  ponderate la risc. Datele pentru acest indicator al Stabilității Financiare de  asemenea sunt compilate în conformitate cu liniile directoare din Basel I sau  Basel II, iar din trimestrul II 2018 - conform Basel III. Acesta măsoară  suficiența capitalului băncilor conform concepției capitalului de bază al  Comitetului pentru Supraveghere Bancară de la Basel (BCBS). </p>
-<p>  (3) Rata  creditelor neperformante nete în raport cu fondurile proprii totale: </p>
+<p>  (3) Rata  creditelor neperformante nete în raport cu fondurile proprii: </p>
 <p>  I3  Credite neperformante nete, în raport cu fondurile proprii totale. Acest  indicator al Stabilității Financiare este calculat luând valoarea creditelor  neperformante (NPL) minus valoarea reducerilor calculate pentru pierderi la  credite neperformante ca numărător și valoarea fondurilor proprii ca numitor.  Capitalul este măsurat ca total capital și rezerve în bilanțul sectorial;  pentru datele consolidate transfrontaliere, poate fi utilizat și capitalul  total propriu. Acest indicator al Stabilității financiare este unul al ratei  al suficienței capitalului, fiind un indicator important ce reflectă  capacitatea capitalului bancar de a face față pierderilor din împrumuturile  neperformante. (4) Ponderea creditelor neperformante în totalul creditelor  acordate: </p>
 <p>  I4 Creditele neperformante la credite brute totale. Acest  indicator este calculate prin utilizarea valorii creditelor neperformante ca  numărător și valorii totale a portofoliului de credite (incluzând creditele  neperformante) ca numitor. Acest indicator este frecvent utilizat ca unul  proxy pentru a calitatea activelor și este destinat pentru identificarea  problemelor ce țin de calitatea activelor în portofoliului de credite. </p>
 <p>   (5) Rentabilitatea activelor: </p>
 <p>  I6 Rentabilitatea activelor este calculată  prin împărțirea venitului net înaintea articolelor și impozitelor  extraordinare (conform recomandărilor Ghidului FSI) la valoarea medie a  activelor totale (financiare și nefinanciare) pentru aceeași perioadă de  referință. Acest indicator al Stabilității Financiare este unul al  rentabilității bancare și este destinat măsurării eficienței utilizării de  către de ținătorii de depozite a activelor lor.</p>
 <p>  (6) Rata activelor  lichide în raport cu pasivele pe termen scurt </p>
 <p>  I11 Active lichide la  pasive pe termen scurt Acest indicator este calculat utilizând măsura de bază  a activelor lichide ca numărător și celor pasive pe termen scurt ca numitor.  Raportul poate fi calculat și luând ca numărător măsura largă a activelor  lichide. Acest indicator este o rată a activelor lichide și este destinat să  capteze nepotrivirea de lichidități între active și pasive, și oferă  informații despre măsura în care deponenții pot efectua retragerile fondurilor  pe termen fără a se confrunta cu probleme de lichidități.</p>
-<p>  (7) Rata  poziției valutare deschise nete la fondurile proprii totale</p>
-<p>  I12 Poziția  valutară deschisă netă în fonduri proprii. Poziția valutară deschisă calculată  în baza recomandării BCBS. Fondurile proprii ar trebui să reprezinte fonduri  proprii totale de bază sau fonduri proprii de nivel 1, deoarece poziția  valutară deschisă este un concept de supraveghere. Acest indicator este unul  al sensibilității la riscul de piață, care este conceput pentru a reflecta  expunerea deponenților la riscul de schimb comparativ cu capitalul. Măsoară  nepotrivirea activelor și pasivelor în valută pentru a evalua vulnerabilitatea  la fluctuațiile cursului de schimb.</p>
+<p>  (7) Rata  poziției valutare deschise nete la fondurile proprii</p>
+<p>  I12 Poziția  valutară deschisă netă la fonduri proprii. Poziția valutară deschisă calculată  în baza recomandării BCBS. Fondurile proprii ar trebui să reprezinte fonduri  proprii totale de bază sau fonduri proprii de nivel 1, deoarece poziția  valutară deschisă este un concept de supraveghere. Acest indicator este unul  al sensibilității la riscul de piață, care este conceput pentru a reflecta  expunerea deponenților la riscul de schimb comparativ cu capitalul. Măsoară  nepotrivirea activelor și pasivelor în valută pentru a evalua vulnerabilitatea  la fluctuațiile cursului de schimb.</p>
 <p>  [A se  vedea](http://data.imf.org/regular.aspx?key=61404865) </p>
 
           
@@ -1686,8 +1704,8 @@ data-event-label="Change to indicator.sources tab"
             
             
             
-              <a href="https://bnm.md/bdi/pages/reports/drsb/DRSB1.xhtml" target="_blank">
-                https://data.imf.org/regular.aspx?key=63174545 <span class="visuallyhidden">se deschide în fereastră nouă</span>
+              <a href="https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:FSIC(13.0.1)" target="_blank">
+                Link la sursa de date <span class="visuallyhidden">se deschide în fereastră nouă</span>
               </a>
             
 
@@ -1721,19 +1739,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Contacte </th>
-        <td>
-          
-            <p>Link la sursa de date</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1847,12 +1854,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624134635'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624134635"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -147,7 +147,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-5-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-5-1-c",
@@ -159,7 +159,7 @@
         },
         {
           "id": "1-5-2",
-          "title": "Valoarea pierderilor economice directe în urma situațiilor excepționale, raportate la PIB",
+          "title": "Valoarea pierderilor economice directe în urma situațiilor excepționale raportate la PIB",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-5-2/",
@@ -191,7 +191,7 @@
         },
         {
           "id": "1-5-4",
-          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de  situații excepționale în conformitate cu strategiile naționale de reducere a riscurilor de situații excepționale (identic cu 11.b.2/13.1.3)",
+          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de dezastre în conformitate cu strategiile naționale de reducere a riscurilor de dezastre",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-5-4/",
@@ -243,6 +243,14 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-a-2-c/",
+          "status": "complete"
+        },
+        {
+          "id": "1-a-3-1",
+          "title": "Ponderea cheltuielilor publice pentru protecție socială în PIB",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/1-a-3-1/",
           "status": "complete"
         },
         {
@@ -343,7 +351,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Ponderea volumului producției agricole a micilor producători agricoli, în total producția agricolă",
+          "title": "Venitul mediu al micilor producători agricoli, pe sexe și statut indigen",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-3-2/",
@@ -359,7 +367,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Numărul de resurse genetice de origine vegetală și animalieră pentru alimentație și agricultură, conservate ex situ, in situ/on farm pe termen mediu sau lung",
+          "title": "Numărul de resurse genetice (a) vegetale și (b) animale pentru alimentație și agricultură asigurate în instalații de conservare pe termen mediu sau lung",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-5-1/",
@@ -383,7 +391,7 @@
         },
         {
           "id": "2-a-2",
-          "title": "Valoarea asistenței financiare și tehnice externe pentru dezvoltarea sectorului agricol",
+          "title": "Volumul fluxurilor oficiale (asistenței oficiale pentru dezvoltare și alte fluxuri) pentru sectorul agricol",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-a-2/",
@@ -519,7 +527,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Gradul de acoperire cu intervenții/servicii a consumatorilor de substanțe psihotrope, indice",
+          "title": "Gradul de acoperire cu intervenții de tratare (servicii farmacologice, psiho-sociale și de reabilitare, cât și servicii după acordarea de asistență) pentru tulburările cauzate de consumul de substanțe",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-5-1/",
@@ -1271,7 +1279,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Gradul de implementare a managementului integrat al resurselor de apă (de la 0 la 100)",
+          "title": "Gradul de implementare a managementului integrat al resurselor de apă",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-5-1/",
@@ -1279,7 +1287,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Ponderea suprafeței bazinelor apelor râurilor (hidrografice) transfrontaliere, parte a acordurilor internaționale",
+          "title": "Ponderea suprafeței bazinelor hidrografice transfrontaliere cu aranjamente operaționale pentru cooperare în domeniul apei",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-5-2/",
@@ -1295,7 +1303,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Valoarea asistenței financiare și tehnice externe pentru dezvoltarea sectorului de aprovizionare cu apă și sanitație",
+          "title": "Volumul asistenței externe oficiale pentru dezvoltare pentru sectorul de aprovizionare cu apă și sanitație, care face parte din planul de cheltuieli coordonate la nivel de guvern",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-a-1/",
@@ -1343,7 +1351,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Ponderea energiei din surse regenerabile în consumul final brut de energie",
+          "title": "Ponderea energiei din surse regenerabile în consumul final de energie",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-2-1/",
@@ -1375,7 +1383,7 @@
         },
         {
           "id": "7-a-1",
-          "title": "Valoarea asistenței financiare și tehnice externe  pentru  dezvoltarea eficienței energetice",
+          "title": "Volumul fluxurilor financiare internaționale oferite țărilor în curs de dezvoltare drept suport pentru cercetări și dezvoltare în domeniul energiei curate și producerea energiei regenerabile, inclusiv în sistemele hibride",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/7-a-1/",
@@ -1615,7 +1623,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Valoarea asistenței financiare și tehnice externe pentru susținerea dezvoltării sectorului de comerț",
+          "title": "Volumul asistenței pentru angajamentele și debursările ce țin de comerț",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-a-1/",
@@ -1815,7 +1823,7 @@
         },
         {
           "id": "9-5-2",
-          "title": "Cercetători (echivalent normă întreagă) la 100 000 populație",
+          "title": "Cercetători (echivalent normă întreagă) la 1.000.000 locuitori",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-5-2/",
@@ -1839,7 +1847,7 @@
         },
         {
           "id": "9-c-1",
-          "title": "Rate de acoperire a populației cu rețele electronice de comunicații mobile",
+          "title": "Rata de acoperire a populației cu rețea mobilă, pe tehnologii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-c-1/",
@@ -1927,7 +1935,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "Indicatori privind stabilitatea financiară",
+          "title": "Indicatorii de stabilitate financiară",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-5-1/",
@@ -2007,7 +2015,7 @@
         },
         {
           "id": "10-7-4",
-          "title": "Numărul de refugiați la 100 000 de locuitori",
+          "title": "Proporția populației care este refugiată, după țara de origine",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-7-4/",
@@ -2071,7 +2079,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "national_indicators.11-2-1-title",
+          "title": "Proporția populației care are acces convenabil la transportul public, pe sexe, vârstă și persoane cu dizabilități",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-2-1/",
@@ -2147,7 +2155,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-5-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-5-1-c",
@@ -2230,6 +2238,14 @@
           "status": "notstarted"
         },
         {
+          "id": "11-a-1-1",
+          "title": "Numărul de țări care au politici urbane naționale sau planuri de dezvoltare regională care (a) răspund la dinamica populației; (b) asigură o dezvoltare teritorială echilibrată; și (c) asigură creșterea spațiului fiscal local",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/11-a-1-1/",
+          "status": "notstarted"
+        },
+        {
           "id": "11-b-1",
           "title": "national_indicators.11-b-1-title",
           "description": "",
@@ -2255,11 +2271,19 @@
         },
         {
           "id": "11-b-2",
-          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de  situații excepționale în conformitate cu strategiile naționale de reducere a riscurilor de situații excepționale (identic cu 1.5.4/13.1.3)",
+          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de dezastre în conformitate cu strategiile naționale de reducere a riscurilor de dezastre",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/11-b-2/",
           "status": "complete"
+        },
+        {
+          "id": "11-c-1",
+          "title": "Total official development assistance and other official flows in support of urban infrastructure or urban infrastructure projects, by sector",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/11-c-1/",
+          "status": "notstarted"
         }]
     }
   },
@@ -2359,7 +2383,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Gradul de respectare a obligațiilor de raportare pe acorduri/angajamente internaționale semnate de Republica Moldova privind substanțele chimice periculoase și deșeurile (numărul rapoartelor prezentate per convenție față de numărul de rapoarte obligatorii)",
+          "title": "Numărul de părți la acorduri internaționale și multilaterale de mediu cu privire la deșeurile periculoase și alte substanțe chimice, care-și întrunesc angajamentele și obligațiilor lor privind transmiterea informației după cum se solicitări de fiecare acord relevant",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-4-1/",
@@ -2431,7 +2455,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Existența în curricula școlară a modulelor/ conținuturilor curriculare: i) dezvoltarea durabilă,  ii) educația pentru schimbările climatice și abordarea multidisciplinară a acestora în vederea formării profilului absolventului",
+          "title": "Măsura în care (i) educația pentru cetățenie globală și (ii) educația pentru dezvoltare durabilă sunt integrate în (a) politicile naționale educaționale; (b) curriculum; (c) instruirea profesorilor și (d) evaluarea studenților",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-8-1/",
@@ -2439,7 +2463,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Capacitatea instalațiilor de generare a energiei electrice regenerabile, Watt/cap de locuitor",
+          "title": "Capacitatea instalată de generare a energiei regenerabile în țările în curs de dezvoltare (în wați pe cap de locuitor)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/12-a-1/",
@@ -2499,7 +2523,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/13-1-1-b/",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "13-1-1-c",
@@ -2535,7 +2559,7 @@
         },
         {
           "id": "13-1-3",
-          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de  situații excepționale în conformitate cu strategiile naționale de reducere a riscurilor de situații excepționale (identic cu 1.5.4/11.b.2)",
+          "title": "Proporția autorităților publice locale care adoptă și implementează strategii locale de reducere a riscurilor de dezastre în conformitate cu strategiile naționale de reducere a riscurilor de dezastre",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/13-1-3/",
@@ -2879,7 +2903,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "Valoarea asistenței financiare și tehnice externe  pentru dezvoltare acordate pentru conservarea și utilizarea durabilă a biodiversității  și a ecosistemelor terestre, acvatice și forestiere",
+          "title": "(a) Asistență oficială pentru dezvoltare pentru conservarea și utilizarea durabilă a biodiversității; și (b) veniturile generate și finanțarea mobilizată din instrumente economice relevante pentru biodiversitate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/15-a-1/",
@@ -2911,7 +2935,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Numărul de victime ale omorului intenționat la 100 000 populație",
+          "title": "Numărul victimelor omorului intenționat la 100 mii populație, pe sexe și vârstă",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-1-1/",
@@ -2919,7 +2943,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Numărul de decese cauzate de conflicte la 100 000 populație",
+          "title": "Numărul deceselor cauzate de conflicte la 100 mii populație, pe sexe, vârste și cauză",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-1-2/",
@@ -2967,7 +2991,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Numărul de victime ale traficului de ființe umane la 100 000 populație",
+          "title": "Numărul victimelor traficului de ființe umane la 100 mii populație, pe sexe, vârstă și forme de exploatare",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-2-2/",
@@ -2991,7 +3015,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Ponderea persoanelor aflate în arest preventiv din numărul total de persoane deținute în instituțiile penitenciare",
+          "title": "Ponderea persoanelor aflate în arest preventiv în total persoane deținute în instituții penitenciare",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-2/",
@@ -3027,7 +3051,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-3-2-4/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-3-3",
@@ -3103,7 +3127,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Cheltuielile executate ale bugetului de stat raportate la bugetul aprobat inițial",
+          "title": "Cheltuielile publice primare drept ca pondere din bugetul aprobat inițial, pe sectoare (sau pe coduri bugetare sau ceva similar)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-6-1/",
@@ -3111,7 +3135,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Gradul de satisfacție al beneficiarilor de servicii publice (servicii de sănătate, educație, documentarea populației)",
+          "title": "Ponderea populației satisfăcute de ultima experiență de accesare a serviciilor publice",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-6-2/",
@@ -3215,7 +3239,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Existența instituțiilor naționale independente pentru drepturile omului în conformitate cu Principiile de la Paris, statut de acreditare (A, B, C)",
+          "title": "Existența instituțiilor naționale independente pentru drepturile omului în conformitate cu Principiile de la Paris",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-a-1/",
@@ -3239,7 +3263,7 @@
         
         {
           "id": "17-1-1",
-          "title": "Ponderea veniturilor bugetului public național în PIB",
+          "title": "Venituri publice totale raportate la PIB, pe surse",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-1-1/",
@@ -3247,7 +3271,7 @@
         },
         {
           "id": "17-1-2",
-          "title": "Raportul veniturilor din impozite și taxe în totalul cheltuielilor bugetului public  național",
+          "title": "Proporția bugetului public național finanțat din impozite și taxe",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-1-2/",
@@ -3271,7 +3295,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "Volumul remiterilor personale ca procent din PIB (recalculat în dolari SUA)",
+          "title": "Volumul remiterilor personale (în dolari SUA) ca procent din PIB",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-3-2/",
@@ -3279,7 +3303,7 @@
         },
         {
           "id": "17-4-1",
-          "title": "Serviciul datoriei externe publice și public garantate ca proporție din total export de bunuri și servicii",
+          "title": "Serviciul datoriei externe ca proporție din total export de bunuri și servicii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-4-1/",
@@ -3295,7 +3319,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Numărul de abonați cu acces la internet în bandă largă la puncte fixe, la 100 de locuitori",
+          "title": "Numărul abonaților cu acces la Internet în banda larga, la 100 de locuitori, după viteza de acces",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-6-1/",
@@ -3327,7 +3351,7 @@
         },
         {
           "id": "17-10-1",
-          "title": "Nivelul mediu ponderat al tarifelor vamale de import în Republica Moldova",
+          "title": "Nivelul mediu ponderat al tarifelor vamale la nivel mondial",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-10-1/",
@@ -3335,7 +3359,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "Ponderea exporturilor din Republica Moldova în comerțul exterior global",
+          "title": "Ponderea exporturilor țărilor în curs de dezvoltare și a celor mai puțin dezvoltate în comerțul global",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-11-1/",

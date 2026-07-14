@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260624134635">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -840,6 +840,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_available', "national_indicators.12-1-1-1-title");
+        var propertyEditor = editor.getEditor('root.indicator_available');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_available');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
 
     
@@ -888,7 +900,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "<p> ***Non-statistical indicator***</p>  <p>Number of policies by year:</p>  <p>2013</p>  <p>- Waste Management Strategy of the Republic of Moldova for the years 2013–2027, Government Decision No. 248/2013</p>  <p>- Energy Strategy of the Republic of Moldova until 2030, Government Decision No. 102/2013</p>  <p>2014</p>  <p>- Environmental Strategy for 2014–2023, Government Decision No. 301/2014</p>  <p>2016</p>  <p>- Low Emissions Development Strategy of the Republic of Moldova until 2030 and its Action Plan, Government Decision No. 1470/2016</p>  <p>- National Programme for the Implementation of the Protocol on Water and Health for the years 2016–2025, Government Decision No. 1063/2016</p>  <p>2018</p>  <p>- Programme for Promoting the Green Economy in the Republic of Moldova for the period 2018–2020, Government Decision No. 160/2018</p>  <p>2022</p>  <p>- National Strategy for Regional Development of the Republic of Moldova for the years 2022–2028, Government Decision No. 40/2022</p>  <p>2023</p>  <p>- National Health Strategy “Health 2030”, Government Decision No. 387/2023</p>  <p>- National Strategy for Agricultural and Rural Development for the years 2023–2030, Government Decision No. 56/2023</p>  <p>- Development Strategy “Education – 2030”, Government Decision No. 114/2023</p>  <p>- Low Emissions Development Programme 2030, Government Decision No. 659/2023</p>  <p>- National Climate Change Adaptation Programme until 2030, Government Decision No. 624/2023</p>  <p>- National Programme for Forest Expansion and Rehabilitation for the period 2023–2032, Government Decision No. 55/2023</p>  <p>- Waste Management Programme for the years 2023–2027, Government Decision No. 972/2023</p>  <p>- Sustainable Chemicals Management Programme for the years 2023–2030, Government Decision No. 816/2023</p>  <p>- National Programme for the Promotion of Entrepreneurship and Competitiveness Growth for the period 2023–2027, Government Decision No. 653/2023</p>  <p>2024</p>  <p>- Environmental Strategy for the years 2024–2030, Government Decision No. 409/2024</p>  <p>- Programme for Promoting the Green and Circular Economy in the Republic of Moldova for the period 2024–2028, Government Decision No. 495/2024</p>  <p>- National Economic Development Strategy 2030, Government Decision No. 394/2024 </p>");
+        var currentValue = normalizeCurrentValue('page_content', "<p> ***Non-statistical indicator***</p>  <p>Number of policies by year:</p>  <p>2013</p>  <p>- Waste Management Strategy of the Republic of Moldova for the years 2013–2027, Government Decision No. 248/2013</p>  <p>- Energy Strategy of the Republic of Moldova until 2030, Government Decision No. 102/2013</p>  <p>2014</p>  <p>- Environmental Strategy for 2014–2023, Government Decision No. 301/2014</p>  <p>2016</p>  <p>- Low Emissions Development Strategy of the Republic of Moldova until 2030 and its Action Plan, Government Decision No. 1470/2016</p>  <p>- National Programme for the Implementation of the Protocol on Water and Health for the years 2016–2025, Government Decision No. 1063/2016</p>  <p>2018</p>  <p>- Programme for Promoting the Green Economy in the Republic of Moldova for the period 2018–2020, Government Decision No. 160/2018</p>  <p>2022</p>  <p>- National Strategy for Regional Development of the Republic of Moldova for the years 2022–2028, Government Decision No. 40/2022</p>  <p>2023</p>  <p>- National Health Strategy “Health 2030”, Government Decision No. 387/2023</p>  <p>- National Strategy for Agricultural and Rural Development for the years 2023–2030, Government Decision No. 56/2023</p>  <p>- Development Strategy “Education – 2030”, Government Decision No. 114/2023</p>  <p>- Low Emissions Development Programme 2030, Government Decision No. 659/2023</p>  <p>- National Climate Change Adaptation Programme until 2030, Government Decision No. 624/2023</p>  <p>- National Programme for Forest Expansion and Rehabilitation for the period 2023–2032, Government Decision No. 55/2023</p>  <p>- Waste Management Programme for the years 2023–2027, Government Decision No. 972/2023</p>  <p>- Sustainable Chemicals Management Programme for the years 2023–2030, Government Decision No. 816/2023</p>  <p>- National Programme for the Promotion of Entrepreneurship and Competitiveness Growth for the period 2023–2027, Government Decision No. 653/2023</p>  <p>2024</p>  <p>- Environmental Strategy for the years 2024–2030, Government Decision No. 409/2024</p>  <p>- Programme for Promoting the Green and Circular Economy in the Republic of Moldova for the period 2024–2028, Government Decision No. 495/2024</p>  <p>- National Economic Development Strategy 2030, Government Decision No. 394/2024</p>  <p>2025:</p>  <p>- National Strategy for the Development of the Capital Market of the Republic of Moldova for the period 2025–2030, Low No. 197/2025;</p>  <p>- Sectoral Strategy for the Long-Term Renovation of the National Building Stock for the period 2025–2050, Government Decision No. 595/2025;</p>  <p>- Digital Transformation Program of the Energy Sector of the Republic of Moldova for the years 2026–2030, Government Decision No. 652/2025;</p>  <p>- State Program for the Establishment and Development of Industrial Parks, Government Decision No. 493/2025. </p>");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1201,12 +1213,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260624134635'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260624134635"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

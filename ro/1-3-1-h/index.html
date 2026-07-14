@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,6 +425,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Acoperirea populației celei mai sărace (quintila 1) cu prestații de ajutor social</h2>
+  </div>
+</div>
+
 
   
 
@@ -709,6 +715,18 @@ data-event-label="high"
           
         </tr>
         
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">1.9</td>
+          
+          
+        </tr>
+        
       </tbody>
     </table>
     
@@ -726,7 +744,9 @@ data-event-label="high"
     <p>Unitatea de măsură: Procent, %</p>
     
     
-    <p>Notă de subsol: Începand cu anul 2019 datele nu sunt comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+    <p>Notă de subsol: <p>1. Începand cu anul 2019 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+<p>2. Începand cu anul 2025 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+</p>
     
   </div>
   
@@ -848,7 +868,9 @@ data-event-label="Change to Table tab"
 
         
         <dt>Notă de subsol:</dt>
-        <dd>Începand cu anul 2019 datele nu sunt comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</dd>
+        <dd><p>1. Începand cu anul 2019 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+<p>2. Începand cu anul 2025 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+</dd>
         
 
         
@@ -927,7 +949,9 @@ data-event-label="Change to Table tab"
 
         
         <dt>Notă de subsol:</dt>
-        <dd>Începand cu anul 2019 datele nu sunt comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</dd>
+        <dd><p>1. Începand cu anul 2019 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+<p>2. Începand cu anul 2025 datele nu sunt întru totul comparabile cu perioada precedentă, deoarece a fost modificată metodologia CBGC</p>
+</dd>
         
 
         
@@ -1170,8 +1194,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definiție și concepte </th>
         <td>
           
-            <p> Programul de „Ajutor social” este implementat începând cu anul 2008 și este  alcătuit din două componente de bază – ajutorul social și ajutorul pentru perioada rece a anului. Scopul programului este asigurarea familiilor sărace cu unui venit lunar minim garantat (VLMG), care este stabilit anual prin legea Bugetului de Stat. Eligibilitatea pentru prestațiile din cadrul programului de Ajutor social este determinată în baza Metodologiei de evaluare a venitului global mediu lunar al familiei și necesitatea de asistență socială (un set de indicatori Proxy). (Legea nr. 133/2008 cu privire la ajutorul social).</p>
-<p>În conformitate cu prevederile Legii nr. 133/2008, Ajutor social – plată lunară în bani acordată familiei defavorizate. Ajutor pentru perioada rece a anului – plată lunară fixă, în bani, acordată familiei defavorizate pentru lunile ianuarie-martie și noiembrie-decembrie. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Programul de „Ajutor social” este implementat începând cu anul 2008 și este  alcătuit din două componente de bază – ajutorul social și ajutorul pentru perioada rece a anului. Scopul programului este asigurarea familiilor sărace cu unui venit lunar minim garantat (VLMG), care este stabilit anual prin legea Bugetului de Stat. Eligibilitatea pentru prestațiile din cadrul programului de Ajutor social este determinată în baza Metodologiei de evaluare a venitului global mediu lunar al familiei și necesitatea de asistență socială (un set de indicatori Proxy). (Legea nr. 133/2008 cu privire la ajutorul social).&lt;/p&gt; &lt;p&gt;În conformitate cu prevederile Legii nr. 133/2008, Ajutor social – plată lunară în bani acordată familiei defavorizate. Ajutor pentru perioada rece a anului – plată lunară fixă, în bani, acordată familiei defavorizate pentru lunile ianuarie-martie și noiembrie-decembrie.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -1264,11 +1293,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Formula de calcul </th>
         <td>
           
-            <p> P_AJUT = Q1_AJUT / Q1 * 100</p>
-<p>    unde:</p>
-<p> P_AJUT - ponderea populației in quintila 1 care beneficiază de Ajutor Social,          </p>
-<p> Q1_AJUT - numărul persoanelor din quintila 1 care beneficiază de Ajutor Social,</p>
-<p> Q1 - numărul total de persoane din quintila 1. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;P_AJUT = Q1_AJUT / Q1 * 100&lt;/p&gt; &lt;p&gt;    unde:&lt;/p&gt; &lt;p&gt; P_AJUT - ponderea populației in quintila 1 care beneficiază de Ajutor Social,          &lt;/p&gt; &lt;p&gt; Q1_AJUT - numărul persoanelor din quintila 1 care beneficiază de Ajutor Social,&lt;/p&gt; &lt;p&gt; Q1 - numărul total de persoane din quintila 1.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -1806,9 +1837,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Responsabil pentru monitorizare </th>
         <td>
           
-            <p> Ministerul Muncii și Protecției Sociale</p>
-<p>Consiliul Național pentru Determinarea Dizabilității și Capacității de Muncă</p>
-<p>Agenția Națională pentru Ocuparea Forței de Muncă </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Ministerul Muncii și Protecției Sociale&lt;/p&gt; &lt;p&gt;Consiliul Național pentru Determinarea Dizabilității și Capacității de Muncă&lt;/p&gt; &lt;p&gt;Agenția Națională pentru Ocuparea Forței de Muncă&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -2043,12 +2078,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

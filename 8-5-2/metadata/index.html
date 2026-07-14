@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -840,7 +840,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> ILO Unemployed are persons aged 15 years and over, who during the reference  period meet simultaneously the following conditions:</p>  <p> - do not have a job  and do not perform any activity to obtain some income;</p>  <p> - are looking for a  job over the last 4 weeks and use different methods get registered at the  National Employment Agency or at private employment agencies, take measures to  start up an activity on their own, publish and answer to job announcements,  call for help from friends, relatives, colleagues, trade-unions, etc.; </p>  <p> -  are available to start working in the following 15 days, if they could find  immediately a job. </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "| <p>ILO Unemployed are persons aged 15 years and over, who during the reference  period meet simultaneously the following conditions:</p> <p>a) during the reference week not employed according to the definition of employment, and</p> <p>b) currently available for work, i.e. were available for paid employment or self-employment before the end of the 2 weeks following the reference week: and</p> <p>c) actively seeking work, i.e. had either carried out activities in the four-week period ending with the reference week to seek paid employment or self-employment or found a job to start within a period of at most 3 months from the end of the reference week.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1094,7 +1094,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "Total corresponding");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "Total corresponding with Series: „SL_TLF_UEM_19ICLS - Unemployment rate, by sex and age - 19th ICLS (%) [8.5.2]” and „SL_TLF_UEMDIS_19ICLS - Unemployment rate, by sex and disability - 19th ICLS (%) [8.5.2]”");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1136,7 +1136,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2025-06-16");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2026-07-14");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1150,7 +1150,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-06-16");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2026-07-14");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1303,12 +1303,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

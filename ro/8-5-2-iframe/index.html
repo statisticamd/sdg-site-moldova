@@ -121,7 +121,7 @@ var translations = {
         
         Indicator 8.5.2 -
         
-        Rata șomajului - Indicatori pentru Obiectivele de Dezvoltare Durabilă
+        Rata șomajului, pe sexe, vârste și persoane cu dizabilități - Indicatori pentru Obiectivele de Dezvoltare Durabilă
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -295,7 +295,7 @@ layout-indicator-iframe
                         
                         Indicator 8.5.2
                         
-                        <span class="lead-copy">Rata șomajului</span>
+                        <span class="lead-copy">Rata șomajului, pe sexe, vârste și persoane cu dizabilități</span>
                     </h1>
                 </div>
             </div>
@@ -306,6 +306,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Rata șomajului</h2>
+  </div>
+</div>
+
 
   
 
@@ -352,7 +358,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Bărbați&quot;,&quot;Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15-24 ani&quot;,&quot;25-34 ani&quot;,&quot;35-44 ani&quot;,&quot;45-54 ani&quot;,&quot;55-64 ani&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa de vârstă&quot;},{&quot;name&quot;:&quot;Persons with disabilities&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Persoane cu dizabilități&quot;},{&quot;name&quot;:&quot;Education levels&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Superior&quot;,&quot;Profesional tehnic postsecundar nonterțiar (mediu de specialitate)&quot;,&quot;Profesional tehnic secundar&quot;,&quot;Liceal, mediu general&quot;,&quot;Gimnazial&quot;,&quot;Primar sau fără şcoală primară&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Nivele de educație&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Bărbați&quot;,&quot;Femei&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;15-24 ani&quot;,&quot;25-34 ani&quot;,&quot;35-44 ani&quot;,&quot;45-54 ani&quot;,&quot;55-64 ani&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Grupa de vârstă&quot;},{&quot;name&quot;:&quot;Persons with disabilities&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Persoane cu dizabilități&quot;},{&quot;name&quot;:&quot;Education level&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Superior&quot;,&quot;Profesional tehnic postsecundar nonterțiar (mediu de specialitate)&quot;,&quot;Profesional tehnic secundar&quot;,&quot;Liceal, mediu general&quot;,&quot;Gimnazial&quot;,&quot;Primar sau fără şcoală primară&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Education level&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -590,6 +596,18 @@ layout-indicator-iframe
           
         </tr>
         
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">3.846</td>
+          
+          
+        </tr>
+        
       </tbody>
     </table>
     
@@ -607,7 +625,15 @@ layout-indicator-iframe
     <p>Unitatea de măsură: Procent, %</p>
     
     
-    <p>Notă de subsol: <p> Întreruperea seriilor de timp:</p> <p>Începând cu 2019, datele nu sunt întru totul comparabile cu perioadele anterioare din cauza modificărilor metodologice:</p> <p>Din 2019 AFM se desfășoară conform unui nou plan de sondaj. Datele sunt estimate folosind numărul populației cu reședință obișnuită.</p> <p>Datele pentru anii 2014-2018 au fost estimate folosind numărul populației cu reședință obișnuită. </p></p>
+    <p>Notă de subsol: <p>Întreruperea seriilor de timp:</p>
+<p>Revizuiri importante ale Anchetei forței de muncă (AFM) (utilizarea numărului populației cu reședință obișnuită, implementarea unui nou plan de sondaj, modificarea / ajustarea definițiilor etc.) au avut loc in anii 2019 si 2025, fapt care trebuie luat in considerare la analiza longitudinala a datelor: </p>
+<p>De aceia:</p>
+<p>  -  datele pentru perioada 2019 - 2024 nu sunt comparabile cu seriile publicate pentru perioadele precedente.</p>
+<p>  -  datele, incepand cu anul 2025, nu sunt comparabile cu cele publicate pentru  perioada 2019-2024.</p>
+<p>Pentru perioada 2019-2024, datele sunt estimate pe baza populatei cu resedinta obisnuita calculate in baza RPL din anul 2014. Cercetarea s-a realizat conform planului de sondaj Multifuncțional de tip master pentru cercetările din DOmeniul Social 2 (EMDOS 2), elaborat in baza RPL din 2014.</p>
+<p>Începand cu 2025, datele sunt estimate pe baza populatiei cu resedinta obisnuita recalculate in baza RPL din anul 2024. Cercetarea se realizeaza conform planului nou de sondaj EMDOS 3, elaborat in baza RPL din 2024.</p>
+<p>Detalii: Metodologia AFM: https://statistica.gov.md/files/files/Metadate/alte/Metodologia_AFM_2025.pdf</p>
+</p>
     
   </div>
   
@@ -729,7 +755,15 @@ data-event-label="Change to Table tab"
 
         
         <dt>Notă de subsol:</dt>
-        <dd><p> Întreruperea seriilor de timp:</p> <p>Începând cu 2019, datele nu sunt întru totul comparabile cu perioadele anterioare din cauza modificărilor metodologice:</p> <p>Din 2019 AFM se desfășoară conform unui nou plan de sondaj. Datele sunt estimate folosind numărul populației cu reședință obișnuită.</p> <p>Datele pentru anii 2014-2018 au fost estimate folosind numărul populației cu reședință obișnuită. </p></dd>
+        <dd><p>Întreruperea seriilor de timp:</p>
+<p>Revizuiri importante ale Anchetei forței de muncă (AFM) (utilizarea numărului populației cu reședință obișnuită, implementarea unui nou plan de sondaj, modificarea / ajustarea definițiilor etc.) au avut loc in anii 2019 si 2025, fapt care trebuie luat in considerare la analiza longitudinala a datelor: </p>
+<p>De aceia:</p>
+<p>  -  datele pentru perioada 2019 - 2024 nu sunt comparabile cu seriile publicate pentru perioadele precedente.</p>
+<p>  -  datele, incepand cu anul 2025, nu sunt comparabile cu cele publicate pentru  perioada 2019-2024.</p>
+<p>Pentru perioada 2019-2024, datele sunt estimate pe baza populatei cu resedinta obisnuita calculate in baza RPL din anul 2014. Cercetarea s-a realizat conform planului de sondaj Multifuncțional de tip master pentru cercetările din DOmeniul Social 2 (EMDOS 2), elaborat in baza RPL din 2014.</p>
+<p>Începand cu 2025, datele sunt estimate pe baza populatiei cu resedinta obisnuita recalculate in baza RPL din anul 2024. Cercetarea se realizeaza conform planului nou de sondaj EMDOS 3, elaborat in baza RPL din 2024.</p>
+<p>Detalii: Metodologia AFM: https://statistica.gov.md/files/files/Metadate/alte/Metodologia_AFM_2025.pdf</p>
+</dd>
         
 
         
@@ -808,7 +842,15 @@ data-event-label="Change to Table tab"
 
         
         <dt>Notă de subsol:</dt>
-        <dd><p> Întreruperea seriilor de timp:</p> <p>Începând cu 2019, datele nu sunt întru totul comparabile cu perioadele anterioare din cauza modificărilor metodologice:</p> <p>Din 2019 AFM se desfășoară conform unui nou plan de sondaj. Datele sunt estimate folosind numărul populației cu reședință obișnuită.</p> <p>Datele pentru anii 2014-2018 au fost estimate folosind numărul populației cu reședință obișnuită. </p></dd>
+        <dd><p>Întreruperea seriilor de timp:</p>
+<p>Revizuiri importante ale Anchetei forței de muncă (AFM) (utilizarea numărului populației cu reședință obișnuită, implementarea unui nou plan de sondaj, modificarea / ajustarea definițiilor etc.) au avut loc in anii 2019 si 2025, fapt care trebuie luat in considerare la analiza longitudinala a datelor: </p>
+<p>De aceia:</p>
+<p>  -  datele pentru perioada 2019 - 2024 nu sunt comparabile cu seriile publicate pentru perioadele precedente.</p>
+<p>  -  datele, incepand cu anul 2025, nu sunt comparabile cu cele publicate pentru  perioada 2019-2024.</p>
+<p>Pentru perioada 2019-2024, datele sunt estimate pe baza populatei cu resedinta obisnuita calculate in baza RPL din anul 2014. Cercetarea s-a realizat conform planului de sondaj Multifuncțional de tip master pentru cercetările din DOmeniul Social 2 (EMDOS 2), elaborat in baza RPL din 2014.</p>
+<p>Începand cu 2025, datele sunt estimate pe baza populatiei cu resedinta obisnuita recalculate in baza RPL din anul 2024. Cercetarea se realizeaza conform planului nou de sondaj EMDOS 3, elaborat in baza RPL din 2024.</p>
+<p>Detalii: Metodologia AFM: https://statistica.gov.md/files/files/Metadate/alte/Metodologia_AFM_2025.pdf</p>
+</dd>
         
 
         
@@ -1047,10 +1089,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definiție și concepte </th>
         <td>
           
-            <p> Șomeri BIM (Biroul Internațional al Muncii) sunt persoanele de 15 ani și peste, care îndeplinesc simultan  următoarele condiții:</p>
-<p> - nu au un loc de muncă şi nu desfăşoară o  activitate în scopul obţinerii unor venituri;</p>
-<p> - sunt în căutarea unui loc  de muncă, utilizând în ultimele 4 săptămâni diverse metode pentru a-l găsi  înscrierea la Agenția Națională pentru Ocuparea Forței de Muncă sau la agenţii  private de ocupare, acţiuni pentru a începe o activitate pe cont propriu,  publicarea de anunţuri şi răspunsuri la anunţuri, apel la prieteni, rude,  colegi, sindicate etc.;</p>
-<p> - sunt disponibile să înceapă lucrul în  următoarele 15 zile, dacă s-ar găsi imediat un loc de muncă. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Șomeri BIM (Biroul Internațional al Muncii) sunt persoanele de 15 ani și peste, care îndeplinesc simultan  următoarele condiții:&lt;/p&gt; &lt;p&gt;a) în cursul săptămânii de referință nu erau ocupate conform definiției persoanelor ocupate, și&lt;/p&gt; &lt;p&gt;b) erau disponibile să muncească, adică erau disponibile să ocupe un loc de muncă remunerat sau să desfășoare o activitate independentă în termen de două săptămâni după săptămâna de referință; și&lt;/p&gt; &lt;p&gt;c) căutau activ un loc de muncă, adică fie au făcut demersuri concrete în perioada de patru săptămâni care s-a încheiat cu săptămâna de referință pentru a căuta un loc de muncă remunerat sau pentru a desfășura o activitate independentă, fie au găsit un loc de muncă unde urmează să înceapă activitatea în termen de cel mult trei luni de la sfârșitul săptămânii de referință.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -1178,7 +1223,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comparabilitatea cu indicatorul global </th>
         <td>
           
-            <p>Corespunde total</p>
+            <p>Corespunde total cu Seriile: „SL_TLF_UEM_19ICLS - Unemployment rate, by sex and age - 19th ICLS (%) [8.5.2]” și „SL_TLF_UEMDIS_19ICLS - Unemployment rate, by sex and disability - 19th ICLS (%) [8.5.2]”</p>
 
           
         </td>
@@ -1863,12 +1908,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -306,6 +306,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Ponderea copiilor cu vârsta între 5-17 ani, care se află în situația de „munca copiilor”</h2>
+  </div>
+</div>
+
 
   
 
@@ -340,7 +346,7 @@ layout-indicator-iframe
   data-charttitles="[]"
   data-measurementunit="Procent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -352,14 +358,528 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;SNA production boundary basis - Age group / Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5-17 / Both sexes&quot;,&quot;5-17 / Men&quot;,&quot;5-17 / Women&quot;,&quot;5-11 / Both sexes&quot;,&quot;5-11 / Men&quot;,&quot;5-11 / Women&quot;,&quot;12-14 / Both sexes&quot;,&quot;12-14 / Men&quot;,&quot;12-14 / Women&quot;,&quot;15-17 / Both sexes&quot;,&quot;15-17 / Men&quot;,&quot;15-17 / Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SNA production boundary basis - Age group / Sex&quot;},{&quot;name&quot;:&quot;SNA general production boundary basis - Age group / Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5-17 / Both sexes&quot;,&quot;5-17 / Men&quot;,&quot;5-17 / Women&quot;,&quot;5-11 / Both sexes&quot;,&quot;5-11 / Men&quot;,&quot;5-11 / Women&quot;,&quot;12-14 / Both sexes&quot;,&quot;12-14 / Men&quot;,&quot;12-14 / Women&quot;,&quot;15-17 / Both sexes&quot;,&quot;15-17 / Men&quot;,&quot;15-17 / Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;SNA general production boundary basis - Age group / Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Children engaged in economic activity - Age group / Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5-17 / Both sexes&quot;,&quot;5-17 / Men&quot;,&quot;5-17 / Women&quot;,&quot;5-11 / Both sexes&quot;,&quot;5-11 / Men&quot;,&quot;5-11 / Women&quot;,&quot;12-14 / Both sexes&quot;,&quot;12-14 / Men&quot;,&quot;12-14 / Women&quot;,&quot;15-17 / Both sexes&quot;,&quot;15-17 / Men&quot;,&quot;15-17 / Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Children engaged in economic activity - Age group / Sex&quot;},{&quot;name&quot;:&quot;Children engaged in economic activity and household chores - Age group / Sex &quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5-17 / Both sexes&quot;,&quot;5-17 / Men&quot;,&quot;5-17 / Women&quot;,&quot;5-11 / Both sexes&quot;,&quot;5-11 / Men&quot;,&quot;5-11 / Women&quot;,&quot;12-14 / Both sexes&quot;,&quot;12-14 / Men&quot;,&quot;12-14 / Women&quot;,&quot;15-17 / Both sexes&quot;,&quot;15-17 / Men&quot;,&quot;15-17 / Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Children engaged in economic activity and household chores - Age group / Sex &quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/headline/8-7-1-a.csv" class="btn btn-primary btn-download" download="indicator_8-7-1-a.csv" tabindex="0" role="button">Descărcați datele despre titlu (.csv)</a>
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/data/8-7-1-a.csv" class="btn btn-primary btn-download" download='indicator_8-7-1-a.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Date de titlu</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>8.7.1.a. Ponderea copiilor cu vârsta între 5-17 ani, care se află în situația de „munca copiilor”</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">11.833</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Sursă: Biroul Național de Statistică</p>
+    
+    
+    <p>Acoperirea geografică: Republica Moldova, fără partea stângă a râului Nistrul și mun. Bender</p>
+    
+    
+    <p>Unitatea de măsură: Procent, %</p>
+    
+    
+    <p>Notă de subsol: În scopurile ODD, la estimarea acestui indicator sunt luate în considerare doar orele lucrate și vârsta copilului. Activitățile/ocupațiile proscrise copiilor sau alte condiții de muncă periculoase nu sunt luate în considerare</p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            8.7.1.a. Ponderea copiilor cu vârsta între 5-17 ani, care se află în situația de „munca copiilor”
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a râului Nistrul și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+        <dt>Notă de subsol:</dt>
+        <dd>În scopurile ODD, la estimarea acestui indicator sunt luate în considerare doar orele lucrate și vârsta copilului. Activitățile/ocupațiile proscrise copiilor sau alte condiții de muncă periculoase nu sunt luate în considerare</dd>
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a râului Nistrul și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+        <dt>Notă de subsol:</dt>
+        <dd>În scopurile ODD, la estimarea acestui indicator sunt luate în considerare doar orele lucrate și vârsta copilului. Activitățile/ocupațiile proscrise copiilor sau alte condiții de muncă periculoase nu sunt luate în considerare</dd>
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -624,8 +1144,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Alte informații </th>
         <td>
           
-            <p> Conform Convențiilor internaționale, munca copiilor este o muncă pe care copiii nu ar trebui să o facă deoarece (a) sunt prea mici sau (b) este în stare să dăuneze sănătății, siguranței sau moralității lor, datorită naturii sau a condițiilor în care se  efectuează.</p>
-<p>Situația de „munca copiilor” cuprinde acele activități/munci care se desfășoară în activități și/sau ocupații proscrise copiilor; și/sau condiții periculoase; sau care durează ore excesive de lucru. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Conform Convențiilor internaționale, munca copiilor este o muncă pe care copiii nu ar trebui să o facă deoarece (a) sunt prea mici sau (b) este în stare să dăuneze sănătății, siguranței sau moralității lor, datorită naturii sau a condițiilor în care se  efectuează.&lt;/p&gt; &lt;p&gt;Situația de „munca copiilor” cuprinde acele activități/munci care se desfășoară în activități și/sau ocupații proscrise copiilor; și/sau condiții periculoase; sau care durează ore excesive de lucru.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -692,8 +1217,25 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Comparabilitatea cu indicatorul global </th>
+        <td>
           
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Corespunde total cu seriile:&lt;/p&gt; &lt;p&gt;- SL_TLF_CHLDEA - Proportion of children engaged in economic activity [8.7.1]&lt;/p&gt; &lt;p&gt;- SL_TLF_CHLDEC - Proportion of children engaged in economic activity and household chores [8.7.1]&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -707,7 +1249,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Periodicitate </th>
         <td>
           
-            <p>De o singură periodicitate</p>
+            <p>O dată la 10 sau mai mulți ani</p>
 
           
         </td>
@@ -828,7 +1370,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicatorul disponibil </th>
         <td>
           
-            <p>Indicator 8.7.1.a: NA</p>
+            <p>Indicator 8.7.1.a: Ponderea și numărul copiilor cu vârsta cuprinsă între 5 și 17 ani care se află în situația de muncă a copiilor pe sexe și vârste</p>
 
           
         </td>
@@ -1125,8 +1667,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Sursele de date </th>
+        <td>
           
+            <p>Cercetarea „Activitățile copiilor”, ca modul adițional la Ancheta Forței de Muncă</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1200,7 +1753,7 @@ data-event-label="Change to indicator.sources tab"
             
             
               <a href="https://statistica.gov.md/ro/munca-copiilor-in-republica-moldova-9670_59508.html" target="_blank">
-                Munca Copiilor,  ediția 2010 <span class="visuallyhidden">se deschide în fereastră nouă</span>
+                Raportul „Activitățile Copiilor” <span class="visuallyhidden">se deschide în fereastră nouă</span>
               </a>
             
 
@@ -1360,12 +1913,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

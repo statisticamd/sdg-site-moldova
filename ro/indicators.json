@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-1",
-          "title": "Ponderea populației aflate sub pragul internațional al sărăciei de 2,15 dolari SUA pe zi",
+          "title": "Ponderea populației aflate sub pragul internațional al sărăciei, pe sexe, vârstă, statut ocupațional și mediu de reședință (urban/rural)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-1-1/",
@@ -23,7 +23,7 @@
         },
         {
           "id": "1-2-1",
-          "title": "Rata sărăciei absolute",
+          "title": "Ponderea populației aflate sub pragul național al sărăciei, pe sexe și vârstă",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-2-1/",
@@ -31,7 +31,7 @@
         },
         {
           "id": "1-2-2",
-          "title": "Indicele sărăciei multidimensionale",
+          "title": "Ponderea bărbaților, femeilor și copiilor de toate vârstele care trăiesc în sărăcie, în toate dimensiunile acesteia, conform definițiilor naționale",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-2-2/",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-4-1",
-          "title": "Ponderea populației care locuiește în gospodării casnice cu acces la servicii de bază, inclusiv electricitate, surse sigure de apă, sistem de canalizare, conexiune la Internet",
+          "title": "Ponderea populației care locuiește în gospodării casnice cu acces la servicii de bază",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/1-4-1/",
@@ -279,11 +279,11 @@
         },
         {
           "id": "2-1-2",
-          "title": "Prevalența insecurității alimentare moderate sau severe",
+          "title": "Prevalența insecurității alimentare moderate sau severe în rândul populației, în baza Scării de Experiență în Insecuritatea Alimentară (FIES)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-2-1",
@@ -735,7 +735,7 @@
         },
         {
           "id": "4-1-2",
-          "title": "Rata de absolvire  a învățământului primar, gimnazial, liceal/mediu general și secundar profesional",
+          "title": "Rata de absolvire (învățământ primar, învățământ secundar inferior, învățământ secundar superior)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-2/",
@@ -767,7 +767,7 @@
         },
         {
           "id": "4-3-1",
-          "title": "Rata de participare a tinerilor și adulților în educație și formare formală și nonformală pe parcursul vieții",
+          "title": "Rata de participare a tinerilor și adulților în educația formală și non-formală în ultimele 12 luni, pe sexe",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-3-1/",
@@ -1015,7 +1015,7 @@
         },
         {
           "id": "5-4-1",
-          "title": "Proporția timpului alocat pentru munca casnică și de îngrijire neplătită",
+          "title": "Proporția timpului alocat pentru munca casnică și îngrijiri neremunerate, pe sexe, vârstă și locație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-4-1/",
@@ -1135,7 +1135,7 @@
         },
         {
           "id": "5-b-1",
-          "title": "Ponderea populației care deține telefon mobil",
+          "title": "Ponderea populației care deține telefon mobil, pe sexe",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/5-b-1/",
@@ -1175,7 +1175,7 @@
         
         {
           "id": "6-1-1",
-          "title": "Ponderea populației cu acces la surse sigure de alimentare cu apă",
+          "title": "Ponderea populației care utilizează servicii de apă potabilă gestionate în mod sigur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/6-1-1/",
@@ -1431,7 +1431,7 @@
         },
         {
           "id": "8-3-1",
-          "title": "Ponderea ocupării informale în  total ocupare",
+          "title": "Ponderea ocupării informale în total populație ocupată, pe sectoare și sexe",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-3-1/",
@@ -1503,7 +1503,7 @@
         },
         {
           "id": "8-5-2",
-          "title": "Rata șomajului",
+          "title": "Rata șomajului, pe sexe, vârste și persoane cu dizabilități",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-5-2/",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "8-6-1",
-          "title": "Ponderea tinerilor care nu fac parte din populația ocupată, nu studiază/învață în cadrul sistemului formal de educație și nu participă la niciun fel de cursuri sau alte instruiri în afara sistemului formal de educație",
+          "title": "Procentul tinerilor (15–24 ani) fără un loc de muncă, studii sau instruire",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-6-1/",
@@ -1531,7 +1531,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-7-1-a/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-7-1-b",
@@ -1539,7 +1539,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-7-1-b/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-8-1",
@@ -1895,7 +1895,7 @@
         },
         {
           "id": "10-2-1",
-          "title": "Ponderea populației care trăiește sub 50 % din cheltuielile de consum mediane",
+          "title": "Ponderea populației care trăiește sub 50% din venitul median, pe sexe, vârstă, persoane cu dizabilități",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/10-2-1/",
@@ -3335,7 +3335,7 @@
         },
         {
           "id": "17-8-1",
-          "title": "Proporția utilizatorilor de Internet la 100 de locuitori",
+          "title": "Proporția persoanelor care utilizează Internetul",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-8-1/",

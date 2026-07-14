@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714111524">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -306,6 +306,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of population with household health expenditure exceeding 25% of total household expenditure</h2>
+  </div>
+</div>
+
 
   
 
@@ -352,7 +358,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Area of residence&quot;},{&quot;name&quot;:&quot;Sex of the head of the household&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Men&quot;,&quot;Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex of the head of the household&quot;},{&quot;name&quot;:&quot;Age groups of head of household, years&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;30&quot;,&quot;30-39&quot;,&quot;40-49&quot;,&quot;50-59&quot;,&quot;60-64&quot;,&quot;65+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age groups of head of household, years&quot;},{&quot;name&quot;:&quot;Quintiles on consumption expenditures&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;I&quot;,&quot;II&quot;,&quot;III&quot;,&quot;IV&quot;,&quot;V&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Quintiles on consumption expenditures&quot;},{&quot;name&quot;:&quot;Household type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;With children up to 18 years&quot;,&quot;Without children up to 18 years&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Household type&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Area of residence&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Area of residence&quot;},{&quot;name&quot;:&quot;Sex of the head of the household&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Men&quot;,&quot;Women&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex of the head of the household&quot;},{&quot;name&quot;:&quot;Age groups of the reference person, years&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;30&quot;,&quot;30-39&quot;,&quot;40-49&quot;,&quot;50-59&quot;,&quot;60-64&quot;,&quot;65+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age groups of the reference person, years&quot;},{&quot;name&quot;:&quot;Quintiles on consumption expenditures&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;I&quot;,&quot;II&quot;,&quot;III&quot;,&quot;IV&quot;,&quot;V&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Quintiles on consumption expenditures&quot;},{&quot;name&quot;:&quot;Household type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;With children up to 18 years&quot;,&quot;Without children up to 18 years&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Household type&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -590,6 +596,18 @@ layout-indicator-iframe
           
         </tr>
         
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">1.8</td>
+          
+          
+        </tr>
+        
       </tbody>
     </table>
     
@@ -607,7 +625,9 @@ layout-indicator-iframe
     <p>Unit of Measurement: Percent, %</p>
     
     
-    <p>Footnote: Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</p>
+    <p>Footnote: <p>1. Starting with 2019, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+<p>2. Starting with 2025, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+</p>
     
   </div>
   
@@ -729,7 +749,9 @@ data-event-label="Change to Table tab"
 
         
         <dt>Footnote:</dt>
-        <dd>Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</dd>
+        <dd><p>1. Starting with 2019, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+<p>2. Starting with 2025, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+</dd>
         
 
         
@@ -808,7 +830,9 @@ data-event-label="Change to Table tab"
 
         
         <dt>Footnote:</dt>
-        <dd>Starting with 2019, the data are not comparable to the previous period, as the HBS methodology was modified</dd>
+        <dd><p>1. Starting with 2019, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+<p>2. Starting with 2025, the data are not fully comparable to the previous period, as the HBS methodology was modified</p>
+</dd>
         
 
         
@@ -1129,9 +1153,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p> To calculate the indicator: </p>
-<p>1. Proportion of health expenditures out of total expenditures of the household = Expenditures for health / Total expenditures of households * 100; </p>
-<p>2. Proportion of population with household expenditures on health larger than 25% = Number of population with household expenditures largest than 25% / Total number of population * 100. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;To calculate the indicator: &lt;/p&gt; &lt;p&gt;1. Proportion of health expenditures out of total expenditures of the household = Expenditures for health / Total expenditures of households * 100; &lt;/p&gt; &lt;p&gt;2. Proportion of population with household expenditures on health larger than 25% = Number of population with household expenditures largest than 25% / Total number of population * 100.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -1214,7 +1242,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Jun 13, 2025
+            Jul 14, 2026
           
         </td>
         </tr>
@@ -1229,7 +1257,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Jul 31, 2024
+            Jul 14, 2026
           
         </td>
         </tr>
@@ -1419,8 +1447,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">International organisations(s) responsible for global monitoring </th>
         <td>
           
-            <p> World Health Organisation (WHO)</p>
-<p>World Bank (WB) </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;World Health Organisation (WHO)&lt;/p&gt; &lt;p&gt;World Bank (WB)&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -1853,12 +1886,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714111524'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714111524"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

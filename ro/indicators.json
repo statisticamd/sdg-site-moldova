@@ -287,7 +287,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Prevalența retardului statural printre copii în vârstă de până la 5 ani",
+          "title": "Prevalența retardului statural (înălțimea pentru vârstă cu o deviere standard <-2 de la mediana standardelor Organizației Mondiale a Sănătății (OMS) pentru creșterea copiilor) printre copii în vârstă de până la 5 ani",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-2-1/",
@@ -319,7 +319,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Prevalența anemiei la femeile în vârstă de 15-49 ani",
+          "title": "Prevalența anemiei la femeile cu vârsta cuprinsă între 15 și 49 de ani, în funcție de statutul sarcinii (procent)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/2-2-3/",
@@ -423,7 +423,7 @@
         
         {
           "id": "3-1-1",
-          "title": "Rata mortalității materne la 100 000 de născuți vii",
+          "title": "Rata mortalității materne",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-1-1/",
@@ -431,7 +431,7 @@
         },
         {
           "id": "3-1-2",
-          "title": "Proporția nașterilor asistate de personal calificat",
+          "title": "Proporția nașterilor asistate de personal medical calificat",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-1-2/",
@@ -439,7 +439,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Rata mortalității copiilor în vârstă de 0-4 ani, la 1 000 de născuți vii",
+          "title": "Rata mortalității copiilor în vârstă de până la 5 ani",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-2-1/",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Rata mortalității neonatale la 1 000 de născuți vii",
+          "title": "Rata mortalității neonatale",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-2-2/",
@@ -463,7 +463,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "Incidența HIV la 100 000 de persoane neinfectate",
+          "title": "Numărul de noi infecții HIV la 1.000 persoane neinfectate, pe sexe, vârstă și populații cheie",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-3-1/",
@@ -479,7 +479,7 @@
         },
         {
           "id": "3-3-2",
-          "title": "Incidența prin tuberculoză la 100 000 de populație",
+          "title": "Incidența prin tuberculoză, la 100 mii populație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-3-2/",
@@ -495,7 +495,7 @@
         },
         {
           "id": "3-3-4",
-          "title": "Incidența prin hepatita B la 100 000 de populație",
+          "title": "Incidența prin hepatita B, la 100 mii populație",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-3-4/",
@@ -511,7 +511,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Rata mortalității prin boli cardiovasculare, cancer, boli ale aparatului digestiv, diabet, boli ale aparatului respirator în rândul persoanelor cu vârste cuprinse între 30 și 70 de ani, la 100 000 populație",
+          "title": "Rata mortalității prin boli cardiovasculare, cancer, diabet, boli cronice ale aparatului respirator",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-4-1/",
@@ -519,7 +519,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Rata mortalității prin suicid la 100 000 populație",
+          "title": "Rata mortalității prin suicid",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-4-2/",
@@ -543,7 +543,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Rata mortalității determinată de accidente rutiere la 100 000 populație",
+          "title": "Rata mortalității determinată de accidente rutiere",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-6-1/",
@@ -567,7 +567,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Acoperirea cu servicii esențiale de sănătate, indice",
+          "title": "Acoperirea cu servicii esențiale de sănătate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-8-1/",
@@ -623,23 +623,23 @@
         },
         {
           "id": "3-9-1",
-          "title": "Rata mortalității determinate de poluarea aerului în încăperi și a celui ambiant la 100 000 populație",
+          "title": "Rata mortalității determinate de poluarea aerului în încăperi și celui ambiant",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-9-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-2",
-          "title": "Rata mortalității determinate de surse nesigure de apă, sanitație și igienă la 100 000 populație",
+          "title": "Rata mortalității determinate de surse nesigure de apă, lipsă de sanitație și igienă (expunerea la servicii nesigure de apă, sanitație și igienă pentru toți - WASH)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-9-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-3",
-          "title": "Rata mortalității determinate de intoxicații neintenționate la 100 000 populație",
+          "title": "Rata mortalității determinate de intoxicații neintenționate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-9-3/",
@@ -647,7 +647,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Prevalența consumului de tutun în rândul populației în vârstă de 15 ani și peste",
+          "title": "Prevalența standardizată pe vârstă a consumului de tutun în rândul populației în vârstă de 15 ani și peste",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-a-1/",
@@ -655,7 +655,7 @@
         },
         {
           "id": "3-b-1",
-          "title": "Ponderea populației acoperite cu vaccinuri în cadrul programelor naționale de imunizări (din numărul celor aflați în evidență la medicul de familie)",
+          "title": "Ponderea populației țintă acoperite cu toate vaccinurile incluse în cadrul programului național de imunizări",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-b-1/",
@@ -679,7 +679,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Numărul personalului medical ce revine în medie la 10 000 populație",
+          "title": "Densitatea și distribuția lucrătorilor medicali",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-c-1/",
@@ -687,7 +687,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "Indicele capacității sectorului de  sănătate",
+          "title": "Capacitatea și pregătirea pentru urgențele de sănătate conform Regulamentului Sanitar Internațional",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/3-d-1/",
@@ -847,7 +847,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "Existența în curricula școlară a modulelor/conținuturilor curriculare: i) dezvoltarea durabilă;  ii) drepturile omului; iii) egalitatea de gen; iv) educația pentru sănătate și abordarea multidisciplinară a acestora în vederea formării profilului absolventului",
+          "title": "Măsura în care (i) educația privind cetățenia globală și (ii) educația pentru dezvoltare durabilă, sunt integrate în (a) politicile educaționale naționale, (b) curriculum, (c) instruirea profesorilor și (d) evaluarea studenților",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-7-1/",
@@ -3199,7 +3199,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Ponderea copiilor în vârstă de până la 5 ani care dispun de certificat de naștere",
+          "title": "Ponderea copiilor în vârstă de până la 5 ani, nașterea cărora a fost înregistrată de o autoritate civilă, pe vârste",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/16-9-1/",

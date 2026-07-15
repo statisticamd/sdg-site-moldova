@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260715132954">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -560,7 +560,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('GOAL_META_LINK_TEXT', "United Nations Sustainable Development Goals Metadata (PDF 216 KB)");
+        var currentValue = normalizeCurrentValue('GOAL_META_LINK_TEXT', "United Nations Sustainable Development Goals Metadata (PDF)");
         var propertyEditor = editor.getEditor('root.GOAL_META_LINK_TEXT');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -644,7 +644,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 7.2.1: Renewable energy share in the total final energy consumption</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 7.2.1: Share of renewable energy in gross final energy consumption</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -840,7 +840,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "<p> Energy from renewable sources represents the energy obtained by harnessing  renewable unused sources, respectively wind energy, solar energy, aerothermal  energy, geothermal energy, hydrothermal energy and ocean energy, hydro-power  energy, biomass, biogas, waste fermentation gas (storage gas) and gas obtained  from wastewater treatment installations. Final gross consumption of energy -  energy products supplied for the energy purposes of industry, transportation,  residential sector, services, including public services, agriculture,  forestry, fishery, including consumption of electricity and thermal energy  from electricity and thermal energy producing, as well as technologic  consumption and losses of electricity and thermal energy in electricity and  thermal networks.</p>  <p>  Final gross consumption of energy from renewable  sources is calculated as the sum of the following: a) final gross consumption  of electricity from renewable sources; b) final gross consumption of energy  from renewables sources for heating and cooling; c) final gross consumption of  energy from renewable sources in transportation. </p>");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "| <p>Energy from renewable sources means energy produced from renewable non-fossil sources, namely wind energy, solar energy, aerothermal energy, geothermal energy, hydrothermal energy and ocean energy, hydroelectric energy, biomass, biogas, landfill gas, and gas from wastewater treatment installations.</p> <p></p> <p>Gross energy consumption means energy products supplied for energy purposes to industry, transport, households, services (including public services), agriculture, forestry and fisheries, including the consumption of electricity and thermal energy in the electricity and heat production sector, as well as technological consumption and losses of electricity and thermal energy in electricity and heat networks.</p> <p></p> <p>Gross final consumption of energy from renewable sources is calculated as the sum of:</p> <p>a) gross final consumption of electricity from renewable sources;</p> <p>b) gross final consumption of energy from renewable sources for heating and cooling;</p> <p>c) gross final consumption of energy from renewable sources in transport.</p>");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -954,7 +954,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('OTHER_METHOD', "");
+        var currentValue = normalizeCurrentValue('OTHER_METHOD', "https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ren/default/table?lang=en");
         var propertyEditor = editor.getEditor('root.OTHER_METHOD');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1150,7 +1150,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2026-07-14");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2026-07-15");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1303,12 +1303,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260715132954'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260715132954"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

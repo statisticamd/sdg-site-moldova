@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260714155944">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260715132954">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -644,7 +644,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 3.4.1: Mortality rate attributed to cardiovascular disease, cancer, diseases of  the digestive system, diabetes, diseases of the respiratory system among  persons between 30 to 70 years aged  per 100,000 population</p>");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "<p>Indicator 3.4.1: Mortality rate attributed to cardiovascular disease, cancer, diseases of  the digestive system, diabetes, diseases of the respiratory system among  persons between 30 to 70 years aged</p>");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -854,7 +854,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "Per 100.000 population");
+        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "%");
         var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -996,7 +996,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "Number of deaths caused by cardiovascular disease, cancer, digestive system  diseases, diabetes or chronic respiratory disease in the year of reference  among the persons aged between 30-70 years old, out of the number of  population of the respective age *100.000");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "| <p>Probability of dying: The likelihood that an individual would die between two ages given current mortality </p> <p>rates at each age in between, calculated using life table methods.  </p> <p>Life table: A table showing the mortality experience of a hypothetical group of infants born at the same </p> <p>time and subject throughout their lifetime to a set of age-specific mortality rates.  </p> <p>Cardiovascular disease, cancer, diabetes or chronic respiratory diseases: ICD-10 underlying causes of death I00-I99, COO-C97, E10-E14 and J30-J98, or ICD-11 underlying causes of death 8B00-8B2Z, BA00BE2Z, 2A00-2F9Z, 5A10-5A2Y, CA20- CA2Z, CA60-CA8Z, CA00-CA0Z, CB00-CB0Z, CB20-CB2Z, CB40, CB41, CB60-CB64, CB7Z.</p>");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1094,7 +1094,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('COMPARABILITY', "");
+        var currentValue = normalizeCurrentValue('COMPARABILITY', "The indicator was recalculated according to the new methodology, in accordance with international requirements and recommendations of the World Health Organization (WHO), being aligned with international standards for calculation and data comparability.");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1136,7 +1136,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2025-08-28");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2026-07-15");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1150,7 +1150,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-08-28");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2026-07-15");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1303,12 +1303,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260714155944'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260715132954'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260714155944"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260715132954"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

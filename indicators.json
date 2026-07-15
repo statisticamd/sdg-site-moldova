@@ -287,7 +287,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Prevalence of stunting among children under 5 years of age",
+          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-2-1/",
@@ -319,7 +319,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Prevalence of anaemia in women aged 15-49 years",
+          "title": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-2-3/",
@@ -423,7 +423,7 @@
         
         {
           "id": "3-1-1",
-          "title": "Maternal mortality ratio per 100,000 live births",
+          "title": "Maternal mortality ratio",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-1-1/",
@@ -439,7 +439,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Under-5 mortality rate per 1,000 live births",
+          "title": "Under‐5 mortality rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-2-1/",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Neonatal mortality rate per 1,000 live births",
+          "title": "Neonatal mortality rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-2-2/",
@@ -463,7 +463,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "HIV incidence per 100,000 uninfected persons",
+          "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-3-1/",
@@ -511,7 +511,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Mortality rate from cardiovascular diseases, cancer, digestive diseases, diabetes and respiratory diseases among persons aged 30-70 years, per 100,000 population",
+          "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-4-1/",
@@ -519,7 +519,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Suicide mortality rate per 100,000 population",
+          "title": "Suicide mortality rate",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-4-2/",
@@ -543,7 +543,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Road traffic mortality rate per 100,000 population",
+          "title": "Death rate due to road traffic injuries",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-6-1/",
@@ -567,7 +567,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Coverage of essential health services, index",
+          "title": "Coverage of essential health services",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-8-1/",
@@ -623,23 +623,23 @@
         },
         {
           "id": "3-9-1",
-          "title": "Mortality rate from indoor and ambient air pollution per 100,000 population",
+          "title": "Mortality rate attributed to household and ambient air pollution",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-2",
-          "title": "Mortality rate from unsafe water, sanitation and hygiene sources per 100,000 population",
+          "title": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-3",
-          "title": "Mortality rate from unintentional poisoning per 100,000 population",
+          "title": "Mortality rate attributed to unintentional poisoning",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-9-3/",
@@ -647,7 +647,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Prevalence of tobacco use among the population aged 15 years and over",
+          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-a-1/",
@@ -655,7 +655,7 @@
         },
         {
           "id": "3-b-1",
-          "title": "Proportion of population covered by vaccines in national immunization programmes (out of those registered with a family doctor)",
+          "title": "Proportion of the target population covered by all vaccines included in their national programme",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-b-1/",
@@ -679,7 +679,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Number of medical personnel per 10,000 population on average",
+          "title": "Health worker density and distribution",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-c-1/",
@@ -687,7 +687,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "Health sector capacity index",
+          "title": "International Health Regulations (IHR) capacity and health emergency preparedness",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/3-d-1/",
@@ -847,7 +847,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "Existence in the school curriculum of modules/curricular contents on: i) sustainable development; ii) human rights; iii) gender equality; iv) health education and their multidisciplinary approach",
+          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-7-1/",
@@ -3199,7 +3199,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Proportion of children under 5 years of age who have a birth certificate",
+          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/16-9-1/",

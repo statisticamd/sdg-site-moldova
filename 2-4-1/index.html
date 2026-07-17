@@ -121,7 +121,7 @@ var translations = {
         
         Indicator 2.4.1 -
         
-        Share of agricultural land using sustainable agricultural practices - Indicators For The Sustainable Development Goals
+        Proportion of agricultural area under productive and sustainable agriculture - Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260715132954">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260717115742">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -414,7 +414,7 @@ data-event-label="high"
                         
                         Indicator 2.4.1
                         
-                        <span class="lead-copy">Share of agricultural land using sustainable agricultural practices</span>
+                        <span class="lead-copy">Proportion of agricultural area under productive and sustainable agriculture</span>
                     </h1>
                 </div>
             </div>
@@ -425,6 +425,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Share of agricultural land using sustainable agricultural practices</h2>
+  </div>
+</div>
+
 
   
 
@@ -459,7 +465,7 @@ data-event-label="high"
   data-charttitles="[]"
   data-measurementunit="Percent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -471,14 +477,284 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Share&quot;,&quot;Area, thousand hectares (estimated)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indicators&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/en/data/2-4-1.csv" class="btn btn-primary btn-download" download='indicator_2-4-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>No headline data available</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            2.4.1. Share of agricultural land using sustainable agricultural practices
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>National Bureau of Statistics</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source:</dt>
+        <dd>National Bureau of Statistics</dd>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Republic of Moldova, without the left side of the river Nistru and the municipality of Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -680,8 +956,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition and concepts </th>
         <td>
           
-            <p> Sustainable agriculture should support healthy ecosystems and sustainable  management of fields, water, and natural resources, ensuring at the same time  world food security. To be sustainable, agriculture should meet the needs of  the present and future generations for its products and services, ensuring at  the same time profitability, environmental health, social and economic justice  (FAO definition).</p>
-<p>  The national strategic framework operates with the  notion "Ensuring sustainable management of natural resources in agriculture”  which includes: 1) use of innovation practices for managing agricultural  fields and water by: (i) enhancing the fields and using modern crop practices  by rotation of agricultural crops and diversification of agricultural  products, (ii) enhancing irrigation services together with access to modern  irrigation infrastructure and equipment; 2) applying environment friendly  production technologies, ecological products, including biodiversity: use of  innovation production technologies for obtaining ecological products, and 3)   existence of support mechanisms for adapting and mitigating the effects of  climate changes on agricultural production and agriculture competitiveness </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Sustainable agriculture should support healthy ecosystems and sustainable  management of fields, water, and natural resources, ensuring at the same time  world food security. To be sustainable, agriculture should meet the needs of  the present and future generations for its products and services, ensuring at  the same time profitability, environmental health, social and economic justice  (FAO definition).&lt;/p&gt; &lt;p&gt;  The national strategic framework operates with the  notion “Ensuring sustainable management of natural resources in agriculture”  which includes: 1) use of innovation practices for managing agricultural  fields and water by: (i) enhancing the fields and using modern crop practices  by rotation of agricultural crops and diversification of agricultural  products, (ii) enhancing irrigation services together with access to modern  irrigation infrastructure and equipment; 2) applying environment friendly  production technologies, ecological products, including biodiversity: use of  innovation production technologies for obtaining ecological products, and 3)   existence of support mechanisms for adapting and mitigating the effects of  climate changes on agricultural production and agriculture competitiveness&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -774,18 +1055,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p> Area covered with productive and sustainable agriculture out of total  agricultural area *100.</p>
-<p>  Numerator covers three dimensions of sustainable  production: environmental, economic and social. It covers the agricultural  areas of the farms which fulfil the selected sub-indicators for all the three  dimensions.</p>
-<p>  Denominator is the area of agricultural area managed by  agricultural holdings, defined as amount of agricultural areas used by  agricultural holdings which are held (exclusively the ones leased), rented,  borrowed, purchased. According to the FAO methodologies, the total  agricultural area does not include the fields under the state property and the  communal ones used by farms.</p>
-<p>  The calculation of the indicator includes a  number of stages:</p>
-<p>  1. Determining the scope of the indicator: the choice  for indicator 2.4.1 is to focus on production of crops and growing livestock,  excluding forestry, fishing and aquaculture.</p>
-<p>  2. Definition of aspects  which should be covered: the choice for indicator 2.4.1 is done to include  environment, economic and social aspects in assessing sustainability.</p>
-<p>  3.  Choosing a scale for assessing sustainability: the choice of indicator 2.4.1  is performed at the level of the farm, with aggregation at higher levels.</p>
-<p>   4. Selecting the tools for collecting data.</p>
-<p>  5. Selecting subjects from  every dimension and selecting a sub-indicator for every subject.</p>
-<p>  6.  Assessing the efficiency of sustainability at the farm level for every  sub-indicator. To assess the sustainability level of the farm, for every  subject, they apply adequate sustainability criteria in line with the  corresponding sub-indicators.</p>
-<p>  7. To decide the frequency of indicator  monitoring.</p>
-<p>  8 .Modality for reporting the indicator. A set of  sub-indicators is presented in the form of a tool dashboard. The tools' bar  described above provides an answer regarding the measuring of sustainability  at the farm level and aggregated at the national level. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Area covered with productive and sustainable agriculture out of total  agricultural area *100.&lt;/p&gt; &lt;p&gt;  Numerator covers three dimensions of sustainable  production: environmental, economic and social. It covers the agricultural  areas of the farms which fulfil the selected sub-indicators for all the three  dimensions.&lt;/p&gt; &lt;p&gt;  Denominator is the area of agricultural area managed by  agricultural holdings, defined as amount of agricultural areas used by  agricultural holdings which are held (exclusively the ones leased), rented,  borrowed, purchased. According to the FAO methodologies, the total  agricultural area does not include the fields under the state property and the  communal ones used by farms.&lt;/p&gt; &lt;p&gt;  The calculation of the indicator includes a  number of stages:&lt;/p&gt; &lt;p&gt;  1. Determining the scope of the indicator: the choice  for indicator 2.4.1 is to focus on production of crops and growing livestock,  excluding forestry, fishing and aquaculture.&lt;/p&gt; &lt;p&gt;  2. Definition of aspects  which should be covered: the choice for indicator 2.4.1 is done to include  environment, economic and social aspects in assessing sustainability.&lt;/p&gt; &lt;p&gt;  3.  Choosing a scale for assessing sustainability: the choice of indicator 2.4.1  is performed at the level of the farm, with aggregation at higher levels.&lt;/p&gt; &lt;p&gt;   4. Selecting the tools for collecting data.&lt;/p&gt; &lt;p&gt;  5. Selecting subjects from  every dimension and selecting a sub-indicator for every subject.&lt;/p&gt; &lt;p&gt;  6.  Assessing the efficiency of sustainability at the farm level for every  sub-indicator. To assess the sustainability level of the farm, for every  subject, they apply adequate sustainability criteria in line with the  corresponding sub-indicators.&lt;/p&gt; &lt;p&gt;  7. To decide the frequency of indicator  monitoring.&lt;/p&gt; &lt;p&gt;  8 .Modality for reporting the indicator. A set of  sub-indicators is presented in the form of a tool dashboard. The tools’ bar  described above provides an answer regarding the measuring of sustainability  at the farm level and aggregated at the national level.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -846,7 +1122,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            May 18, 2023
+            Jul 17, 2026
           
         </td>
         </tr>
@@ -861,7 +1137,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Jul 24, 2023
+            Jul 17, 2026
           
         </td>
         </tr>
@@ -1035,7 +1311,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">metadata_fields.goal_meta_link_text </th>
         <td>
           
-            <p>United Nations Sustainable Development Goals Metadata (PDF 4.0 MB)</p>
+            <p>United Nations Sustainable Development Goals Metadata (PDF)</p>
 
           
         </td>
@@ -1400,7 +1676,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Contact details </th>
         <td>
           
-            <p>Lungu Ludmila, Biroul Național de Statistică, tel.067770682, e-mail:  ludmila.lungu@statistica.gov.md</p>
+            <p>Baltag Grigore,Plant-based products department, Ministry of Agriculture and Food Industry, 022 204 514, grigore.baltag@maia.gov.md</p>
 
           
         </td>
@@ -1593,12 +1869,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260715132954'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260717115742'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260715132954"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260717115742"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

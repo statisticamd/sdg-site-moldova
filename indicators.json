@@ -147,7 +147,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/1-5-1-b/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-5-1-c",
@@ -359,11 +359,11 @@
         },
         {
           "id": "2-4-1",
-          "title": "Share of agricultural land using sustainable agricultural practices",
+          "title": "Proportion of agricultural area under productive and sustainable agriculture",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-4-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-5-1",
@@ -375,7 +375,7 @@
         },
         {
           "id": "2-5-2",
-          "title": "Proportion of breeds and local varieties classified as at risk, not at risk, or at unknown risk of extinction",
+          "title": "Proportion of local breeds classified as being at risk of extinction",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/2-5-2/",
@@ -718,19 +718,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-ii",
-          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/4-1-1-c-ii/",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-i",
           "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-1-c-i/",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-ii",
+          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-1-1-c-ii/",
           "status": "complete"
         },
         {
@@ -2083,7 +2083,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-2-1-3",
@@ -2155,7 +2155,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/11-5-1-b/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-5-1-c",
@@ -2523,7 +2523,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/13-1-1-b/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "13-1-1-c",

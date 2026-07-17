@@ -121,7 +121,7 @@ var translations = {
         
         Indicator 2.4.1 -
         
-        Ponderea suprafețelor agricole care utilizează practici de agricultură durabilă - Indicatori pentru Obiectivele de Dezvoltare Durabilă
+        Ponderea suprafețelor agricole în agricultură productivă și durabilă - Indicatori pentru Obiectivele de Dezvoltare Durabilă
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260715132954">
+        <link rel="stylesheet" href="/sdg-site-moldova/assets/css/style.css?v=20260717115742">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -295,7 +295,7 @@ layout-indicator-iframe
                         
                         Indicator 2.4.1
                         
-                        <span class="lead-copy">Ponderea suprafețelor agricole care utilizează practici de agricultură durabilă</span>
+                        <span class="lead-copy">Ponderea suprafețelor agricole în agricultură productivă și durabilă</span>
                     </h1>
                 </div>
             </div>
@@ -306,6 +306,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Ponderea suprafețelor agricole care utilizează practici de agricultură durabilă</h2>
+  </div>
+</div>
+
 
   
 
@@ -340,7 +346,7 @@ layout-indicator-iframe
   data-charttitles="[]"
   data-measurementunit="Procent, %"
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -352,14 +358,284 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Anul&quot;},{&quot;name&quot;:&quot;Indicators&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Share&quot;,&quot;Area, thousand hectares (estimated)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indicatori&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-unit-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-series-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Subcategorii</h4>
+    <p>Alegeți categorii din meniurile derulante de mai jos pentru a vedea diferite dezagregări ale datelor. Unele nu vor fi disponibile până când un nivel superior nu va fi ales.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a role="button" href="https://statisticamd.github.io/sdg-data-moldova/ro/data/2-4-1.csv" class="btn btn-primary btn-download" download='indicator_2-4-1.csv' tabindex='0' role='button'>Descărcați datele sursă (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Descărcați datele sursă pentru dezagregări (.csv)</p>
+
+    
+    <h3>Nu sunt disponibile date despre titlu</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site-moldova/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Pentru alternative de date tabelare, consultați fila Tabel.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Diagramă</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabel</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertizare:</span></i>
+      Există prea multe seturi de date pentru a fi afișate pe diagramă. Nu toate vor fi afișate până când nu eliminați unele selecții.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            2.4.1. Ponderea suprafețelor agricole care utilizează practici de agricultură durabilă
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Descărcați imaginea diagramei ca PNG"
+          aria-label="Descărcați imaginea diagramei ca PNG"
+          class='btn btn-primary btn-download'>
+          Descărcați imaginea diagramei (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Faceți clic pentru a sorta după această coloană</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Sursă:</dt>
+        <dd>Biroul Național de Statistică</dd>
+        
+
+        
+        <dt>Acoperirea geografică:</dt>
+        <dd>Republica Moldova, fără partea stângă a Nistrului și mun. Bender</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unitatea de măsură:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Notă de subsol:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data ultimei actualizări:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -557,8 +833,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definiție și concepte </th>
         <td>
           
-            <p> Agricultura durabilă trebuie să sprijine ecosistemele sănătoase și gestionarea  durabilă a terenurilor, apei și resurselor naturale, asigurând în același timp  securitatea alimentară mondială. Pentru a fi durabilă, agricultura trebuie să  răspundă nevoilor generațiilor prezente și viitoare pentru produsele și  serviciile sale, asigurând în același timp rentabilitate, sănătate de mediu și  justiție socială și economică (Definiția FAO).</p>
-<p>  Cadrul strategic național  operează cu noțiunea de „Asigurarea gestionării durabile a resurselor naturale  în agricultură” care include: 1) utilizarea practicilor inovatoare de  gestionare a terenurilor agricole și a apei prin: (i) consolidarea terenurilor  și utilizarea de practici moderne de cultivare prin rotația culturilor  agricole și diversificarea produselor agricole, (ii) consolidarea serviciilor  de irigare împreună cu accesul la infrastructura și echipamentele moderne de  irigare; 2) aplicarea tehnologiilor de producție prietenoase mediului, a  produselor ecologice, inclusiv a biodiversității:  utilizarea de tehnologii de  producție inovatoare pentru obținerea de produse ecologice, și 3)  existența  mecanismelor de sprijin a adaptării și atenuării efectelor schimbărilor  climatice asupra producției agricole și a competitivității agriculturii </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Agricultura durabilă trebuie să sprijine ecosistemele sănătoase și gestionarea  durabilă a terenurilor, apei și resurselor naturale, asigurând în același timp  securitatea alimentară mondială. Pentru a fi durabilă, agricultura trebuie să  răspundă nevoilor generațiilor prezente și viitoare pentru produsele și  serviciile sale, asigurând în același timp rentabilitate, sănătate de mediu și  justiție socială și economică (Definiția FAO).&lt;/p&gt; &lt;p&gt;  Cadrul strategic național  operează cu noțiunea de „Asigurarea gestionării durabile a resurselor naturale  în agricultură” care include: 1) utilizarea practicilor inovatoare de  gestionare a terenurilor agricole și a apei prin: (i) consolidarea terenurilor  și utilizarea de practici moderne de cultivare prin rotația culturilor  agricole și diversificarea produselor agricole, (ii) consolidarea serviciilor  de irigare împreună cu accesul la infrastructura și echipamentele moderne de  irigare; 2) aplicarea tehnologiilor de producție prietenoase mediului, a  produselor ecologice, inclusiv a biodiversității:  utilizarea de tehnologii de  producție inovatoare pentru obținerea de produse ecologice, și 3)  existența  mecanismelor de sprijin a adaptării și atenuării efectelor schimbărilor  climatice asupra producției agricole și a competitivității agriculturii&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -651,18 +932,13 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Formula de calcul </th>
         <td>
           
-            <p> Suprafața acoperită cu agricultura productivă și durabilă raportată la  suprafața totală agricolă *100</p>
-<p>  Numărătorul cuprinde trei dimensiuni ale producției durabile: de mediu, economic și social. Aceasta corespunde ariilor agricole ale exploatațiilor care corespund sub-indicatorilor selectați pe toate cele  trei dimensiuni.</p>
-<p>  Numitorul este suprafața de teren agricol gestionat de exploatații agricole, definită ca suma suprafeței agricole utilizate de  gospodăriile țărănești (de fermier) care sunt deținute (exclusiv  cele date în arendă),  luate în arendă, închiriate, împrumutate sau cumpărate. Conform metodologiilor FAO, în suprafața totală agricolă nu sunt incluse terenurile aflate în  proprietatea statului sau cele comune utilizate de gospodăria țărănească (de fermier).</p>
-<p>  Calcularea indicatorului include mai multe etape:</p>
-<p>  1.  Determinarea scopului indicatorului: alegerea pentru  indicatorul 2.4.1 este focusarea pe producția vegetalăi și creșterea animalelor, excluzând silvicultura, pescuitul și acvacultura.</p>
-<p>  2.  Definiția aspectelor care trebuie acoperite: alegerea pentru indicatorul 2.4.1 se efectuează pentru a include aspecte de mediu, economice și sociale în evaluarea  durabilității.</p>
-<p>  3. Alegerea unei scări pentru evaluarea sustenabilității:  alegerea indicatorului 2.4.1 se efectuează la nivelul gospodăriilor țărănești (de fermier), cu agregarea la niveluri superioare.</p>
-<p>  4. Selectarea instrumentelor de  colectare a datelor.</p>
-<p>  5. Selectarea subiectelor din fiecare dimensiune și  selectarea unui sub-indicator pentru fiecare subiect.</p>
-<p>  6. Evaluarea  eficacității durabilității la nivelul gospodăriei țărănești (de fermier) pentru fiecare sub indicator. Pentru a evalua nivelul de durabilitate al gospodăriei țărănești (de fermier), pentru fiecare subiect,  se aplică criteriile de durabilitate adecvate în conformitate cu sub-indicatorii corespunzători.</p>
-<p>  7. Determinarea frecvenței monitorizării  indicatorului.</p>
-<p>  8. Modalitateade de raportare a indicatorului. Un set de  sub-indicatori este prezentat sub forma unui tablou de instrumente. Bara de  instrumente descrisă mai sus oferă un răspuns în ceea ce privește măsurarea  durabilității la nivelul gospodăriei țărănești (de fermier) și agregarea acesteia la nivel național. </p>
+            <table>
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;Suprafața acoperită cu agricultura productivă și durabilă raportată la  suprafața totală agricolă *100&lt;/p&gt; &lt;p&gt;  Numărătorul cuprinde trei dimensiuni ale producției durabile: de mediu, economic și social. Aceasta corespunde ariilor agricole ale exploatațiilor care corespund sub-indicatorilor selectați pe toate cele  trei dimensiuni.&lt;/p&gt; &lt;p&gt;  Numitorul este suprafața de teren agricol gestionat de exploatații agricole, definită ca suma suprafeței agricole utilizate de  gospodăriile țărănești (de fermier) care sunt deținute (exclusiv  cele date în arendă),  luate în arendă, închiriate, împrumutate sau cumpărate. Conform metodologiilor FAO, în suprafața totală agricolă nu sunt incluse terenurile aflate în  proprietatea statului sau cele comune utilizate de gospodăria țărănească (de fermier).&lt;/p&gt; &lt;p&gt;  Calcularea indicatorului include mai multe etape:&lt;/p&gt; &lt;p&gt;  1.  Determinarea scopului indicatorului: alegerea pentru  indicatorul 2.4.1 este focusarea pe producția vegetalăi și creșterea animalelor, excluzând silvicultura, pescuitul și acvacultura.&lt;/p&gt; &lt;p&gt;  2.  Definiția aspectelor care trebuie acoperite: alegerea pentru indicatorul 2.4.1 se efectuează pentru a include aspecte de mediu, economice și sociale în evaluarea  durabilității.&lt;/p&gt; &lt;p&gt;  3. Alegerea unei scări pentru evaluarea sustenabilității:  alegerea indicatorului 2.4.1 se efectuează la nivelul gospodăriilor țărănești (de fermier), cu agregarea la niveluri superioare.&lt;/p&gt; &lt;p&gt;  4. Selectarea instrumentelor de  colectare a datelor.&lt;/p&gt; &lt;p&gt;  5. Selectarea subiectelor din fiecare dimensiune și  selectarea unui sub-indicator pentru fiecare subiect.&lt;/p&gt; &lt;p&gt;  6. Evaluarea  eficacității durabilității la nivelul gospodăriei țărănești (de fermier) pentru fiecare sub indicator. Pentru a evalua nivelul de durabilitate al gospodăriei țărănești (de fermier), pentru fiecare subiect,  se aplică criteriile de durabilitate adecvate în conformitate cu sub-indicatorii corespunzători.&lt;/p&gt; &lt;p&gt;  7. Determinarea frecvenței monitorizării  indicatorului.&lt;/p&gt; &lt;p&gt;  8. Modalitateade de raportare a indicatorului. Un set de  sub-indicatori este prezentat sub forma unui tablou de instrumente. Bara de  instrumente descrisă mai sus oferă un răspuns în ceea ce privește măsurarea  durabilității la nivelul gospodăriei țărănești (de fermier) și agregarea acesteia la nivel național.&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -892,7 +1168,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">metadata_fields.goal_meta_link_text </th>
         <td>
           
-            <p>Metadatele indicatorului global</p>
+            <p>Metadatele ODD ale ONU (PDF)</p>
 
           
         </td>
@@ -1231,7 +1507,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Contacte </th>
         <td>
           
-            <p>Lungu Ludmila, Biroul Național de Statistică, tel.067770682, e-mail: ludmila.lungu@statistica.gov.md</p>
+            <p>Baltag Grigore, Direcția Produse de origine vegetală, Ministerul Agriculturii și Industriei Alimentare, 022 204 514, grigore.baltag@maia.gov.md</p>
 
           
         </td>
@@ -1352,12 +1628,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Caută';</script>
 
-<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260715132954'></script>
+<script src='/sdg-site-moldova/assets/js/sdg.js?v=20260717115742'></script>
 
 
     
     
-    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260715132954"></script><script>
+    <script src="/sdg-site-moldova/assets/js/custom.js?v=20260717115742"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

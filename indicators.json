@@ -718,19 +718,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-i",
-          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/4-1-1-c-i/",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-ii",
           "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-1-c-ii/",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-i",
+          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-1-1-c-i/",
           "status": "complete"
         },
         {

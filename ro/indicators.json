@@ -718,19 +718,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-i",
-          "title": "Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/ro/4-1-1-c-i/",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-ii",
           "title": "Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul matematicii",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/4-1-1-c-ii/",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-i",
+          "title": "Ponderea elevilor din ultima clasă a învățământului gimnazial cu cunoștințe minime în domeniul citirii/lecturii",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/ro/4-1-1-c-i/",
           "status": "complete"
         },
         {
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "8-8-1",
-          "title": "Rata accidentelor de muncă, la 100 000 de salariați",
+          "title": "Rata accidentelor de muncă fatale și non-fatale la 100.000 lucrători, pe sexe și statut migrațional",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/8-8-1/",
@@ -1847,11 +1847,11 @@
         },
         {
           "id": "9-b-1",
-          "title": "Ponderea valorii adăugate brute a industriei cu tehnologii avansate și medii avansate, în total valoarea adăugată în industrie prelucrătoare",
+          "title": "Ponderea valorii adăugate a industriei cu tehnologii avansate și medii-avansate în total valoarea adăugată",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/9-b-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-c-1",
@@ -3543,7 +3543,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "Valoarea asistenței financiare și tehnice externe pentru consolidarea sistemului statistic național",
+          "title": "Volumul asistenței externe acordate pentru consolidarea sistemului statistic în țările în curs de dezvoltare, echivalent în dolari SUA",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/ro/17-19-1/",

@@ -718,19 +718,19 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-c-i",
-          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in reading",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-moldova/4-1-1-c-i/",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-c-ii",
           "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in mathematics",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/4-1-1-c-ii/",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-1-c-i",
+          "title": "Proportion of students in the final grade of lower secondary education with minimum proficiency in reading",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-moldova/4-1-1-c-i/",
           "status": "complete"
         },
         {
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "8-8-1",
-          "title": "Rate of work-related accidents per 100,000 employees",
+          "title": "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/8-8-1/",
@@ -1847,11 +1847,11 @@
         },
         {
           "id": "9-b-1",
-          "title": "Share of gross value added of high and medium-high technology industries in total gross value added in manufacturing",
+          "title": "Proportion of medium and high-tech industry value added in total value added",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/9-b-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-c-1",
@@ -3543,7 +3543,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "Value of external financial and technical assistance for strengthening the national statistical system",
+          "title": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-moldova/17-19-1/",
